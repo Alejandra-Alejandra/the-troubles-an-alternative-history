@@ -57,7 +57,7 @@ is-deck: true
 - #party_affairs
 
 @govt
-title: Revolutionary Affairs
+title: The Unfinished Revolution
 view-if: in_control = 1
 card-image: img/Free_Derry.jpg
 is-deck: true
