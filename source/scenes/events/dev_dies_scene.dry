@@ -1,6 +1,6 @@
-title: Public Meeting
+title: Dev Dies
 new-page: true
-subtitle: The IRSP holds its first public meeting...
+subtitle: Éamon de Valera has died
 view-if: year = 1975 and month = 9 and dev_dead = 0
 max-visits: 1
 on-arrival: dev_dead = 1;
