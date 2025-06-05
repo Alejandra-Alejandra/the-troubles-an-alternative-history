@@ -1,0 +1,79 @@
+title: Next month
+set-bg: img/eire.jpg
+is-hand: true
+on-arrival: {!
+if (Q.advisor_action_timer <= 0) {
+    Q.pinnedCardsDescription = 'Advisors - an action is available.';
+} else if (Q.advisor_action_timer == 1) {
+    Q.pinnedCardsDescription = 'Advisors - next action available in 1 month.';
+} else {
+    Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' months.';
+}
+!}
+max-cards: 3
+
+#Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
+
+[? if year = 1928 and month = 2 : The current bourgeois-right government has fallen. The next elections are slated for May of this year. ?]
+
+- @party
+- @govt
+- @paramilitary
+- @calendar
+- #advisor
+- @shuffle_leadership_pinned
+
+@main_easy
+set-bg: img/eire.jpg
+is-hand: true
+on-arrival: {!
+if (Q.advisor_action_timer <= 0) {
+    Q.pinnedCardsDescription = 'Advisors - an action is available.';
+} else if (Q.advisor_action_timer == 1) {
+    Q.pinnedCardsDescription = 'Advisors - next action available in 1 month.';
+} else {
+    Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' months.';
+}
+!}
+max-cards: 4
+
+#Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
+
+[? if year = 1928 and month = 2 : The current bourgeois-right government has fallen. The next elections are slated for May of this year. ?]
+
+- @party
+- @govt
+- @paramilitary
+- @calendar
+- #advisor
+- @shuffle_leadership_pinned
+
+
+@party
+title: Party Affairs
+card-image: img/irsp_logo.png
+is-deck: true
+
+- #party_affairs
+
+@govt
+title: Revolutionary Affairs
+view-if: in_control = 1
+card-image: img/Free_Derry.jpg
+is-deck: true
+
+- #govt_affairs
+
+@paramilitary
+title: Paramilitary Affairs
+card-image: img/INLALogo123.png
+is-deck: true
+
+- #para_affairs
+
+@calendar
+title: End Month
+card-image: img/calendar.jpg
+is-deck: true
+
+- #calendar_affairs

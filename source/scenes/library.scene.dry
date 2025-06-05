@@ -1,0 +1,123 @@
+title: Library
+new-page: true
+is-special: true
+go-to: menu
+
+= The Library
+
+Below is essential information for demographics, paramilitaries, party relations, etc. 
+
+@menu
+
+- @background: Historical Background
+- @parties_and_paramilitaries: Details about the parties and paramilitaries
+- @Polling: Poll results broken down by demographics
+- @backSpecialScene: Exit library.
+
+@background
+go-to: menu
+
+In 1154, Englishman Nicholas Breakspear ascended to the papacy as Pope Adrian IV. Within a year the Laudabiliter was issued which sanctioned the invasion of Ireland by the English crown. This was to force the Gregorian reforms upon the Irish church, which was largely independent from the Vatican.
+
+Over the course of the next few centuries the British expanded their control over Ireland through a combination of manipulating local lords and the ousted High King of Ireland Diarmaid Mac Murchada, and violent conquest. In 1649-1653 after the Irish Rebellion of 1641, Cromwell invaded Ireland to fully assert British control over the country, hundreds of thousands were massacred by Cromwell's men who wished to scare the Irish populace back into submission.
+
+Ireland struggled to develop as a nation under British colonial rule, with it being turned into the agricultural basket of the United Kingdom, and wealth being hoarded by a small class of protestants largely tied to the British mainland. In 'Capital' Karl Marx wrote about the de-industrialisation forced upon Ireland during the Industrial revolution in the UK. Ireland's extremely poor largely rural populace eventually became dependent on just the potato.
+
+In 1845, as a result of British policies a potato blight that struck Ireland turned into the great famine. Food continued to be exported out of the country while the Irish starved. Over the next decade over 1 million people died, and millions more fled the country.
+
+By the late 1800s, as a result of the great famine, and Britain's colonial empire expanding leading to it becoming less reliant on Irish agriculture, Ireland began to undergo industrialisation.
+
+At first nationalists took a parliamentary approach in their attempts to gain Irish independence and autonomy. However, these attempts were repeatedly blocked by conservatives in Westminister, and hindered by unionists in the country. 
+
+In 1914 Britain dragged Ireland into the great war. Only 2 years later the Easter Rising occurred, when a group of nationalists, trade unionists and socialists took over parts of Dublin city and proclaimed an Irish Republic.
+
+The Rising was put down violently, and the subsequent outroar over the British reaction, and their attempt to force conscription upon Ireland in 1918 eventually led to the Irish war of independence.
+
+A brutal guerilla war was waged in Ireland, with Britain committing violent reprisals on civillians, their hamfisted approach led to their eventual defeat. However, the peace that was signed between Ireland and Britain partitioned the country north and south. Much of the soldiers who fought during the war felt betrayed by the signing of the treaty, and a civil war broke out leading to many more dying. The pro-treaty side won, and Ireland remained partitioned.
+
+Despite this defeat, many in Ireland longed for unification, and this unification would become a real possibility in 1969 with the birth of the Irish civil rights movement in the north. Later that year, in the Bogside district of Derry riots broke out that were violently put down by the Royal Ulster Constabulary. Seven catholics were shot, with one being killed. In 1972, violence once again visited the Bogside district, this time on a much greater scale. The British army opened fire on civillians, and ran them down, and 14 died as a result. Only a few days later in the south, enraged by the actions of the British army, a mob burned down the British embassy to Ireland.
+
+Violence visits the north every day, the troubles in are full swing as republican paramilitaries patrol Catholic neighbourhoods in an attempt to defend them from incursions by the British army and unionist forces. Violent reprisals are being carried out by both sides as Catholics are tossed out of Protestant neighbourhoods and Protestants are tossed out of Catholic neighbourhoods.
+
+@Polling
+go-to: menu
+
+Free State:
+
+Workers: IRSP: [+ workers_IRSP +]%, Officials: [+ workers_Officials +]%, Provisionals: [+ workers_provisionals +]%, Independent Republicans: [+ workers_IR +]%; FG: [+ workers_FG +]%, FF: [+ workers_FF +]%, Labour: [+ workers_labour +]% 
+
+Middle Class: IRSP: [+ urban_middle_IRSP +]%, Officials: [+ urban_middle_Officials +]%, Provisionals: [+ urban_middle_provisionals +]%, Independent Republicans: [+ urban_middle_IR +]%; FG: [+ urban_middle_FG +]%, FF: [+ urban_middle_FF +]%, Labour: [+ urban_middle_labour +]% 
+
+Small Farmers: IRSP: [+ poor_rural_IRSP +]%, Officials: [+ poor_rural_Officials +]%, Provisionals: [+ poor_rural_provisionals +]%, Independent Republicans: [+ poor_rural_IR +]%; FG: [+ poor_rural_FG +]%, FF: [+ poor_rural_FF +]%, Labour: [+ poor_rural_labour +]% 
+
+Big Farmers: IRSP: [+ middle_rural_IRSP +]%, Officials: [+ middle_rural_Officials +]%, Provisionals: [+ middle_rural_provisionals +]%, Independent Republicans: [+ middle_rural_IR +]%; FG: [+ middle_rural_FG +]%, FF: [+ middle_rural_FF +]%, Labour: [+ middle_rural_labour +]% 
+
+Industrialists and the Wealthy: IRSP: [+ rich_IRSP +]%, Officials: [+ rich_Officials +]%, Provisionals: [+ rich_provisionals +]%, Independent Republicans: [+ rich_IR +]%; FG: [+ rich_FG +]%, FF: [+ rich_FF +]%, Labour: [+ rich_labour +]% 
+
+Unemployed: IRSP: [+ unemployed_IRSP +]%, Officials: [+ unemployed_Officials +]%, Provisionals: [+ unemployed_provisionals +]%, Independent Republicans: [+ unemployed_IR +]%; FG: [+ unemployed_FG +]%, FF: [+ unemployed_FF +]%, Labour: [+ unemployed_labour +]% 
+
+The Six Counties:
+
+Catholic Workers: IRSP: [+ catholic_workers_IRSP +]%, Officials: [+ catholic_workers_Officials +]%, Provisionals: [+ catholic_workers_provisionals +]%, Independent Republicans: [+ catholic_workers_IR +]%; SDLP: [+ catholic_workers_sdlp +]%, Alliance: [+ catholic_workers_alliance +]%, NILP: [+ catholic_workers_NILP +]%, UUP: [+ catholic_workers_UUP +]%, DUP: [+ catholic_workers_DUP +]%, Vanguard: [+ catholic_workers_Vanguard +]% 
+
+Protestant Workers: IRSP: [+ protestant_workers_IRSP +]%, Officials: [+ protestant_workers_Officials +]%, Provisionals: [+ protestant_workers_provisionals +]%, Independent Republicans: [+ protestant_workers_IR +]%; SDLP: [+ protestant_workers_sdlp +]%, Alliance: [+ protestant_workers_alliance +]%, NILP: [+ protestant_workers_NILP +]%, UUP: [+ protestant_workers_UUP +]%, DUP: [+ protestant_workers_DUP +]%, Vanguard: [+ protestant_workers_Vanguard +]% 
+
+Other Workers: IRSP: [+ other_workers_IRSP +]%, Officials: [+ other_workers_Officials +]%, Provisionals: [+ other_workers_provisionals +]%, Independent Republicans: [+ other_workers_IR +]%; SDLP: [+ other_workers_sdlp +]%, Alliance: [+ other_workers_alliance +]%, NILP: [+ other_workers_NILP +]%, UUP: [+ other_workers_UUP +]%, DUP: [+ other_workers_DUP +]%, Vanguard: [+ other_workers_Vanguard +]% 
+
+Big Catholic Farmers: IRSP: [+ catholic_middle_rural_IRSP +]%, Officials: [+ catholic_middle_rural_Officials +]%, Provisionals: [+ catholic_middle_rural_provisionals +]%, Independent Republicans: [+ catholic_middle_rural_IR +]%; SDLP: [+ catholic_middle_rural_sdlp +]%, Alliance: [+ catholic_middle_rural_alliance +]%, NILP: [+ catholic_middle_rural_NILP +]%, UUP: [+ catholic_middle_rural_UUP +]%, DUP: [+ catholic_middle_rural_DUP +]%, Vanguard: [+ catholic_middle_rural_Vanguard +]%
+
+Small Catholic Farmers: IRSP: [+ catholic_poor_rural_IRSP +]%, Officials: [+ catholic_poor_rural_Officials +]%, Provisionals: [+ catholic_poor_rural_provisionals +]%, Independent Republicans: [+ catholic_poor_rural_IR +]%; SDLP: [+ catholic_poor_rural_sdlp +]%, Alliance: [+ catholic_poor_rural_alliance +]%, NILP: [+ catholic_poor_rural_NILP +]%, UUP: [+ catholic_poor_rural_UUP +]%, DUP: [+ catholic_poor_rural_DUP +]%, Vanguard: [+ catholic_poor_rural_Vanguard +]%
+
+Catholic Middle Class: IRSP: [+ catholic_middle_urban_IRSP +]%, Officials: [+ catholic_middle_urban_Officials +]%, Provisionals: [+ catholic_middle_urban_provisionals +]%, Independent Republicans: [+ catholic_middle_urban_IR +]%; SDLP: [+ catholic_middle_urban_sdlp +]%, Alliance: [+ catholic_middle_urban_alliance +]%, NILP: [+ catholic_middle_urban_NILP +]%, UUP: [+ catholic_middle_urban_UUP +]%, DUP: [+ catholic_middle_urban_DUP +]%, Vanguard: [+ catholic_middle_urban_Vanguard +]%
+
+Big Protestant Farmers: IRSP: [+ protestant_middle_rural_IRSP +]%, Officials: [+ protestant_middle_rural_Officials +]%, Provisionals: [+ protestant_middle_rural_provisionals +]%, Independent Republicans: [+ protestant_middle_rural_IR +]%; SDLP: [+ protestant_middle_rural_sdlp +]%, Alliance: [+ protestant_middle_rural_alliance +]%, NILP: [+ protestant_middle_rural_NILP +]%, UUP: [+ protestant_middle_rural_UUP +]%, DUP: [+ protestant_middle_rural_DUP +]%, Vanguard: [+ protestant_middle_rural_Vanguard +]%
+
+Small Protestant Farmers: IRSP: [+ protestant_poor_rural_IRSP +]%, Officials: [+ protestant_poor_rural_Officials +]%, Provisionals: [+ protestant_poor_rural_provisionals +]%, Independent Republicans: [+ protestant_poor_rural_IR +]%; SDLP: [+ protestant_poor_rural_sdlp +]%, Alliance: [+ protestant_poor_rural_alliance +]%, NILP: [+ protestant_poor_rural_NILP +]%, UUP: [+ protestant_poor_rural_UUP +]%, DUP: [+ protestant_poor_rural_DUP +]%, Vanguard: [+ protestant_poor_rural_Vanguard +]%
+
+Protestant Middle Class: IRSP: [+ protestant_middle_urban_IRSP +]%, Officials: [+ protestant_middle_urban_Officials +]%, Provisionals: [+ protestant_middle_urban_provisionals +]%, Independent Republicans: [+ protestant_middle_urban_IR +]%; SDLP: [+ protestant_middle_urban_sdlp +]%, Alliance: [+ protestant_middle_urban_alliance +]%, NILP: [+ protestant_middle_urban_NILP +]%, UUP: [+ protestant_middle_urban_UUP +]%, DUP: [+ protestant_middle_urban_DUP +]%, Vanguard: [+ protestant_middle_urban_Vanguard +]%
+
+Unemployed: IRSP: [+ north_unemployed_IRSP +]%, Officials: [+ north_unemployed_Officials +]%, Provisionals: [+ north_unemployed_provisionals +]%, Independent Republicans: [+ north_unemployed_IR +]%; SDLP: [+ north_unemployed_sdlp +]%, Alliance: [+ north_unemployed_alliance +]%, NILP: [+ north_unemployed_NILP +]%, UUP: [+ north_unemployed_UUP +]%, DUP: [+ north_unemployed_DUP +]%, Vanguard: [+ north_unemployed_Vanguard +]%
+
+Industrialists and the Wealthy: IRSP: [+ north_rich_IRSP +]%, Officials: [+ north_rich_Officials +]%, Provisionals: [+ north_rich_provisionals +]%, Independent Republicans: [+ north_rich_IR +]%; SDLP: [+ north_rich_sdlp +]%, Alliance: [+ north_rich_alliance +]%, NILP: [+ north_rich_NILP +]%, UUP: [+ north_rich_UUP +]%, DUP: [+ north_rich_DUP +]%, Vanguard: [+ north_rich_Vanguard +]%
+
+Support for Republicanism in the six counties: [+ 30 +]%
+
+Support for Republicanism in the south: [+ 46 +]%
+
+@parties_and_paramilitaries
+go-to: menu
+
+Parties:
+
+Officials: Official Sinn Féin, the successor party to Sinn Féin that led the Irish war of independence, they have shifted to Soviet style politics and are increasingly flirting with electoralism. Despite preaching peace their paramilitary wing OIRA hunts down rival republicans in an attempt to maintain the strength of Official Sinn Féin.
+
+Provisionals: Provisional Sinn Féin, they were the minority during the split that led to the "Officials" and "Provisionals". They denounced the shift towards electoralism, and the turn away from traditional physical force republicanism by the Officials.
+
+IRSP: The Irish Republican Socialist Party split from the Officials at the end of 1974. They wanted to combine Marxist politics with physical force republicanism. They are radical in their Marxism, and they are radical in their republicanism.
+
+IRs: Independent Republicans are elected republicans who are part of none of the major Republican groups.
+
+SDLP: The Social Democratic Labour Party originated from the Republican and Labour movement in the 60s. They have denounced the taking up of armed struggle by the modern republican movement, and are increasingly making overtures to Fianna Fáil in the south.
+
+Alliance: Founded as an alternative to the mainstream unionist and republican movement it reperesents a pacifist strain of unionism.
+
+UUP: The Ulster Unionist Party is the main unionist party in the north, and until 1972 was affiliated to the Conservative party in the UK. It has up until recently been seen as the main representative of unionism. Despite support for paramilitarism by much of the party, it has begun to lose support due to its concessions to NICRA and the visiting by party leader O'Neill to Dublin.
+
+DUP: The Democratic Unionist Party is a thoroughly conservative protestant fundamentalist party. It is seen as the hardline unionist party, and because of this it has begun to eat away at the base of support for the UUP.
+
+Vanguard: The Vanguard Unionist Progressive Party is seen as the "pro-labour" wing of the hardline unionist movement. It however, only supports the working rights of Protestants.
+
+NILP: The Northern Ireland Labour Party were once a giant force in the north. It was one of the key supporters for the civil rights movement, however when the civil rights movement became increasingly aligned with republicanism, much of its members gained by its support for civil rights were expelled. It maintains a soft unionist stance.
+
+FG: Fine Gael is the founding party of the southern republic. It represented the pro-treaty side in the Irish civil war, and is one of the two big parties in the south. It was historically aligned with the interests of industry, and large agriculture. However, in recent years the party has adopted some pro-labour stances, it is seen as the "socially liberal" party amongst the big two.
+
+FF: Fianna Fáil was founded by veterans of the anti-treaty forces in the Irish civil war, and the other of the big two parties in the south. Known as the republican party, its republican credentials were rejected by much of its former allies in 1935 when it broke with the IRA, and a year later banned the organisation. It is seen as the party of the Catholic church and christian conservatism. It has a broad base of support amongst small farmers and workers due to its implementation of some social democratic parties.
+
+Labour: When founded the Labour party was seen as the representative of the socialist republican movement, however it quickly became dominated by conservative elements in the trade union movement and even refused to support either side in the civil war. It is the social-democratic alternative to the big two in Ireland. In 1973 it formed the "National Coalition" with Fine Gael and joined government. Some of the rank-and-file, and reformist socialists in the party are disappointed with its increasing moderation.
+
+Paramilitaries:
+PIRA: provisional IRA, armed wing of Provisional Sinn Féin.
+OIRA: Official IRA, armed wing of Official Sinn Féin.
+INLA: Irish National Liberation Army, armed wing of the IRSP.
+UDA: Ulster Defence Association, the largest unionist organisation comprised of mostly untrained, inexperienced youths looking for a fight, it does however, contain a hardened core of armed men.
+UVF: Ulster Volunteer Force, the better armed and more secretive of the unionist organisations, though much smaller in number.

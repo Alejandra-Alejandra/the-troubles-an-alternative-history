@@ -1,0 +1,167 @@
+title: Status
+new-page: true
+is-special: true
+on-arrival: {!
+if (Q.unemployed) {
+    Q.unemployed_2 = Q.unemployed.toFixed(1);
+}
+if (Q.inflation) {
+    Q.inflation_2 = Q.inflation.toFixed(1);
+}
+Q.economic_growth_2 = '0';
+if (Q.economic_growth) {
+    Q.economic_growth_2 = Q.economic_growth.toFixed(1);
+}
+!}
+
+= Status
+
+[+ month : month +] [+ year +]
+
+Resources available: [+ resources +]
+
+Paramilitary Funding: [+ para_resources +]
+
+Internal dissent: [+ dissent_percent : dissent +]
+
+= Southern Government
+
+President: [+ president +] ([+ president_party +])
+
+Taoiseach: [+ taoiseach +] ([+ taoiseach_party +])
+
+Next election: Before 1978
+
+= Northern Government
+
+Prime Minister: [+ prime_minister +] ([+ prime_minister_party +])
+
+Monarch: [+ monarch +]
+
+Next election: Before 1979
+
+= Economics
+
+Inflation: [+ inflation_2 +]%
+
+[? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
+
+Economic growth: [+ economic_growth_2 +]%
+
+# = Public Opinion
+
+@politics
+
+= Inter-party Relations
+
+
+{!<span class="tooltip-text" title="Ulster Unionist Party">UUP</span>!}: [+ uup_relation : relationships +]
+
+{!<span class="tooltip-text" title="Democratic Unionist Party">UDA</span>!}: [+ dup_relation : relationships +]
+
+{!<span class="tooltip-text" title="Vanguard">Vanguard</span>!}: [+ vanguard_relation : relationships +]
+
+{!<span class="tooltip-text" title="Social Democratic Labour Party">SDLP</span>!}: [+ sdlp_relation : relationships +]
+
+{!<span class="tooltip-text" title="Alliance">Alliance</span>!}: [+ alliance_relation : relationships +]
+
+{!<span class="tooltip-text" title="Provisional Sinn Féin">Provisionals</span>!}: [+ psf_relation : relationships +]
+
+{!<span class="tooltip-text" title="Official Sinn Féin">Officials</span>!}: [+ psf_relation : relationships +]
+
+{!<span class="tooltip-text" title="Fianna Fáil">FF</span>!}: [+ ff_relation : relationships +]
+
+{!<span class="tooltip-text" title="Fine Gael">FG</span>!}: [+ fg_relation : relationships +]
+
+{!<span class="tooltip-text" title="Labour Party">LB</span>!}: [+ lb_relation : relationships +]
+
+{!<span class="tooltip-text" title="The Groups of the New Left">NL</span>!}: [+ lb_relation : relationships +]
+
+= Internal Factions of the IRSP
+
+{!<span class="tooltip-text" title="The Communist Left is interested in launching a revolution that sweeps away the governments in the south and north. They seek increased co-operation with new-left groups such as People's Democracy, the Socialist Workers Movement and the numerous Trotskyist groups in Ireland.">Communist Left</span>!} strength: [+ communist_left_strength : strength +], dissent: [+ communist_left_dissent : dissent +]
+
+{!<span class="tooltip-text" title="The Traditionalists are a faction of traditionalist republicans who believe in the necessity of armed struggle. They care primarily about unification, and secondarily about economic questions.">Traditionalists</span>!} strength: [+ trad_strength : strength +], dissent: [+ trad_dissent : dissent +]
+
+{!<span class="tooltip-text" title="Labour's goal is economic reform and benefits for organized workers. They consist primarily of trade union officials and their supporters.">Labour</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+
+{!<span class="tooltip-text" title="The reformists are interested in taking Leinster House and the democratisation of the north to allow for a gradual approach to socialism.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+
+@paramilitaries
+on-arrival: {!
+if (Q.inla_strength) {
+    Q.inla_strength_2 = Q.inla_strength.toFixed(1);
+}
+if (Q.PIRA_strength) {
+    Q.PIRA_strength_2 = Q.PIRA_strength.toFixed(1);
+}
+if (Q.OIRA_strength) {
+    Q.OIRA_strength_2 = Q.OIRA_strength.toFixed(1);
+}
+if (Q.UDA_strength) {
+    Q.UDA_strength_2 = Q.UDA_strength.toFixed(1);
+}
+if (Q.UVF_strength) {
+    Q.UVF_strength_2 = Q.UVF_strength.toFixed(1);
+}
+!}
+
+= Paramilitaries
+[? if ica_exists == 1: {!<span class="tooltip-text" title="The Irish Citizen Army is a self defense organisation for workers.">INLA</span>!} Strength: [+ ica_strength +] ?]
+
+[? if ica_exists == 1: ICA Militarization: [+ ica_militancy : militancy +] ?]
+
+{!<span class="tooltip-text" title="The Irish National Liberation Army is our paramilitary organisation that fights for a 32 county democratic republic.">INLA</span>!} Strength: [+ inla_strength +] 
+
+INLA Militarization: [+ inla_militancy : militancy +]
+
+{!<span class="tooltip-text" title="The PIRA (Provisional Irish Republican Army) is the paramilitary wing of Provisional Sinn Féin">PIRA</span>!} Strength: [+ PIRA_strength +] 
+
+PIRA Militarization: [+ PIRA_militancy : militancy +]
+
+{!<span class="tooltip-text" title="The OIRA (Official Irish Republican Army) is the paramilitary wing of Official Sinn Féin">OIRA</span>!} Strength: [+ OIRA_strength +] 
+
+OIRA Militarization: [+ OIRA_militancy : militancy +]
+
+{!<span class="tooltip-text" title="The Ulster Defence Association is the main unionist paramilitary association.">UDA</span>!} Strength: [+ uda_strength +] 
+
+UDA Militarization: [+ UDA_militancy : militancy +]
+
+{!<span class="tooltip-text" title="The Ulster Volunteer Force is the second largest unionist paramilitary association, it is primarily made up of working class protestants, unlike the UDA, and operates the elite paramilitary group: Red Hand Commando.">UVF</span>!} Strength: [+ UVF_strength +] 
+
+UVF Militarization: [+ UVF_militancy : militancy +]
+
+= State Forces
+
+British Armed Forces in Ireland: [+ BAF_strength +] troops.
+
+British Armed Forces Relations: [+ BAF_relation : relationships +]
+
+Royal Ulster Constabulary: [+ ruc_strength +] members.
+
+Royal Ulster Constabulary Relations: [+ ruc_relation : relationships +]
+
+An Garda Síochána: [+ GA_strength +] members.
+
+An Garda Síochána loyalty: [+ GA_relation : relationships +]
+
+Irish Defence Forces: [+ IDF_strength +] troops.
+
+Irish Defence Forces Relations: [+ IDF_relation : relationships +]
+
+@polls
+on-arrival: {!
+Q.pro_republic_disp = Math.round(Q.pro_republic);
+Q.nationalism_disp = Math.round(Q.nationalism);
+Q.socialism_disp = Math.round(Q.socialism);
+!}
+
+= Support for Each Party
+
+Free State: 
+
+Placeholder
+
+The Six Counties:
+
+Placeholder

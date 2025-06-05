@@ -1,0 +1,60 @@
+title: Reaching Across the Aisle
+new-page: true
+view-if: year <= 1985 and inter_party_relationships_timer <= 0
+tags: party_affairs
+is-card: true
+on-arrival: month_actions += 0; inter_party_relationships_timer = 2;
+card-image: img/LH.jpg
+max-visits: 12
+#subtitle: Building relations with the other groups in Ireland.
+
+= Reaching Across the Aisle
+
+The IRSP if it wishes to establish a 32 county republic must build ties with other groups in the country.
+
+- @disaffected_republicans: Appeal to disaffected republicans who have left Fianna Fáil and the provisionals, perhaps we can convince them to join the party?
+- @the_communist_left: Build ties with the Socialist Worker's Movement, People's Democracy and other far-left groups.
+- @provos: Work towards repairing relationships with the provisionals.
+- @trade_unions: Build up support in the trade unions.
+- @IRSP_alone: We shall do nothing for now.
+- @easy_discard
+
+
+@disaffected_republicans
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; catholic_poor_rural_IRSP += 0.05*(1-dissent); poor_rural_IRSP += 0.1*(1-dissent); agri_prog_support +=1; IRs_relation += 10;
+
+Some former members of Fianna Fáil join us.
+
+@the_communist_left
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; the_communist_left_unites += 1;
+
+We make great headway convincing much of the communist left to support the republican movement. Talks of unification seem possible.
+
+@provos
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; Provisionals_relation += 5*(1 - dissent)
+
+The provisionals welcome our overtures, talk of co-ordinated action is brought up.
+
+@trade_unions
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; influence_in_irish_trade_union_movement += 1; workers_IRSP += 0.2*(1-dissent); catholic_workers_IRSP += 0.2*(1-dissent); protestant_workers_IRSP += 0.1*(1-dissent)
+
+We have successfully recruited some of the rank-and-file in the trade unions.
+
+
+@IRSP_alone
+
+Whether it is because we *cannot* or *will not*, we do not make ties with other parties at this moment.
+
+- @return: Continue...
