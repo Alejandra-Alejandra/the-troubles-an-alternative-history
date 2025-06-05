@@ -50,7 +50,7 @@ Q.factions = ['left', 'center', 'labor', 'reformist', 'neorevisionist'];
 // should this be normalized to 100%?
 Q.communist_left_strength = 20;
 Q.communist_left_dissent = 10;
-Q.trad_strength = 30;
+Q.trad_strength = 40;
 Q.trad_dissent = 0;
 Q.labor_strength = 10;
 Q.labor_dissent = 5;
