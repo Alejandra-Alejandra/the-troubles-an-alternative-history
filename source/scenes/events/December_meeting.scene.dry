@@ -22,8 +22,7 @@ on-arrival: bernadette_advisor = 2; communist_left_strength = 0; catholic_worker
 The minority faction led by Bernadette Devlin has left the party. It will be difficult to recover from this.
   
 @Compromise
-subtitle: - resources
-choose-if: resources >= 2
+choose-if: inla_relation >= 80; communist_left_dissent <= 10
 unavailable-subtitle: We do not have high enough relations with both the INLA and Left of the party to seek a compromise solution.
 on-arrival: INLA_under_control = 1; inla_strength -= 20; question_of_defection = 1;
 
