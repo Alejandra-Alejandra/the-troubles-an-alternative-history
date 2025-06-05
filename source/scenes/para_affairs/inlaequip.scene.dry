@@ -1,0 +1,50 @@
+title: INLA
+new-page: true
+is-card: true
+tags: para_affairs
+view-if: new_month == 0 and visit_inla == 0
+card-image: img/inlatrain.jpg
+on-arrival: month_actions += 0; INLA_timer += 3; INLA_militarization_cost = 2 if inla_militancy > 0.1 else INLA_militarization_cost = 1; INLA_militarization_cost = 3 if inla_militancy > 0.25; robbery_true +=1;
+max-visits: 1
+#subtitle: Paramilitary organizing 
+
+= INLA
+
+The INLA is our paramilitary organisation, highly trained and well armed we use it to carry out operations against the British state and free state. [? if INLA_strength <= 500 : However, it is by far the smallest paramilitary on the Island. ?]
+
+- @militant: Fund more training and equipment for the INLA.
+- @militant_2: Use our existing resources to support more training for the INLA.
+- @same: Keep the INLA as it is.
+- @cut_inla: Cut funding for the INLA.
+- @easy_discard
+- @cancel_advisor_action
+
+#- Orient reichsbanner towards anti-fascism (only available if we have prioritized anti fascism)
+
+@militant
+choose-if: resources >= INLA_militarization_cost
+unavailable-subtitle: Not enough resources ([+ INLA_militarization_cost +] needed).
+subtitle: -[+ INLA_militarization_cost +] resources
+on-arrival: resources -= INLA_militarization_cost; inla_investment += 1; inla_strength += 100; inla_militancy += 0.05; has_BOV = 1 if inla_militancy >= 1.95;
+
+The INLA conducts drills and buys new weapons. [? if inla_militancy >= 2 and has_BOV == 0: The INLA has managed to grab hold of a BTR-60! This is an incredible achievement for our forces. ?]
+
+@militant_2
+view-if: funded_inla >= 1
+on-arrival: inla_militancy += 0.02; funded_inla -= 1
+
+As we have already funded lots of resources towards the INLA, we can invest in training.
+
+
+@same
+
+The INLA is already serving the purpose it needs to serve. There is no reason to change what already works.
+
+- @return: Continue...
+
+
+@cut_inla
+subtitle: +1 resources
+on-arrival: resources += 1; inla_strength -= 10; inla_militancy -= 0.05; unemployed_provisionals += 0.05
+
+Cutting resources to the INLA causes a drop in the membership, and leads some would-be members to join the provisionals instead.

@@ -1,0 +1,39 @@
+title: Bernadette Devlin
+is-pinned-card: true
+tags: advisor, communist_left
+card-image: img/portraits/Bernadette_Devlin.jpg
+view-if: bernadette_advisor = 1
+new-page: true 
+
+= Bernadette Devlin
+
+A longtime civil rights campaigner in the north and Trotskyist, Bernadette Devlin has contacts with left-wing organisations globally such as the Black Panther Party in America.
+  
+- @international_work_berna
+- @belfast_rally
+- @mediawork
+- @root: Return to main
+
+@international_work_berna
+title: Establish International Relations
+subtitle: Build contacts with organisations abroad.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0
+on-arrival: advisor_action_timer = 1; international_relations_timer -= 12
+go-to: international_relations
+
+@belfast_rally
+title: Organise a rally in Belfast
+subtitle: Try gain support in Belfast.
+choose-if: advisor_action_timer = 0 
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: rally_check = 1; advisor_action_timer = 1
+go-to: Belfast_campaign
+
+@mediawork
+title: Focus on the Media
+subtitle: Work on our media network
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: media_timer = 0; advisor_action_timer = 1
+go-to: media

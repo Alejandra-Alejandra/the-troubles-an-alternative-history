@@ -1,0 +1,41 @@
+title: Seamus Costello
+is-pinned-card: true
+tags: advisor
+card-image: img/portraits/costello.jpg
+view-if: costello_advisor = 1
+new-page: true 
+
+= Seamus Costello
+
+A longtime tenants' organiser in Bray, and veteran IRA member. In 1974 he founded the IRSP with Bernadette Devlin.
+  
+- @emergency_fundraising
+- @wicklow_doorknocking
+- @rein_in_the_inla
+- @root: Return to main
+
+@emergency_fundraising
+title: Emergency Fundraising
+subtitle: An emergency infusion of resources.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 1; resources += dues
+
+We have gained +[+ dues +] resources.
+
+@wicklow_doorknocking
+title: Go Doorknocking in Wicklow
+subtitle: Try gain support in Wicklow county.
+choose-if: advisor_action_timer = 0 
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: doorknocking_check = 1; advisor_action_timer = 1
+go-to: Wicklow_doorknocking
+
+@rein_in_the_inla
+title: Rally support in the INLA
+subtitle: Improve relations with INLA membership
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: inla_relation += 5; advisor_action_timer = 1
+
+We have improved relations with the INLA
