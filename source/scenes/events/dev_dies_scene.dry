@@ -1,0 +1,17 @@
+title: Public Meeting
+new-page: true
+subtitle: The IRSP holds its first public meeting...
+view-if: year = 1975 and month = 9 and dev_dead = 0
+max-visits: 1
+on-arrival: dev_dead = 1
+face-image: img/dev.jpg
+tags: event
+
+= Éamon de Valera has died
+
+The former leader of the anti-treaty side during the Irish Civil war and founder of Fianna Fáil has died of pneumonia. Throughout the course of his life he evolved from a militant republican and anti-imperialist fighter into a symbol of the corruption of the free state and its deep ties to the Catholic church. 
+
+His death did not come as a surprise to many considering he was 92 years old. Nonetheless, many across the south mourn his loss as over 200,000 people attended his funeral. It is clear that much needs to be done before the Irish people wake up to the bankruptcy of Fianna Fáil and Fine Gael.
+
+- @curse_him: Curse the man!
+- @Oh_well: Oh well.
