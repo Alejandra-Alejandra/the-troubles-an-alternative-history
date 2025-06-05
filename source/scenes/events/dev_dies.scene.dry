@@ -1,9 +1,8 @@
 title: Dev Dies
 new-page: true
 subtitle: Éamon de Valera has died
-view-if: year = 1975 and month = 9 and dev_dead = 0
+view-if: year = 1975 and month = 9
 max-visits: 1
-on-arrival: dev_dead = 1;
 face-image: img/dev.jpg
 tags: event
 
