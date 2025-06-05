@@ -19,6 +19,7 @@ subtitle: The Left and Labour have just enough strength to push it through
 choose-if: communist_left_strength + labor_strength >= trad_strength 
 unavailable-subtitle: Left and labour are too weak.
 on-arrival: ica_returns = 1;
+
 The Irish Citizen Army has been re-established. Consisting of trade union members and average workers, it is a self-defense militia that was used in the past to defend striking workers. Now under the direction of the INLA and their allies in the trade union left and Republican Movement it will be used to prepare for the coming revolution...
 
 @No_Rebuild
@@ -26,4 +27,5 @@ subtitle: The traditionalists shoot the motion down.
 choose-if: communist_left_strength + labor_strength <= trad_strength 
 unavailable-subtitle: The traditionalists are too weak.
 on-arrival: annual_meeting_over_ica = 1; meeting_ica_timer = 0;
+
 The Irish Citizen Army will not be re-established. However, the left and labour bide their time and hope that by the next annual congress they can push the party towards establishing the ICA.
