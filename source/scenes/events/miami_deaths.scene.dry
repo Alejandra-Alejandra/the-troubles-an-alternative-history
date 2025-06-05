@@ -1,0 +1,19 @@
+title: Miami Showband Massacre
+new-page: true
+subtitle: UDR kills famous musicians
+view-if: year = 1975 and month = 8
+on-arrival: irsp_miami = 1
+max-visits: 1
+face-image: img/miami_band.jpg
+tags: event
+
+= Miami Showband killings
+
+On the 31st of July 1975 three members of the famous Miami Showband were traveling to Newry when their minibus was stopped at what appeared to be a military checkpoint. All three members were gunned down by the British forces colluding with unionists. It can be confirmed that at least three of the men were members of the UDR.
+  
+- @we_should_respond: We should respond! 
+- @tragedy: Truly a tragedy.
+
+@we_should_respond
+
+@tragedy
