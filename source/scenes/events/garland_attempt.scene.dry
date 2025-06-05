@@ -1,0 +1,19 @@
+title: Attack on Garland Fails
+new-page: true
+subtitle: We have failed to kill Garland...
+view-if: (year = 1975 and month >= 3) and garland_attacked_1 = 1
+max-visits: 1
+on-arrival: oira_to_fight_back_after_garland = 1
+face-image: img/schutzbund.png
+tags: event
+
+= Attack on Garland Fails
+
+On the 1st of March two of our volunteers lay in wait outside Seán Garland's home in Ballymun. Deep into the night at 10:00 pm he returned home with his wife and the two separated while he locked the car door. Our men opened fire on him, however after firing six bullets into him, we could not confirm a kill as locals chased after our men.
+
+- @survived
+
+@survived
+title: Our assassination attempt has failed
+
+The Officals have confirmed that Seán Garland has survived. It will be much harder to assassinate this OIRA commander now.

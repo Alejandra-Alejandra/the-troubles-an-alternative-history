@@ -1,0 +1,31 @@
+title: Uprising in Derry
+new-page: true
+subtitle: The British army undergoes a stream of attacks in Derry.
+view-if: derry_strength >= 10 and uprising_in_derry_seen == 0
+max-visits: 1
+on-arrival: uprising_in_derry_seen = 1; bloody_sunday_the_second = 1
+face-image: img/Free_Derry.jpg
+tags: event
+
+= Uprising in Derry
+
+The crushing of the autonomous zone of Free Derry by the British Armed Forces in 1972 has failed to deter the people of Derry who have risen up. Riots broke out today, and even after the British violently massacred dozens of nationalists in an event that even makes Bloody Sunday pale in comparison, the nationalist remain undeterred. No, if anything the bloodshed has made them all the more angrier.
+  
+Eventually...
+
+- @crushed
+- @free_derry_succeeds
+
+@crushed
+title: The rebellion in Derry has been crushed by the British Armed Forces. Dozens of INLA men are killed.
+on-arrival: INLA_strength -= 40
+view-if: inla_strength*inla_militancy + ica_strength*ica_militancy < 300
+
+The uprising lasted for no more than a few days before it was crushed. The BFA has taken back control of Derry.
+
+@free_derry_succeeds
+title: Free Derry Returns
+view-if: inla_strength*inla_militancy + ica_strength*ica_militancy >= 300
+on-arrival: in_control = 1; free_derry_gov = 1; ica_strength += 800 if ica_returns == 1; provisionals_strength += 200 if ica_returns == 1; provisionals_strength += 500 if ica_returns == 0; inla_strength += 100; derry_defence_numbers += 200;
+
+[? if ica_returns == 0: The INLA and other Republicans have beaten back the British Armed forces. The (DCDA) Derry Citizens Defence Association has been re-established to run Free Derry. In the aftermath, INLA membership swells. ?] [? if ica_returns == 1: The combined forces of the INLA and ICA have beaten back the British Armed forces. The (DCDA) Derry Citizens Defence Association has been re-established to run Free Derry. Hundreds join the ICA in the aftermath of the victory, and INLA membership swells. ?]

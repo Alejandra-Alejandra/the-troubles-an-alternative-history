@@ -1,0 +1,12 @@
+title: Irish Citizen Army
+new-page: true
+subtitle: The Irish Citizen Army is Re-established
+view-if: (arm_civillians >= 5 and influence_in_irish_trade_union_movement >= 1 and ica_returns == 0) or (influence_in_irish_trade_union_movement >= 5 and ica_returns == 0)
+max-visits: 1
+on-arrival: ica_returns = 1; ica_strength = 1000; ica_militancy = 0.2;
+face-image: img/irsp-meeting.jpg
+tags: event
+
+= The Irish Citizen Army is Re-established
+
+After discussions with leaders in the Irish trade union movement and successful arming of civillians, the Irish Citizen Army has been re-established. Consisting of trade union members and average workers, it is a self-defense militia that was used in the past to defend striking workers. Now under the direction of the INLA and their allies in the trade union left and Republican Movement it will be used to prepare for the coming revolution...

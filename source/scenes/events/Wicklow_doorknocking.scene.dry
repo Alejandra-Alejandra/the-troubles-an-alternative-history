@@ -1,0 +1,55 @@
+title: Doorknocking in Wicklow
+new-page: true
+view-if: doorknocking_check == 1
+on-arrival: doorknocking_check = 0; month_actions += 0
+tags: event
+
+= Doorknocking in Wicklow
+
+We have decided to go doorknocking across county Wicklow, what should the focus of our campaign be?
+
+- @british_violence: We leaflet against the violence of the British army and unionist paramilitaries up north and demand an end to their attacks on Catholic civillians.
+- @tenants: We hand out leaflets about the rising rents and organise tenants in the area to resist evictions.
+- @support_refugees: We go door to door asking for clothes and food to give to refugees fleeing from the north.
+- @unification: We hand out leaflets demanding unification.
+- @courts: We hand out leaflets denouncing the repression in the free state, and specifically denounce the existence of the Special Criminal Court as anti-democratic and authoritarian.
+
+@british_violence
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1
+
+WIP: Result will depend on quantity of BAF in Britain and level of state repression up north.
+
+@tenants
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1
+
+WIP: Result will depend on state of the economy. 
+
+@support_refugees
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1
+
+WIP: Result will depend on level of state repression up north and support for republicanism in Wicklow.
+  
+@unification
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1
+
+WIP: Result will depend on support for republicanism in Wicklow.
+
+@courts
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1
+
+WIP: Result will depend on level of state repression in the south and support for left-wing parties.

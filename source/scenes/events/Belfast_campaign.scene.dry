@@ -1,0 +1,55 @@
+title: Rallying in Belfast
+new-page: true
+view-if: rally_check = 1
+on-arrival: rally_check = 0; month_actions += 0
+tags: event
+
+= Rallying in Belfast
+
+We have decided to hold a rally in Belfast, what should the focus of our rally be?
+
+- @british_violence: We hold a rally against the violence of the British army and unionist paramilitaries up north and demand an end to their attacks on Catholic civillians.
+- @workers: We hold a rally demanding increased worker control of industry, further worker protections and higher wages.
+- @inequality: We hold a rally denouncing discrimination against Catholics in the work place, and in housing.
+- @unification: We hold a rally demanding unification.
+- @democracy: We hold a rally denouncing the power held by the unionist parties, and demand an end to gerrymandering and voter repression.
+
+@british_violence
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1
+
+WIP: Result will depend on quantity of BAF in Britain and level of state repression up north.
+
+@workers
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1
+
+WIP: Result will depend on state of the economy.
+
+@inequality
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1
+
+WIP: Result will depend on state of economy and quality of life of Catholics
+
+@unification
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1
+
+WIP: Result will depend on support for republicanism in Belfast and the north.
+
+@democracy
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1
+
+WIP: Result will depend inversely on quantity of BAF in Britain and level of state repression up north, as well as who is in control up north.

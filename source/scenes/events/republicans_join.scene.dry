@@ -1,0 +1,26 @@
+title: Disaffected republicans join the party
+new-page: true
+subtitle: Independent republicans of a progressive mind-set consider joining our party
+view-if: (year = 1976 and month = 1 and IRs_relation >= 40 and influence_in_irish_trade_union_movement >= 1 and republican_event == 0) or (year = 1977 and month = 1 and IRs_relation >= 40 and influence_in_irish_trade_union_movement >= 1 and republican_event == 1)
+max-visits: 2
+on-arrival: republican_event += 1;
+face-image: img/irsp-meeting.jpg
+tags: event
+
+= Disafeccted Republicans Consider Joining the IRSP
+
+With the IRSP bolstering its progressive credentials recently, and its overtures towards the trade unions, many reformist minded republicans consider joining our party. They see us a progressive alternative to the provisionals, and as being sufficiently republican, which is not the case for Fianna Fáil.
+
+- @Let_Them_In: Let them into the party! With the costelloite in one hand and the ballot box in the other we shall conquer this Island!
+- @We_Reject_Them: We reject letting them in, at least for now.
+
+@Let_Them_In
+choose-if: IRs_relation >= 60
+unavailable-subtitle: We need better relations with independent republicans to get them to join.
+on-arrival: reformist_strength += 10; labor_strength += 5; trad_dissent +=5; McQuillan_advisor = 0; workers_IRSP += 2; trade_union_influence += 2;
+
+The traditionalists are shocked by our decision. However, our membership numbers swell, and our influence in the trade union movement increases further.
+
+@We_Reject_Them
+
+They are disappointed.

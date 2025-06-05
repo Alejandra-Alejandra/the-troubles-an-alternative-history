@@ -1,0 +1,18 @@
+title: Trouble in Derry
+new-page: true
+subtitle: Trouble is brewing in Derry...
+view-if: year = 1975 and month = 4 and trouble_in_derry == 0
+max-visits: 1
+on-arrival: trouble_in_derry = 1
+face-image: img/irsp-meeting.jpg
+tags: event
+
+= Trouble is brewing in Derry
+
+The presence of British military units in Derry is inflaming tensions. The people can do nothing but silently watch in anger as the military patrols the streets.
+
+- @Johnny_White_Proposes_Arming: Johnny White proposes that the INLA conduct civillian self-defence classes in secret. 
+
+@Johnny_White_Proposes_Arming 
+
+Johnny White has established contacts with local community leaders, and if he continues in his mission to arm civillians and recruit for the INLA in Derry, we might just have enough strength to fight the British back.

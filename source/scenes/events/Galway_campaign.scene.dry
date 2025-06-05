@@ -1,0 +1,55 @@
+title: Rallying in Galway
+new-page: true
+view-if: rally_check = 1
+on-arrival: rally_check = 0; month_actions += 0
+tags: event
+
+= Rallying in Galway
+
+We have decided to hold a rally in Galway, what should the focus of our rally be?
+
+- @british_violence: We hold a rally against the violence of the British army and unionist paramilitaries up north and demand an end to their attacks on Catholic civillians.
+- @workers: We hold a rally demanding increased worker control of industry, further worker protections and higher wages.
+- @farming: We hold a rally denouncing the monopolisation of the farming industry and demanding further subsidies for small farmers. 
+- @unification: We hold a rally demanding unification.
+- @courts: We hold a rally denouncing the repression in the free state, and specifically denounce the existence of the Special Criminal Court as anti-democratic and authoritarian.
+
+@british_violence
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1
+
+WIP: Result will depend on quantity of BAF in Britain and level of state repression up north.
+
+@workers
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1
+
+WIP: Result will depend on state of the economy.
+
+@farming
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1
+
+WIP: Result will depend on quality of life of small farmers, and recent events.
+
+@unification
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1
+
+WIP: Result will depend on support for republicanism in Dublin and the south.
+
+@courts
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1
+
+WIP: Result will depend on level of state repression in the south and support for left-wing parties.
