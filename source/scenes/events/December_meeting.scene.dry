@@ -1,0 +1,35 @@
+title: Public Meeting
+new-page: true
+subtitle: The IRSP holds its first public meeting...
+view-if: year = 1975 and month = 12 and December_Decision_start == 0
+max-visits: 1
+on-arrival: December_Decision_start = 1
+face-image: img/irsp-meeting.jpg
+tags: event
+
+= Meeting of the Ard Comhairle
+
+The Ard Comhairle meeting this month is not going as planned. The party seems to have split in two over whether the INLA should be directly subordinate to the Ard Comhairle or not. The minority led by Bernadette Devlin seems extremely concerned over the lack of control the party has over the INLA. If this solution is not resolved then the minority could end up forcing a split in the party.
+  
+  
+- @No_Need: We have no need for appealing to the minority. The IRSP cannot formally involve itself with it's paramilitary wing if it wishes to continue its above ground activities.
+- @Compromise: Suggest that the INLA maintain a firm degree of independence, but any high-level operations have to be signed off by the Ard Comhairle.
+- @Direct_Control: Take direct control over the INLA.
+
+@No_Need
+on-arrival: bernadette_advisor = 2; communist_left_strength = 0; catholic_workers_IRSP -= 0.5; unemployed_north -= 0.5;
+
+The minority faction led by Bernadette Devlin has left the party. It will be difficult to recover from this.
+  
+@Compromise
+subtitle: - resources
+choose-if: resources >= 2
+unavailable-subtitle: We do not have high enough relations with both the INLA and Left of the party to seek a compromise solution.
+on-arrival: INLA_under_control = 1; inla_strength -= 20; question_of_defection = 1;
+
+Some dissatisfied INLA members leave the organisation, but the majority stay. This compromise has saved the organisation.
+
+@Direct_Control
+on-arrival: inla_strength -= 80; IPLO_forms_early = 1;
+
+A large amount of INLA members have left the organisation. One Sammy Ward in particular threatened to shoot Bernadette Devlin in the face over the Ard Comhairle's decision.
