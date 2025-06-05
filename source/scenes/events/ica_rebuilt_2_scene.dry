@@ -1,0 +1,30 @@
+title: Irish Citizen Army
+new-page: true
+subtitle: Rebuilding the Irish Citizen Army?
+view-if: (arm_civillians >= 5 and influence_in_irish_trade_union_movement >= 1 and ica_returns == 0 and ica_returning == 0 and ica_to_return == 1 and annual_meeting_over_ica = 1 and meeting_ica_timer = 6) or (influence_in_irish_trade_union_movement >= 5 and ica_returns == 0 and ica_returning == 0 and ica_to_return == 1 and annual_meeting_over_ica = 1 and meeting_ica_timer = 6)
+max-visits: 1
+on-arrival: ica_returning = 1; 
+face-image: img/irsp-meeting.jpg
+tags: event
+
+= Rebuilding the Irish Citizen Army?
+
+An annual conference is once again held in Dundalk as a result of continued calls for the party to form the ICA or not. Let this decision finally be put to rest.
+  
+- @Rebuild: The left and labour factions are strong enough to push for the ICA to return.
+- @No_Rebuild: Do not rebuild the Irish Citizen Army
+
+@Rebuild
+subtitle: The Left and Labour have just enough strength to push it through
+choose-if: communist_left_strength + labor_strength >= trad_strength 
+unavailable-subtitle: Left and labour are too weak.
+on-arrival: ica_returns = 1;
+The Irish Citizen Army has been re-established. Consisting of trade union members and average workers, it is a self-defense militia that was used in the past to defend striking workers. Now under the direction of the INLA and their allies in the trade union left and Republican Movement it will be used to prepare for the coming revolution...
+
+@No_Rebuild
+subtitle: The traditionalists shoot the motion down.
+choose-if: communist_left_strength + labor_strength <= trad_strength 
+unavailable-subtitle: The traditionalists are too weak.
+on-arrival: annual_meeting_over_ica = 0
+  
+The Irish Citizen Army will not be re-established.
