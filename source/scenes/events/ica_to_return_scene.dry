@@ -1,7 +1,7 @@
 title: Irish Citizen Army
 new-page: true
 subtitle: The Irish Citizen Army is Re-established
-view-if: (arm_civillians >= 5 and influence_in_irish_trade_union_movement >= 1 and worker_strikes_north == 1 and ica_to_return == 0) or (influence_in_irish_trade_union_movement >= 3 and worker_strikes_north == 1 and ica_to_return == 0)
+view-if: (arm_civillians >= 5 and influence_in_irish_trade_union_movement >= 1 and ica_to_return == 0) or (influence_in_irish_trade_union_movement >= 3 and ica_to_return == 0)
 max-visits: 1
 on-arrival: ica_to_return = 1;
 face-image: img/irsp-meeting.jpg
