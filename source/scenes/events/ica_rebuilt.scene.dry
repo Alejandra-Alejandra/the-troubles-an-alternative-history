@@ -25,5 +25,5 @@ The Irish Citizen Army has been re-established. Consisting of trade union member
 subtitle: The traditionalists shoot the motion down.
 choose-if: communist_left_strength + labor_strength <= trad_strength 
 unavailable-subtitle: The traditionalists are too weak.
-on-arrival: annual_meeting_over_ica = 1;
+on-arrival: annual_meeting_over_ica = 1; meeting_ica_timer = 0;
 The Irish Citizen Army will not be re-established. However, the left and labour bide their time and hope that by the next annual congress they can push the party towards establishing the ICA.
