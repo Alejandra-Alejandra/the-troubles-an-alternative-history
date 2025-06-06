@@ -16,7 +16,7 @@ Matt Merrigan, one of the leading members of the left-wing of the Labour party h
 
 @Offer_ard
 subtitle: Matt Merrigan joins the party.
-on-arrival: Matt_the_king = 1; Matt_advisor = 0
+on-arrival: Matt_the_king = 1; Matt_advisor = 0;
 
 @Feck_off
 subtitle: Matt Merrigan does not join the party.
