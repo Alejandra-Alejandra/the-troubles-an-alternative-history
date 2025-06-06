@@ -29,6 +29,6 @@ on-arrival: INLA_under_control = 1; inla_strength -= 20; question_of_defection =
 Some dissatisfied INLA members leave the organisation, but the majority stay. This compromise has saved the organisation.
 
 @Direct_Control
-on-arrival: inla_strength -= 80; IPLO_forms_early = 1;
+on-arrival: inla_strength -= 80; IPLO_forms_early = 1; INLA_under_fullcontrol = 1;
 
 A large amount of INLA members have left the organisation. One Sammy Ward in particular threatened to shoot Bernadette Devlin in the face over the Ard Comhairle's decision.
