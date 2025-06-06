@@ -1,7 +1,7 @@
 title: Uprising in Derry
 new-page: true
 subtitle: The British army undergoes a stream of attacks in Derry.
-view-if: derry_strength >= 10 and uprising_in_derry_seen == 0
+view-if: derry_strength >= 10 and uprising_in_derry_seen == 0 and (inla_strength*inla_militancy + ica_strength*ica_militancy >= 500 or ica_strength >= 1)
 max-visits: 1
 on-arrival: uprising_in_derry_seen = 1; bloody_sunday_the_second = 1
 face-image: img/Free_Derry.jpg
