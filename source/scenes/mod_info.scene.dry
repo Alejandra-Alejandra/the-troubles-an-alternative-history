@@ -1,0 +1,21 @@
+title: Mod Info
+go-to: mod_info_menu
+
+This is an overhaul mod for the game Social Democracy: An Alternate History. This mod is set in the midst of the Troubles in 1975 when the Irish Republican Socialist Party was formed. 
+
+Credits:
+  
+To be updated at some point
+
+@mod_info_menu
+
+- @update_log: Update Log
+- @root: Back
+
+@update_log
+
+06-06-2025 - v0.01: Initial mod pre-release. No ending or elections yet. Main event chain revolves around starting a revolution.
+
+
+- @mod_info_menu: Back
+
