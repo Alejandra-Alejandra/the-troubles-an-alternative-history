@@ -45,7 +45,6 @@ max-cards: 4
 - @paramilitary
 - @calendar
 - #advisor
-- @shuffle_leadership_pinned
 
 
 @party
