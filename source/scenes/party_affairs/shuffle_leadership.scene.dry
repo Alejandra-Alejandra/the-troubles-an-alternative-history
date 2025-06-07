@@ -1,0 +1,165 @@
+title: Shuffle Leadership
+new-page: true
+is-card: true
+tags: party_affairs
+view-if: shuffle_leadership_timer = 0 and difficulty >= 0
+on-arrival: month_activities += 0; shuffle_leadership_timer = 8;
+card-image: img/armycouncil.jpg
+go-to: rm_main
+
+Changing the leadership of the party is painful, but perhaps it is necessary to adapt to changing circumstances.
+
+Removing advisors will increase dissent from their faction of the party, while selecting advisors will increase a faction's strength.
+
+- @rm_main: Remove advisors
+- @add_advisors: Add advisors
+- @remove_none: Don't change advisors.
+- @easy_discard
+
+
+###################### removing leaders
+
+@rm_main
+title: Remove advisors.
+tags: communist_left_advisor, reformist_advisor, labor_advisor, trad_advisor, nonfactional_advisor 
+frequency: 1
+
+- #remove_advisor
+- @add_advisors: Add advisors
+
+@remove_none
+title: Stop changing advisors.
+go-to: root
+tags: remove_advisor
+
+
+@remove_costello
+title: Remove Seamus Costello
+view-if: costello_advisor = 1
+on-arrival: costello_advisor = 0; inla_relation -= 15; trad_dissent +=5; communist_left_dissent +=5; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Costello is the spiritual leader of the party. Many are upset.
+
+@remove_bernadette
+title: Remove Bernadette Devlin
+view-if: bernadette_advisor = 1
+on-arrival: bernadette_advisor = 0; communist_left_dissent +=5; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+The left is upset.
+
+@remove_johnny
+title: Remove Johnny White
+view-if: johnny_advisor = 1
+on-arrival: johnny_advisor = 0; trad_dissent +=5; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+The traditionalist republicans are upset.
+
+@remove_McQuillan
+title: Remove Jack McQuillan
+view-if: McQuillan_advisor = 1
+on-arrival: McQuillan_advisor = 0; reformist_dissent +=5; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+The reformists are upset.
+
+####################### adding advisors
+
+@add_advisors
+title: Add advisors
+choose-if: n_advisors < 3
+unavailable-subtitle: Maximum of 3 advisors.
+go-to: advisor_menu
+
+@advisor_menu
+title: Add other advisors.
+tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_advisor, nonfactional_advisor
+frequency: 1
+
+
+- @communist_left: Add Leftists
+- @reformist: Add Reformists
+- @labor: Add Labor
+- @trad: Add Traditionalists
+- @nonfactional: Add non-factional advisors
+- @rm_main: Remove advisors instead.
+- @remove_none: Stop changing advisors.
+
+@trad
+view-if: n_advisors < 3
+
+- #trad_advisor
+
+@reformist
+view-if: n_advisors < 3
+
+- #reformist_advisor
+
+@communist_left
+view-if: n_advisors < 3
+
+- #communist_left_advisor
+
+@labor
+view-if: n_advisors < 3
+
+- #labor_advisor
+
+@nonfactional
+view-if: n_advisors < 3
+
+- #nonfactional_advisor
+
+@add_Costello
+title: Seamus Costello
+subtitle: A longtime tenants' organiser in Bray, and veteran IRA member. In 1974 he founded the IRSP with Bernadette Devlin.
+is-card: true
+card-image: img/portraits/costello.jpg
+tags: nonfactional_advisor
+view-if: costello_advisor = 0 and n_advisors < 3
+on-arrival: costello_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Seamus Costello is now an advisor.
+
+@add_bernadette
+title: Bernadette Devlin
+subtitle: A longtime civil rights campaigner in the north and Trotskyist, Bernadette Devlin has contacts with left-wing organisations globally such as the Black Panther Party in America.
+is-card: true
+card-image: img/portraits/Bernadette_Devlin.jpg
+tags: communist_left_advisor
+view-if: bernadette_advisor = 0 and n_advisors < 3
+on-arrival: bernadette_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Bernadette Devlin is now an advisor.
+
+@add_johnny
+title: Johnny White
+subtitle: An IRA veteran and one of the founders of the IRSP, he was a key member in organising Free Derry from 1969 to 1972.
+is-card: true
+card-image: img/portraits/johnny.jpg
+tags: trad_advisor
+view-if: johnny_advisor = 0 and n_advisors < 3
+on-arrival: johnny_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Johnny White is now an advisor.
+
+@add_McQuillan
+title: McQuillan
+subtitle: A former Clann na Poblachta TD who later joined the National Progressive Democrats to support Noël Browne, Jack McQuillan is a grizzled politician.
+is-card: true
+card-image: img/portraits/Jack_McQuillan.jpg
+tags: reformist_advisor
+view-if: McQuillan_advisor = 0 and n_advisors < 3
+on-arrival: McQuillan_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Jack McQuillan is now an advisor.
