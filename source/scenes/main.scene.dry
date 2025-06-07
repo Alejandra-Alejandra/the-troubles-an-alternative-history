@@ -21,7 +21,6 @@ max-cards: 3
 - @paramilitary
 - @calendar
 - #advisor
-- @shuffle_leadership_pinned
 
 @main_easy
 set-bg: img/eire.jpg
