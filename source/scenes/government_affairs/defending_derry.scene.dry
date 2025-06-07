@@ -1,0 +1,36 @@
+title: Defending Free Derry
+new-page: true
+is-card: true
+view-if: free_derry_gov == 1 and defend_derry_timer <= 0
+frequency: 200
+on-arrival: defend_derry_timer = 1
+card-image: img/motorman.jpg
+tags: govt_affairs
+
+= Defending Free Derry
+
+If Free Derry is to last we must make preparations to defend the place. Currently the Derry Citizen Defence Association has [+ derry_defence_numbers +] men pledged to take up arms to defend the territory of Free Derry. 
+
+- @deploy_the_ica: We need to have more soldiers in Derry.
+- @recruit_reserves: We need to build up support for defence from the local populace.
+- @increase_intel: Free Derry failed last time because we were not prepared to disable advanced British weaponry. We must build intel on their movements so that we can assassinate their tank drivers and tank commanders.
+
+@deploy_the_ica
+view-if: ica_returns == 1
+on-arrival: ica_militancy += 0.05; resources -=2; derry_deploy +=75;
+
+We have successfully deployed some of the ICA to Derry, and trained them in self-defense.
+
+@recruit_reserves
+on-arrival: resources -=2; derry_defence_numbers +=150;
+
+We have successfully recruited more men to help in the defence of Free Derry.
+
+@increase_intel
+on-arrival: derry_intel +=2 if derry_intel <=6;
+
+We have worked on developing an intelligence network all across the city to help us understand British troop movements.
+
+
+
+
