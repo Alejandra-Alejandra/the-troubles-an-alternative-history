@@ -4,7 +4,6 @@ subtitle: One of our volunteers has been murdered by the officials.
 view-if: year = 1975 and month = 4 and garland_attacked_1 == 1
 max-visits: 1
 on-arrival: loughran_killed = 1
-face-image: img/irsp-meeting.jpg
 tags: event
 
 = The Officials Fight Back
@@ -18,6 +17,7 @@ The Officials have responded by assassinating Daniel Loughran, one of our volunt
 
 @Kill_the_bastards
 on-arrival: cycle_of_violence = 1;
+face-image: img/fallscurfew.jpg
 
 Two men lay dead, and three in hospital. 
   
