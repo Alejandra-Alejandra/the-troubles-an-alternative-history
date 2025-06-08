@@ -5,7 +5,6 @@ view-if: (year = 1975 and month >= 3) and garland_attacked_1 == 1
 max-visits: 1
 on-arrival: oira_to_fight_back_after_garland = 1
 face-image: img/schutzbund.jpg
-
 tags: event
 
 = Attack on Garland Fails
