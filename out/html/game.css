@@ -391,23 +391,20 @@ a.card:focus .card-tooltip, a.card:hover .card-tooltip {
 
 /* Unlike cards, face images can have different sizes. */
 .face-figure {
-  /*vertical-align: top;*/
-  display: inline-block;
+  display: block;             /* was inline-block */
+  width: 100%;                /* full width of the parent (likely #content) */
   border: 5px solid var(--card-border-color);
-  float: left;
-  max-width: 35%;
-  /*max-height: 180px;*/
-  margin-right: 1em;
   margin-bottom: 0.5em;
   overflow: hidden;
 }
 
 .face-img {
-  width: 100%;             
-  height: auto;            
-  object-fit: contain;     
-  display: block;          
+  width: 100%;               /* Fill the width of the .face-figure container */
+  height: auto;              /* Maintain aspect ratio */
+  object-fit: contain;       /* Prevent cropping */
+  display: block;
 }
+
 
 
 /*
