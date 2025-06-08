@@ -4,7 +4,7 @@ subtitle: Trouble is brewing in Derry...
 view-if: year = 1975 and month = 4 and trouble_in_derry == 0
 max-visits: 1
 on-arrival: trouble_in_derry = 1
-face-image: img/irsp-meeting.jpg
+face-image: img/motorman2.jpg
 tags: event
 
 = Trouble is brewing in Derry
