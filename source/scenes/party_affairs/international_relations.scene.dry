@@ -30,7 +30,7 @@ on-arrival: resources -= 2; eurocom_relation += 1; reformist_strength += 5; cath
 subtitle: -2 resources
 choose-if: resources >= 2
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 2; militant_left_relation += 1; communist_left_strength += 5; inla_strength += 5 if militant_left_relation <=7; inla_militancy += 0.001*(inla_relation) if militant_left_relation <=7; inla_strength += 4 if militant_left_relation >=8; inla_militancy += 0.002*(inla_relation) if militant_left_relation >=8
+on-arrival: resources -= 2; militant_left_relation += 1; communist_left_strength += 5; inla_militancy += 0.001*(inla_relation) if militant_left_relation <=7; inla_strength += 4 if militant_left_relation >=8; inla_militancy += 0.002*(inla_relation) if militant_left_relation >=8
 
 [? if militant_left_relation <=7: The militants train us in covert operations. ?] [? if militant_left_relation >= 8: The Red Army Faction sends some of their best members to help train the INLA. ?]
 
