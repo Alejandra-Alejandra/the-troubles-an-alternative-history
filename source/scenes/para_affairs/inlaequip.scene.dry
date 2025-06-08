@@ -45,6 +45,6 @@ The INLA is already serving the purpose it needs to serve. There is no reason to
 
 @cut_inla
 subtitle: +1 resources
-on-arrival: resources += 1; inla_strength -= [+ INLA_militarization_cost +]; inla_militancy -= 0.05; unemployed_provisionals += 0.05
+on-arrival: resources += 1; inla_strength -= INLA_militarization_cost; inla_militancy -= 0.05; unemployed_provisionals += 0.05
 
 Cutting resources to the INLA causes a drop in the membership, and leads some would-be members to join the provisionals instead.
