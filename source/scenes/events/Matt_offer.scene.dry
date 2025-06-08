@@ -4,7 +4,7 @@ subtitle: Trade Union Leader Approaches us
 view-if: (arm_civillians >= 5 and influence_in_irish_trade_union_movement >= 2 and matt_the_guy == 0) or (influence_in_irish_trade_union_movement >= 3 and matt_the_guy == 0)
 max-visits: 1
 on-arrival: matt_the_guy = 1;
-face-image: img/irsp-meeting.jpg
+face-image: img/mattyboyandjones.jpg
 tags: event
 
 = The Mysterious Case of Matt Merrigan
