@@ -4,7 +4,7 @@ subtitle: We have failed to kill Garland...
 view-if: (year = 1975 and month >= 3) and garland_attacked_1 = 1
 max-visits: 1
 on-arrival: oira_to_fight_back_after_garland = 1
-img: img/schutzbund.jpg;
+face-img: img/schutzbund.jpg;
 
 tags: event
 
