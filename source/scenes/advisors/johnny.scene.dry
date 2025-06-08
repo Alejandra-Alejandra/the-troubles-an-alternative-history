@@ -27,6 +27,6 @@ title: Recruit for the INLA in Derry
 subtitle: Try recruit Derry locals to join the INLA.
 choose-if: advisor_action_timer = 0 
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: inla_strength += 8*(derry_strength) if derry_strength <= 5; inla_strength += 20 if derry_strength >=6; derry_strength += 1; advisor_action_timer = 1
+on-arrival: inla_strength += 1*(derry_strength) if derry_strength <= 5; inla_strength += 5 if derry_strength >=6; derry_strength += 1; advisor_action_timer = 1
 
 [? if derry_strength <= 2: Some in Derry join the INLA. ?] [? if derry_strength >= 3 and derry_strength <=6: Our recruitment campaign in Derry is very successful, we have almost made sufficient preparations to go on the offensive. ?] [? if derry_strength >= 7: Soon we shall take back Free Derry... ?]
