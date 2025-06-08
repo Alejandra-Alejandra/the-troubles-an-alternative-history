@@ -105,12 +105,12 @@
   };
 
   window.enableImages = function() {
-      window.dendryUI.show_portraits = false;
+      window.dendryUI.show_portraits = true;
       window.dendryUI.saveSettings();
   };
 
   window.disableImages = function() {
-      window.dendryUI.show_portraits = true;
+      window.dendryUI.show_portraits = false;
       window.dendryUI.saveSettings();
   };
 
