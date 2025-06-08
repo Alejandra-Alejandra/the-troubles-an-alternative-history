@@ -4,7 +4,7 @@ subtitle: Rebuilding the Irish Citizen Army?
 view-if: (arm_civillians >= 5 and influence_in_irish_trade_union_movement >= 3 and ica_returns == 0 and ica_returning == 0 and ica_to_return == 1) or (influence_in_irish_trade_union_movement >= 5 and ica_returns == 0 and ica_returning == 0 and ica_to_return == 1)
 max-visits: 1
 on-arrival: ica_returning = 1; 
-face-image: img/irsp-meeting.jpg
+face-image: img/ica_event.jpg
 tags: event
 
 = Rebuilding the Irish Citizen Army?
