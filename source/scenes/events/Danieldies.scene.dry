@@ -1,0 +1,31 @@
+title: Daniel Loughran Murdered
+new-page: true
+subtitle: One of our volunteers has been murdered by the officials.
+view-if: year = 1975 and month = 4 and garland_attacked_1 == 1
+max-visits: 1
+on-arrival: loughran_killed = 1
+face-image: img/irsp-meeting.jpg
+tags: event
+
+= The Officials Fight Back
+
+After our retaliation against the Officials, one of their men lay dead, and another, Sean Garland, critically injured.
+  
+The Officials have responded by assassinating Daniel Loughran, one of our volunteers. The men are hungry for blood.
+
+- @Kill_the_bastards: Order the assassination of multiple Officials in response! Kneecap as many of the bastards as possible!
+- @End_Violence: We must end this cycle of violence before it gets out of hand! The enemy is the British, not our fellow Irishmen.
+
+@Kill_the_bastards
+on-arrival: cycle_of_violence = 1;
+
+Two men lay dead, and three in hospital. 
+  
+Official commander Billy McMillen though his death was not ordered was killed as well. Many on the falls road mourn the soldier who led the valiant struggle against the British just 5 years before that started what people today are terming "The Troubles".
+
+The cycle of violence has begun, many more deaths shall come and only time will tell if it can end.
+
+@End_Violence
+on-arrival: cycle_of_violence = 2;
+
+We seek an end to the violence, if it shall come, we do not know. But it is necessary to fight the British.
