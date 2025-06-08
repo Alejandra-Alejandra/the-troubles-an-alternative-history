@@ -246,7 +246,7 @@
   console.log("Modifying stats: see dendryUI.dendryEngine.state.qualities");
 
   window.onload = function() {
-    window.dendryUI.loadSettings({show_portraits: true});
+    window.dendryUI.loadSettings({show_portraits: true, disable_bg: false});
     if (window.dendryUI.dark_mode) {
         document.body.classList.add('dark-mode');
     }
