@@ -4,7 +4,8 @@ subtitle: We have failed to kill Garland...
 view-if: (year = 1975 and month >= 3) and garland_attacked_1 = 1
 max-visits: 1
 on-arrival: oira_to_fight_back_after_garland = 1
-face-image: img/schutzbund.png
+<img src="img/schutzbund.jpg" alt="Rally in Dublin" style="width:100%; max-height:300px;">
+
 tags: event
 
 = Attack on Garland Fails
