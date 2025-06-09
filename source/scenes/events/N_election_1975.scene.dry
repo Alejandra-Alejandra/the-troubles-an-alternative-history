@@ -72,3 +72,22 @@ for (var party of Q.parties) {
 Q.election_records.push(election_result);
 !}
 
+= Election results
+
+{!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
+
+{!<table>!} 
+{!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#8B0000'> </div> !} SDLP: {!</td><td>!} [+ SDLP_r +]% {!</td><td>!} [+ str_change_SDLP +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#DCCA4A'> </div> !} Alliance: {!</td><td>!} [+ alliance_r +]% {!</td><td>!} [+ str_change_alliance +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#000'> </div> !} NILP: {!</td><td>!} [+ NILP_r +]% {!</td><td>!} [+ str_change_NILP +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#D5AC27'> </div> !} UUP: {!</td><td>!} [+ UUP_r +]% {!</td><td>!} [+ str_change_UUP +] {!</td></tr>!}
+ 
+{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} DUP: {!</td><td>!} [+ DUP_r +] % {!</td><td>!} [+ str_change_DUP +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#3f7bc1'> </div> !} Vanguard: {!</td><td>!} [+ Vanguard_r +]% {!</td><td>!} [+ str_change_Vanguard +] {!</td></tr>!}
+
+{!</table>!}
