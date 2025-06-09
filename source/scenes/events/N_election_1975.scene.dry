@@ -164,24 +164,24 @@ if (window && d3) {
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#100'> </div> !} IRSP: {!</td><td>!} [+ IRSP_r +]% {!</td><td>!} [+ str_change_IRSP +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FF7F7F'> </div> !} IRSP: {!</td><td>!} [+ IRSP_r +]% {!</td><td>!} [+ str_change_IRSP +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#100'> </div> !} Provisionals: {!</td><td>!} [+ Provisionals_r +]% {!</td><td>!} [+ str_change_Provisionals +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#008000'> </div> !} Provisionals: {!</td><td>!} [+ Provisionals_r +]% {!</td><td>!} [+ str_change_Provisionals +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#100'> </div> !} Officials: {!</td><td>!} [+ Officials_r +]% {!</td><td>!} [+ str_change_Officials +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#CC3333'> </div> !} Officials: {!</td><td>!} [+ Officials_r +]% {!</td><td>!} [+ str_change_Officials +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#100'> </div> !} Independent Republicans: {!</td><td>!} [+ IRs_r +]% {!</td><td>!} [+ str_change_IRs +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#90EE90'> </div> !} Independent Republicans: {!</td><td>!} [+ IRs_r +]% {!</td><td>!} [+ str_change_IRs +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#8B0000'> </div> !} SDLP: {!</td><td>!} [+ SDLP_r +]% {!</td><td>!} [+ str_change_SDLP +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#98FB98'> </div> !} SDLP: {!</td><td>!} [+ SDLP_r +]% {!</td><td>!} [+ str_change_SDLP +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#DCCA4A'> </div> !} Alliance: {!</td><td>!} [+ alliance_r +]% {!</td><td>!} [+ str_change_alliance +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FFFF00'> </div> !} Alliance: {!</td><td>!} [+ alliance_r +]% {!</td><td>!} [+ str_change_alliance +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#000'> </div> !} NILP: {!</td><td>!} [+ NILP_r +]% {!</td><td>!} [+ str_change_NILP +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FFC0CB'> </div> !} NILP: {!</td><td>!} [+ NILP_r +]% {!</td><td>!} [+ str_change_NILP +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#D5AC27'> </div> !} UUP: {!</td><td>!} [+ UUP_r +]% {!</td><td>!} [+ str_change_UUP +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#C17E5A'> </div> !} UUP: {!</td><td>!} [+ UUP_r +]% {!</td><td>!} [+ str_change_UUP +] {!</td></tr>!}
  
-{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} DUP: {!</td><td>!} [+ DUP_r +]% {!</td><td>!} [+ str_change_DUP +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FFA500'> </div> !} DUP: {!</td><td>!} [+ DUP_r +]% {!</td><td>!} [+ str_change_DUP +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#3f7bc1'> </div> !} Vanguard: {!</td><td>!} [+ Vanguard_r +]% {!</td><td>!} [+ str_change_Vanguard +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FFD580'> </div> !} Vanguard: {!</td><td>!} [+ Vanguard_r +]% {!</td><td>!} [+ str_change_Vanguard +] {!</td></tr>!}
 
 {!</table>!}
