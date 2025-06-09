@@ -66,8 +66,8 @@ if (Q.electoral_threshold && Q.electoral_threshold > 0) {
 }
 
 var election_result = {'date': new Date(Q.year, Q.month - 1)};
-for (var party of Q.parties) {
-    election_result[party] = Q[party + '_r'];
+for (var party of Q.north_parties) {
+    election_result[north_party] = Q[north_party + '_r'];
 }
 Q.election_records.push(election_result);
 !}
