@@ -431,7 +431,7 @@ Q.north_unemployed_FF = 0;
 Q.north_unemployed_Labour = 0;
 
 Q.north_rich_IRSP = 0;
-Q.north_rich=_Officials  = 0;
+Q.north_rich_Officials  = 0;
 Q.north_rich_IRs = 1;
 Q.north_rich_Provisionals = 2;
 Q.north_rich_SDLP = 6;
