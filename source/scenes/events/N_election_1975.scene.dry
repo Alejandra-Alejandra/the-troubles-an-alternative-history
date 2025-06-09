@@ -139,6 +139,15 @@ if (window && d3) {
 
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#100'> </div> !} IRSP: {!</td><td>!} [+ IRSP_r +]% {!</td><td>!} [+ str_change_IRSP +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#100'> </div> !} Provisionals: {!</td><td>!} [+ Provisionals_r +]% {!</td><td>!} [+ str_change_Provisionals +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#100'> </div> !} Officials: {!</td><td>!} [+ Officials_r +]% {!</td><td>!} [+ str_change_Officials +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#100'> </div> !} Officials: {!</td><td>!} [+ IRs_r +]% {!</td><td>!} [+ str_change_IRs +] {!</td></tr>!}
+
 {!<tr><td><div class="box" style='background-color:#8B0000'> </div> !} SDLP: {!</td><td>!} [+ SDLP_r +]% {!</td><td>!} [+ str_change_SDLP +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#DCCA4A'> </div> !} Alliance: {!</td><td>!} [+ alliance_r +]% {!</td><td>!} [+ str_change_alliance +] {!</td></tr>!}
