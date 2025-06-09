@@ -59,6 +59,7 @@ if (Q.electoral_threshold && Q.electoral_threshold > 0) {
         } else {
             Q[north_party + '_r_disp'] = Q[north_party+'_r'];
         }
+        console.log(north_party, Q[north_party + '_r'], Q['old_' + north_party + '_r']);
         Q['change_' + north_party + '_r'] = Q[north_party + '_r'] - Q['old_' + north_party + '_r'];
         var sign = Q['change_' + north_party + '_r'] > 0 ? '+'  : '';
         Q['str_change_' + north_party] = sign + Q['change_' + north_party + '_r'];//.toFixed(1);
