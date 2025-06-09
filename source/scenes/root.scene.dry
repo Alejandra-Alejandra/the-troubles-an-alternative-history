@@ -167,9 +167,6 @@ Q.OIRA_banned = 0;
 Q.PIRA_strength = 10000;
 Q.PIRA_militancy = 0.6;
 Q.PIRA_banned = 0;
-Q.IRSP_banned = 1;
-Q.Provisionals_banned = 1;
-Q.Officials_banned = 1;
 
 Q.interior_police_strength = 50;
 Q.interior_police_militancy = 1;
@@ -217,6 +214,9 @@ Q.presidential_powers = 0;
 Q.constitutional_protection = 0;
 Q.kpd_banned = 0;
 Q.nsdap_banned = 0;
+Q.IRSP_banned = 1;
+Q.Provisionals_banned = 1;
+Q.Officials_banned = 1;
 
 // coups and capital strikes happen when you upset the right or the capitalists too much with your policies. they're an additional check on your policies, when purely electoral checks don't suffice.
 // when coup_progress reaches 10 or capital_strike_progress reaches 10, there's a special event that launches the coup.
