@@ -82,7 +82,7 @@ data = [
         "seats": Math.round(Q.IRSP_r*5),
     }
 ];
-data = data.concat(
+data = data.concat([
     {
         "id": "Provisionals",
         "legend": "Provisionals",
