@@ -4,7 +4,7 @@
  */
 
 d3.parliament = function() {
-    /* params */
+    /* . */
     var width,
         height,
         innerRadiusCoef = 0.4;
