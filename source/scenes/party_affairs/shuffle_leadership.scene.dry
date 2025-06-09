@@ -179,7 +179,6 @@ subtitle: A veteran Irish trade unionist leader and former organiser in the Iris
 is-card: true
 card-image: img/portraits/mattyboy.png
 view-if: Matt_advisor = 0 and n_advisors < 18
-view-if: Matt_advisor = 0 and n_advisors < 18
 on-arrival: Matt_advisor = 1; n_advisors += 1
 tags: labor_advisor
 go-to: advisor_menu
