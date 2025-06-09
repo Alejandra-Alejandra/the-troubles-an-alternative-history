@@ -24,7 +24,7 @@ The IRSP if it wishes to establish a 32 county republic must build ties with oth
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; catholic_poor_rural_IRSP += 0.05*(1-dissent); poor_rural_IRSP += 0.1*(1-dissent); agri_prog_support +=1; IRs_relation += 10;
+on-arrival: resources -= 1; catholic_poor_rural_IRSP += 0.05*(1-dissent); poor_rural_IRSP += 0.1*(1-dissent); agri_prog_support +=1; IRs_relation += 20;
 
 Some former members of Fianna Fáil join us.
 
