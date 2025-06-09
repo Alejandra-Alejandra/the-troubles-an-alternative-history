@@ -550,7 +550,10 @@ Q.old_NILP_r = 0;
 Q.old_UUP_r = 0;
 Q.old_DUP_r = 0;
 Q.old_Vanguard_r = 0;
-
+Q.old_IRSP_r = 0;
+Q.old_Provisionals_r = 0;
+Q.old_Officials_r = 0;
+Q.old_IRs_r = 0;
 
 Q.in_right_coalition = 0;
 // Weimar coalition = SPD + Z + DDP
