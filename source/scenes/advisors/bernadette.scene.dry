@@ -12,6 +12,7 @@ A longtime civil rights campaigner in the north and Trotskyist, Bernadette Devli
 - @international_work_berna
 - @belfast_rally
 - @mediawork
+- @strengthen_left
 - @root: Return to main
 
 @international_work_berna
@@ -36,4 +37,12 @@ subtitle: Work on our media network
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 on-arrival: media_timer = 0; advisor_action_timer = 1
+go-to: media
+
+@strengthen_left
+title: Try push for support amongst the party for the left-wing.
+subtitle: We will strengthen the left.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 1; communist_left_strength +=5
 go-to: media
