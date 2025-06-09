@@ -1,5 +1,5 @@
 /*
- * generating a line graph of multipile parties with multiple dates...
+ * generating a line graph of multipile north_parties with multiple dates...
  * */
 
 function addMonths(date, months) {
@@ -13,16 +13,16 @@ function addMonths(date, months) {
 }
 
 
-d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataMax, dataMin, additionalMonths) {
+d3.linegraph = function(noTicks, noDots, north_parties, north_partyColors, north_partyNames, dataMax, dataMin, additionalMonths) {
     /* params */
-    if (!parties) {
-        parties = ['spd', 'kpd', 'ddp', 'z', 'dvp', 'dnvp', 'nsdap', 'other'];
+    if (!north_parties) {
+        north_parties = ['IRSP', 'Provisionals', 'Officials', 'IRs', 'SDLP', 'alliance', 'NILP', 'UUP', 'DUP', 'Vanguard'];
     }
-    if (!partyColors) {
-        partyColors = {'spd': '#E3000F', 'kpd': '#8B0000', 'ddp': '#DCCA4A', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0'};
+    if (!north_partyColors) {
+        north_partyColors = {'IRSP': '#FF7F7F', 'Provisionals': '#008000', 'Officials': '#CC3333', 'IRs': '#90EE90', 'SDLP': '#98FB98', 'alliance': '#FFFF00', 'NILP': '#FFC0CB', 'UUP': '#C17E5A', 'DUP': '#FFA500', 'Vanguard': '#FFD580'};
     }
-    if (!partyNames) {
-        partyNames = {'spd': 'SPD', 'kpd': 'KPD', 'ddp': 'DDP', 'z': 'Z + BVP', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others'};
+    if (!north_partyNames) {
+        north_partyNames = {'IRSP': 'IRSP', 'Provisionals': 'Provisionals', 'Officials': 'Officials', 'IRs': 'Independent Republicans', 'SDLP': 'SDLP', 'alliance': 'Alliance', 'NILP': 'NILP', 'UUP': 'UUP', 'DUP': 'DUP', 'Vanguard': 'Vanguard'};
     }
     if (!additionalMonths) {
         additionalMonths = 10;
@@ -40,7 +40,7 @@ d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataM
      dataset.each(function (data) {
       const dates = data.map(d => new Date(d.date));
       // Map the data to an array of arrays of {x, y} tuples.
-      const series = parties.map(party => data.map(d => ({'x': new Date(d.date), 'y': d[party], 'series': party})));
+      const series = north_parties.map(north_party => data.map(d => ({'x': new Date(d.date), 'y': d[north_party], 'series': north_party})));
 
       // Declare the x (horizontal position) scale.
       const maxDate = d3.max(dates);
@@ -88,32 +88,32 @@ d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataM
           .attr("transform", `translate(${marginLeft},0)`)
           .call(d3.axisLeft(yScale));
 
-      const partyLine = (party) => d3.line()
+      const north_partyLine = (north_party) => d3.line()
           .x(d => xScale(new Date(d.date)))
-          .y(d => yScale(d[party]));
+          .y(d => yScale(d[north_party]));
 
       // draw the lines
-      for (const party of parties) {
+      for (const north_party of north_parties) {
         svg.append("path")
           .attr("fill", "none")
-          .attr("stroke", partyColors[party])
+          .attr("stroke", north_partyColors[north_party])
           .attr("stroke-width", 1.5)
-          .attr("class", party + " " + "party-line")
-          .attr("id", party+"-line")
-          .attr("series", party)
-          .attr("d", partyLine(party)(data))
+          .attr("class", north_party + " " + "north_party-line")
+          .attr("id", north_party+"-line")
+          .attr("series", north_party)
+          .attr("d", north_partyLine(north_party)(data))
           .on("mouseover", function (d) {
-              d3.selectAll(".party-line").attr("stroke-width", 0.1);
-              d3.selectAll(".party-node").attr("fill-opacity", 0.1);
-              d3.selectAll(".party-label").attr("opacity", 0.1);
-              d3.selectAll("."+party+'-node').attr("fill-opacity", 1);
-              d3.selectAll("."+party+'-label').attr("opacity", 1);
+              d3.selectAll(".north_party-line").attr("stroke-width", 0.1);
+              d3.selectAll(".north_party-node").attr("fill-opacity", 0.1);
+              d3.selectAll(".north_party-label").attr("opacity", 0.1);
+              d3.selectAll("."+north_party+'-node').attr("fill-opacity", 1);
+              d3.selectAll("."+north_party+'-label').attr("opacity", 1);
               d3.select(this).attr("stroke-width", 5);
           })
           .on("mouseout", function (d) {
-            d3.selectAll(".party-line").attr("stroke-width", 1.5);
-            d3.selectAll(".party-node").attr("fill-opacity", 1);
-            d3.selectAll(".party-label").attr("opacity", 1);
+            d3.selectAll(".north_party-line").attr("stroke-width", 1.5);
+            d3.selectAll(".north_party-node").attr("fill-opacity", 1);
+            d3.selectAll(".north_party-label").attr("opacity", 1);
           });
       }
 
@@ -126,8 +126,8 @@ d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataM
             .selectAll(".point")
               .data(d => d)
             .enter().append("circle")
-              .attr("class", d => d.series + " " + d.series+"-node " + "party-node")
-              .attr("fill", d => partyColors[d.series])
+              .attr("class", d => d.series + " " + d.series+"-node " + "north_party-node")
+              .attr("fill", d => north_partyColors[d.series])
               .attr("series", d => d.series)
               .attr("r", 4)
               .attr("cx", d => xScale(d.x))
@@ -135,17 +135,17 @@ d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataM
               .on("mouseover", function (d) {
                   const node = d3.select(this);
                   const series = node.attr('series');
-                  d3.selectAll(".party-line").attr("stroke-width", 0.1);
-                  d3.selectAll(".party-node").attr("fill-opacity", 0.1);
-                  d3.selectAll(".party-label").attr("opacity", 0.1);
+                  d3.selectAll(".north_party-line").attr("stroke-width", 0.1);
+                  d3.selectAll(".north_party-node").attr("fill-opacity", 0.1);
+                  d3.selectAll(".north_party-label").attr("opacity", 0.1);
                   d3.selectAll("."+series+'-node').attr("fill-opacity", 1);
                   d3.selectAll("#"+series+'-line').attr("stroke-width", 5);
                   d3.selectAll("."+series+'-label').attr("opacity", 1);
               })
               .on("mouseout", function (d) {
-                  d3.selectAll(".party-line").attr("stroke-width", 1.5);
-                  d3.selectAll(".party-node").attr("fill-opacity", 1);
-                  d3.selectAll(".party-label").attr("opacity", 1);
+                  d3.selectAll(".north_party-line").attr("stroke-width", 1.5);
+                  d3.selectAll(".north_party-node").attr("fill-opacity", 1);
+                  d3.selectAll(".north_party-label").attr("opacity", 1);
               });
       }
 
@@ -153,26 +153,26 @@ d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataM
       svg.selectAll(".labels")
         .data(series)
         .enter().append("text")
-        .text(s => partyNames[s[0].series])
+        .text(s => north_partyNames[s[0].series])
         .attr("series", s => s[0].series)
         .attr("font-size", "0.8em")
-        .attr("class", s => s[0].series + "-label party-label")
+        .attr("class", s => s[0].series + "-label north_party-label")
         .attr("x", s => xScale(s[s.length - 1].x) + 15)
         .attr("y", s => yScale(s[s.length - 1].y) + 5)
         .on("mouseover", function (d) {
           const text = d3.select(this);
           const series = text.attr('series');
-          d3.selectAll(".party-line").attr("stroke-width", 0.1);
-          d3.selectAll(".party-node").attr("fill-opacity", 0.1);
-          d3.selectAll(".party-label").attr("opacity", 0.1);
+          d3.selectAll(".north_party-line").attr("stroke-width", 0.1);
+          d3.selectAll(".north_party-node").attr("fill-opacity", 0.1);
+          d3.selectAll(".north_party-label").attr("opacity", 0.1);
           d3.selectAll("."+series+'-node').attr("fill-opacity", 1);
           d3.selectAll("#"+series+'-line').attr("stroke-width", 5);
           d3.selectAll("."+series+'-label').attr("opacity", 1);
         })
         .on("mouseout", function (d) {
-          d3.selectAll(".party-line").attr("stroke-width", 1.5);
-          d3.selectAll(".party-node").attr("fill-opacity", 1);
-          d3.selectAll(".party-label").attr("opacity", 1);
+          d3.selectAll(".north_party-line").attr("stroke-width", 1.5);
+          d3.selectAll(".north_party-node").attr("fill-opacity", 1);
+          d3.selectAll(".north_party-label").attr("opacity", 1);
         });
 
      });
@@ -190,21 +190,21 @@ d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataM
         return linegraph;
     };
 
-    linegraph.parties = function(value) {
-        if (!arguments.length) return parties;
-        parties = value;
+    linegraph.north_parties = function(value) {
+        if (!arguments.length) return north_parties;
+        north_parties = value;
         return linegraph;
     };
 
-    linegraph.partyNames = function(value) {
-        if (!arguments.length) return partyNames;
-        partyNames = value;
+    linegraph.north_partyNames = function(value) {
+        if (!arguments.length) return north_partyNames;
+        north_partyNames = value;
         return linegraph;
     };
 
-    linegraph.partyColors = function(value) {
-        if (!arguments.length) return partyColors;
-        partyColors = value;
+    linegraph.north_partyColors = function(value) {
+        if (!arguments.length) return north_partyColors;
+        north_partyColors = value;
         return linegraph;
     };
 
