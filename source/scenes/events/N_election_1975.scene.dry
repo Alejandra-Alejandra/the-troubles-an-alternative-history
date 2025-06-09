@@ -64,6 +64,10 @@ if (Q.electoral_threshold && Q.electoral_threshold > 0) {
     }
 }
 
-// get change arrows and signs
-
+var election_result = {'date': new Date(Q.year, Q.month - 1)};
+for (var party of Q.parties) {
+    election_result[party] = Q[party + '_r'];
+}
+Q.election_records.push(election_result);
+!}
 
