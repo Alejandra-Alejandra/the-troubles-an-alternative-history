@@ -76,13 +76,37 @@ Q.election_records.push(election_result);
 on-display: {!
 data = [
     {
+        "id": "IRSP",
+        "legend": "IRSP",
+        "name": "IRSP",
+        "seats": Math.round(Q.IRSP_r*5),
+    }
+];
+data = data.concat(
+    {
+        "id": "Provisionals",
+        "legend": "Provisionals",
+        "name": "Provisionals",
+        "seats": Math.round(Q.Provisionals_r*5),
+    },
+    {
+        "id": "Officials",
+        "legend": "Officials",
+        "name": "Officials",
+        "seats": Math.round(Q.Officials_r*5),
+    },
+    {
+        "id": "IRs",
+        "legend": "IRs",
+        "name": "Independent Republicans",
+        "seats": Math.round(Q.IRs_r*5),
+    },
+    {
         "id": "SDLP",
         "legend": "SDLP",
         "name": "SDLP",
         "seats": Math.round(Q.SDLP_r*5),
-    }
-];
-data = data.concat([
+    },
     {
         "id": "alliance",
         "legend": "alliance",
