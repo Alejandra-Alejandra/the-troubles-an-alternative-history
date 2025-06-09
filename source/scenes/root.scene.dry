@@ -167,6 +167,9 @@ Q.OIRA_banned = 0;
 Q.PIRA_strength = 10000;
 Q.PIRA_militancy = 0.6;
 Q.PIRA_banned = 0;
+Q.IRSP_banned = 1;
+Q.Provisionals_banned = 1;
+Q.Officials_banned = 1;
 
 Q.interior_police_strength = 50;
 Q.interior_police_militancy = 1;
