@@ -74,6 +74,68 @@ for (var north_party of Q.north_parties) {
 Q.election_records.push(election_result);
 !}
 
+on-display: {!
+data = [
+    {
+        "id": "SDLP",
+        "legend": "SDLP",
+        "name": "SDLP",
+        "seats": Math.round(Q.SDLP_r*5),
+    }
+];
+data = data.concat([
+    {
+        "id": "alliance",
+        "legend": "alliance",
+        "name": "alliance",
+        "seats": Math.round(Q.alliance_r*5),
+    },
+    {
+        "id": "NILP",
+        "legend": "NILP",
+        "name": "NILP",
+        "seats": Math.round(Q.NILP_r*5),
+    },
+    {
+        "id": "UUP",
+        "legend": "UUP",
+        "name": "UUP",
+        "seats": Math.round(Q.UUP_r*5),
+    },
+    {
+        "id": "DUP",
+        "legend": "DUP",
+        "name": "DUP",
+        "seats": Math.round(Q.DUP_r*5),
+    },
+    {
+        "id": "Vanguard",
+        "legend": "Vanguard",
+        "name": "Vanguard",
+        "seats": Math.round(Q.Vanguard_r*5),
+    },
+]);
+
+if (window && d3) {
+    var width = 500; 
+    var height = 500;
+    var screenWidth = document.getElementById('content').offsetWidth;
+    if (screenWidth < width - 50) {
+        width = screenWidth - 50; 
+        height = width;
+        document.getElementById("reichstag").style.height = screenWidth/2 + "px";
+    } 
+
+    var parliament = d3.parliament();
+    parliament.width(width).height(height).innerRadiusCoef(0.4);
+    parliament.enter.fromCenter(true).smallToBig(true);
+    parliament.exit.toCenter(false).bigToSmall(true);
+    d3.select("#reichstag").datum(data).call(parliament);
+}
+!}
+go-to: coalition_menu
+
+
 = Election results (WIP)
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
