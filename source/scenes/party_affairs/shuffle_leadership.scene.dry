@@ -7,7 +7,7 @@ on-arrival: month_activities += 0; shuffle_leadership_timer = 8;
 card-image: img/armycouncil.jpg
 go-to: rm_main
 
-Changing the leadership of the party is painful, but perhaps it is necessary to adapt to changing circumstances.
+Changing the Ard Comhairle of the party is not an easy affair, but perhaps it is necessary to adapt to changing circumstances.
 
 Removing advisors will increase dissent from their faction of the party, while selecting advisors will increase a faction's strength.
 
@@ -68,6 +68,15 @@ tags: remove_advisor
 go-to: rm_main
 
 The reformists are upset.
+
+@remove_MattMerrigan
+title: Remove Matt Merrigan
+view-if: Matt_advisor = 1
+on-arrival: Matt_advisor = 0; labor_dissent +=5; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+The Labour wing is upset.
 
 ####################### adding advisors
 
@@ -163,3 +172,17 @@ on-arrival: McQuillan_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
 Jack McQuillan is now an advisor.
+
+@add_MattMerrigan
+title: Add Matt Merrigan
+subtitle: A veteran Irish trade unionist leader and former organiser in the Irish Labour party.
+is-card: true
+card-image: img/portraits/mattyboy.png
+view-if: Matt_advisor = 0 and n_advisors < 18
+view-if: Matt_advisor = 0 and n_advisors < 18
+on-arrival: Matt_advisor = 1; n_advisors += 1
+tags: labor_advisor
+go-to: advisor_menu
+
+Matt Merrigan is now an advisor.
+
