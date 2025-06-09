@@ -1,0 +1,26 @@
+title: The Far Left Unites?
+new-page: true
+subtitle: The Far Left rallies behind the IRSP
+view-if: year = 1975 and month = 8
+max-visits: 1
+face-image: img/swm.png
+tags: event
+
+= The Far Left Unites?
+
+With the recent establishment of a firmly socialist republican organisation, many on the left have shown an increased interest in the national struggle. The Socialist Workers Movement is considering a merger with our party. This group is very small, consisting of less than half a hundred individuals. However, they are dedicated to the cause, and have some support amongst the workers in the Waterford Crystal Plant in Waterford. 
+
+- @They_Join: Let them into the party! With the costelloite in one hand and the ballot box in the other we shall conquer this Island!
+- @They_Do_Not_Join: We reject letting them in, at least for now.
+
+@They_Join
+choose-if: the_communist_left_unites >= 2
+unavailable-subtitle: You do not have good enough relations with the left
+on-arrival: left_is_united = 1; communist_left_strength += 10
+
+The Socialist Workers Movement joins our party, and many more from a socialist perspective flock to us.
+
+@They_Do_Not_Join
+choose-if: the_communist_left_unites <= 1
+
+The motion to join our party is narrowly defeated, and the Socialist Workers Movement does not merge with us.
