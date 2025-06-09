@@ -25,7 +25,7 @@ var new_north_party_sum = 0;
 for (var north_party of Q.north_parties) {
     Q['old_' + north_party + '_r'] = Q[north_party + '_r'];
     if (Q.constitutional_reform > 0) {
-        if (Q[north_party + '_votes'] < Q.electoral_threshold || (Q.electoral_threshold > 1 && north_party == 'other') || Q[north_party + '_banned'] = 1) {
+        if (Q[north_party + '_votes'] < Q.electoral_threshold || (Q.electoral_threshold > 1 && north_party == 'other') || Q[north_party + '_banned'] == 1) {
             Q[north_party + '_r'] = 0;
         } else {
             Q[north_party + '_r'] = Q[north_party + '_votes'];
