@@ -72,7 +72,7 @@ for (var party of Q.parties) {
 Q.election_records.push(election_result);
 !}
 
-= Election results
+= Election results (WIP)
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
