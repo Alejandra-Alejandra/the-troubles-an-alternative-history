@@ -17,7 +17,7 @@ With the IRSP bolstering its progressive credentials recently, and its overtures
 @Let_Them_In
 choose-if: IRs_relation >= 60
 unavailable-subtitle: We need better relations with independent republicans to get them to join.
-on-arrival: reformist_strength += 10; labor_strength += 5; trad_dissent +=5; McQuillan_advisor = 0; workers_IRSP += 2; trade_union_influence += 2;
+on-arrival: reformist_strength += 10; labor_strength += 5; trad_dissent +=5; McQuillan_advisor = 0; workers_IRSP += 2; trade_union_influence += 2; IRs_in_party = 1;
 
 The traditionalists are shocked by our decision. However, our membership numbers swell, and our influence in the trade union movement increases further.
 
