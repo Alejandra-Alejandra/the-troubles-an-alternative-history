@@ -93,23 +93,23 @@ d3.parliament = function() {
                 return a.polar.teta - b.polar.teta || b.polar.r - a.polar.r;
             });
 
-            /* fill the seat objects with data of its party and of itself if existing */
+            /* fill the seat objects with data of its north_party and of itself if existing */
             (function() {
-                var partyIndex = 0;
+                var north_partyIndex = 0;
                 var seatIndex = 0;
                 seats.forEach(function(s) {
-                    /* get current party and go to the next one if it has all its seats filled */
-                    var party = d[partyIndex];
-                    var nSeatsInParty = typeof party.seats === 'number' ? party.seats : party.seats.length;
-                    if (seatIndex >= nSeatsInParty) {
-                        partyIndex++;
+                    /* get current north_party and go to the next one if it has all its seats filled */
+                    var north_party = d[north_partyIndex];
+                    var nSeatsInnorth_party = typeof north_party.seats === 'number' ? north_party.seats : north_party.seats.length;
+                    if (seatIndex >= nSeatsInnorth_party) {
+                        north_partyIndex++;
                         seatIndex = 0;
-                        party = d[partyIndex];
+                        north_party = d[north_partyIndex];
                     }
 
-                    /* set party data */
-                    s.party = party;
-                    s.data = typeof party.seats === 'number' ? null : party.seats[seatIndex];
+                    /* set north_party data */
+                    s.north_party = north_party;
+                    s.data = typeof north_party.seats === 'number' ? null : north_party.seats[seatIndex];
 
                     seatIndex++;
                 });
@@ -120,13 +120,13 @@ d3.parliament = function() {
              * helpers to get value from seat data */
             var seatClasses = function(d) {
                 var c = "seat ";
-                c += (d.party && d.party.id) || "";
+                c += (d.north_party && d.north_party.id) || "";
                 return c.trim();
             };
             var seatX = function(d) { return d.cartesian.x; };
             var seatY = function(d) { return d.cartesian.y; };
-            var seatColor = function(d) { return d.party.color; };
-            var seatOutline = function(d) { return d.party.outline; };
+            var seatColor = function(d) { return d.north_party.color; };
+            var seatOutline = function(d) { return d.north_party.outline; };
             var seatRadius = function(d) {
                 var r = 0.4 * rowWidth;
                 if (d.data && typeof d.data.size === 'number') {
