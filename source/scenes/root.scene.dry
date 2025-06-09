@@ -528,38 +528,6 @@ Q.unemployed_FG = 10;
 Q.unemployed_FF = 21;
 Q.unemployed_Labour = 45;
 
-// Current Reichstag composition
-// % of Reichstag in Jan 1928
-// source: wikipedia
-// note: the Z figures also include the BVP (Bavarian people's party)
-// since they were ideologically similar, but they were separate parties.
-// They did not have a CDU/CSU-style relationship.
-Q.spd_r = 26;
-Q.kpd_r = 9;
-Q.z_r = 17;
-Q.ddp_r = 6;
-Q.dvp_r = 10;
-Q.dnvp_r = 20;
-Q.nsdap_r = 3;
-Q.other_r = 9;
-
-// diff from prev
-Q.old_spd_r = 26;
-Q.old_kpd_r = 9;
-Q.old_z_r = 17;
-Q.old_ddp_r = 6;
-Q.old_dvp_r = 10;
-Q.old_dnvp_r = 20;
-Q.old_nsdap_r = 3;
-Q.old_other_r = 9;
-
-// UVFpd isn't formed yet, but it may be formed
-Q.UVFpd_r = 0;
-Q.old_UVFpd_r = 0;
-
-// for changing the DDP's name to the DStP
-Q.ddp_name = "DDP";
-
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
 Q.election_records = [];
 // party support records for every month
@@ -739,15 +707,6 @@ Q.reichsbanner_timer = 0;
 Q.shuffle_leadership_timer = 0;
 Q.streetfighting_timer = 0;
 Q.peoples_party_timer = 0;
-// n_elections is the number of elections that have happened since the start of the game.
-Q.n_elections = 0;
-// number of elections without a clear majority.
-Q.no_majority_elections = 0;
-// elections are not on a timer, but rather there is an indicator for whether you're in an electoral cycle.
-Q.in_election = 1;
-Q.next_election_year = 1928;
-Q.next_election_month = 5;
-Q.next_election_time = 5;
 // government affairs timers
 Q.agricultural_policy_timer = 0;
 Q.domestic_enemies_timer = 0;
