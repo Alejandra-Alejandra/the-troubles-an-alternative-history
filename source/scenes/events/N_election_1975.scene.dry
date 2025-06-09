@@ -1,0 +1,69 @@
+title: Northern Ireland Constitutional Convention Elections
+new-page: true
+tags: event
+priority: -1
+view-if: (year = 1975 and month == 5)
+set-jump: post_election_1975
+
+# TODO: should there be an image?
+
+# the low priority means that this event is only seen after all other events are resolved for the month.
+
+= Elections, [+ month : month +] [+ year +]
+
+The Northern Ireland Constitutional Convention elections are to be held now.
+
+- @NICC_algorithm: What a waste of taxpayer money...
+
+@post_election_1975
+on-arrival: {!
+// set old results
+// election threshold constitutional reform
+// banning north_parties
+var new_north_party_sum = 0;
+for (var north_party of Q.north_parties) {
+    Q['old_' + north_party + '_r'] = Q[north_party + '_r'];
+    if (Q.constitutional_reform > 0) {
+        if (Q[north_party + '_votes'] < Q.electoral_threshold || (Q.electoral_threshold > 1 && north_party == 'other') || Q[north_party + '_banned']) {
+            Q[north_party + '_r'] = 0;
+        } else {
+            Q[north_party + '_r'] = Q[north_party + '_votes'];
+        }
+        new_north_party_sum += Q[north_party + '_r'];
+    } else {
+        Q[north_party + '_r'] = Q[north_party + '_votes'];
+    }
+    // if we use decimals, then we might want to truncate the numbers
+    if (Q.use_decimals) {
+        Q[north_party + '_r_disp'] = Q[north_party+'_r'].toFixed(1);
+    }  else {
+            Q[north_party + '_r_disp'] = Q[north_party+'_r'];
+    }
+    Q['change_' + north_party + '_r'] = Q[north_party + '_r'] - Q['old_' + north_party + '_r'];
+    var sign = Q['change_' + north_party + '_r'] > 0 ? '+'  : '';
+    Q['str_change_' + north_party] = sign + Q['change_' + north_party + '_r'];//.toFixed(1);
+}
+// calculate new north_party sum if electoral reform
+if (Q.electoral_threshold && Q.electoral_threshold > 0) {
+    for (var north_party of Q.north_parties) {
+        if (Q[north_party + '_r'] > 0) {
+            if (Q.use_decimals) {
+                Q[north_party + '_r'] = Math.round(Q[north_party + '_r']*1000/new_north_party_sum)/10;
+            } else {
+                Q[north_party + '_r'] = Math.round(Q[north_party + '_r']*100/new_north_party_sum);
+            }
+        }
+        if (Q.use_decimals) {
+            Q[north_party + '_r_disp'] = Q[north_party+'_r'].toFixed(1);
+        } else {
+            Q[north_party + '_r_disp'] = Q[north_party+'_r'];
+        }
+        Q['change_' + north_party + '_r'] = Q[north_party + '_r'] - Q['old_' + north_party + '_r'];
+        var sign = Q['change_' + north_party + '_r'] > 0 ? '+'  : '';
+        Q['str_change_' + north_party] = sign + Q['change_' + north_party + '_r'];//.toFixed(1);
+    }
+}
+
+// get change arrows and signs
+
+
