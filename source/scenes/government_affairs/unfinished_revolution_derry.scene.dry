@@ -15,7 +15,7 @@ If Free Derry is to last we must make preparations to defend the place. Currentl
 - @marching_up_creggan_road: Now we strike!
 
 @prepare_for_an_offensive
-view-if: prepare_take_north_west_derry <= 3
+view-if: prepare_take_north_west_derry <= 4
 on-arrival: prepare_take_north_west_derry += 1; inla_strength += 150
 
 Our preparations continue
