@@ -1,6 +1,6 @@
 title: Irish Citizen Army
 new-page: true
-subtitle: The Irish Citizen Army is Re-established
+subtitle: The Irish Citizen Army?
 view-if: (arm_civillians >= 5 and influence_in_irish_trade_union_movement >= 2 and ica_to_return == 0 and Matt_the_king = 1) or (influence_in_irish_trade_union_movement >= 4 and ica_to_return == 0 and Matt_the_king = 1)
 max-visits: 1
 on-arrival: ica_to_return = 1;
