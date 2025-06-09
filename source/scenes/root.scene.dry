@@ -205,7 +205,7 @@ Q.emergency_rule = 0;
 // minimum percentage of votes to be represented in the Reichstag
 Q.electoral_threshold = 0;
 // constitutional reform level
-Q.constitutional_reform = 0;
+Q.constitutional_reform = 1;
 // constructive vote of no confidence
 Q.constructive_vonc = 0;
 // reduction in presidential powers
