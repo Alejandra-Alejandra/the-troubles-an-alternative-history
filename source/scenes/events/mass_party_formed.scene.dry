@@ -1,0 +1,12 @@
+title: The Birth of a Mass Party
+new-page: true
+subtitle: And so a Mass party is born
+view-if: year = 1976 and month = 1 and left_is_united == 1 and IRs_in_party == 1 and Matt_the_king == 1 and (INLA_under_control == 1 or INLA_under_fullcontrol == 1)
+max-visits: 1
+face-image: img/James_Larkin.jpg
+tags: event
+on-arrival: Mass_party = 1
+
+= Building a Mass Party
+
+We have built a diverse party consisting of a coalition of traditionalist republicans, trade unionists, and elements of the communist left. We have redoubled on our efforts in the trade unions and our party's popularity begins to surge like never seen before.
