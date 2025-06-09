@@ -29,7 +29,7 @@ Over 20,0000 nationalists begin marching up Creggan road, and our forces take up
 
 - @ira_joins_us: Our comrades in the IRA join us.
 - @our_forces_march_alone: Our forces are alone.
-- @the_battle_begins: Onwards our forces march
+- @the_battle_shall_begin: Let us begin the battle now!
 
 @ira_joins_us
 view-if: Provisionals_relation >= 50
