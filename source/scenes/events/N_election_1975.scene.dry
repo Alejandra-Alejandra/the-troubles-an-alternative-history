@@ -14,13 +14,101 @@ set-jump: post_election_1975
 
 The Northern Ireland Constitutional Convention elections are to be held now. The election has been boycotted by most of the Republican movement including Sinn Féin and the IRSP. However, the Officials are participating in the elections, though given northern gerrymandering and spread of their votes they are unlikely to win any seats.
 
-The United Ulster Unionist Council opposes any power sharing agreement and comprises of the UUP, DUP and Vanguard. 
+The United Ulster Unionist Council opposes any power sharing agreement and comprises of the UUP, DUP and Vanguard and some independent unionists. 
 
 The pro-power sharing agreement parties are the SDLP representing the moderate nationalists, Alliance representing anti-sectarian unionism, and the old guard expelled from the UUP which has now formed the UPNI. 
 
 An assortment of other minor parties are also involved.
 
-- @NICC_algorithm: What a waste of taxpayer money...
+- @UUP: Leading the Ulster Unionist Council is the UUP.
+- @NICC_algorithm: Enough with the details, what were the results?
+
+@UUP
+face-image: img/Harry_west.jpg
+
+The UUP is led by Harry West, a former minister of Agriculture of Northern Ireland. He had the party whip withdrawn for his vociferous attacks upon the leadership of Terence O'Neill, the former UUP leader and moderate unionist.
+
+Last year Harry West ousted the old guard of the party led by Brian Faulkner. With the sharp turn to the right will the UUP be able to survive the rise of alternative Unionist parties?
+
+- @DUP: Closely following the UUP is the DUP.
+- @NICC_algorithm: Enough with the details, what were the results?
+
+@DUP:
+face-image: img/Ian_paisley.jpg
+
+The DUP was founded by Ian Paisley, a fundamentalist Protestant and unionist firebrand who opposes the rights of minorities, and Catholics. He supports the criminalisation of homosexuality, and violent attacks on Catholic civillians.
+
+Will the hardline DUP be able to stop power sharing?
+
+- @Vanguard: The final party in the UUUC is the Vanguard Unionist Progressive Party
+- @NICC_algorithm: Enough with the details, what were the results?
+
+@Vanguard
+face-image: img/William_craig.jpg
+
+The Vanguard Unionist Progressive Party was founded by William Craig. A staunch opponent of a United Ireland, William Craig has even floated the idea of an independent Ulster if necessary.
+
+The Vanguard movement has been described as the far-right wing of the Unionist movement and the attire of its members is deeply reminiscent by fascist movements in the past. William Craig has even told members of the Conservative party in the UK that if the British government were to sideline the interests of unionists in the North that "We are prepared to come out and shoot and kill. I am prepared to come out and shoot and kill."
+
+Will this eccentric party manage to gain much support?
+
+- @ILS: Also in the UUUC are a variety of independent Unionists.
+- @NICC_algorithm: Enough with the details, what were the results?
+
+@ILs
+face-image: img/Frank_millar.jpg
+
+Frank Millar is the most prominent of the independent unionists. A hardline protestant fundamentalist, racist and homophobe he has gained a large amount of support from Belfast North for his inflammatory language.
+
+- @UPNI: One party missing from the UUUC is the UPNI.
+- @NICC_algorithm: Enough with the details, what were the results?
+
+@UPNI
+face-image: img/Brian_faulkner.jpg
+
+The UPNI consists of the old guard expelled from the UUP centred around former prime-minister Brian Faulkner. Moderate unionists, they support a power sharing agreement with the Catholic community.
+
+Will the UPNI be able to ensure power sharing passes?
+
+- @Alliance: On the other end of unionism from the UUUC is Alliance
+- @NICC_algorithm: Enough with the details, what were the results?
+
+@Alliance
+face-image: img/Olivier_napier.jpg
+
+The Catholic Oliver Napier leads Alliance, the non-sectarian unionist party that is opposed to violent paramilitaries, and even supports a power-sharing agreement with the Catholics.
+
+Their stated aim is to build a prosperous Northern Ireland for both Catholic and Protestant alike. Will they be able to form a government towards this end?
+
+- @NILP: Similar to Alliance is the Northern Ireland Labour Party
+- @NICC_algorithm: Enough with the details, what were the results?
+
+@NILP
+face-image: img/Alan_carr.jpg
+
+The Northern Ireland Labour Party is led by an executive committee, but its leading voice is that of Alan Carr. The party was the leading voice of the Labour movement in the North until the Civil Rights Movement. It split over the Civil Rights Movement, with many of it's anti-unionist membership being expelled.
+
+Will this shell of a party even be able to secure a single seat?
+
+- @SDLP: The main nationalist party running in the election is the SDLP
+- @NICC_algorithm: Enough with the details, what were the results?
+
+@SDLP
+face-image: img/Gerry_fitt.jpg
+
+Leading the Social Democratic Labour Party is Gerry Fitt, a former leader of the Civil Rights Movement, and a moderate social democrat he seeks a power-sharing agreement that will have Catholics involved in running their own government.
+
+Will the SDLP be able to achieve this aim?
+
+- @Officials: The final nationalist party running in the election is Official Sinn Féin
+- @NICC_algorithm: Enough with the details, what were the results?
+
+@Officials
+face-image: img/Sean_garland.jpg
+
+Our old party that is more interested in running in elections than defending the Catholic community. Let's hope they do not even win a single seat.
+
+- @NICC_algorithm: Enough with the details, what were the results?
 
 @post_election_1975
 on-arrival: {!
