@@ -25,7 +25,7 @@ The INLA is our paramilitary organisation, highly trained and well armed we use 
 choose-if: resources >= INLA_militarization_cost
 unavailable-subtitle: Not enough resources ([+ INLA_militarization_cost +] needed).
 subtitle: -[+ INLA_militarization_cost +] resources
-on-arrival: resources -= inlaquipment_timer += 3; INLA_militarization_cost; inla_investment += 1; inla_strength += INLA_militarization_cost; inla_militancy += 0.05; has_BOV = 1 if inla_militancy >= 1.95;
+on-arrival: inlaquipment_timer += 3; resources -= INLA_militarization_cost; inla_investment += 1; inla_strength += INLA_militarization_cost; inla_militancy += 0.05; has_BOV = 1 if inla_militancy >= 1.95;
 
 The INLA conducts drills and buys new weapons. [? if inla_militancy >= 2 and has_BOV == 0: The INLA has managed to grab hold of a BTR-60! This is an incredible achievement for our forces. ?]
 
