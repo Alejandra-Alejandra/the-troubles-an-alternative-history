@@ -116,12 +116,6 @@ data = [
 ];
 data = data.concat([
     {
-        "id": "Officials",
-        "legend": "Officials",
-        "name": "Officials",
-        "seats": -1,
-    },
-    {
         "id": "SDLP",
         "legend": "SDLP",
         "name": "SDLP",
