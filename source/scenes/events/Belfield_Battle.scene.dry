@@ -1,0 +1,16 @@
+title: Battle of Belfield
+new-page: true
+subtitle: The Taoiseach Liam Cosgrave visits UCD...
+view-if: year = 1975 and month = 1 and Battle_bel == 0
+max-visits: 1
+on-arrival: Battle_bel = 1
+face-image: img/belfield_battle.jpg
+tags: event
+
+= The Taoiseach Liam Cosgrave visits the Belfield campus of UCD
+
+The leader of the free state Liam Cosgrave visited Belfield campus today to meet wealthy patrons of the University. The Student Union picketed the event due to a proposed fifty percent increase in fees.
+
+The event was going along peacefully though there was a disproportionately large garda presence, until the guards discovered two of their tyres had been deflated. In response, they decided to arrest some students and a massive riot broke out.
+
+While yesterday many students might have seen the guards as respectable defenders of the law, today that might no longer be the case.
