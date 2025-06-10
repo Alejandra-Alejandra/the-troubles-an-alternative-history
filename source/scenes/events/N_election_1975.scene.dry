@@ -12,7 +12,7 @@ set-jump: post_election_1975
 
 = Elections, [+ month : month +] [+ year +]
 
-The Northern Ireland Constitutional Convention elections are to be held now. The election has been boycotted by most of the Republican movement including Sinn Féin and the IRSP. However, the Officials are participating in the elections.
+The Northern Ireland Constitutional Convention elections are to be held now. The election has been boycotted by most of the Republican movement including Sinn Féin and the IRSP. However, the Officials are participating in the elections, though given northern gerrymandering and spread of their votes they are unlikely to win any seats.
 
 The United Ulster Unionist Council opposes any power sharing agreement and comprises of the UUP, DUP and Vanguard. 
 
@@ -201,3 +201,5 @@ if (window && d3) {
 {!<tr><td><div class="box" style='background-color:#FFD580'> </div> !} Vanguard(UUUC): {!</td><td>!} [+ Vanguard_r +]% {!</td><td>!} [+ str_change_Vanguard +] {!</td></tr>!}
 
 {!</table>!}
+
+[? if UUP_r + DUP_r + Vanguard_r > 50: The UUUC has won over 50% of the seats up for grabs. The Catholics will almost certainly have no role in government. ?]
