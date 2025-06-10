@@ -20,8 +20,6 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-Paramilitary Funding: [+ para_resources +]
-
 Internal dissent: [+ dissent_percent : dissent +]
 
 = Southern Government
