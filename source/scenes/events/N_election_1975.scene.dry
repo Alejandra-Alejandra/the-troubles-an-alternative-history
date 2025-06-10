@@ -100,7 +100,6 @@ for (var north_party of Q.north_parties) {
 Q.election_records.push(election_result);
 !}
 on-display: {!
-on-display: {!
 data = [
     {
         "id": "IRSP",
