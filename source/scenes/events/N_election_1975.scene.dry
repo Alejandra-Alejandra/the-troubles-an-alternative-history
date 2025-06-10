@@ -105,7 +105,7 @@ data = [
         "id": "IRs",
         "legend": "IRs",
         "name": "Independent Republicans",
-        "seats": Math.round(Q.IRs_r*5),
+        "seats": Math.round(Q.IRs_r*(78/100)),
     }
 ];
 data = data.concat([
@@ -113,43 +113,43 @@ data = data.concat([
         "id": "Officials",
         "legend": "Officials",
         "name": "Officials",
-        "seats": Math.round(Q.Officials_r*5),
+        "seats": Math.round(Q.Officials_r*(78/100)),
     },
     {
         "id": "SDLP",
         "legend": "SDLP",
         "name": "SDLP",
-        "seats": Math.round(Q.SDLP_r*5),
+        "seats": Math.round(Q.SDLP_r*(78/100)),
     },
     {
         "id": "alliance",
         "legend": "alliance",
         "name": "alliance",
-        "seats": Math.round(Q.alliance_r*5),
+        "seats": Math.round(Q.alliance_r*(78/100)),
     },
     {
         "id": "NILP",
         "legend": "NILP",
         "name": "NILP",
-        "seats": Math.round(Q.NILP_r*5),
+        "seats": Math.round(Q.NILP_r*(78/100)),
     },
     {
         "id": "UUP",
         "legend": "UUP",
         "name": "UUP",
-        "seats": Math.round(Q.UUP_r*5),
+        "seats": Math.round(Q.UUP_r*(78/100)),
     },
     {
         "id": "DUP",
         "legend": "DUP",
         "name": "DUP",
-        "seats": Math.round(Q.DUP_r*5),
+        "seats": Math.round(Q.DUP_r*(78/100)),
     },
     {
         "id": "Vanguard",
         "legend": "Vanguard",
         "name": "Vanguard",
-        "seats": Math.round(Q.Vanguard_r*5),
+        "seats": Math.round(Q.Vanguard_r*(78/100)),
     },
 ]);
 
