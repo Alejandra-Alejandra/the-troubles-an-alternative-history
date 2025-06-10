@@ -457,7 +457,7 @@ Q.north_rich_Vanguard = 1;
 Q.north_rich_FG = 0;
 Q.north_rich_FF = 0;
 Q.north_rich_Labour = 0;
-Q.north_unemployed_UP_NI = 28;
+Q.north_rich_UP_NI = 28;
 
 Q.workers_IRSP = 1.5;
 Q.workers_Officials  = 2.5;
