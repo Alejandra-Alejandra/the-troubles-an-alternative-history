@@ -19,6 +19,7 @@ max-cards: 3
 - @party
 - @govt
 - @paramilitary
+- @student
 - @calendar
 - #advisor
 
@@ -43,6 +44,7 @@ max-cards: 4
 - @party
 - @govt
 - @paramilitary
+- @student
 - @calendar
 - #advisor
 
@@ -68,6 +70,12 @@ card-image: img/INLALogo123.png
 is-deck: true
 
 - #para_affairs
+
+@student
+title: Student Affairs
+view-if: left_is_united = 1
+card-image: img/ucd.jpg
+is-deck: true
 
 @calendar
 title: End Month
