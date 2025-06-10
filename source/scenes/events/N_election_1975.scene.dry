@@ -6,8 +6,6 @@ view-if: (year = 1975 and month == 5)
 max-visits: 1
 set-jump: post_election_1975
 
-# TODO: should there be an image?
-
 # the low priority means that this event is only seen after all other events are resolved for the month.
 
 = Elections, [+ month : month +] [+ year +]
