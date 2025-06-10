@@ -16,13 +16,13 @@ function addMonths(date, months) {
 d3.linegraph = function(noTicks, noDots, north_parties, north_partyColors, north_partyNames, dataMax, dataMin, additionalMonths) {
     /* params */
     if (!north_parties) {
-        north_parties = ['IRSP', 'Provisionals', 'Officials', 'IRs', 'SDLP', 'alliance', 'NILP', 'UUP', 'DUP', 'Vanguard'];
+        north_parties = ['IRSP', 'Provisionals', 'Officials', 'IRs', 'SDLP', 'alliance', 'NILP', 'UUP', 'DUP', 'Vanguard', 'UP_NI'];
     }
     if (!north_partyColors) {
-        north_partyColors = {'IRSP': '#FF7F7F', 'Provisionals': '#008000', 'Officials': '#CC3333', 'IRs': '#90bc7c', 'SDLP': '#98FB98', 'alliance': '#FFFF00', 'NILP': '#FFC0CB', 'UUP': '#C17E5A', 'DUP': '#FFA500', 'Vanguard': '#FFD580'};
+        north_partyColors = {'IRSP': '#FF7F7F', 'Provisionals': '#008000', 'Officials': '#CC3333', 'IRs': '#90bc7c', 'SDLP': '#98FB98', 'alliance': '#FFFF00', 'NILP': '#FFC0CB', 'UUP': '#C17E5A', 'DUP': '#FFA500', 'Vanguard': '#FFD580', 'UP_NI': '#ffcc66'};
     }
     if (!north_partyNames) {
-        north_partyNames = {'IRSP': 'IRSP', 'Provisionals': 'Provisionals', 'Officials': 'Officials', 'IRs': 'Independent Republicans', 'SDLP': 'SDLP', 'alliance': 'Alliance', 'NILP': 'NILP', 'UUP': 'UUP', 'DUP': 'DUP', 'Vanguard': 'Vanguard'};
+        north_partyNames = {'IRSP': 'IRSP', 'Provisionals': 'Provisionals', 'Officials': 'Officials', 'IRs': 'Independent Republicans', 'SDLP': 'SDLP', 'alliance': 'Alliance', 'NILP': 'NILP', 'UUP': 'UUP', 'DUP': 'DUP', 'Vanguard': 'Vanguard', 'UP_NI': 'Unionist Party of Northern Ireland'};
     }
     if (!additionalMonths) {
         additionalMonths = 10;
