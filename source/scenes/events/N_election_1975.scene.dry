@@ -198,7 +198,7 @@ data = [
         "id": "SDLP",
         "legend": "SDLP",
         "name": "SDLP",
-        "seats": Math.round(Q.SDLP_r*(78/100))-1,
+        "seats": Math.round(Q.SDLP_r*(78/100)-1),
     }
 ];
 data = data.concat([
@@ -242,7 +242,7 @@ data = data.concat([
         "id": "ILs",
         "legend": "ILs",
         "name": "Independent Unionists",
-        "seats": Math.round(Q.ILs_r**(78/100))+1,
+        "seats": Math.round(Q.ILs_r**(78/100)+1),
     },
 ]);
 
