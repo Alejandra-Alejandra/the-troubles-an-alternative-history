@@ -264,7 +264,7 @@ if (window && d3) {
 }
 !}
 
-= Election results (WIP)
+= Election results 
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
