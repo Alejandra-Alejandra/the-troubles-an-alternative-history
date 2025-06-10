@@ -12,7 +12,7 @@ set-jump: post_election_1975
 
 = Elections, [+ month : month +] [+ year +]
 
-The Northern Ireland Constitutional Convention elections are to be held now. The election has been boycotted by most of the Republican movement including Sinn Féin and the IRSP. However, the Officials and some independents are participating in the elections.
+The Northern Ireland Constitutional Convention elections are to be held now. The election has been boycotted by most of the Republican movement including Sinn Féin and the IRSP. However, the Officials are participating in the elections.
 
 The United Ulster Unionist Council opposes any power sharing agreement and comprises of the UUP, DUP and Vanguard. 
 
@@ -108,19 +108,13 @@ Q.election_records.push(election_result);
 on-display: {!
 data = [
     {
-        "id": "IRs",
-        "legend": "IRs",
-        "name": "Independent Republicans",
-        "seats": Math.round((1/3)*Q.IRs_r*(78/100)),
-    }
-];
-data = data.concat([
-    {
         "id": "SDLP",
         "legend": "SDLP",
         "name": "SDLP",
         "seats": Math.round(Q.SDLP_r*(78/100)),
-    },
+    }
+];
+data = data.concat([
     {
         "id": "alliance",
         "legend": "alliance",
