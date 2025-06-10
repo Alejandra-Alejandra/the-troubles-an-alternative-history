@@ -362,6 +362,7 @@ Q.catholic_middle_rural_UP_NI = 2.5;
 Q.catholic_middle_urban_IRSP = 1;
 Q.catholic_middle_urban_Officials  = 2;
 Q.catholic_middle_urban_IRs = 4;
+Q.catholic_middle_urban_ILs = 0;
 Q.catholic_middle_urban_Provisionals = 25;
 Q.catholic_middle_urban_SDLP = 47;
 Q.catholic_middle_urban_alliance = 8;
