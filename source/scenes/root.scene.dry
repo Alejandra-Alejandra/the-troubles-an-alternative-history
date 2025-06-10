@@ -593,6 +593,7 @@ Q.old_Provisionals_r = 0;
 Q.old_Officials_r = 0;
 Q.old_IRs_r = 0;
 Q.old_UP_NI_r = 0;
+Q.old_ILs = 0;
 
 Q.in_right_coalition = 0;
 // Weimar coalition = SPD + Z + DDP
