@@ -2,9 +2,9 @@ title: INLA
 new-page: true
 is-card: true
 tags: para_affairs
-view-if: inlaquipment == 0
+view-if: inlaquipment_timer == 0
 card-image: img/inlatrain.jpg
-on-arrival: inlaquipment += 3; INLA_timer += 3; INLA_militarization_cost = 2 if inla_militancy > 0.1 else INLA_militarization_cost = 1; INLA_militarization_cost = 3 if inla_militancy > 0.25; robbery_true +=1;
+on-arrival: inlaquipment_timer += 3; INLA_militarization_cost = 2 if inla_militancy > 0.1 else INLA_militarization_cost = 1; INLA_militarization_cost = 3 if inla_militancy > 0.25; robbery_true +=1;
 max-visits: 1000000
 #subtitle: Paramilitary organizing 
 
