@@ -198,7 +198,7 @@ data = [
         "id": "SDLP",
         "legend": "SDLP",
         "name": "SDLP",
-        "seats": Math.round(Q.SDLP_r*(78/100)),
+        "seats": Math.round(Q.SDLP_r*(78/100))-1,
     }
 ];
 data = data.concat([
@@ -242,7 +242,7 @@ data = data.concat([
         "id": "ILs",
         "legend": "ILs",
         "name": "Independent Unionists",
-        "seats": Math.round(Q.ILs_r**(78/100)),
+        "seats": Math.round(Q.ILs_r**(78/100))+1,
     },
 ]);
 
@@ -293,7 +293,9 @@ if (window && d3) {
 
 {!<tr><td><div class="box" style='background-color:#FFD580'> </div> !} Vanguard (UUUC): {!</td><td>!} [+ Vanguard_r +]% {!</td><td>!} [+ str_change_Vanguard +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#eae374'> </div> !} Independent Unionists (UUUC): {!</td><td>!} [+ ILs_r +]% {!</td><td>!} [+ str_change_ILs +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#eae374'> </div> !} Independent Unionists (UUUC): {!</td><td>!} [+ ((2/3)*ILs_r) +]% {!</td><td>!} [+ str_change_ILs +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#eae374'> </div> !} Independent Unionists (Non-UUUC): {!</td><td>!} [+ ((1/3)*ILs_r)  +]% {!</td><td>!} [+ str_change_ILs +] {!</td></tr>!}
 
 {!</table>!}
 
