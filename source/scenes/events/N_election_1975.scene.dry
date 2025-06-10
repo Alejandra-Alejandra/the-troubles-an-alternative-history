@@ -100,12 +100,13 @@ for (var north_party of Q.north_parties) {
 Q.election_records.push(election_result);
 !}
 on-display: {!
+on-display: {!
 data = [
     {
         "id": "IRSP",
         "legend": "IRSP",
         "name": "IRSP",
-        "seats": [0 if IRSP_banned == 1][Math.round(Q.IRSP_r*5) if IRSP_banned == 0],
+        "seats": Q.IRSP_banned == 1 ? 0 : Math.round(Q.IRSP_r*5),
     }
 ];
 data = data.concat([
@@ -113,13 +114,13 @@ data = data.concat([
         "id": "Provisionals",
         "legend": "Provisionals",
         "name": "Provisionals",
-        "seats": [0 if Provisionals_banned == 1][Math.round(Q.Provisionals_r*5) if Provisionals_banned == 0],
+        "seats": Q.Provisionals_banned == 1 ? 0 : Math.round(Q.Provisionals_r*5),
     },
     {
         "id": "Officials",
         "legend": "Officials",
         "name": "Officials",
-        "seats": [0 if Officials_banned == 1][Math.round(Q.Officials_r*5) if Officials_banned == 0],
+        "seats": Q.Officials_banned == 1 ? 0 : Math.round(Q.Officials_r*5),
     },
     {
         "id": "IRs",
