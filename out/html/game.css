@@ -542,6 +542,9 @@ table {
 .seat.Provisionals {
     fill: #008000;
 }
+.seat.ILs {
+    fill: #eae374,
+}
 .seat.UP_NI {
     fill: #ffcc66;
 }
