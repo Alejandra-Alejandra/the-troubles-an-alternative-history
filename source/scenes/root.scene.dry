@@ -116,6 +116,7 @@ Q.SDLP_relation = 10;
 Q.UUP_relation = 0;
 Q.DUP_relation = 0;
 Q.Vanguard_relation = 0;
+Q.UP_NI_relation = 0;
 Q.FG_relation = 0;
 Q.FF_relation = 10;
 Q.Labour_relation = 10;
