@@ -46,24 +46,30 @@ for (var north_party of Q.north_parties) {
     Q['str_change_' + north_party] = sign + Q['change_' + north_party + '_r'];//.toFixed(1);
 }
 // calculate new north_party sum if electoral reform
-if (Q.electoral_threshold && Q.electoral_threshold > 0) {
+// Normalize remaining (unbanned + valid) parties proportionally so they sum to 100%
+if (Q.electoral_threshold && Q.electoral_threshold > 0 && new_north_party_sum > 0) {
     for (var north_party of Q.north_parties) {
         if (Q[north_party + '_r'] > 0) {
+            let scaled = Q[north_party + '_r'] * 100 / new_north_party_sum;
             if (Q.use_decimals) {
-                Q[north_party + '_r'] = Math.round(Q[north_party + '_r']*1000/new_north_party_sum)/10;
+                Q[north_party + '_r'] = Math.round(scaled * 10) / 10;
             } else {
-                Q[north_party + '_r'] = Math.round(Q[north_party + '_r']*100/new_north_party_sum);
+                Q[north_party + '_r'] = Math.round(scaled);
             }
-        }
-        if (Q.use_decimals) {
-            Q[north_party + '_r_disp'] = Q[north_party+'_r'].toFixed(1);
         } else {
-            Q[north_party + '_r_disp'] = Q[north_party+'_r'];
+            Q[north_party + '_r'] = 0;
         }
-        console.log(north_party, Q[north_party + '_r'], Q['old_' + north_party + '_r']);
+
+        // Update display and change strings
+        if (Q.use_decimals) {
+            Q[north_party + '_r_disp'] = Q[north_party + '_r'].toFixed(1);
+        } else {
+            Q[north_party + '_r_disp'] = Q[north_party + '_r'];
+        }
+
         Q['change_' + north_party + '_r'] = Q[north_party + '_r'] - Q['old_' + north_party + '_r'];
-        var sign = Q['change_' + north_party + '_r'] > 0 ? '+'  : '';
-        Q['str_change_' + north_party] = sign + Q['change_' + north_party + '_r'];//.toFixed(1);
+        var sign = Q['change_' + north_party + '_r'] > 0 ? '+' : '';
+        Q['str_change_' + north_party] = sign + Q['change_' + north_party + '_r'];
     }
 }
 
