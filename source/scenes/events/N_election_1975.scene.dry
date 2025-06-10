@@ -110,6 +110,12 @@ data = [
 ];
 data = data.concat([
     {
+        "id": "Officials",
+        "legend": "Officials",
+        "name": "Officials",
+        "seats": Math.round(Q.Officials_r*5),
+    },
+    {
         "id": "SDLP",
         "legend": "SDLP",
         "name": "SDLP",
