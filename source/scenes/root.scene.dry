@@ -343,7 +343,7 @@ Q.catholic_middle_rural_IRSP = 0.5;
 Q.catholic_middle_rural_Officials  = 2;
 Q.catholic_middle_rural_IRs = 5;
 Q.catholic_middle_rural_Provisionals = 25;
-Q.catholic_middle_rural_SDLP = 35;
+Q.catholic_middle_rural_SDLP = 32;
 Q.catholic_middle_rural_alliance = 8;
 Q.catholic_middle_rural_NILP = 1;
 Q.catholic_middle_rural_UUP = 0;
@@ -352,7 +352,7 @@ Q.catholic_middle_rural_Vanguard = 0;
 Q.catholic_middle_rural_FG = 0;
 Q.catholic_middle_rural_FF = 0;
 Q.catholic_middle_rural_Labour = 0;
-Q.catholic_middle_rural_UP_NI = 2;
+Q.catholic_middle_rural_UP_NI = 2.5;
 
 Q.catholic_middle_urban_IRSP = 1;
 Q.catholic_middle_urban_Officials  = 2;
