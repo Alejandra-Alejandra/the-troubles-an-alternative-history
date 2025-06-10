@@ -1,0 +1,43 @@
+title: Campaigning amongst students
+new-page: true
+view-if: year >= 1976 and SU_campaign_timer == 0
+tags: party_affairs
+is-card: true
+on-arrival: month_actions += 0; SU_campaign_timer = 2
+card-image: img/studentcampaign.jpg
+max-visits: 100000
+#subtitle: How will we build our support amongst students?
+
+= Reaching Across the Aisle
+
+The IRSP if it wishes to establish a 32 county republic must build support amongst the students.
+
+- @contraception: Hand out leaflets about contraception.
+- @republic: Hand out leaflets arguing for the establishment of a 32 county worker's republic.
+- @homosexual_rights: Hand out leaflets arguing for homosexual rights.
+
+
+
+@contraception
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1
+
+WIP: To Do
+
+@republic
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1
+
+WIP: To Do
+
+@homosexual_rights
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1
+
+WIP: To Do
