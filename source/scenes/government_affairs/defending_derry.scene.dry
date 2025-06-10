@@ -29,7 +29,7 @@ We have successfully recruited more men to help in the defence of Free Derry.
 @increase_intel
 on-arrival: derry_intel +=2 if derry_intel <=6;
 
-We have worked on developing an intelligence network all across the city to help us understand British troop movements.
+We have worked on developing an intelligence network all across the city to help us understand British troop movements.[? if derry_intel <=4: We have fully developed our intelligence network. Any further developments will provide little to no benefit. ?]
 
 
 
