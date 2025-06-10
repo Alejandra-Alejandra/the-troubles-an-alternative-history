@@ -55,27 +55,27 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Ulster Unionist Party">UUP</span>!}: [+ uup_relation : relationships +]
+{!<span class="tooltip-text" title="Ulster Unionist Party">UUP</span>!}: [+ UUP_relation : relationships +]
 
-{!<span class="tooltip-text" title="Democratic Unionist Party">UDA</span>!}: [+ dup_relation : relationships +]
+{!<span class="tooltip-text" title="Unionist Party of Northern Ireland">LB</span>!}: [+ UP_NI_relation : relationships +]
 
-{!<span class="tooltip-text" title="Vanguard">Vanguard</span>!}: [+ vanguard_relation : relationships +]
+{!<span class="tooltip-text" title="Democratic Unionist Party">UDA</span>!}: [+ DUP_relation : relationships +]
 
-{!<span class="tooltip-text" title="Social Democratic Labour Party">SDLP</span>!}: [+ sdlp_relation : relationships +]
+{!<span class="tooltip-text" title="Vanguard">Vanguard</span>!}: [+ Vanguard_relation : relationships +]
+
+{!<span class="tooltip-text" title="Social Democratic Labour Party">SDLP</span>!}: [+ SDLP_relation : relationships +]
 
 {!<span class="tooltip-text" title="Alliance">Alliance</span>!}: [+ alliance_relation : relationships +]
 
-{!<span class="tooltip-text" title="Provisional Sinn Féin">Provisionals</span>!}: [+ psf_relation : relationships +]
+{!<span class="tooltip-text" title="Provisional Sinn Féin">Provisionals</span>!}: [+ Provisionals_relation : relationships +]
 
-{!<span class="tooltip-text" title="Official Sinn Féin">Officials</span>!}: [+ psf_relation : relationships +]
+{!<span class="tooltip-text" title="Official Sinn Féin">Officials</span>!}: [+ Officials_relation : relationships +]
 
-{!<span class="tooltip-text" title="Fianna Fáil">FF</span>!}: [+ ff_relation : relationships +]
+{!<span class="tooltip-text" title="Fianna Fáil">FF</span>!}: [+ FF_relation : relationships +]
 
-{!<span class="tooltip-text" title="Fine Gael">FG</span>!}: [+ fg_relation : relationships +]
+{!<span class="tooltip-text" title="Fine Gael">FG</span>!}: [+ FG_relation : relationships +]
 
-{!<span class="tooltip-text" title="Labour Party">LB</span>!}: [+ lb_relation : relationships +]
-
-{!<span class="tooltip-text" title="The Groups of the New Left">NL</span>!}: [+ lb_relation : relationships +]
+{!<span class="tooltip-text" title="Labour Party">LB</span>!}: [+ Labour_relation : relationships +]
 
 = Internal Factions of the IRSP
 
