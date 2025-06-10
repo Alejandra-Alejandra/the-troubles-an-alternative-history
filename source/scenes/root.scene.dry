@@ -322,7 +322,7 @@ Q.protestant_workers_Vanguard = 22;
 Q.protestant_workers_FG = 0;
 Q.protestant_workers_FF = 0;
 Q.protestant_workers_Labour = 0;
-Q.protestant_workers_UP_NI = 5;
+Q.protestant_workers_UP_NI = 6;
 
 Q.other_workers_IRSP = 2;
 Q.other_workers_Officials  = 4;
@@ -391,13 +391,13 @@ Q.protestant_middle_urban_Provisionals = 2;
 Q.protestant_middle_urban_SDLP = 6;
 Q.protestant_middle_urban_alliance = 18;
 Q.protestant_middle_urban_NILP = 2;
-Q.protestant_middle_urban_UUP = 54;
+Q.protestant_middle_urban_UUP = 50;
 Q.protestant_middle_urban_DUP = 20;
 Q.protestant_middle_urban_Vanguard = 10;
 Q.protestant_middle_urban_FG = 0;
 Q.protestant_middle_urban_FF = 0;
 Q.protestant_middle_urban_Labour = 0;
-Q.protestant_middle_urban_UP_NI = 14;
+Q.protestant_middle_urban_UP_NI = 19;
 
 Q.catholic_poor_rural_IRSP = 1;
 Q.catholic_poor_rural_Officials  = 2;
