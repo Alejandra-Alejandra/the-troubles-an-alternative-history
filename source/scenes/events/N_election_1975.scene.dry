@@ -12,7 +12,13 @@ set-jump: post_election_1975
 
 = Elections, [+ month : month +] [+ year +]
 
-The Northern Ireland Constitutional Convention elections are to be held now.
+The Northern Ireland Constitutional Convention elections are to be held now. The election has been boycotted by most of the Republican movement including Sinn Féin and the IRSP. However, the Officials and some independents are participating in the elections.
+
+The United Ulster Unionist Council opposes any power sharing agreement and comprises of the UUP, DUP and Vanguard. 
+
+The pro-power sharing agreement parties are the SDLP representing the moderate nationalists, Alliance representing anti-sectarian unionism, and the old guard expelled from the UUP which has now formed the UPNI. 
+
+An assortment of other minor parties are also involved.
 
 - @NICC_algorithm: What a waste of taxpayer money...
 
@@ -198,12 +204,12 @@ if (window && d3) {
 
 {!<tr><td><div class="box" style='background-color:#FFC0CB'> </div> !} NILP: {!</td><td>!} [+ NILP_r +]% {!</td><td>!} [+ str_change_NILP +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#C17E5A'> </div> !} UUP: {!</td><td>!} [+ UUP_r +]% {!</td><td>!} [+ str_change_UUP +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#C17E5A'> </div> !} UUP(UUUC): {!</td><td>!} [+ UUP_r +]% {!</td><td>!} [+ str_change_UUP +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#ffcc66'> </div> !} UPNI: {!</td><td>!} [+ UP_NI_r +]% {!</td><td>!} [+ str_change_UP_NI +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#FFA500'> </div> !} DUP: {!</td><td>!} [+ DUP_r +]% {!</td><td>!} [+ str_change_DUP +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FFA500'> </div> !} DUP(UUUC): {!</td><td>!} [+ DUP_r +]% {!</td><td>!} [+ str_change_DUP +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#FFD580'> </div> !} Vanguard: {!</td><td>!} [+ Vanguard_r +]% {!</td><td>!} [+ str_change_Vanguard +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FFD580'> </div> !} Vanguard(UUUC): {!</td><td>!} [+ Vanguard_r +]% {!</td><td>!} [+ str_change_Vanguard +] {!</td></tr>!}
 
 {!</table>!}
