@@ -77,6 +77,8 @@ view-if: left_is_united = 1
 card-image: img/ucd.jpg
 is-deck: true
 
+- #student_affairs
+
 @calendar
 title: End Month
 card-image: img/calendar.jpg
