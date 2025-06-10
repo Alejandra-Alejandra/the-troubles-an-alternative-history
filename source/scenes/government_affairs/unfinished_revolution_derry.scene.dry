@@ -50,7 +50,7 @@ There are 10 enemy tanks and our intel estimates around 2000 British troops stat
 - @force_collapses: And so the battle begins...
 
 @the_battle_begins
-view-if: derry_deploy*(ica_militancy) + inla_strength*(inla_militancy)*3 + PIRA_militancy*2000*ira_helping*2 >= 2000*(BAF_strength)
+view-if: derry_deploy*(ica_militancy) + inla_strength*(inla_militancy)*3 + PIRA_militancy*2000*ira_helping*2 >= 2000*(BAF_strength) + 100*enemy_tanks
 on-arrival: PIRA_strength +=1000*ira_helping; inla_strength += 1500; catholic_workers_IRSP += 5
 
 The 20,000 nationalists march up Creggan road and start throwing stones at the British army. [? if ica_returns = 1: Segments mobilise to disperse the crowd, but ICA soldiers open fire. ?] During the chaos, our volunteers take up key positions around the city. The British are lured in and suddenly a hail of bullets fall upon their men. An entire battalion is decimated. The rest of the British troops pile in, and the westside devolves into street to street fighting at every corner. After what feels like days, the sun begins to shine upon Derry again over the countless dead. The British have been beaten back. What has occurred today is unprecedented. The proud British army has been defeated in head to head battle... Things will not be the same.
