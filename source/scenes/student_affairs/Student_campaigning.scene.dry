@@ -1,7 +1,7 @@
 title: Campaigning amongst students
 new-page: true
 view-if: year >= 1976 and SU_campaign_timer == 0
-tags: party_affairs
+tags: student_affairs
 is-card: true
 on-arrival: month_actions += 0; SU_campaign_timer = 2
 card-image: img/studentcampaign.jpg
