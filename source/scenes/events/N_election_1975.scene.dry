@@ -178,7 +178,7 @@ if (window && d3) {
 
 {!<tr><td><div class="box" style='background-color:#CC3333'> </div> !} Officials: {!</td><td>!} [+ Officials_r +]% {!</td><td>!} [+ str_change_Officials +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#90EE90'> </div> !} Independent Republicans: {!</td><td>!} [+ IRs_r +]% {!</td><td>!} [+ str_change_IRs +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#90bc7c'> </div> !} Independent Republicans: {!</td><td>!} [+ IRs_r +]% {!</td><td>!} [+ str_change_IRs +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#98FB98'> </div> !} SDLP: {!</td><td>!} [+ SDLP_r +]% {!</td><td>!} [+ str_change_SDLP +] {!</td></tr>!}
 
