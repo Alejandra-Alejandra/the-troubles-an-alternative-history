@@ -105,7 +105,7 @@ data = [
         "id": "IRSP",
         "legend": "IRSP",
         "name": "IRSP",
-        "seats": Math.round(Q.IRSP_r*5),
+        "seats": Q.IRSP_banned == 1 ? 0 : Math.round(Q.IRSP_r*5),
     }
 ];
 data = data.concat([
@@ -113,14 +113,15 @@ data = data.concat([
         "id": "Provisionals",
         "legend": "Provisionals",
         "name": "Provisionals",
-        "seats": Math.round(Q.Provisionals_r*5),
+        "seats": Q.Provisionals_banned == 1 ? 0 : Math.round(Q.Provisionals_r*5),
     },
     {
         "id": "Officials",
         "legend": "Officials",
         "name": "Officials",
-        "seats": Math.round(Q.Officials_r*5),
+        "seats": Q.Officials_banned == 1 ? 0 : Math.round(Q.Officials_r*5),
     },
+!}
     {
         "id": "IRs",
         "legend": "IRs",
