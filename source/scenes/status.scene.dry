@@ -57,7 +57,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Ulster Unionist Party">UUP</span>!}: [+ UUP_relation : relationships +]
 
-{!<span class="tooltip-text" title="Unionist Party of Northern Ireland">LB</span>!}: [+ UP_NI_relation : relationships +]
+{!<span class="tooltip-text" title="Unionist Party of Northern Ireland">UPNI</span>!}: [+ UP_NI_relation : relationships +]
 
 {!<span class="tooltip-text" title="Democratic Unionist Party">UDA</span>!}: [+ DUP_relation : relationships +]
 
