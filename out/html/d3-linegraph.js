@@ -19,7 +19,7 @@ d3.linegraph = function(noTicks, noDots, north_parties, north_partyColors, north
         north_parties = ['IRSP', 'Provisionals', 'Officials', 'IRs', 'SDLP', 'alliance', 'NILP', 'UUP', 'DUP', 'Vanguard'];
     }
     if (!north_partyColors) {
-        north_partyColors = {'IRSP': '#FF7F7F', 'Provisionals': '#008000', 'Officials': '#CC3333', 'IRs': '#90EE90', 'SDLP': '#98FB98', 'alliance': '#FFFF00', 'NILP': '#FFC0CB', 'UUP': '#C17E5A', 'DUP': '#FFA500', 'Vanguard': '#FFD580'};
+        north_partyColors = {'IRSP': '#FF7F7F', 'Provisionals': '#008000', 'Officials': '#CC3333', 'IRs': '#90bc7c', 'SDLP': '#98FB98', 'alliance': '#FFFF00', 'NILP': '#FFC0CB', 'UUP': '#C17E5A', 'DUP': '#FFA500', 'Vanguard': '#FFD580'};
     }
     if (!north_partyNames) {
         north_partyNames = {'IRSP': 'IRSP', 'Provisionals': 'Provisionals', 'Officials': 'Officials', 'IRs': 'Independent Republicans', 'SDLP': 'SDLP', 'alliance': 'Alliance', 'NILP': 'NILP', 'UUP': 'UUP', 'DUP': 'DUP', 'Vanguard': 'Vanguard'};
