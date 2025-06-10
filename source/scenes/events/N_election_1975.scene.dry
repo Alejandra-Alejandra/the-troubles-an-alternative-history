@@ -128,6 +128,12 @@ data = data.concat([
         "seats": Math.round(Q.alliance_r*(78/100)),
     },
     {
+        "id": "UP_NI",
+        "legend": "UP_NI",
+        "name": "Unionist Party of Northern Ireland",
+        "seats": Math.round(Q.UP_NI_r*(78/100)),
+    },
+    {
         "id": "NILP",
         "legend": "NILP",
         "name": "NILP",
@@ -193,7 +199,9 @@ if (window && d3) {
 {!<tr><td><div class="box" style='background-color:#FFC0CB'> </div> !} NILP: {!</td><td>!} [+ NILP_r +]% {!</td><td>!} [+ str_change_NILP +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#C17E5A'> </div> !} UUP: {!</td><td>!} [+ UUP_r +]% {!</td><td>!} [+ str_change_UUP +] {!</td></tr>!}
- 
+
+{!<tr><td><div class="box" style='background-color:#ffcc66'> </div> !} UPNI: {!</td><td>!} [+ UP_NI_r +]% {!</td><td>!} [+ str_change_UP_NI +] {!</td></tr>!}
+
 {!<tr><td><div class="box" style='background-color:#FFA500'> </div> !} DUP: {!</td><td>!} [+ DUP_r +]% {!</td><td>!} [+ str_change_DUP +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#FFD580'> </div> !} Vanguard: {!</td><td>!} [+ Vanguard_r +]% {!</td><td>!} [+ str_change_Vanguard +] {!</td></tr>!}
