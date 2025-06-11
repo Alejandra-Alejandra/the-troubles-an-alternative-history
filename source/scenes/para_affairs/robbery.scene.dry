@@ -32,5 +32,5 @@ on-arrival: resources += 5
 We have retrieved a small amount of funds, WIP: the locals in Waterford are aggravated, but luckily this will not make national headlines.
 
 @no
-choose-if: INLA_relation >= 90 and (INLA_under_fullcontrol = 1 or INLA_under_control = 1)
+choose-if: INLA_relation >= 75 and (INLA_under_fullcontrol = 1 or INLA_under_control = 1)
 unavailable-subtitle: You need either more control over the INLA, or better relations with it.
