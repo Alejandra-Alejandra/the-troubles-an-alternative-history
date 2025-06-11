@@ -103,7 +103,7 @@ data = [
         "id": "FG",
         "legend": "FG",
         "name": "Fine Gael",
-        "seats": Math.round(Q.FG_l*(148/100)),
+        "seats": Math.round(Q.FG_l*(148/100))+Math.round(Q.Officials_l*(148/100)),
     }
 ];
 data = data.concat([
