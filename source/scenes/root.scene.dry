@@ -519,7 +519,7 @@ Q.urban_middle_DUP = 0;
 Q.urban_middle_Vanguard = 0;
 Q.urban_middle_FG = 34;
 Q.urban_middle_FF = 29;
-Q.urban_middle_Labour = 25;
+Q.urban_middle_Labour = 10;
 Q.urban_middle_UP_NI = 0;
 Q.urban_middle_INDs = 1;
 
@@ -587,7 +587,7 @@ Q.unemployed_DUP = 0;
 Q.unemployed_Vanguard = 0;
 Q.unemployed_FG = 10;
 Q.unemployed_FF = 21;
-Q.unemployed_Labour = 45;
+Q.unemployed_Labour = 28;
 Q.unemployed_UP_NI = 0;
 Q.unemployed_INDs = 0.1;
 
