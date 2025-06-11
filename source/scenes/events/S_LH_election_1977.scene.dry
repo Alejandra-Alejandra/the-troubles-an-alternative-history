@@ -48,9 +48,11 @@ if (Q.electoral_threshold && Q.electoral_threshold > 0) {
     for (var party of Q.parties) {
         if (Q[party + '_l'] > 0) {
             if (Q.use_decimals) {
-                Q[party + '_l'] = Math.round(Q[party + '_l']*1000/new_party_sum)/10;
+                Q[party + '_l'] = (Q[party + '_l'] * 1000 / new_party_sum);
+                Q[party + '_l'] = Math.round(Q[party + '_l'] * 1000) / 1000; 
             } else {
-                Q[party + '_l'] = Math.round(Q[party + '_l']*100/new_party_sum);
+                Q[party + '_l'] = (Q[party + '_l'] * 100 / new_party_sum);
+                Q[party + '_l'] = Math.round(Q[party + '_l'] * 100) / 100; 
             }
         }
         if (Q.use_decimals) {
