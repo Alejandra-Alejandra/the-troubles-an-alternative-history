@@ -1,0 +1,13 @@
+title: The Irish Anti-Apartheid Movement is formed
+new-page: true
+view-if: year == 1977 and month == 1
+tags: event
+is-card: true
+face-image: kader_asmal
+max-visits: 1
+
+= The Irish Anti-Apartheid Movement is formed
+  
+Kader Asmal, a lecturer in Trinity College DUblin, along with his associates in Dublin have founded the Irish Anti-Apartheid Movement.
+
+The goal of the organisation is to cut all ties between the Irish state and Apartheid South Africa to force the regime there to grant rights to its Black citizens.
