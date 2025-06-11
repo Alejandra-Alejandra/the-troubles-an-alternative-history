@@ -1,0 +1,34 @@
+title: Formulating Student Consciousness 
+new-page: true
+view-if: year >= 1976 and SU_campaign_timer == 0
+tags: student_affairs
+is-card: true
+on-arrival: month_actions += 0; SU_meeting_timer = 1
+card-image: img/ncad.jpg
+max-visits: 100000
+#subtitle: What should our student branches meet and discuss this month?
+
+= Formulating Student Consciousness
+
+What should our student branches meet and discuss this month?
+
+- @sexual_liberation: Discuss sexual liberation and women's rights.
+- @republic: Discuss the writings of James Connolly about a worker's republic.
+- @worker_rights: Hand out leaflets arguing for homosexual rights.
+
+
+
+@sexual_liberation
+on-arrival: student_pro_secular += 0.1*pro_secular
+
+WIP: To Do
+
+@republic
+on-arrival: student_pro_republic += 0.01*pro_republic
+
+WIP: To Do
+
+@homosexual_rights
+on-arrival: student_pro_socialism += 0.03*pro_socialism
+
+WIP: To Do
