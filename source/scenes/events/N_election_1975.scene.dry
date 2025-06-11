@@ -129,14 +129,14 @@ for (var north_party of Q.north_parties) {
     }
     // if we use decimals, then we might want to truncate the numbers
     if (Q.use_decimals) {
-        Q[north_party + '_r_disp'] = Q[north_party+'_r'].toFixed(1);
+        Q[north_party + '_r_disp'] = Q[north_party+'_r'].toFixed(2);
     }  else {
             Q[north_party + '_r_disp'] = Q[north_party+'_r'];
     }
     console.log(north_party, Q[north_party + '_r'], Q['old_' + north_party + '_r']);
     Q['change_' + north_party + '_r'] = Q[north_party + '_r'] - Q['old_' + north_party + '_r'];
     var sign = Q['change_' + north_party + '_r'] > 0 ? '+'  : '';
-    Q['str_change_' + north_party] = sign + Q['change_' + north_party + '_r'];//.toFixed(1);
+    Q['str_change_' + north_party] = sign + Q['change_' + north_party + '_r'];//.toFixed(2);
 }
 // calculate new north_party sum if electoral reform
 if (Q.electoral_threshold && Q.electoral_threshold > 0) {
@@ -149,14 +149,14 @@ if (Q.electoral_threshold && Q.electoral_threshold > 0) {
             }
         }
         if (Q.use_decimals) {
-            Q[north_party + '_r_disp'] = Q[north_party+'_r'].toFixed(1);
+            Q[north_party + '_r_disp'] = Q[north_party+'_r'].toFixed(2);
         } else {
             Q[north_party + '_r_disp'] = Q[north_party+'_r'];
         }
         console.log(north_party, Q[north_party + '_r'], Q['old_' + north_party + '_r']);
         Q['change_' + north_party + '_r'] = Q[north_party + '_r'] - Q['old_' + north_party + '_r'];
         var sign = Q['change_' + north_party + '_r'] > 0 ? '+'  : '';
-        Q['str_change_' + north_party] = sign + Q['change_' + north_party + '_r'];//.toFixed(1);
+        Q['str_change_' + north_party] = sign + Q['change_' + north_party + '_r'];//.toFixed(2);
     }
 }
 
