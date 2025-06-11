@@ -8,9 +8,9 @@ card-image: img/studentcampaign.jpg
 max-visits: 100000
 #subtitle: How will we build our support amongst students?
 
-= Reaching Across the Aisle
+= Campaigning amongst students
 
-The IRSP if it wishes to establish a 32 county republic must build support amongst the students.
+The IRSP if it wishes to establish a 32 county republic must build support amongst the students. What should we campaign on campuses about?
 
 - @contraception: Hand out leaflets about contraception.
 - @republic: Hand out leaflets arguing for the establishment of a 32 county worker's republic.
@@ -22,7 +22,7 @@ The IRSP if it wishes to establish a 32 county republic must build support among
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; student_IRSP_strength += 4*pro_secular
+on-arrival: resources -= 1; student_IRSP_strength += 4*student_pro_secular
 
 WIP: To Do
 
@@ -30,7 +30,7 @@ WIP: To Do
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; student_IRSP_strength += pro_republic
+on-arrival: resources -= 1; student_IRSP_strength += student_pro_republic
 
 WIP: To Do
 
@@ -38,6 +38,6 @@ WIP: To Do
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; student_IRSP_strength += 3*pro_homosexual
+on-arrival: resources -= 1; student_IRSP_strength += 3*student_pro_homosexual
 
 WIP: To Do
