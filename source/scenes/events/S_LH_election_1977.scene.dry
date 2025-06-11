@@ -54,7 +54,7 @@ if (Q.electoral_threshold && Q.electoral_threshold > 0) {
             }
         }
         if (Q.use_decimals) {
-            Q[party + '_l_disp'] = Q[party+'_l'].toFixed(1);
+            Q[party + '_l_disp'] = Q[party+'_l'].toFixed(2);
         } else {
             Q[party + '_l_disp'] = Q[party+'_l'];
         }
