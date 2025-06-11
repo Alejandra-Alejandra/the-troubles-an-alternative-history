@@ -151,14 +151,28 @@ Irish Defence Forces Relations: [+ IDF_relation : relationships +]
 
 = Support for different issues in the South
 
-Republicanism: [+ pro_republic_supp : supp +]
-Secularism: [+ pro_secular_supp : supp +]
-Socialism: [+ pro_socialism_supp : supp +]
-Gay Rights: [+ pro_homosexual_supp : supp +]
+Republicanism:
+[+ pro_republic_supp : supp +]
+
+Secularism:
+[+ pro_secular_supp : supp +]
+
+Socialism:
+[+ pro_socialism_supp : supp +]
+
+Gay Rights:
+[+ pro_homosexual_supp : supp +]
 
 = Support for different issues in the North
 
-Republicanism: [+ pro_north_republic_supp : supp +]
-Secularism: [+ pro_north_secular_supp : supp +]
-Socialism: [+ pro_north_socialism_supp : supp +]
-Gay Rights: [+ pro_north_homosexual_supp : supp +]
+Republicanism:
+[+ pro_north_republic_supp : supp +]
+
+Secularism:
+[+ pro_north_secular_supp : supp +]
+
+Socialism:
+[+ pro_north_socialism_supp : supp +]
+
+Gay Rights:
+[+ pro_north_homosexual_supp : supp +]
