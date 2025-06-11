@@ -34,14 +34,14 @@ for (var party of Q.parties) {
     }
     // if we use decimals, then we might want to truncate the numbers
     if (Q.use_decimals) {
-        Q[party + '_l_disp'] = Q[party+'_l'].toFixed(2);
+        Q[party + '_l_disp'] = Q[party+'_l'].tofixed(3);
     }  else {
             Q[party + '_l_disp'] = Q[party+'_l'];
     }
     console.log(party, Q[party + '_l'], Q['old_' + party + '_l']);
     Q['change_' + party + '_l'] = Q[party + '_l'] - Q['old_' + party + '_l'];
     var sign = Q['change_' + party + '_l'] > 0 ? '+'  : '';
-    Q['str_change_' + party] = sign + Q['change_' + party + '_l'];//.toFixed(2);
+    Q['str_change_' + party] = sign + Q['change_' + party + '_l'];//.tofixed(3);
 }
 // calculate new party sum if electoral reform
 if (Q.electoral_threshold && Q.electoral_threshold > 0) {
@@ -56,14 +56,14 @@ if (Q.electoral_threshold && Q.electoral_threshold > 0) {
             }
         }
         if (Q.use_decimals) {
-            Q[party + '_l_disp'] = Q[party+'_l'].toFixed(2);
+            Q[party + '_l_disp'] = Q[party+'_l'].tofixed(3);
         } else {
             Q[party + '_l_disp'] = Q[party+'_l'];
         }
         console.log(party, Q[party + '_l'], Q['old_' + party + '_l']);
         Q['change_' + party + '_l'] = Q[party + '_l'] - Q['old_' + party + '_l'];
         var sign = Q['change_' + party + '_l'] > 0 ? '+'  : '';
-        Q['str_change_' + party] = sign + Q['change_' + party + '_l'];//.toFixed(2);
+        Q['str_change_' + party] = sign + Q['change_' + party + '_l'];//.tofixed(3);
     }
 }
 
@@ -82,14 +82,14 @@ for (var party of Q.parties) {
         // Round to 2 decimal places
         Q[party + '_l'] = Math.round(Q[party + '_l'] * 100) / 100;
         if (Q.use_decimals) {
-            Q[party + '_l_disp'] = Q[party+'_l'].toFixed(2);
+            Q[party + '_l_disp'] = Q[party+'_l'].tofixed(3);
         } else {
             Q[party + '_l_disp'] = Math.round(Q[party+'_l']);
         }
         console.log(party, Q[party + '_l'], Q['old_' + party + '_l']);
         Q['change_' + party + '_l'] = Q[party + '_l'] - Q['old_' + party + '_l'];
         var sign = Q['change_' + party + '_l'] > 0 ? '+' : '';
-        Q['str_change_' + party] = sign + Q['change_' + party + '_l'].toFixed(2);
+        Q['str_change_' + party] = sign + Q['change_' + party + '_l'].tofixed(3);
     }
 }
 
