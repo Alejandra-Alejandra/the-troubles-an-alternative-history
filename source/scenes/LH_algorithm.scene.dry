@@ -47,7 +47,7 @@ for (var party of Q.parties) {
         Q[party + '_votes_disp'] = Q[party+'_votes'];
     } else {
         Q[party+'_votes'] = Math.round(Q[party+'_normalized']*100);
-        Q[party + '_votes_disp'] = Q[party+'_votes_dec'].toFixed(1);
+        Q[party + '_votes_disp'] = Q[party+'_votes_dec'].toFixed(2);
     }
     //Q[party+'_votes'] = Q[party+'_votes_dec'];
     // display
