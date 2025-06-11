@@ -3,7 +3,7 @@ new-page: true
 view-if: year == 1977 and month == 1
 tags: event
 is-card: true
-face-image: kader_asmal
+face-image: kader_asmal.jpg
 max-visits: 1
 
 = The Irish Anti-Apartheid Movement is formed
