@@ -489,8 +489,8 @@ Q.north_rich_Labour = 0;
 Q.north_rich_UP_NI = 29;
 Q.north_rich_INDs = 0;
 
-Q.workers_IRSP = 0.1;
-Q.workers_Officials  = 1.9;
+Q.workers_IRSP = 0.2;
+Q.workers_Officials  = 1.85;
 Q.workers_IRs = 5;
 Q.workers_ILs = 0;
 Q.workers_Provisionals = 5;
@@ -507,7 +507,7 @@ Q.workers_UP_NI = 0;
 Q.workers_INDs = 1;
 
 Q.urban_middle_IRSP = 0.02;
-Q.urban_middle_Officials  = 1.2;
+Q.urban_middle_Officials  = 0.4;
 Q.urban_middle_IRs = 4;
 Q.urban_middle_ILs = 0;
 Q.urban_middle_Provisionals = 5;
@@ -524,7 +524,7 @@ Q.urban_middle_UP_NI = 0;
 Q.urban_middle_INDs = 1;
 
 Q.poor_rural_IRSP = 0.05;
-Q.poor_rural_Officials  = 1;
+Q.poor_rural_Officials  = 0.6;
 Q.poor_rural_IRs = 5;
 Q.poor_rural_ILs = 0;
 Q.poor_rural_Provisionals = 6.5;
@@ -541,7 +541,7 @@ Q.poor_rural_UP_NI = 0;
 Q.poor_rural_INDs = 2;
 
 Q.middle_rural_IRSP = 0.05;
-Q.middle_rural_Officials  = 1;
+Q.middle_rural_Officials  = 0.2;
 Q.middle_rural_IRs = 2;
 Q.middle_rural_ILs = 0;
 Q.middle_rural_Provisionals = 5;
