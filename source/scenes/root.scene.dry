@@ -501,8 +501,8 @@ Q.workers_UUP = 0;
 Q.workers_DUP = 0;
 Q.workers_Vanguard = 0;
 Q.workers_FG = 25;
-Q.workers_FF = 46;
-Q.workers_Labour = 15;
+Q.workers_FF = 38;
+Q.workers_Labour = 18;
 Q.workers_UP_NI = 0;
 Q.workers_INDs = 1;
 
