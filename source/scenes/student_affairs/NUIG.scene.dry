@@ -11,11 +11,11 @@ tags: student_affairs
 
 With the Socialist Worker's Movement joining the IRSP, we have gained some support in the National University of Ireland, Galway amongst former SWM members. From now on we can expend more effort into growing our support amongst students. 
 
-[? if (year <= 1977 and and hoxhaist_president == 0): More and more working class people are enrolling in College in Ireland. However, very few are actively involved in politics.
+[? if year <= 1977 and and hoxhaist_president == 0: More and more working class people are enrolling in College in Ireland. However, very few are actively involved in politics.
 
 Instead, student politics is largely dominated by bureaucrats in the Union of Students of Ireland affiliated with different political groups. Most prominent of these are the Officials, followed by Labour. A small faction of Maoists based around Dublin also have some influence. ?]
 
-[? if (year <= 1985 and year >= 1978 and hoxhaist_president == 0): More and more working class people are enrolling in College in Ireland. However, very few are actively involved in politics.
+[? if year <= 1985 and year >= 1978 and hoxhaist_president == 0: More and more working class people are enrolling in College in Ireland. However, very few are actively involved in politics.
 
 Instead, student politics is largely dominated by bureaucrats in the Union of Students of Ireland affiliated with different political groups. Most prominent of these are the Officials, followed by Labour. A small faction of Maoists based around Dublin also have some influence. ?]
 
