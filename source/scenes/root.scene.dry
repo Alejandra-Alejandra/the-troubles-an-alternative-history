@@ -302,7 +302,7 @@ Q.UVFpd_formed = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.catholic_workers_IRSP = 1.5;
+Q.catholic_workers_IRSP = 0.8;
 Q.catholic_workers_Officials  = 2.2;
 Q.catholic_workers_IRs = 5;
 Q.catholic_workers_ILs = 0;
@@ -336,7 +336,7 @@ Q.protestant_workers_Labour = 0;
 Q.protestant_workers_UP_NI = 6.2;
 Q.protestant_workers_INDs = 0;
 
-Q.other_workers_IRSP = 2;
+Q.other_workers_IRSP = 0.5;
 Q.other_workers_Officials  = 4;
 Q.other_workers_IRs = 4;
 Q.other_workers_ILs = 0.2;
@@ -353,7 +353,7 @@ Q.other_workers_Labour = 0;
 Q.other_workers_UP_NI = 4;
 Q.other_workers_INDs = 0;
 
-Q.catholic_middle_rural_IRSP = 0.5;
+Q.catholic_middle_rural_IRSP = 0.1;
 Q.catholic_middle_rural_Officials  = 2;
 Q.catholic_middle_rural_IRs = 5;
 Q.catholic_middle_rural_ILs = 0;
@@ -370,7 +370,7 @@ Q.catholic_middle_rural_Labour = 0;
 Q.catholic_middle_rural_UP_NI = 2.5;
 Q.catholic_middle_rural_INDs = 0;
 
-Q.catholic_middle_urban_IRSP = 1;
+Q.catholic_middle_urban_IRSP = 0.2;
 Q.catholic_middle_urban_Officials  = 2;
 Q.catholic_middle_urban_IRs = 4;
 Q.catholic_middle_urban_ILs = 0;
@@ -421,7 +421,7 @@ Q.protestant_middle_urban_Labour = 0;
 Q.protestant_middle_urban_UP_NI = 20;
 Q.protestant_middle_urban_INDs = 0;
 
-Q.catholic_poor_rural_IRSP = 1;
+Q.catholic_poor_rural_IRSP = 0.1;
 Q.catholic_poor_rural_Officials  = 2;
 Q.catholic_poor_rural_IRs = 5;
 Q.catholic_poor_rural_ILs = 0;
@@ -455,7 +455,7 @@ Q.protestant_poor_rural_Labour = 0;
 Q.protestant_poor_rural_UP_NI = 2;
 Q.protestant_poor_rural_INDs = 0;
 
-Q.north_unemployed_IRSP = 2.5;
+Q.north_unemployed_IRSP = 0.8;
 Q.north_unemployed_Officials  = 5.5;
 Q.north_unemployed_IRs = 6;
 Q.north_unemployed_ILs = 0.1;
@@ -489,8 +489,8 @@ Q.north_rich_Labour = 0;
 Q.north_rich_UP_NI = 29;
 Q.north_rich_INDs = 0;
 
-Q.workers_IRSP = 1.5;
-Q.workers_Officials  = 2.5;
+Q.workers_IRSP = 0.1;
+Q.workers_Officials  = 2.1;
 Q.workers_IRs = 5;
 Q.workers_ILs = 0;
 Q.workers_Provisionals = 5;
@@ -506,8 +506,8 @@ Q.workers_Labour = 35;
 Q.workers_UP_NI = 0;
 Q.workers_INDs = 2;
 
-Q.urban_middle_IRSP = 1;
-Q.urban_middle_Officials  = 2;
+Q.urban_middle_IRSP = 0.02;
+Q.urban_middle_Officials  = 1.2;
 Q.urban_middle_IRs = 4;
 Q.urban_middle_ILs = 0;
 Q.urban_middle_Provisionals = 5;
@@ -523,7 +523,7 @@ Q.urban_middle_Labour = 25;
 Q.urban_middle_UP_NI = 0;
 Q.urban_middle_INDs = 2.5;
 
-Q.poor_rural_IRSP = 1.5;
+Q.poor_rural_IRSP = 0.05;
 Q.poor_rural_Officials  = 1;
 Q.poor_rural_IRs = 5;
 Q.poor_rural_ILs = 0;
@@ -540,7 +540,7 @@ Q.poor_rural_Labour = 5;
 Q.poor_rural_UP_NI = 0;
 Q.poor_rural_INDs = 3;
 
-Q.middle_rural_IRSP = 1.5;
+Q.middle_rural_IRSP = 0.05;
 Q.middle_rural_Officials  = 1;
 Q.middle_rural_IRs = 2;
 Q.middle_rural_ILs = 0;
@@ -574,8 +574,8 @@ Q.rich_Labour = 1;
 Q.rich_UP_NI = 0;
 Q.rich_INDs = 0.1;
 
-Q.unemployed_IRSP = 2.5;
-Q.unemployed_Officials  = 8.5;
+Q.unemployed_IRSP = 0.11;
+Q.unemployed_Officials  = 5.5;
 Q.unemployed_IRs = 5;
 Q.unemployed_ILs = 0;
 Q.unemployed_Provisionals = 8;
