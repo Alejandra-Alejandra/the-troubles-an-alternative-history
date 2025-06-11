@@ -198,8 +198,12 @@ Q.IDF_relation = 20;
 Q.nationalism = 60;
 // socialism vs capitalism
 Q.socialism = 40;
-// pro-republic vs anti-republic
+// republicanism
 Q.pro_republic = 59;
+// pro secular
+Q.pro_secular = 1;
+// pro gay
+Q.pro_homosexual = 1;
 
 Q.emergency_rule = 0;
 
