@@ -28,7 +28,7 @@ on-arrival: student_pro_republic += 0.01*pro_republic
 
 WIP: To Do
 
-@homosexual_rights
+@worker_rights
 on-arrival: student_pro_socialism += 0.03*pro_socialism
 
 WIP: To Do
