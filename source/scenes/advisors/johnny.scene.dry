@@ -25,6 +25,7 @@ A few members are not happy with this debate, but we have convinced some of the 
 @recruit_in_derry
 title: Recruit for the INLA in Derry
 subtitle: Try recruit Derry locals to join the INLA.
+view-if: trouble_in_derry == 1
 choose-if: advisor_action_timer = 0 
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 on-arrival: inla_strength += 1*(derry_strength) if derry_strength <= 5; inla_strength += 5 if derry_strength >=6; derry_strength += 1; advisor_action_timer = 1
