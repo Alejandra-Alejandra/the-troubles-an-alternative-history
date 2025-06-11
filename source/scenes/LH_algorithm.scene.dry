@@ -37,8 +37,6 @@ for (var party of Q.parties) {
 }
 // 2. normalize support (fraction)
 // 3. Round to integers
-// TODO: round to 1 decimal instead of rounding to integers
-// to do that, we multiply party_normalized*1000 and divide the rounded number by 10.
 for (var party of Q.parties) {
     Q[party+'_normalized'] = Q[party + '_support']/total_support;
     Q[party+'_votes_dec'] = Math.round(Q[party+'_normalized']*100000000)/100;
