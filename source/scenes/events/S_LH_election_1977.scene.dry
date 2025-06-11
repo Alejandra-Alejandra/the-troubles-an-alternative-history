@@ -18,82 +18,82 @@ WIP
 on-arrival: {!
 // set old results
 // election threshold constitutional reform
-// banning north_parties
-var new_north_party_sum = 0;
-for (var north_party of Q.north_parties) {
-    Q['old_' + north_party + '_l'] = Q[north_party + '_l'];
+// banning parties
+var new_party_sum = 0;
+for (var party of Q.parties) {
+    Q['old_' + party + '_l'] = Q[party + '_l'];
     if (Q.constitutional_reform > 0) {
-        if (Q[north_party + '_votes'] < Q.electoral_threshold || (Q.electoral_threshold > 1 && north_party == 'other') || Q[north_party + '_banned']) {
-            Q[north_party + '_l'] = 0;
+        if (Q[party + '_votes'] < Q.electoral_threshold || (Q.electoral_threshold > 1 && party == 'other') || Q[party + '_banned']) {
+            Q[party + '_l'] = 0;
         } else {
-            Q[north_party + '_l'] = Q[north_party + '_votes'];
+            Q[party + '_l'] = Q[party + '_votes'];
         }
-        new_north_party_sum += Q[north_party + '_l'];
+        new_party_sum += Q[party + '_l'];
     } else {
-        Q[north_party + '_l'] = Q[north_party + '_votes'];
+        Q[party + '_l'] = Q[party + '_votes'];
     }
     // if we use decimals, then we might want to truncate the numbers
     if (Q.use_decimals) {
-        Q[north_party + '_l_disp'] = Q[north_party+'_l'].toFixed(1);
+        Q[party + '_l_disp'] = Q[party+'_l'].toFixed(1);
     }  else {
-            Q[north_party + '_l_disp'] = Q[north_party+'_l'];
+            Q[party + '_l_disp'] = Q[party+'_l'];
     }
-    console.log(north_party, Q[north_party + '_l'], Q['old_' + north_party + '_l']);
-    Q['change_' + north_party + '_l'] = Q[north_party + '_l'] - Q['old_' + north_party + '_l'];
-    var sign = Q['change_' + north_party + '_l'] > 0 ? '+'  : '';
-    Q['str_change_' + north_party] = sign + Q['change_' + north_party + '_l'];//.toFixed(1);
+    console.log(party, Q[party + '_l'], Q['old_' + party + '_l']);
+    Q['change_' + party + '_l'] = Q[party + '_l'] - Q['old_' + party + '_l'];
+    var sign = Q['change_' + party + '_l'] > 0 ? '+'  : '';
+    Q['str_change_' + party] = sign + Q['change_' + party + '_l'];//.toFixed(1);
 }
-// calculate new north_party sum if electoral reform
+// calculate new party sum if electoral reform
 if (Q.electoral_threshold && Q.electoral_threshold > 0) {
-    for (var north_party of Q.north_parties) {
-        if (Q[north_party + '_l'] > 0) {
+    for (var party of Q.parties) {
+        if (Q[party + '_l'] > 0) {
             if (Q.use_decimals) {
-                Q[north_party + '_l'] = Math.round(Q[north_party + '_l']*1000/new_north_party_sum)/10;
+                Q[party + '_l'] = Math.round(Q[party + '_l']*1000/new_party_sum)/10;
             } else {
-                Q[north_party + '_l'] = Math.round(Q[north_party + '_l']*100/new_north_party_sum);
+                Q[party + '_l'] = Math.round(Q[party + '_l']*100/new_party_sum);
             }
         }
         if (Q.use_decimals) {
-            Q[north_party + '_l_disp'] = Q[north_party+'_l'].toFixed(1);
+            Q[party + '_l_disp'] = Q[party+'_l'].toFixed(1);
         } else {
-            Q[north_party + '_l_disp'] = Q[north_party+'_l'];
+            Q[party + '_l_disp'] = Q[party+'_l'];
         }
-        console.log(north_party, Q[north_party + '_l'], Q['old_' + north_party + '_l']);
-        Q['change_' + north_party + '_l'] = Q[north_party + '_l'] - Q['old_' + north_party + '_l'];
-        var sign = Q['change_' + north_party + '_l'] > 0 ? '+'  : '';
-        Q['str_change_' + north_party] = sign + Q['change_' + north_party + '_l'];//.toFixed(1);
+        console.log(party, Q[party + '_l'], Q['old_' + party + '_l']);
+        Q['change_' + party + '_l'] = Q[party + '_l'] - Q['old_' + party + '_l'];
+        var sign = Q['change_' + party + '_l'] > 0 ? '+'  : '';
+        Q['str_change_' + party] = sign + Q['change_' + party + '_l'];//.toFixed(1);
     }
 }
 
 // Calculate total_l_unbanned by summing _l for all unbanned parties
 var total_l_unbanned = 0;
-for (var north_party of Q.north_parties) {
-    if (Q[north_party + '_banned'] != 1) {
-        total_l_unbanned += Q[north_party + '_l'];
+for (var party of Q.parties) {
+    if (Q[party + '_banned'] != 1) {
+        total_l_unbanned += Q[party + '_l'];
     }
 }
 
 // Adjust _l values for unbanned parties by dividing by total_l_unbanned and multiplying by 100
-for (var north_party of Q.north_parties) {
-    if (Q[north_party + '_banned'] != 1) {
-        Q[north_party + '_l'] = (Q[north_party + '_l'] / total_l_unbanned) * 100;
+for (var party of Q.parties) {
+    if (Q[party + '_banned'] != 1) {
+        Q[party + '_l'] = (Q[party + '_l'] / total_l_unbanned) * 100;
         // Round to 2 decimal places
-        Q[north_party + '_l'] = Math.round(Q[north_party + '_l'] * 100) / 100;
+        Q[party + '_l'] = Math.round(Q[party + '_l'] * 100) / 100;
         if (Q.use_decimals) {
-            Q[north_party + '_l_disp'] = Q[north_party+'_l'].toFixed(2);
+            Q[party + '_l_disp'] = Q[party+'_l'].toFixed(2);
         } else {
-            Q[north_party + '_l_disp'] = Math.round(Q[north_party+'_l']);
+            Q[party + '_l_disp'] = Math.round(Q[party+'_l']);
         }
-        console.log(north_party, Q[north_party + '_l'], Q['old_' + north_party + '_l']);
-        Q['change_' + north_party + '_l'] = Q[north_party + '_l'] - Q['old_' + north_party + '_l'];
-        var sign = Q['change_' + north_party + '_l'] > 0 ? '+' : '';
-        Q['str_change_' + north_party] = sign + Q['change_' + north_party + '_l'].toFixed(2);
+        console.log(party, Q[party + '_l'], Q['old_' + party + '_l']);
+        Q['change_' + party + '_l'] = Q[party + '_l'] - Q['old_' + party + '_l'];
+        var sign = Q['change_' + party + '_l'] > 0 ? '+' : '';
+        Q['str_change_' + party] = sign + Q['change_' + party + '_l'].toFixed(2);
     }
 }
 
 var election_result = {'date': new Date(Q.year, Q.month - 1)};
-for (var north_party of Q.north_parties) {
-    election_result[north_party] = Q[north_party + '_l'];
+for (var party of Q.parties) {
+    election_result[party] = Q[party + '_l'];
 }
 Q.election_records.push(election_result);
 !}
