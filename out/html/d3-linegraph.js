@@ -1,5 +1,5 @@
 /*
- * generating a line graph of multipile north_parties with multiple dates...
+ * generating a line graph of multipile parties with multiple dates...
  * */
 
 function addMonths(date, months) {
@@ -13,16 +13,16 @@ function addMonths(date, months) {
 }
 
 
-d3.linegraph = function(noTicks, noDots, north_parties, north_partyColors, north_partyNames, dataMax, dataMin, additionalMonths) {
+d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataMax, dataMin, additionalMonths) {
     /* params */
-    if (!north_parties) {
-        north_parties = ['IRSP', 'Provisionals', 'Officials', 'IRs', 'ILs', 'SDLP', 'alliance', 'NILP', 'UUP', 'DUP', 'Vanguard', 'UP_NI'];
+    if (!parties) {
+        parties = ['IRSP', 'Provisionals', 'Officials', 'IRs', 'ILs', 'SDLP', 'alliance', 'NILP', 'UUP', 'DUP', 'Vanguard', 'UP_NI'];
     }
-    if (!north_partyColors) {
-        north_partyColors = {'IRSP': '#FF7F7F', 'Provisionals': '#008000', 'Officials': '#CC3333', 'IRs': '#90bc7c', 'ILs': '#eae374', 'SDLP': '#98FB98', 'alliance': '#FFFF00', 'NILP': '#FFC0CB', 'UUP': '#C17E5A', 'DUP': '#FFA500', 'Vanguard': '#FFD580', 'UP_NI': '#ffcc66'};
+    if (!partyColors) {
+        partyColors = {'IRSP': '#FF7F7F', 'Provisionals': '#008000', 'Officials': '#CC3333', 'IRs': '#90bc7c', 'ILs': '#eae374', 'SDLP': '#98FB98', 'alliance': '#FFFF00', 'NILP': '#FFC0CB', 'UUP': '#C17E5A', 'DUP': '#FFA500', 'Vanguard': '#FFD580', 'UP_NI': '#ffcc66'};
     }
-    if (!north_partyNames) {
-        north_partyNames = {'IRSP': 'IRSP', 'Provisionals': 'Provisionals', 'Officials': 'Officials', 'IRs': 'Independent Republicans', 'ILs': 'Independent Unionists', 'SDLP': 'SDLP', 'alliance': 'Alliance', 'NILP': 'NILP', 'UUP': 'UUP', 'DUP': 'DUP', 'Vanguard': 'Vanguard', 'UP_NI': 'Unionist Party of Northern Ireland'};
+    if (!partyNames) {
+        partyNames = {'IRSP': 'IRSP', 'Provisionals': 'Provisionals', 'Officials': 'Officials', 'IRs': 'Independent Republicans', 'ILs': 'Independent Unionists', 'SDLP': 'SDLP', 'alliance': 'Alliance', 'NILP': 'NILP', 'UUP': 'UUP', 'DUP': 'DUP', 'Vanguard': 'Vanguard', 'UP_NI': 'Unionist Party of Northern Ireland'};
     }
     if (!additionalMonths) {
         additionalMonths = 10;
@@ -40,7 +40,7 @@ d3.linegraph = function(noTicks, noDots, north_parties, north_partyColors, north
      dataset.each(function (data) {
       const dates = data.map(d => new Date(d.date));
       // Map the data to an array of arrays of {x, y} tuples.
-      const series = north_parties.map(north_party => data.map(d => ({'x': new Date(d.date), 'y': d[north_party], 'series': north_party})));
+      const series = parties.map(party => data.map(d => ({'x': new Date(d.date), 'y': d[party], 'series': party})));
 
       // Declare the x (horizontal position) scale.
       const maxDate = d3.max(dates);
@@ -88,32 +88,32 @@ d3.linegraph = function(noTicks, noDots, north_parties, north_partyColors, north
           .attr("transform", `translate(${marginLeft},0)`)
           .call(d3.axisLeft(yScale));
 
-      const north_partyLine = (north_party) => d3.line()
+      const partyLine = (party) => d3.line()
           .x(d => xScale(new Date(d.date)))
-          .y(d => yScale(d[north_party]));
+          .y(d => yScale(d[party]));
 
       // draw the lines
-      for (const north_party of north_parties) {
+      for (const party of parties) {
         svg.append("path")
           .attr("fill", "none")
-          .attr("stroke", north_partyColors[north_party])
+          .attr("stroke", partyColors[party])
           .attr("stroke-width", 1.5)
-          .attr("class", north_party + " " + "north_party-line")
-          .attr("id", north_party+"-line")
-          .attr("series", north_party)
-          .attr("d", north_partyLine(north_party)(data))
+          .attr("class", party + " " + "party-line")
+          .attr("id", party+"-line")
+          .attr("series", party)
+          .attr("d", partyLine(party)(data))
           .on("mouseover", function (d) {
-              d3.selectAll(".north_party-line").attr("stroke-width", 0.1);
-              d3.selectAll(".north_party-node").attr("fill-opacity", 0.1);
-              d3.selectAll(".north_party-label").attr("opacity", 0.1);
-              d3.selectAll("."+north_party+'-node').attr("fill-opacity", 1);
-              d3.selectAll("."+north_party+'-label').attr("opacity", 1);
+              d3.selectAll(".party-line").attr("stroke-width", 0.1);
+              d3.selectAll(".party-node").attr("fill-opacity", 0.1);
+              d3.selectAll(".party-label").attr("opacity", 0.1);
+              d3.selectAll("."+party+'-node').attr("fill-opacity", 1);
+              d3.selectAll("."+party+'-label').attr("opacity", 1);
               d3.select(this).attr("stroke-width", 5);
           })
           .on("mouseout", function (d) {
-            d3.selectAll(".north_party-line").attr("stroke-width", 1.5);
-            d3.selectAll(".north_party-node").attr("fill-opacity", 1);
-            d3.selectAll(".north_party-label").attr("opacity", 1);
+            d3.selectAll(".party-line").attr("stroke-width", 1.5);
+            d3.selectAll(".party-node").attr("fill-opacity", 1);
+            d3.selectAll(".party-label").attr("opacity", 1);
           });
       }
 
@@ -126,8 +126,8 @@ d3.linegraph = function(noTicks, noDots, north_parties, north_partyColors, north
             .selectAll(".point")
               .data(d => d)
             .enter().append("circle")
-              .attr("class", d => d.series + " " + d.series+"-node " + "north_party-node")
-              .attr("fill", d => north_partyColors[d.series])
+              .attr("class", d => d.series + " " + d.series+"-node " + "party-node")
+              .attr("fill", d => partyColors[d.series])
               .attr("series", d => d.series)
               .attr("r", 4)
               .attr("cx", d => xScale(d.x))
@@ -135,17 +135,17 @@ d3.linegraph = function(noTicks, noDots, north_parties, north_partyColors, north
               .on("mouseover", function (d) {
                   const node = d3.select(this);
                   const series = node.attr('series');
-                  d3.selectAll(".north_party-line").attr("stroke-width", 0.1);
-                  d3.selectAll(".north_party-node").attr("fill-opacity", 0.1);
-                  d3.selectAll(".north_party-label").attr("opacity", 0.1);
+                  d3.selectAll(".party-line").attr("stroke-width", 0.1);
+                  d3.selectAll(".party-node").attr("fill-opacity", 0.1);
+                  d3.selectAll(".party-label").attr("opacity", 0.1);
                   d3.selectAll("."+series+'-node').attr("fill-opacity", 1);
                   d3.selectAll("#"+series+'-line').attr("stroke-width", 5);
                   d3.selectAll("."+series+'-label').attr("opacity", 1);
               })
               .on("mouseout", function (d) {
-                  d3.selectAll(".north_party-line").attr("stroke-width", 1.5);
-                  d3.selectAll(".north_party-node").attr("fill-opacity", 1);
-                  d3.selectAll(".north_party-label").attr("opacity", 1);
+                  d3.selectAll(".party-line").attr("stroke-width", 1.5);
+                  d3.selectAll(".party-node").attr("fill-opacity", 1);
+                  d3.selectAll(".party-label").attr("opacity", 1);
               });
       }
 
@@ -153,26 +153,26 @@ d3.linegraph = function(noTicks, noDots, north_parties, north_partyColors, north
       svg.selectAll(".labels")
         .data(series)
         .enter().append("text")
-        .text(s => north_partyNames[s[0].series])
+        .text(s => partyNames[s[0].series])
         .attr("series", s => s[0].series)
         .attr("font-size", "0.8em")
-        .attr("class", s => s[0].series + "-label north_party-label")
+        .attr("class", s => s[0].series + "-label party-label")
         .attr("x", s => xScale(s[s.length - 1].x) + 15)
         .attr("y", s => yScale(s[s.length - 1].y) + 5)
         .on("mouseover", function (d) {
           const text = d3.select(this);
           const series = text.attr('series');
-          d3.selectAll(".north_party-line").attr("stroke-width", 0.1);
-          d3.selectAll(".north_party-node").attr("fill-opacity", 0.1);
-          d3.selectAll(".north_party-label").attr("opacity", 0.1);
+          d3.selectAll(".party-line").attr("stroke-width", 0.1);
+          d3.selectAll(".party-node").attr("fill-opacity", 0.1);
+          d3.selectAll(".party-label").attr("opacity", 0.1);
           d3.selectAll("."+series+'-node').attr("fill-opacity", 1);
           d3.selectAll("#"+series+'-line').attr("stroke-width", 5);
           d3.selectAll("."+series+'-label').attr("opacity", 1);
         })
         .on("mouseout", function (d) {
-          d3.selectAll(".north_party-line").attr("stroke-width", 1.5);
-          d3.selectAll(".north_party-node").attr("fill-opacity", 1);
-          d3.selectAll(".north_party-label").attr("opacity", 1);
+          d3.selectAll(".party-line").attr("stroke-width", 1.5);
+          d3.selectAll(".party-node").attr("fill-opacity", 1);
+          d3.selectAll(".party-label").attr("opacity", 1);
         });
 
      });
@@ -190,21 +190,21 @@ d3.linegraph = function(noTicks, noDots, north_parties, north_partyColors, north
         return linegraph;
     };
 
-    linegraph.north_parties = function(value) {
-        if (!arguments.length) return north_parties;
-        north_parties = value;
+    linegraph.parties = function(value) {
+        if (!arguments.length) return parties;
+        parties = value;
         return linegraph;
     };
 
-    linegraph.north_partyNames = function(value) {
-        if (!arguments.length) return north_partyNames;
-        north_partyNames = value;
+    linegraph.partyNames = function(value) {
+        if (!arguments.length) return partyNames;
+        partyNames = value;
         return linegraph;
     };
 
-    linegraph.north_partyColors = function(value) {
-        if (!arguments.length) return north_partyColors;
-        north_partyColors = value;
+    linegraph.partyColors = function(value) {
+        if (!arguments.length) return partyColors;
+        partyColors = value;
         return linegraph;
     };
 
