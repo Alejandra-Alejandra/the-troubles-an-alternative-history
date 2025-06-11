@@ -291,7 +291,7 @@ Q.unemployed.qol = 100; //
 
 Q.classes = ['workers', 'urban_middle', 'poor_rural', 'middle_rural', 'rich', 'unemployed'];
 Q.north_classes = ['catholic_workers', 'protestant_workers', 'other_workers', 'catholic_middle_rural', 'catholic_middle_urban', 'protestant_middle_rural', 'protestant_middle_urban', 'catholic_poor_rural', 'protestant_poor_rural', 'north_unemployed', 'north_rich'];
-Q.parties = ['IRSP', 'Provisionals', 'Officials', 'FG', 'FF', 'Labour', 'IRs'];
+Q.parties = ['IRSP', 'Provisionals', 'Officials', 'FG', 'FF', 'Labour', 'IRs', 'INDs'];
 Q.north_parties = ['IRSP', 'Provisionals', 'Officials', 'SDLP', 'UUP', 'DUP', 'Vanguard', 'NILP', 'IRs', 'alliance', 'UP_NI', 'ILs'];
 
 // TODO: add 'UVFpd' later on
@@ -314,6 +314,7 @@ Q.catholic_workers_FG = 0;
 Q.catholic_workers_FF = 0;
 Q.catholic_workers_Labour = 0;
 Q.catholic_workers_UP_NI = 2;
+Q.catholic_workers_INDs = 0;
 
 Q.protestant_workers_IRSP = 0.01;
 Q.protestant_workers_Officials  = 0.80;
@@ -330,6 +331,7 @@ Q.protestant_workers_FG = 0;
 Q.protestant_workers_FF = 0;
 Q.protestant_workers_Labour = 0;
 Q.protestant_workers_UP_NI = 6.2;
+Q.protestant_workers_INDs = 0;
 
 Q.other_workers_IRSP = 2;
 Q.other_workers_Officials  = 4;
@@ -346,6 +348,7 @@ Q.other_workers_FG = 0;
 Q.other_workers_FF = 0;
 Q.other_workers_Labour = 0;
 Q.other_workers_UP_NI = 4;
+Q.other_workers_INDs = 0;
 
 Q.catholic_middle_rural_IRSP = 0.5;
 Q.catholic_middle_rural_Officials  = 2;
@@ -362,6 +365,7 @@ Q.catholic_middle_rural_FG = 0;
 Q.catholic_middle_rural_FF = 0;
 Q.catholic_middle_rural_Labour = 0;
 Q.catholic_middle_rural_UP_NI = 2.5;
+Q.catholic_middle_rural_INDs = 0;
 
 Q.catholic_middle_urban_IRSP = 1;
 Q.catholic_middle_urban_Officials  = 2;
@@ -378,6 +382,7 @@ Q.catholic_middle_urban_FG = 0;
 Q.catholic_middle_urban_FF = 0;
 Q.catholic_middle_urban_Labour = 0;
 Q.catholic_middle_urban_UP_NI = 1.5;
+Q.catholic_middle_urban_INDs = 0;
 
 Q.protestant_middle_rural_IRSP = 0;
 Q.protestant_middle_rural_Officials  = 0;
@@ -394,6 +399,7 @@ Q.protestant_middle_rural_FG = 0;
 Q.protestant_middle_rural_FF = 0;
 Q.protestant_middle_rural_Labour = 0;
 Q.protestant_middle_rural_UP_NI = 10;
+Q.protestant_middle_rural_INDs = 0;
 
 Q.protestant_middle_urban_IRSP = 0;
 Q.protestant_middle_urban_Officials  = 0;
@@ -410,6 +416,7 @@ Q.protestant_middle_urban_FG = 0;
 Q.protestant_middle_urban_FF = 0;
 Q.protestant_middle_urban_Labour = 0;
 Q.protestant_middle_urban_UP_NI = 20;
+Q.protestant_middle_urban_INDs = 0;
 
 Q.catholic_poor_rural_IRSP = 1;
 Q.catholic_poor_rural_Officials  = 2;
@@ -426,6 +433,7 @@ Q.catholic_poor_rural_FG = 0;
 Q.catholic_poor_rural_FF = 0;
 Q.catholic_poor_rural_Labour = 0;
 Q.catholic_poor_rural_UP_NI = 0;
+Q.catholic_poor_rural_INDs = 0;
 
 Q.protestant_poor_rural_IRSP = 0;
 Q.protestant_poor_rural_Officials  = 2;
@@ -442,6 +450,7 @@ Q.protestant_poor_rural_FG = 0;
 Q.protestant_poor_rural_FF = 0;
 Q.protestant_poor_rural_Labour = 0;
 Q.protestant_poor_rural_UP_NI = 2;
+Q.protestant_poor_rural_INDs = 0;
 
 Q.north_unemployed_IRSP = 2.5;
 Q.north_unemployed_Officials  = 5.5;
@@ -458,6 +467,7 @@ Q.north_unemployed_FG = 0;
 Q.north_unemployed_FF = 0;
 Q.north_unemployed_Labour = 0;
 Q.north_unemployed_UP_NI = 1.5;
+Q.north_unemployed_INDs = 0;
 
 Q.north_rich_IRSP = 0;
 Q.north_rich_Officials  = 0;
@@ -474,6 +484,7 @@ Q.north_rich_FG = 0;
 Q.north_rich_FF = 0;
 Q.north_rich_Labour = 0;
 Q.north_rich_UP_NI = 29;
+Q.north_rich_INDs = 0;
 
 Q.workers_IRSP = 1.5;
 Q.workers_Officials  = 2.5;
@@ -490,6 +501,7 @@ Q.workers_FG = 20;
 Q.workers_FF = 31;
 Q.workers_Labour = 35;
 Q.workers_UP_NI = 0;
+Q.workers_INDs = 2;
 
 Q.urban_middle_IRSP = 1;
 Q.urban_middle_Officials  = 2;
@@ -506,6 +518,7 @@ Q.urban_middle_FG = 34;
 Q.urban_middle_FF = 29;
 Q.urban_middle_Labour = 25;
 Q.urban_middle_UP_NI = 0;
+Q.urban_middle_INDs = 2.5;
 
 Q.poor_rural_IRSP = 1.5;
 Q.poor_rural_Officials  = 1;
@@ -522,6 +535,7 @@ Q.poor_rural_FG = 25;
 Q.poor_rural_FF = 56;
 Q.poor_rural_Labour = 5;
 Q.poor_rural_UP_NI = 0;
+Q.poor_rural_INDs = 3;
 
 Q.middle_rural_IRSP = 1.5;
 Q.middle_rural_Officials  = 1;
@@ -538,6 +552,7 @@ Q.middle_rural_FG = 63.5;
 Q.middle_rural_FF = 27;
 Q.middle_rural_Labour = 0;
 Q.middle_rural_UP_NI = 0;
+Q.middle_rural_INDs = 5.5;
 
 Q.rich_IRSP = 0;
 Q.rich_Officials  = 0;
@@ -554,6 +569,7 @@ Q.rich_FG = 56;
 Q.rich_FF = 37;
 Q.rich_Labour = 1;
 Q.rich_UP_NI = 0;
+Q.rich_INDs = 0.1;
 
 Q.unemployed_IRSP = 2.5;
 Q.unemployed_Officials  = 8.5;
@@ -570,6 +586,7 @@ Q.unemployed_FG = 10;
 Q.unemployed_FF = 21;
 Q.unemployed_Labour = 45;
 Q.unemployed_UP_NI = 0;
+Q.unemployed_INDs = 0.1;
 
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
 Q.election_records = [];
@@ -599,6 +616,15 @@ Q.old_Officials_r = 0;
 Q.old_IRs_r = 0;
 Q.old_UP_NI_r = 0;
 Q.old_ILs = 0;
+
+Q.old_INDs_l = 0.7;
+Q.old_IRs_l = 0.7;
+Q.old_IRSP_l = 0;
+Q.old_Officials_l = 0;
+Q.old_Provisionals_l = 0;
+Q.old_FG_l = 47.9;
+Q.old_FF_l = 37.5;
+Q.old_Labour_l = 13.2;
 
 Q.in_right_coalition = 0;
 // Weimar coalition = SPD + Z + DDP
