@@ -41,7 +41,7 @@ for (var north_party of Q.north_parties) {
 // to do that, we multiply north_party_normalized*1000 and divide the rounded number by 10.
 for (var north_party of Q.north_parties) {
     Q[north_party+'_normalized'] = Q[north_party + '_support']/total_support;
-    Q[north_party+'_votes_dec'] = Math.round(Q[north_party+'_normalized']*1000)/10;
+    Q[north_party+'_votes_dec'] = Math.round(Q[north_party+'_normalized']*100000000)/100;
     if (Q.use_decimals) {
         Q[north_party+'_votes'] = Q[north_party+'_votes_dec'];
         Q[north_party + '_votes_disp'] = Q[north_party+'_votes'];
