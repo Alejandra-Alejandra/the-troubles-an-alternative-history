@@ -19,12 +19,12 @@ What should our student branches meet and discuss this month?
 
 
 @sexual_liberation
-on-arrival: student_pro_secular += 0.1*pro_secular
+on-arrival: student_pro_secular += 0.1*pro_secular_supp
 
 WIP: To Do
 
 @republic
-on-arrival: student_pro_republic += 0.01*pro_republic
+on-arrival: student_pro_republic += 0.01*pro_republic_supp
 
 WIP: To Do
 
