@@ -194,33 +194,33 @@ Q.IDF_relation = 20;
 
 // popular opinion on various issues in the south
 // socialism vs capitalism
-Q.pro_socialism = 11;
+Q.pro_socialism_supp = 11;
 // republicanism
-Q.pro_republic = 20;
+Q.pro_republic_supp = 20;
 // pro secular
-Q.pro_secular = 3;
+Q.pro_secular_supp = 3;
 // pro gay
-Q.pro_homosexual = 1;
+Q.pro_homosexual_supp = 1;
 
 // popular opinion on various issues amongst students
 // socialism vs capitalism
-Q.pro_student_socialism = 21;
+Q.pro_student_socialism_supp = 21;
 // republicanism
-Q.pro_student_republic = 35;
+Q.pro_student_republic_supp = 35;
 // pro secular
-Q.pro_student_secular = 20;
+Q.pro_student_secular_supp = 20;
 // pro gay
-Q.pro_student_homosexual = 17;
+Q.pro_student_homosexual_supp = 17;
 
 // popular opinion on various issues in the north
 // socialism vs capitalism
-Q.pro_north_socialism = 6;
+Q.pro_north_socialism_supp = 6;
 // republicanism
-Q.pro_north_republic = 22;
+Q.pro_north_republic_supp = 22;
 // pro secular
-Q.pro_north_secular = 2;
+Q.pro_north_secular_supp = 2;
 // pro gay
-Q.pro_north_homosexual = 0.5;
+Q.pro_north_homosexual_supp = 0.5;
 
 Q.emergency_rule = 0;
 
