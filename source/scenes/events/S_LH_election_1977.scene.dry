@@ -23,7 +23,7 @@ var new_party_sum = 0;
 for (var party of Q.parties) {
     Q['old_' + party + '_l'] = Q[party + '_l'];
     if (Q.constitutional_reform > 0) {
-        if (Q[party + '_votes'] < Q.electoral_threshold || (Q.electoral_threshold > 1 && party == 'other') || Q[party + '_banned']) {
+        if (Q[party + '_votes'] < Q.electoral_threshold || (Q.electoral_threshold > 1 && party == 'other') || Q[party + '_south_banned']) {
             Q[party + '_l'] = 0;
         } else {
             Q[party + '_l'] = Q[party + '_votes'];
@@ -65,18 +65,18 @@ if (Q.electoral_threshold && Q.electoral_threshold > 0) {
     }
 }
 
-// Calculate total_l_unbanned by summing _l for all unbanned parties
-var total_l_unbanned = 0;
+// Calculate total_l_unsouth_banned by summing _l for all unsouth_banned parties
+var total_l_unsouth_banned = 0;
 for (var party of Q.parties) {
-    if (Q[party + '_banned'] != 1) {
-        total_l_unbanned += Q[party + '_l'];
+    if (Q[party + '_south_banned'] != 1) {
+        total_l_unsouth_banned += Q[party + '_l'];
     }
 }
 
-// Adjust _l values for unbanned parties by dividing by total_l_unbanned and multiplying by 100
+// Adjust _l values for unsouth_banned parties by dividing by total_l_unsouth_banned and multiplying by 100
 for (var party of Q.parties) {
-    if (Q[party + '_banned'] != 1) {
-        Q[party + '_l'] = (Q[party + '_l'] / total_l_unbanned) * 100;
+    if (Q[party + '_south_banned'] != 1) {
+        Q[party + '_l'] = (Q[party + '_l'] / total_l_unsouth_banned) * 100;
         // Round to 2 decimal places
         Q[party + '_l'] = Math.round(Q[party + '_l'] * 100) / 100;
         if (Q.use_decimals) {
@@ -100,25 +100,13 @@ Q.election_records.push(election_result);
 on-display: {!
 data = [
     {
-        "id": "IRSP",
-        "legend": "IRSP",
-        "name": "IRSP",
-        "seats": Math.round(Q.IRSP_l*(148/100)),
-    }
-];
-data = data.concat([
-    {
-        "id": "Officials",
-        "legend": "Officials",
-        "name": "Officials",
-        "seats": Math.round(Q.Officials_l*(148/100)),
-    },
-    {
         "id": "FG",
         "legend": "FG",
         "name": "Fine Gael",
         "seats": Math.round(Q.FG_l*(148/100)),
-    },
+    }
+];
+data = data.concat([
     {
         "id": "FF",
         "legend": "FF",
