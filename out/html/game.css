@@ -572,6 +572,19 @@ table {
 .seat.Vanguard {
     fill: #FFD580;
 }
+.seat.FF {
+    fill: #009E58;
+}
+.seat.FG {
+    fill: #18eaed;
+}
+.seat.Labour {
+    fill: #cc0000;
+}
+.seat.INDs {
+    fill: #999999;
+}
+
 
 .tooltip-text {
     text-decoration: underline;
