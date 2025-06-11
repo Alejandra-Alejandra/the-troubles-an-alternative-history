@@ -3,7 +3,7 @@ new-page: true
 view-if: year >= 1976 and SU_campaign_timer == 0
 tags: student_affairs
 is-card: true
-on-arrival: month_actions += 0; SU_meeting_timer = 1
+on-arrival: month_actions += 0; SU_campaign_timer = 1
 card-image: img/ncad.jpg
 max-visits: 100000
 #subtitle: What should our student branches meet and discuss this month?
