@@ -1,8 +1,8 @@
-title: 1977 Irish general election (If seen in 1975 testing)
+title: 1977 Irish general election 
 new-page: true
 tags: event
 priority: -1
-view-if: (year = 1975 and month == 2)
+view-if: (year = 1977 and month == 6)
 max-visits: 1
 set-jump: post_election_1977_LH
 
