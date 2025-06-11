@@ -22,7 +22,7 @@ The IRSP if it wishes to establish a 32 county republic must build support among
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; student_IRSP_strength += pro_secular
+on-arrival: resources -= 1; student_IRSP_strength += 4*pro_secular
 
 WIP: To Do
 
@@ -38,6 +38,6 @@ WIP: To Do
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; student_IRSP_strength += pro_homosexual
+on-arrival: resources -= 1; student_IRSP_strength += 3*pro_homosexual
 
 WIP: To Do
