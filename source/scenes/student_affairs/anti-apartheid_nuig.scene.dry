@@ -1,0 +1,31 @@
+title: The Student Branches are Clamouring for Action Around The Sale of South African Goods in Universities.
+new-page: true
+view-if: year == 1977 and month == 2
+tags: student_affairs
+is-card: true
+on-arrival: month_actions += 0; SU_consc_timer = 1
+card-image: img/iaam.jpg
+max-visits: 1
+#subtitle: What should we do to assist the Irish Anti-Apartheid Movement?
+
+= The Student Branches are Clamouring for Action Around The Sale of South African Goods in Universities.
+
+How should we respond?
+
+- @protest: Stage a campus protest.
+- @organise_workers: Organise workers on campus to refuse the handling of Apartheid goods
+- @shelf: Go into the stores, take the goods off their shelves and cover them in anti-apartheid stickers.
+
+
+
+@protest
+
+WIP: To Do
+
+@organise_workers
+
+WIP: To Do
+
+@shelf
+
+WIP: To Do
