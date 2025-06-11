@@ -1,10 +1,10 @@
-title: Northern Ireland Constitutional Convention Elections
+title: 1977 Irish general election (If seen in 1975 testing)
 new-page: true
 tags: event
 priority: -1
-view-if: (year = 1975 and month == 5)
+view-if: (year = 1975 and month == 2)
 max-visits: 1
-set-jump: post_election_1975
+set-jump: post_election_1977_LH
 
 # the low priority means that this event is only seen after all other events are resolved for the month.
 
@@ -109,7 +109,7 @@ Our old party that is more interested in running in elections than defending the
 
 - @NICC_algorithm: Enough with the details, what were the results?
 
-@post_election_1975
+@post_election_1977_LH
 on-arrival: {!
 // set old results
 // election threshold constitutional reform
