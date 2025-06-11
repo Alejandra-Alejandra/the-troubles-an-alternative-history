@@ -489,7 +489,7 @@ Q.north_rich_Labour = 0;
 Q.north_rich_UP_NI = 29;
 Q.north_rich_INDs = 0;
 
-Q.workers_IRSP = 1.4;
+Q.workers_IRSP = 0.42;
 Q.workers_Officials  = 1.85;
 Q.workers_IRs = 5;
 Q.workers_ILs = 0;
