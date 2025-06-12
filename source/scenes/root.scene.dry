@@ -825,7 +825,7 @@ Q.UVF_ban_timer = 0;
 Q.uda_ban_timer = 0;
 Q.kpd_ultimatum_timer = 0;
 Q.march_on_berlin_timer = 0;
-Q.defended_derry_timer = 2
+Q.defended_derry_timer = 2;
 
 // non-factional advisors.
 Q.costello_advisor = 1; // Seamus Costello
