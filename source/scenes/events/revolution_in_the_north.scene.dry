@@ -12,3 +12,8 @@ tags: event
 Following our victory over the BAF in Derry the entire North has risen up in revolt. Citizens have forced soldiers out of cities under a storm of stones, backed by sporadic gunfire from the IRA and INLA.
 
 The British government has ordered the withdrawal of all British forces from the west and are currently garrisoning the east of Ulster. Currently the nationalist areas of Belfast are under the control of the INLA and IRA but are being beseiged by the British army.
+
+- @game_fin: We shall fight on!
+
+@game_fin
+go-to: game_over
