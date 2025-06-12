@@ -3,8 +3,8 @@ new-page: true
 subtitle: Party members demand that we take steps to implement a socialist programme
 view-if: year = 1975 and month = 12 and December_Decision_start == 0
 max-visits: 10
-face-image: img/irsp-meeting.jpg
-tags: event
+card-image: img/motorman.jpg
+tags: govt_affairs
 
 = The Revolution Spreads in Derry
 
