@@ -1,7 +1,7 @@
 title: The Unfinished Revolution Returns
 new-page: true
 subtitle: The North Rises Up
-view-if: defended_derry_timer == 1
+view-if: defended_derry == 1
 max-visits: 1
 on-arrival: the_north_rises_up = 1
 face-image: img/unfinished_revolution_returns.jpg
