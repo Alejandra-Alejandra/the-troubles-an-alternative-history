@@ -17,7 +17,7 @@ game-over: true
 
 @the_british_defeated
 view-if: the_north_rises_up == 1 and IRSP_gov == 0 and FF_gov == 0
-title: The North has risen up and the British have fallen back to the eastern parts of the country, though they still hold onto Belfast. 
+title: The North has risen up and the British have fallen back to the eastern parts of the country, though they still hold onto Belfast. The war will continue to rage on, but the spectre of socialism now haunts the Island of Ireland. The bourgeois government down south is in complete panic.
 tags: endings
 go-to: eg_menu
 
