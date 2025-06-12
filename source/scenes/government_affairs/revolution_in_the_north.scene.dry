@@ -1,0 +1,14 @@
+title: The Unfinished Revolution Returns
+new-page: true
+subtitle: The North Rises Up
+view-if: defended_derry_timer == 1
+max-visits: 1
+on-arrival: the_north_rises_up
+face-image: img/unfinished_revolution_returns.jpg
+tags: event
+
+= The unfinished revolution of 1919 has returned, and it shall shake the world!
+
+Following our victory over the BAF in Derry the entire North has risen up in revolt. Citizens have forced soldiers out of cities under a storm of stones, backed by sporadic gunfire from the IRA and INLA.
+
+The British government has ordered the withdrawal of all British forces from the west and are currently garrisoning the north of Ulster. Currently the nationalist areas of Belfast are under the control of the INLA and IRA but are under siege by the British army.
