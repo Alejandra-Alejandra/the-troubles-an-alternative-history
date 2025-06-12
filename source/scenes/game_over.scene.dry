@@ -17,19 +17,24 @@ game-over: true
 
 @the_british_defeated
 view-if: the_north_rises_up == 1 and IRSP_gov == 0 and FF_gov == 0
-title: The North has risen up and the British have fallen back to the eastern parts of the country, though they still hold onto Belfast. The war will continue to rage on, but the spectre of socialism now haunts the Island of Ireland. The bourgeois government down south is in complete panic.
+title: The North has risen up.
 tags: endings
 go-to: eg_menu
+
+The North has risen up and the British have fallen back to the eastern parts of the country, though they still hold onto Belfast. The war will continue to rage on, but the spectre of socialism now haunts the Island of Ireland. The bourgeois government down south is in complete panic.
 
 @the_british_defeated_IRSP
 view-if: the_north_rises_up == 1 and IRSP_gov == 1
-title: The North has risen up and the British have fallen back to the eastern parts of the country, though they still hold onto Belfast given our control of the southern government, it seems clear that the British government will soon relinquish control over the place. Thousands of protestants have already started fleeing to Britain, though some Protestants remain.
+title: The North has risen up.
 tags: endings
 go-to: eg_menu
+
+The North has risen up and the British have fallen back to the eastern parts of the country, though they still hold onto Belfast given our control of the southern government, it seems clear that the British government will soon relinquish control over the place. Thousands of protestants have already started fleeing to Britain, though some Protestants remain.
 
 @the_british_defeated_FF
 view-if: the_north_rises_up == 1 and FF_gov == 1
-title: The North has risen up and the British have fallen back to the eastern parts of the country, though they still hold onto Belfast. Fianna Fáil has demanded that the British relinquish the north to the southern government, and for immediate local elections to be held. Given our role in the liberation of the north, and our successful propagandising, we will almost certainly sweep control of nationalist areas. With our popularity down south growing as well we can look forward to a bright future for socialist politics in Ireland. Perhaps we will even lead a worker's government in the next election and begin the transition to socialism?
+title: The North has risen up
 tags: endings
 go-to: eg_menu
 
+The North has risen up and the British have fallen back to the eastern parts of the country, though they still hold onto Belfast. Fianna Fáil has demanded that the British relinquish the north to the southern government, and for immediate local elections to be held. Given our role in the liberation of the north, and our successful propagandising, we will almost certainly sweep control of nationalist areas. With our popularity down south growing as well we can look forward to a bright future for socialist politics in Ireland. Perhaps we will even lead a worker's government in the next election and begin the transition to socialism?
