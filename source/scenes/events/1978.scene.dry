@@ -1,0 +1,11 @@
+title: 1978
+new-page: true
+view-if: year = 1978 and month = 1
+max-visits: 1
+priority: 10
+on-arrival: unemployed -= 0.8; workers += 0.8; north_unemployed += 0.4; catholic_workers -= 0.3; protestant_workers -= 0.1; unemployed_FF += 0.4; north_unemployed_Provisionals += 0.15
+tags: event
+
+= 1978
+
+Unemployment in the south has fallen back down sligthly. In the North, unemployment continues to rise.
