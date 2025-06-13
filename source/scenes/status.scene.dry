@@ -28,7 +28,8 @@ President: [+ president +] ([+ president_party +])
 
 Taoiseach: [+ taoiseach +] ([+ taoiseach_party +])
 
-Next election: Before 1978
+Next election:[? if S_election_held == 0: Before 1979 ?][? if S_election_held == 1: Before 1983 ?]
+
 
 = Northern Government
 
@@ -36,7 +37,7 @@ Prime Minister: [+ prime_minister +] ([+ prime_minister_party +])
 
 Monarch: [+ monarch +]
 
-Next election: Before 1975
+Next election:[? if N_election_held == 0: May 1975 ?][? if N_election_held == 1: Unknown ?]
 
 = Economics
 
