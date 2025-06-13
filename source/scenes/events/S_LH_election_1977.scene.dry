@@ -172,11 +172,6 @@ if (window && d3) {
     d3.select("#reichstag").datum(data).call(parliament);
 }
 
-if (FF_l >= 50) {
-    FF_in_gov = 1;
-    taoiseach = "Jack Lynch";
-    taoiseach_party = 'FF'
-}
 !}
 
 = Election results (WIP)
@@ -204,4 +199,9 @@ if (FF_l >= 50) {
 
 {!</table>!}
 
-[? if FF_l > 50: FF has won in a landslide as a result of their swing to populism. Jack Lynch will be Taoiseach. ?]
+
+- @FF_in_gov: FF has won in a landslide as a result of their swing to populism. Jack Lynch will be Taoiseach.
+
+@FF_in_gov
+view-if: FF_l >= 50
+on-arrival: FF_in_gov = 1; taoiseach = "Jack Lynch"; taoiseach_party = 'FF'
