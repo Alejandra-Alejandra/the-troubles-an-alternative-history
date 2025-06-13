@@ -171,7 +171,7 @@ if (window && d3) {
     d3.select("#reichstag").datum(data).call(parliament);
 }
 
-FF_in_gov = 1 if FF_l > 50
+if FF_l > 50: FF_in_gov = 1 
 !}
 
 = Election results (WIP)
