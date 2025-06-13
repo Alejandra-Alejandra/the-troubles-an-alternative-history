@@ -6,7 +6,7 @@ max-visits: 1
 on-arrival: FF_1977_manifesto = 1; workers_Labour -= 4; workers_FG -= 9; workers_FF += 12;
 face-image: img/FF_manifesto.jpg
 tags: event
-priority: -1
+priority: -2
 
 = The 1977 Fianna Fáil Manifesto
 
