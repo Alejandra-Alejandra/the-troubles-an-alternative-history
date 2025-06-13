@@ -13,7 +13,7 @@ for (var c of Q.classes) {
         class_votes += Q[c+'_'+party];
     }
     for (var party of Q.parties) {
-        Q[c + '_' + party + '_normalized'] = Math.round(10000(*Q[c+'_'+party]/class_votes)/100);
+        Q[c + '_' + party + '_normalized'] = Math.round(10000*(Q[c+'_'+party]/class_votes)/100);
         Q[c + '_' + party + '_display'] = Math.round(100*Q[c+'_'+party]/class_votes);
     }
 }
