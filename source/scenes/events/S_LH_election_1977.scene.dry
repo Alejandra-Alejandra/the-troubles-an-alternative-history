@@ -171,8 +171,8 @@ if (window && d3) {
     d3.select("#reichstag").datum(data).call(parliament);
 }
 
-if FF_l > 50
-{FF_in_gov = 1 
+if (FF_l > 50) {
+    FF_in_gov = 1 
 }
 !}
 
