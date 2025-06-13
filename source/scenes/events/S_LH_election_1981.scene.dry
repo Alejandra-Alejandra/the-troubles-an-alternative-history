@@ -134,8 +134,8 @@ data = data.concat([
     },
 ]);
 
-// Add IRSP only if vote share > 2%
-if (Q.IRSP_l > 2) {
+// Add IRSP only if vote share > 1.5%
+if (Q.IRSP_l > 1.5) {
     data.push({
         "id": "IRSP",
         "legend": "IRSP",
@@ -144,8 +144,8 @@ if (Q.IRSP_l > 2) {
     });
 }
 
-// Add Officials only if vote share > 2%
-if (Q.Officials_l > 2) {
+// Add Officials only if vote share > 1.5%
+if (Q.Officials_l > 1.5) {
     data.push({
         "id": "Officials",
         "legend": "Officials",
