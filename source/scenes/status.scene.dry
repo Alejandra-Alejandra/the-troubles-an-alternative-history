@@ -28,7 +28,7 @@ President: [+ president +] ([+ president_party +])
 
 Taoiseach: [+ taoiseach +] ([+ taoiseach_party +])
 
-Next election: [? if S_election_held == 0: Before 1978 ?][? if S_election_held == 1: Before 1982 ?]
+Next election: [? if S_election_held == 0: Before 1978 ?][? if S_election_held == 1: Before 1982 ?][? if S_election_held == 2: Before 1986 ?]
 
 
 = Northern Government
