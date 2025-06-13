@@ -172,10 +172,10 @@ if (window && d3) {
     d3.select("#reichstag").datum(data).call(parliament);
 }
 
-if (Q.FF_l >= 50) {
+if (FF_l >= 50) {
     FF_in_gov = 1;
-    Q.taoiseach = "Jack Lynch";
-    Q.taoiseach_party = 'FF'
+    taoiseach = "Jack Lynch";
+    taoiseach_party = 'FF'
 }
 !}
 
