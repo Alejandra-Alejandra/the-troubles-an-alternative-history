@@ -1,7 +1,7 @@
 title: The 1977 Fianna Fáil Manifesto
 new-page: true
 subtitle: Fianna Fáil Launches a New Manifesto
-view-if: year = 1977 and month = 1 and FF_1977_manifesto == 0
+view-if: year = 1977 and month = 3 and FF_1977_manifesto == 0
 max-visits: 1
 on-arrival: FF_1977_manifesto = 1; workers_Labour -= 4; workers_FG -= 9; workers_FF += 12;
 face-image: img/FF_manifesto.jpg
