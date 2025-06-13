@@ -265,7 +265,7 @@ Q.north_unemployed = 6.7; //
 Q.north_rich = 1; //
 
 // Proportion of different social groups in the republic, again some guess work has been used
-// sources: https://www.oireachtas.ie/en/debates/debate/dail/1975-12-02/4/#:~:text=The%20unemployment%20rate%20of%209.1,the%20total%20Irish%20labour%20force.
+// sources: https://www.oireachtas.ie/en/debates/debate/dail/1975-12-02/4/#:~:text=The%20unemployment%20rate%20of%209.1,the%20total%20Irish%20labour%20force. https://www.ifo.de/DocDL/cesifo_wp856.pdf
 Q.workers = 45.9; //
 Q.urban_middle = 5; //
 Q.poor_rural = 29; //
