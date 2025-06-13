@@ -1,7 +1,7 @@
 title: Taoiseach Liam Cosgrave dissolves the 20th Dáil
 new-page: true
 subtitle: New elections to be held next month
-view-if: year = 1977 and month = 3
+view-if: year = 1977 and month = 5
 max-visits: 1
 face-image: img/liam_cosgrave.jpg
 tags: event
