@@ -1,0 +1,9 @@
+title: James Callaghan Becomes Prime Minister of the UK
+new-page: true
+view-if: year = 1976 and month = 4
+on-arrival: prime_minister = "James Callaghan"
+tags: event
+
+= James Callaghan Becomes Prime Minister of the UK
+
+This will probably have little to no effect on affairs here.
