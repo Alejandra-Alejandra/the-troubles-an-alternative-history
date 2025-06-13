@@ -3,7 +3,7 @@ new-page: true
 view-if: year = 1979 and month = 10
 max-visits: 1
 priority: 10
-face-image: oil_crisis.jpg
+face-image: img/oil_crisis.jpg
 tags: event
 
 = The Oil Crisis Hits Ireland
