@@ -2,6 +2,7 @@ title: Hillery Sex Scandal
 new-page: true
 view-if: year = 1979 and month = 9
 max-visits: 1
+face-image: img/john_and_hillery.jpg
 priority: 10
 tags: event
 
