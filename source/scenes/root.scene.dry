@@ -251,8 +251,8 @@ Q.capital_strike_progress = 0;
 Q.budget = 4;
 
 // Proportion of different social groups, there is significant guesswork done here due to lack of useful figures.
-// sources: https://www.statista.com/statistics/384634/religion-of-northern-ireland-residents-census-uk/ and https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=GB and https://api.parliament.uk/historic-hansard/commons/1975/feb/13/unemployment#:~:text=The%20latest%20unemployment%20figures%20for%20Northern%20Ireland%20are%20for%2013th,which%20straddle%20the%20River%20Bann.
-Q.catholic_workers = 16; // 
+// sources: https://www.statista.com/statistics/384634/religion-of-northern-ireland-residents-census-uk/ and https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=GB and https://api.parliament.uk/historic-hansard/commons/1975/feb/13/unemployment#:~:text=The%20latest%20unemployment%20figures%20for%20Northern%20Ireland%20are%20for%2013th,which%20straddle%20the%20River%20Bann. https://cain.ulster.ac.uk/ni/economy/economy.htm#table6
+Q.catholic_workers = 17; // 
 Q.protestant_workers = 33; // 
 Q.other_workers = 8; // other christians, atheist, etc
 Q.catholic_middle_rural = 7.3; // 
@@ -261,17 +261,17 @@ Q.protestant_middle_rural = 5; //
 Q.protestant_middle_urban = 10; //
 Q.catholic_poor_rural = 9; //
 Q.protestant_poor_rural = 3; //
-Q.north_unemployed = 6.7; //
+Q.north_unemployed = 5.5; //
 Q.north_rich = 1; //
 
 // Proportion of different social groups in the republic, again some guess work has been used
-// sources: https://www.oireachtas.ie/en/debates/debate/dail/1975-12-02/4/#:~:text=The%20unemployment%20rate%20of%209.1,the%20total%20Irish%20labour%20force. https://www.ifo.de/DocDL/cesifo_wp856.pdf
-Q.workers = 45.9; //
+// sources: https://www.oireachtas.ie/en/debates/debate/dail/1975-12-02/4/#:~:text=The%20unemployment%20rate%20of%209.1,the%20total%20Irish%20labour%20force. https://www.ifo.de/DocDL/cesifo_wp856.pdf https://www.cso.ie/en/releasesandpublications/ep/p-ieu50/irelandandtheeuat50/economy/labourmarket/#:~:text=Labour%20Market%20in%20Ireland,lowest%20unemployment%20rate%20of%204.2%25.
+Q.workers = 48.05; //
 Q.urban_middle = 5; //
 Q.poor_rural = 29; //
 Q.middle_rural = 10; //
 Q.rich = 1 //
-Q.unemployed = 9.1; //
+Q.unemployed = 6.95; //
 
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (UVFme source as above)
