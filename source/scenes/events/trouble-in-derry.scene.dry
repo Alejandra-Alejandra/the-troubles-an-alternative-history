@@ -1,7 +1,7 @@
 title: Trouble in Derry
 new-page: true
 subtitle: Trouble is brewing in Derry...
-view-if: year = 1976 and month = 4 and trouble_in_derry == 0
+view-if: year = 1976 and month = 7 and trouble_in_derry == 0
 max-visits: 1
 on-arrival: trouble_in_derry = 1
 face-image: img/motorman2.jpg
