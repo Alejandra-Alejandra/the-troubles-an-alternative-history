@@ -576,7 +576,7 @@ Q.middle_rural_INDs = 3.5;
 Q.rich_IRSP = 0;
 Q.rich_Officials  = 0;
 Q.rich_IRs = 2;
-Q.rich_ILs = 2;
+Q.rich_ILs = 0;
 Q.rich_Provisionals = 4;
 Q.rich_SDLP = 0;
 Q.rich_alliance = 0;
@@ -588,7 +588,7 @@ Q.rich_FG = 56;
 Q.rich_FF = 37;
 Q.rich_Labour = 1;
 Q.rich_UP_NI = 0;
-Q.rich_INDs = 0.1;
+Q.rich_INDs = 1;
 
 Q.unemployed_IRSP = 0.11;
 Q.unemployed_Officials  = 4;
