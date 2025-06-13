@@ -3,7 +3,7 @@ new-page: true
 view-if: year = 1979 and month = 2
 max-visits: 1
 priority: 10
-face-image: iranian_revolution.jpg
+face-image: img/iranian_revolution.jpg
 tags: event
 
 = The Iranian Revolution and Oil Prices
