@@ -3,6 +3,7 @@ new-page: true
 tags: event
 priority: -1
 view-if: (year = 1977 and month == 6)
+on-arrival: S_election_Held = 1
 max-visits: 1
 set-jump: post_election_1977_LH
 
