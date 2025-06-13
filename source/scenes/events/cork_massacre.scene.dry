@@ -1,6 +1,6 @@
 title: The Cork Massacre
 new-page: true
-subtitle: Haughey 
+subtitle: Haughey rises
 view-if: year = 1979 and month = 11 and FF_in_gov == 1
 on-arrival: poor_rural_FF -= 4; workers_FF -= 6
 max-visits: 1
