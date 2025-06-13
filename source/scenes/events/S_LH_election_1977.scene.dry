@@ -173,9 +173,9 @@ if (window && d3) {
 }
 
 if (FF_l > 50) {
-    FF_in_gov = 1 
+    FF_in_gov = 1;
     taoiseach = "Jack Lynch";
-    taoiseach_party = 'FF';
+    taoiseach_party = 'FF'
 }
 !}
 
