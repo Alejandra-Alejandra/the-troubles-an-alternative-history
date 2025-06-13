@@ -2,7 +2,7 @@ title: The Rise of Charles Haughey
 new-page: true
 subtitle: Haughey 
 view-if: year = 1979 and month = 12 and FF_in_gov == 1
-on-arrival: Haughey_is_king = 1 Q.taoiseach = "Charles Haughey"
+on-arrival: Haughey_is_king = 1; Q.taoiseach = "Charles Haughey"
 max-visits: 1
 face-image: img/haughey.jpg
 tags: event
