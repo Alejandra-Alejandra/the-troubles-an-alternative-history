@@ -5,7 +5,7 @@ priority: -1
 view-if: (year = 1981 and month == 6)
 on-arrival: S_election_2_held = 1
 max-visits: 1
-set-jump: post_election_1977_LH
+set-jump: post_election_1981_LH
 
 # the low priority means that this event is only seen after all other events are resolved for the month.
 
@@ -15,7 +15,7 @@ WIP
 
 - @LH_algorithm: What were the results?
 
-@post_election_1977_LH
+@post_election_1981_LH
 on-arrival: {!
 // set old results
 // election threshold constitutional reform
