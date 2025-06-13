@@ -1,7 +1,7 @@
 title: Taoiseach Charles Haughey dissolves the 21st Dáil
 new-page: true
 subtitle: New elections to be held next month
-view-if: year = 1977 and month = 5
+view-if: year = 1981 and month = 5
 max-visits: 1
 face-image: img/haughey.jpg
 tags: event
