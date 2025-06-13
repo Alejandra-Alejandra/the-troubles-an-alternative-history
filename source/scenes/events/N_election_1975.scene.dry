@@ -246,6 +246,26 @@ data = data.concat([
     },
 ]);
 
+// Add IRSP only if vote share > 2%
+if (Q.IRSP_l > 2) {
+    data.push({
+        "id": "IRSP",
+        "legend": "IRSP",
+        "name": "Irish Republican Socialist Party",
+        "seats": Math.round(Q.IRSP_l * (148 / 100))
+    });
+}
+
+// Add Officials only if vote share > 3%
+if (Q.Officials_l > 3) {
+    data.push({
+        "id": "Officials",
+        "legend": "Officials",
+        "name": "Official Sinn Féin",
+        "seats": Math.round(Q.Officials_l * (148 / 100))
+    });
+}
+
 if (window && d3) {
     var width = 500; 
     var height = 500;
