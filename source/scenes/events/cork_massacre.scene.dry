@@ -1,0 +1,15 @@
+title: The Cork Massacre
+new-page: true
+subtitle: Haughey 
+view-if: year = 1979 and month = 11 and FF_in_gov == 1
+max-visits: 1
+face-image: img/cork_massacre.jpg
+tags: event
+
+= The Cork Massacre
+
+Following the death of Fianna Fáil TD Seán Brosnan and Labour TD Patrick Kerrigan, two elections were held in Cork county this month.
+
+In both cases Fine Gael has won and as a result Fianna Fáil has also lost their seat in Cork North East.
+
+Following this disaster the leadership of Jack Lynch is being increasingly challenged by members of Fianna Fáil, particularly by a group of five TDs known as "The Gang of Five" based around disgraced ex-finance minister Charles Haughey.
