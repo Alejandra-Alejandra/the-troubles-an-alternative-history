@@ -36,7 +36,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: month_actions += 0; resources -= 1; Limerick_inner_city_support += 0.01*(housing_issue)*MPTW; limerick_inner_city_radicalisation += 1*MPTW
 
-[? if housing_issue >= 5: We have gained a substantial amount of support in Limerick due to the impoverishment of the inner city. ?][? if housing_issue < 5: We have gained only a small amount of support in Limerick due to the issues in the inner city in Limerick being largely resolved. ?]
+[? if housing_issue >= 5: We have gained a substantial amount of support in Limerick due to the housing crisis in the city. ?][? if housing_issue < 5: We have gained only a small amount of support in Limerick due to the housing crisis in Limerick being largely resolved. ?]
 
 @unification
 subtitle: -1 resources
