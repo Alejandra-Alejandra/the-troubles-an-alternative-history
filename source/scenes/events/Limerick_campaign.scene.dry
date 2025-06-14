@@ -14,42 +14,58 @@ We have decided to hold a rally in Limerick, what should the focus of our rally 
 - @unification: We hold a rally demanding unification.
 - @courts: We hold a rally denouncing the repression in the free state, and specifically denounce the existence of the Special Criminal Court as anti-democratic and authoritarian.
 
+title: Rallying in Limerick
+new-page: true
+view-if: rally_check = 1
+on-arrival: rally_check = 0; month_actions += 0
+tags: event
+
+= Rallying in Limerick
+
+We have decided to hold a rally in Limerick, what should the focus of our rally be?
+
+- @british_violence: We hold a rally against the violence of the British army and unionist paramilitaries up north and demand an end to their attacks on Catholic civillians.
+- @workers: We hold a rally demanding increased worker control of industry, further worker protections and higher wages.
+- @housing: We hold a rally denouncing the impoverishment of the inner city in Limerick.
+- @unification: We hold a rally demanding unification.
+- @courts: We hold a rally denouncing the repression in the free state, and specifically denounce the existence of the Special Criminal Court as anti-democratic and authoritarian.
+
 @british_violence
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; Limerick_support += 0.000002*(BAF_strength); resources -= 1; 
 
-WIP: Result will depend on quantity of BAF in Britain and level of state repression up north.
+[? if BAF_strength >= 10000: We have gained a significant amount of support in Limerick due to the presence of the British Armed Forces ?][? if BAF_strength < 10000: We have gained little support in Limerick due to the reduced presence of the British Armed Forces ?]
 
 @workers
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Limerick_support += 0.02*(inflation)
 
-WIP: Result will depend on state of the economy.
+[? if inflation >= 5: We have gained a substantial amount of support in Limerick due to the state of the economy ?][? if inflation < 5: We have gained only a small amount of support in Limerick due to the state of the economy ?]
 
 @housing
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Limerick_inner_city_support += 0.01*(housing_issue); limerick_inner_city_radicalisation += 1
 
-WIP: Result will depend on state of the economy and recent events.
+[? if housing_issue >= 5: We have gained a substantial amount of support in Limerick due to the impoverishment of the inner city. ?][? if housing_issue < 5: We have gained only a small amount of support in Limerick due to the issues in the inner city in Limerick being largely resolved. ?]
 
 @unification
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Limerick_support += 0.008*(republic_supp)
 
-WIP: Result will depend on support for republicanism in Dublin and the south.
+We have gained significant support due to the support for a united Ireland in Limerick.
 
 @courts
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Limerick_support += 0.003*(republic_supp); republic_supp += 0.001
 
-WIP: Result will depend on level of state repression in the south and support for left-wing parties.
+We have managed to rally support against the special criminal courts.
