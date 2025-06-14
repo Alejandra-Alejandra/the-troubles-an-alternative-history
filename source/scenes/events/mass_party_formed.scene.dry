@@ -5,7 +5,7 @@ view-if: (year = 1976 or year = 1977) and month = 2 and left_is_united == 1 and 
 max-visits: 1
 face-image: img/James_Larkin.jpg
 tags: event
-on-arrival: Mass_party = 1; MPTW = 2
+on-arrival: Mass_party = 1; MPTW += 1
 
 = Building a Mass Party
 
