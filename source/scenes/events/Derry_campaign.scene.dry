@@ -8,39 +8,50 @@ tags: event
 
 We have decided to hold a rally in Derry, what should the focus of our rally be?
 
+
 - @british_violence: We hold a rally against the violence of the British army and unionist paramilitaries up north and demand an end to their attacks on Catholic civillians.
 - @workers: We hold a rally demanding increased worker control of industry, further worker protections and higher wages.
 - @inequality: We hold a rally denouncing discrimination against Catholics in the work place, and in housing.
 - @unification: We hold a rally demanding unification.
+- @democracy: We hold a rally denouncing the power held by the unionist parties, and demand an end to gerrymandering and voter repression.
 
 @british_violence
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; Derry_support += 0.000004*(BAF_strength); resources -= 1; 
 
-WIP: Result will depend on quantity of BAF in Britain and level of state repression up north.
+[? if BAF_strength >= 10000: We have gained a significant amount of support in Derry due to the presence of the British Armed Forces ?][? if BAF_strength < 10000: We have gained little support in Derry due to the reduced presence of the British Armed Forces ?]
+
 
 @workers
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Derry_support += 0.008*(north_inflation)
 
-WIP: Result will depend on state of the economy.
+[? if north_inflation >= 5: We have gained a substantial amount of support in Derry due to the state of the economy ?][? if north_inflation < 5: We have gained only a small amount of support in Derry due to the state of the economy ?]
 
 @inequality
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Derry_support += 0.03*(north_unemployment)
 
-WIP: Result will depend on state of economy and quality of life of Catholics
+[? if north_unemployment >= 4: Due to the high unemployment in the north amongst Catholics we have gained a lot of support. ?][? if north_unemployment < 4: Due to the low unemployment in the north amongst Catholics we have gained barely any support. ?]
 
 @unification
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Derry_support += 0.01*(north_republic_supp)
 
-WIP: Result will depend on support for republicanism in Derry and the north.
+We have gained significant support due to the support for a united Ireland in Derry.
+
+@democracy
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: month_actions += 0; resources -= 1; Derry_support += 0.0000065*(BAF_strength) if year >= 1980; Derry_support += 0.000003*(BAF_strength) if year < 1980
+
+[if year < 1980: We have gained a small amount of support, but there are more pressing concerns right now. ?][if year >= 1980: We have gained a lot of support due to the increasing demands for democracy in Derry. ?]
