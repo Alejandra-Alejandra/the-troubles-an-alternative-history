@@ -34,7 +34,7 @@ on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.01*(inflatio
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.01*(housing_issue); inner_city_radicalisation += 1
+on-arrival: month_actions += 0; resources -= 1; Dublin_inner_city_support += 0.01*(poverty_issue); inner_city_radicalisation += 1
 
 [? if housing_issue >= 5: We have gained a substantial amount of support in Dublin due to the impoverishment of the inner city. ?][? if housing_issue < 5: We have gained only a small amount of support in Dublin due to the issues in the inner city in Dublin being largely resolved. ?]
 
