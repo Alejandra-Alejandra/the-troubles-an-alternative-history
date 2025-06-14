@@ -5,6 +5,9 @@ on-arrival: {!
 if (Q.unemployed) {
     Q.unemployed_2 = Q.unemployed.toFixed(1);
 }
+if (Q.north_unemployed) {
+    Q.north_unemployed_2 = Q.north_unemployed.toFixed(1);
+}
 if (Q.inflation) {
     Q.inflation_2 = Q.inflation.toFixed(1);
 }
@@ -39,11 +42,19 @@ Monarch: [+ monarch +]
 
 Next election: [? if N_election_held == 0: May 1975 ?][? if N_election_held == 1: Unknown ?]
 
-= Economics
+= Northern Economy
 
 Inflation: [+ inflation_2 +]%
 
-[? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
+Unemployment: [+ unemployed_2 +]%
+
+Economic growth: [+ economic_growth_2 +]%
+
+= Southern Economy
+
+Inflation: [+ inflation_2 +]%
+
+Unemployment: [+ unemployed_2 +]%
 
 Economic growth: [+ economic_growth_2 +]%
 
