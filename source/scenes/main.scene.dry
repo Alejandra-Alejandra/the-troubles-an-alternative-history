@@ -21,6 +21,7 @@ max-cards: 3
 - @paramilitary
 - @student
 - @calendar
+- @local_council
 - #advisor
 
 @main_easy
@@ -46,6 +47,7 @@ max-cards: 4
 - @paramilitary
 - @student
 - @calendar
+- @local_council
 - #advisor
 
 
@@ -79,9 +81,19 @@ is-deck: true
 
 - #student_affairs
 
+@local_council
+title: Local Council Affairs
+view-if: in_council = 1
+card-image: img/bray.jpg
+is-deck: true
+- #council_affairs
+
 @calendar
 title: End Month
 card-image: img/calendar.jpg
 is-deck: true
 
 - #calendar_affairs
+
+
+
