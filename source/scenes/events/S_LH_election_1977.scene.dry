@@ -104,7 +104,7 @@ data = [
         "id": "FG",
         "legend": "FG",
         "name": "Fine Gael",
-        "seats": Math.round(Q.FG_l*(148/100))+Math.round(Q.Officials_l*(148/100)),
+        "seats": Math.round(Q.FG_l*(148/100)),
     }
 ];
 data = data.concat([
@@ -119,13 +119,13 @@ data = data.concat([
         "id": "INDs",
         "legend": "INDs",
         "name": "Independents",
-        "seats": Math.round(Q.INDs_l*(148/100),
+        "seats": Math.round(Q.INDs_l*(148/100)),
     },
     {
         "id": "FF",
         "legend": "FF",
         "name": "Fianna Fáil",
-        "seats": Math.round(Q.FF_l*(148/100)+Q.IRSP_l*(148/100)+Q.Officials_l*(148/100)),
+        "seats": Math.round(Q.FF_l*(148/100)),
     },
     {
         "id": "IRs",
@@ -135,8 +135,28 @@ data = data.concat([
     },
 ]);
 
+// Add FG extra only if IRSP vote share < 2%
+if (.7 < Q.IRSP_l < 2) {
+    data.push({
+        "id": "FF",
+        "legend": "FF",
+        "name": "Fianna Fáil",
+        "seats": Math.round(Q.IRSP_l*(148/100)),
+    });
+}
+
+// Add FG extra only if Officials vote share < 2%
+if (.7 < Q.Officials_l < 2) {
+    data.push({
+        "id": "FF",
+        "legend": "FF",
+        "name": "Fianna Fáil",
+        "seats": Math.round(Q.Officials_l*(148/100)),
+    });
+}
+
 // Add IRSP only if vote share > 2%
-if (Q.IRSP_l > 2) {
+if (Q.IRSP_l >= 2) {
     data.push({
         "id": "IRSP",
         "legend": "IRSP",
@@ -146,12 +166,12 @@ if (Q.IRSP_l > 2) {
 }
 
 // Add Officials only if vote share > 2%
-if (Q.Officials_l > 2) {
+if (Q.Officials_l >= 2) {
     data.push({
         "id": "Officials",
         "legend": "Officials",
         "name": "Official Sinn Féin",
-        "seats": Math.round(Q.Officials_l*(148 / 100))
+        "seats": Math.round(Q.Officials_l * (148 / 100))
     });
 }
 
@@ -202,6 +222,10 @@ if (window && d3) {
 
 
 - @FF_in_gov: FF has won in a landslide as a result of their swing to populism. Jack Lynch will be Taoiseach.
+
+@FF_in_gov
+view-if: FF_l >= 50
+on-arrival: FF_in_gov = 1; taoiseach = "Jack Lynch"; taoiseach_party = 'FF'
 
 @FF_in_gov
 view-if: FF_l >= 50
