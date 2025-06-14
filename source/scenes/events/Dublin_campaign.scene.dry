@@ -18,7 +18,7 @@ We have decided to hold a rally in Dublin, what should the focus of our rally be
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; Dublin_support += 0.000002*(BAF_strength); resources -= 1; 
+on-arrival: month_actions += 0; Dublin_support += 0.000002*(BAF_strength)*MPTW; resources -= 1; 
 
 [? if BAF_strength >= 10000: We have gained a significant amount of support in Dublin due to the presence of the British Armed Forces ?][? if BAF_strength < 10000: We have gained little support in Dublin due to the reduced presence of the British Armed Forces ?]
 
@@ -26,7 +26,7 @@ on-arrival: month_actions += 0; Dublin_support += 0.000002*(BAF_strength); resou
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.01*(inflation)
+on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.01*(inflation)*MPTW
 
 [? if inflation >= 5: We have gained a substantial amount of support in Dublin due to the state of the economy ?][? if inflation < 5: We have gained only a small amount of support in Dublin due to the state of the economy ?]
 
@@ -34,7 +34,7 @@ on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.01*(inflatio
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Dublin_inner_city_support += 0.01*(poverty_issue); inner_city_radicalisation += 1
+on-arrival: month_actions += 0; resources -= 1; Dublin_inner_city_support += 0.01*(poverty_issue)*MPTW; inner_city_radicalisation += 1*MPTW
 
 [? if poverty_issue >= 5: We have gained a substantial amount of support in Dublin due to the impoverishment of the inner city. ?][? if poverty_issue < 5: We have gained only a small amount of support in Dublin due to the issues in the inner city in Dublin being largely resolved. ?]
 
@@ -42,7 +42,7 @@ on-arrival: month_actions += 0; resources -= 1; Dublin_inner_city_support += 0.0
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.008*(republic_supp)
+on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.008*(republic_supp)*MPTW
 
 We have gained significant support due to the support for a united Ireland in Dublin.
 
@@ -50,6 +50,6 @@ We have gained significant support due to the support for a united Ireland in Du
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.003*(republic_supp); republic_supp += 0.001
+on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.003*(republic_supp)*MPTW; republic_supp += 0.001*MPTW
 
 We have managed to rally support against the special criminal courts.
