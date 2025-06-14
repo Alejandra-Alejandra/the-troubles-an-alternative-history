@@ -1,0 +1,10 @@
+title: Local Elections in the South
+new-page: true
+view-if: year = 1977 and month = 7
+max-visits: 1
+priority: 10
+tags: event
+
+= Local Elections in the South
+
+WIP: To be implemented soon. Will cover all seats nationally, but also include detailed results and campaigning in: Belfast, Derry, Dublin, Galway, Limerick, Cork, and Wicklow
