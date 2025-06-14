@@ -280,11 +280,11 @@ Q.unemployed = 6.95; //
 Q.income = 1600;
 // what about incomes for different classes? rural workers? middle-class workers?
 
-// inflation (in %; 1928: 2.9; 1929: 0; 1930: -5%; 1931: -10%; 1932: -10%) - source: https://en.wikipedia.org/wiki/File:BSPDRWeltkriseEngl.PNG, derived from https://www.destatis.de/DE/Methoden/WISTA-Wirtschaft-und-Statistik/2009/03/rezession-betrachtung-032009.pdf?__blob=publicationFile
-Q.inflation = 2.9;
+// southern inflation source: https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IE
+Q.inflation = 20.9;
 
-// economic growth - UVFme source as above, Table 2 (preisbereinigt) - this is also the source for the yearly changes in the great depression.
-Q.economic_growth = 4.4;
+// north inflation - source: https://www.macrotrends.net/global-metrics/countries/gbr/united-kingdom/inflation-rate-cpi
+Q.north_inflation = 24.21;
 
 // economic expansion timer
 Q.economic_expansion = 0;
