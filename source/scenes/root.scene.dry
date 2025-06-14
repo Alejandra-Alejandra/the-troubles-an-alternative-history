@@ -191,6 +191,9 @@ Q.IDF_relation = 20;
 
 // The state of the country
 
+// Mass Party Weight - increases as the presence of the IRSP grows
+Q.MPTW = 1;
+
 // popular opinion on various issues in the south
 // socialism vs capitalism
 Q.pro_socialism_supp = 11;
