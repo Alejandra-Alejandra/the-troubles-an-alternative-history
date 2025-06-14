@@ -1,0 +1,16 @@
+title: Crisis in the Inner City
+new-page: true
+view-if: year = 1981 and month = 2
+max-visits: 1
+priority: 10
+on-arrival: 
+face-image: img/stardust-fire.jpg
+tags: event
+
+= Stardust Fire
+
+A fire broke out in the Starduyst nightclub in Artane, Dublin. Dozens attending a disco event died, and hundreds were injured.
+
+They struggled to escape due to chains and padlocks being on multiple exits, as well as the existence of barred windows, and failure of the lighting system.
+
+The local community has been completely shocked by the tragedy, and the nation is in mourning.
