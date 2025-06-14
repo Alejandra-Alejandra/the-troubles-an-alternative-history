@@ -41,12 +41,6 @@ Monarch: [+ monarch +]
 
 Next election: [? if N_election_held == 0: May 1975 ?][? if N_election_held == 1: Unknown ?]
 
-= Northern Economy
-
-Inflation: [+ north_inflation_2 +]%
-
-Unemployment: [+ north_unemployed_2 +]%
-
 = Southern Economy
 
 Inflation: [+ inflation_2 +]%
@@ -56,6 +50,12 @@ Unemployment: [+ unemployed_2 +]%
 Dublin Inner City Poverty: [+ poverty_issue : poverty +]
 
 Farming Monopolisation: [+ farming_monopolisation : strength +]
+
+= Northern Economy
+
+Inflation: [+ north_inflation_2 +]%
+
+Unemployment: [+ north_unemployed_2 +]%
 
 # = Public Opinion
 
