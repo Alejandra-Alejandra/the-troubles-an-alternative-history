@@ -49,6 +49,8 @@ Unemployment: [+ unemployed_2 +]%
 
 Dublin Inner City Poverty: [+ poverty_issue : poverty +]
 
+Limerick Housing Crisis: [+ housing_issue : poverty +]
+
 Farming Monopolisation: [+ farming_monopolisation : strength +]
 
 = Northern Economy
