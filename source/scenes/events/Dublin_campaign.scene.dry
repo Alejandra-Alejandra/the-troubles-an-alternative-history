@@ -10,7 +10,7 @@ We have decided to hold a rally in Dublin, what should the focus of our rally be
 
 - @british_violence: We hold a rally against the violence of the British army and unionist paramilitaries up north and demand an end to their attacks on Catholic civillians.
 - @workers: We hold a rally demanding increased worker control of industry, further worker protections and higher wages.
-- @housing: We hold a rally denouncing landlordism and the dangerous tenements in the city. We demand an increase in construction of safe, quality homes.
+- @housing: We hold a rally denouncing the impoverishment of the inner city in Dublin.
 - @unification: We hold a rally demanding unification.
 - @courts: We hold a rally denouncing the repression in the free state, and specifically denounce the existence of the Special Criminal Court as anti-democratic and authoritarian.
 
@@ -34,9 +34,9 @@ on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.01*(inflatio
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.01*(housing_issue)
+on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.01*(housing_issue); inner_city_radicalisation += 1
 
-[? if housing_issue >= 5: We have gained a substantial amount of support in Dublin due to issue of Housing in Dublin ?][? if housing_issue < 5: We have gained only a small amount of support in Dublin due to the Housing issue in Dublin being largely resolved. ?]
+[? if housing_issue >= 5: We have gained a substantial amount of support in Dublin due to the impoverishment of the inner city. ?][? if housing_issue < 5: We have gained only a small amount of support in Dublin due to the issues in the inner city in Dublin being largely resolved. ?]
 
 @unification
 subtitle: -1 resources
