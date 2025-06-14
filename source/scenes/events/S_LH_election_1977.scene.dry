@@ -145,8 +145,8 @@ if (.7 < Q.IRSP_l < 2) {
     });
 }
 
-// Add FG extra only if Officials vote share < 2%
-if (.7 < Q.Officials_l < 2) {
+// Add FG extra only if Officials vote share < 2.4%
+if (.7 < Q.Officials_l < 2.4) {
     data.push({
         "id": "FF",
         "legend": "FF",
@@ -165,8 +165,8 @@ if (Q.IRSP_l >= 2) {
     });
 }
 
-// Add Officials only if vote share > 2%
-if (Q.Officials_l >= 2) {
+// Add Officials only if vote share > 2.4%
+if (Q.Officials_l >= 2.4) {
     data.push({
         "id": "Officials",
         "legend": "Officials",
