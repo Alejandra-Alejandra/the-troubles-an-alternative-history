@@ -34,7 +34,7 @@ We have decided to hold a rally in Limerick, what should the focus of our rally 
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; Limerick_support += 0.000002*(BAF_strength); resources -= 1; 
+on-arrival: month_actions += 0; Limerick_support += 0.000002*(BAF_strength)*MPTW; resources -= 1; 
 
 [? if BAF_strength >= 10000: We have gained a significant amount of support in Limerick due to the presence of the British Armed Forces ?][? if BAF_strength < 10000: We have gained little support in Limerick due to the reduced presence of the British Armed Forces ?]
 
@@ -42,7 +42,7 @@ on-arrival: month_actions += 0; Limerick_support += 0.000002*(BAF_strength); res
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Limerick_support += 0.02*(inflation)
+on-arrival: month_actions += 0; resources -= 1; Limerick_support += 0.02*(inflation)*MPTW
 
 [? if inflation >= 5: We have gained a substantial amount of support in Limerick due to the state of the economy ?][? if inflation < 5: We have gained only a small amount of support in Limerick due to the state of the economy ?]
 
@@ -50,7 +50,7 @@ on-arrival: month_actions += 0; resources -= 1; Limerick_support += 0.02*(inflat
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Limerick_inner_city_support += 0.01*(housing_issue); limerick_inner_city_radicalisation += 1
+on-arrival: month_actions += 0; resources -= 1; Limerick_inner_city_support += 0.01*(housing_issue)*MPTW; limerick_inner_city_radicalisation += 1*MPTW
 
 [? if housing_issue >= 5: We have gained a substantial amount of support in Limerick due to the impoverishment of the inner city. ?][? if housing_issue < 5: We have gained only a small amount of support in Limerick due to the issues in the inner city in Limerick being largely resolved. ?]
 
@@ -58,7 +58,7 @@ on-arrival: month_actions += 0; resources -= 1; Limerick_inner_city_support += 0
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Limerick_support += 0.008*(republic_supp)
+on-arrival: month_actions += 0; resources -= 1; Limerick_support += 0.008*(republic_supp)*MPTW
 
 We have gained significant support due to the support for a united Ireland in Limerick.
 
@@ -66,6 +66,6 @@ We have gained significant support due to the support for a united Ireland in Li
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Limerick_support += 0.003*(republic_supp); republic_supp += 0.001
+on-arrival: month_actions += 0; resources -= 1; Limerick_support += 0.003*(republic_supp)*MPTW; republic_supp += 0.001*MPTW
 
 We have managed to rally support against the special criminal courts.
