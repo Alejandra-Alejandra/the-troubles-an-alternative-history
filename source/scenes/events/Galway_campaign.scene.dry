@@ -34,9 +34,9 @@ on-arrival: month_actions += 0; resources -= 1; Galway_support += 0.005*(inflati
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Galway_support += 0.01*(farming_monopolisation)
+on-arrival: month_actions += 0; resources -= 1; Galway_support += 0.01*(farming_monopolisation_fears)
 
-[? if housing_issue >= 5: We have gained a substantial amount of support in Galway due to issue of Housing in Galway ?][? if housing_issue < 5: We have gained only a small amount of support in Galway due to the Housing issue in Galway being largely resolved. ?]
+[? if farming_monopilisation_fears >= 5: We have gained a substantial amount of support in Galway due to the monopolisation of the farming industry ?][? if farming_monopilisation_fears < 5: We have gained only a small amount of support in Galway as monopolisation of the farming sector is not that high yet. ?]
 
 @unification
 subtitle: -1 resources
