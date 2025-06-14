@@ -53,6 +53,8 @@ Inflation: [+ inflation_2 +]%
 
 Unemployment: [+ unemployed_2 +]%
 
+Dublin Inner City Poverty: [+ poverty_issue : poverty +]
+
 # = Public Opinion
 
 @politics
