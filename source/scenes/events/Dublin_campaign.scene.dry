@@ -18,38 +18,38 @@ We have decided to hold a rally in Dublin, what should the focus of our rally be
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; Dublin_support += 0.000002*(BAF_strength); resources -= 1; 
 
-WIP: Result will depend on quantity of BAF in Britain and level of state repression up north.
+[? if BAF_strength >= 10000: We have gained a significant amount of support in Dublin due to the presence of the British Armed Forces ?][? if BAF_strength < 10000: We have gained little support in Dublin due to the reduced presence of the British Armed Forces ?]
 
 @workers
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.01*(inflation)
 
-WIP: Result will depend on state of the economy.
+[? if inflation >= 5: We have gained a substantial amount of support in Dublin due to the state of the economy ?][? if inflation < 5: We have gained only a small amount of support in Dublin due to the state of the economy ?]
 
 @housing
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.01*(housing_issue)
 
-WIP: Result will depend on relations with other left-wing organisations in Dublin and recent events.
+[? if housing_issue >= 5: We have gained a substantial amount of support in Dublin due to issue of Housing in Dublin ?][? if housing_issue < 5: We have gained only a small amount of support in Dublin due to the Housing issue in Dublin being largely resolved. ?]
 
 @unification
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.008*(republic_supp)
 
-WIP: Result will depend on support for republicanism in Dublin and the south.
+We have gained significant support due to the support for a united Ireland in Dublin.
 
 @courts
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Dublin_support += 0.003*(republic_supp); republic_supp += 0.001
 
-WIP: Result will depend on level of state repression in the south and support for left-wing parties.
+We have managed to rally support against the special criminal courts.
