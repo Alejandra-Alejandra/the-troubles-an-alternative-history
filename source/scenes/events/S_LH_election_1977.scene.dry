@@ -113,13 +113,13 @@ data = data.concat([
         "id": "Labour",
         "legend": "Labour",
         "name": "Labour",
-        "seats": Math.round(Q.Labour_l**(148/100)),
+        "seats": Math.round(Q.Labour_l*(148/100)),
     },
     {
         "id": "INDs",
         "legend": "INDs",
         "name": "Independents",
-        "seats": Math.round(Q.INDs_l**(148/100)),
+        "seats": Math.round(Q.INDs_l*(148/100) + Q.IRSP_l*(148/100)+Q.IRSP_l*(148/100)),
     },
     {
         "id": "FF",
@@ -131,7 +131,7 @@ data = data.concat([
         "id": "IRs",
         "legend": "IRs",
         "name": "Independent Republicans",
-        "seats": Math.round(Q.IRs_l**(148/100)),
+        "seats": Math.round(Q.IRs_l*(148/100)),
     },
 ]);
 
@@ -141,7 +141,7 @@ if (Q.IRSP_l > 2) {
         "id": "IRSP",
         "legend": "IRSP",
         "name": "Irish Republican Socialist Party",
-        "seats": Math.round(Q.IRSP_l * (148 / 100))
+        "seats": Math.round(Q.IRSP_l*(148/100))
     });
 }
 
