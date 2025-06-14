@@ -3,10 +3,10 @@ new-page: true
 view-if: year = 1977 and month = 1
 max-visits: 1
 priority: 10
-on-arrival: unemployed += 2; workers -= 2; north_unemployed += 0.6; catholic_workers -= 0.4; protestant_workers -= 0.2; unemployed_Labour -= 4; north_unemployed_Provisionals += 1
+on-arrival: unemployed += 2; workers -= 2; north_unemployed += 0.6; catholic_workers -= 0.4; protestant_workers -= 0.2; unemployed_Labour -= 4; north_unemployed_Provisionals += 1; inflation -= 4.5; north_inflation -= 0.72
 tags: event
 
 = 1977
 
-Unemployment in the south has risen significantly as the economy falters. The National Coalition, particularly Labour is losing support as a result. In the North, unemployment continues to rise.
+The great inflation of the 1970s continues to shake the economy. Unemployment in the south has risen significantly as the economy falters. The National Coalition, particularly Labour is losing support as a result. In the North, unemployment continues to rise.
 
