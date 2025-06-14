@@ -4,7 +4,7 @@ view-if: year = 1981 and month = 2
 max-visits: 1
 priority: 10
 on-arrival: poverty_issue += 10
-face-image: fatima-jpg
+face-image: img/fatima.jpg
 tags: event
 
 = Crisis in the Inner City
