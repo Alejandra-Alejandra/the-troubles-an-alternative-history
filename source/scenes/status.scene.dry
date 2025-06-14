@@ -46,7 +46,7 @@ Next election: [? if N_election_held == 0: May 1975 ?][? if N_election_held == 1
 
 Inflation: [+ inflation_2 +]%
 
-Unemployment: [+ unemployed_2 +]%
+Unemployment: [+ north_unemployed_2 +]%
 
 Economic growth: [+ economic_growth_2 +]%
 
