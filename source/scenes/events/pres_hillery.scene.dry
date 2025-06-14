@@ -1,0 +1,12 @@
+title: New President of Ireland
+new-page: true
+view-if: year = 1976 and month = 12
+max-visits: 1
+priority: 10
+face-image: img/hillery.jpg
+on-arrival: president = "Patrick Hillery"
+tags: event
+
+= New President of Ireland
+
+Following a short election, Patrick Hillery of Fianna Fáil has been elected the new President of Ireland.
