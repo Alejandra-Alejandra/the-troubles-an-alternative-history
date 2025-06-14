@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta prefix="ifiction: http://babel.ifarchive.org/protocol/iFiction/"
         property="ifiction:ifid" content="7FCDF039-2B77-4179-B795-CBAFA65253AA">
-    <title>The Troubles an Alternative History - Alejandra Martí Pérez</title>
+    <title>Social Democracy: An Alternate History - Autumn Chen</title>
     <link rel="stylesheet" type="text/css" href="game.css">
     <script src="jquery-1.11.1.min.js"></script>
     <script src="d3.v7.min.js"></script>
@@ -15,12 +15,75 @@
     <script src="game.js"></script>
   </head>
   <body>
-    <div class="background" id="bg2"></div>
-    <div class="background" id="bg1"></div>
+    <div class="background" id="bg2">
+    </div>
+
+    <div class="background" id="bg1">
+    </div>
 
     <div id="options" class="overlay" style="display: none;">
         <div class="overlay_top">
             <table>
+                <tr>
+                    <td>
+                        Backgrounds:
+                    </td>
+                    <td>
+                        <label for="backgrounds_yes">On</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="backgrounds_yes" name="backgrounds" value="1" onclick="window.enableBg();">
+                    </td>
+                    <td>
+                        <label for="backgrounds_no">Off</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="backgrounds_no" name="backgrounds" value="0" onclick="window.disableBg();">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <hr> </td>
+                </tr>
+                <tr>
+                    <td>
+                        Event images:
+                    <td>
+                        <label for="images_yes">On</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="images_yes" name="images" value="1" onclick="window.enableImages();">
+                    </td>
+                    <td>
+                        <label for="images_no">Off</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="images_no" name="images" value="0" onclick="window.disableImages();">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <hr> </td>
+                </tr>
+ 
+                <tr>
+                    <td>
+                        Animations:
+                    </td>
+                    <td>
+                        <label for="animate_yes">On</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="animate_yes" name="animate" value="1" onclick="window.enableAnimate();">
+                    </td>
+                    <td>
+                        <label for="animate_no">Off</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="animate_no" name="animate" value="0" onclick="window.disableAnimate();">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <hr> </td>
+                </tr>
                 <tr>
                     <td>
                         Music:
@@ -39,7 +102,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><hr></td>
+                    <td> <hr> </td>
                 </tr>
                 <tr>
                     <td>
@@ -69,15 +132,163 @@
                    <td>
                         <button onclick="window.showMods();">Mods</button>
                     </td>
+
                 </tr>
             </table>
         </div>
+    </div>
+
+    <div id="save" class="overlay" style="display: none;">
+        <table id="saves_table" class="overlay_top">
+            <tr>
+                <td>Auto-0</td>
+                <td>
+                    <button class="b save_button" id="save_button_a0">Save</button>
+                </td>
+                <td>
+                    <button class="b delete_button" id="delete_button_a0">Delete</button>
+                </td>
+                <td class="save_info" id="save_info_a0"></td>
+                <td>
+                    <button class="b export_button" id="export_button_a0">Export</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Auto-1</td>
+                <td>
+                    <button class="b save_button" id="save_button_a1">Save</button>
+                </td>
+                <td>
+                    <button class="b delete_button" id="delete_button_a1">Delete</button>
+                </td>
+                <td class="save_info" id="save_info_a1"></td>
+                <td>
+                    <button class="b export_button" id="export_button_a1">Export</button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>0</td>
+                <td>
+                    <button class="b save_button" id="save_button_0">Save</button>
+                </td>
+                <td>
+                    <button class="b delete_button" id="delete_button_0">Delete</button>
+                </td>
+                <td class="save_info" id="save_info_0"></td>
+                <td>
+                    <button class="b export_button" id="export_button_0">Export</button>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <button class="b save_button" id="save_button_1">Save</button>
+                </td>
+                <td>
+                    <button class="b delete_button" id="delete_button_1">Delete</button>
+                </td>
+                <td class="save_info" id="save_info_1"></td>
+                <td>
+                    <button class="b export_button" id="export_button_1">Export</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <button class="b save_button" id="save_button_2">Save</button>
+                </td>
+                <td>
+                    <button class="b delete_button" id="delete_button_2">Delete</button>
+                </td>
+                <td class="save_info" id="save_info_2"></td>
+                <td>
+                    <button class="b export_button" id="export_button_2">Export</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <button class="b save_button" id="save_button_3">Save</button>
+                </td>
+                <td>
+                    <button class="b delete_button" id="delete_button_3">Delete</button>
+                </td>
+                <td class="save_info" id="save_info_3"></td>
+                <td>
+                    <button class="b export_button" id="export_button_3">Export</button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    <button class="b save_button" id="save_button_4">Save</button>
+                </td>
+                <td>
+                    <button class="b delete_button" id="delete_button_4">Delete</button>
+                </td>
+                <td class="save_info" id="save_info_4"></td>
+                <td>
+                    <button class="b export_button" id="export_button_4">Export</button>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>
+                    <button class="b save_button" id="save_button_5">Save</button>
+                </td>
+                <td>
+                    <button class="b delete_button" id="delete_button_5">Delete</button>
+                </td>
+                <td class="save_info" id="save_info_5"></td>
+                <td>
+                    <button class="b export_button" id="export_button_5">Export</button>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>
+                    <button class="b save_button" id="save_button_6">Save</button>
+                </td>
+                <td>
+                    <button class="b delete_button" id="delete_button_6">Delete</button>
+                </td>
+                <td class="save_info" id="save_info_6"></td>
+                <td>
+                    <button class="b export_button" id="export_button_6">Export</button>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>
+                    <button class="b save_button" id="save_button_7">Save</button>
+                </td>
+                <td>
+                    <button class="b delete_button" id="delete_button_7">Delete</button>
+                </td>
+                <td class="save_info" id="save_info_7"></td>
+                <td>
+                    <button class="b export_button" id="export_button_7">Export</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <label for="import_save">Import save file:</label> <input type="file" id="import_save" onchange="dendryUI.importSave('import_save');"></input>
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <button onclick="dendryUI.hideSaveSlots();">Close</button>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <!-- Sprite stuff - feel free to comment out/remove if not using -->
     <div id="contentSpriteContainer">
         <div class="sprite" id="topLeftSprite"></div>
         <div class="sprite" id="topRightSprite"></div>
+
         <div class="sprite" id="bottomLeftSprite"></div>
         <div class="sprite" id="bottomRightSprite"></div>
     </div>
@@ -85,10 +296,8 @@
     <div id='page'>
         <div id="mid_panel">
             <header>
-                <h1 id="game-title" style="background: linear-gradient(to right, #169B62, #FFFFFF, #FF883E);-webkit-background-clip: text;color: transparent;font-weight: bold;">
-                  The Troubles an Alternative History</h1>
-                <h2 id="game-author" style="background: linear-gradient(to right, #D52D00, #FF9A56, #FFFFFF, #D362A4, #A30262, #8A0253, #3D1A78); -webkit-background-clip: text; color: transparent; font-weight: bold;">
-                  Alejandra Martí Pérez</h2>
+                <h1 id="game-title">Social Democracy: An Alternate History</h1>
+                <h2 id="game-author">Autumn Chen</h2>
 
                 <div id="header-links">
                     <a id="stats-link" onclick="window.showStats();" href="#">Library</a>
@@ -96,7 +305,6 @@
                     <a onclick="window.showOptions();" href="#">Options</a>
                 </div>
             </header>
-
             <div id="tools_wrapper">
                 <div id='stats_sidebar' class='tools left'>
                     <div class="tab_container">
@@ -105,26 +313,28 @@
                         <button class="tab_button" id="paramilitary_tab" onclick="window.changeTab('status.paramilitaries', 'paramilitary_tab');">Defense</button>
                         <button class="tab_button" id="poll_tab" onclick="window.changeTab('status.polls', 'poll_tab');">Polls</button>
                     </div>
-                    <div id="qualities"></div>
+                    <div id="qualities">
+                    </div>
                 </div>
             </div>
 
-            <div id='content'></div>
+            <div id='content'>
+
+            </div>
 
             <footer>
-              <!--
-              <p>
-                <a onclick="window.showSaveSlots();" href="#">Save/Load</a>
-                <a onclick="window.quickSave();" href="#">Quick Save</a>
-                <a onclick="window.quickLoad();" href="#">Quick Load</a>
-              </p>
+      <!--
+      <p>
+        <a onclick="window.showSaveSlots();" href="#">Save/Load</a>
+        <a onclick="window.quickSave();" href="#">Quick Save</a>
+        <a onclick="window.quickLoad();" href="#">Quick Load</a>
+      </p>
 
-              &copy; 2021 Autumn Chen.
-              Made with <a href="https://github.com/aucchen/dendry">Dendry</a>.
-              -->
+      &copy; 2021 Autumn Chen.
+      Made with <a href="https://github.com/aucchen/dendry">Dendry</a>.
+      -->
             </footer>
         </div>
     </div>
   </body>
 </html>
-
