@@ -1,0 +1,18 @@
+title: Sallins Train Robbery
+new-page: true
+view-if: year = 1976 and month = 4
+max-visits: 1
+priority: 10
+on-arrival: inla_strength -= 5
+tags: event
+
+= Sallins Train Robbery
+
+The Cork to Dublin mail train at the end of last month was robbed near Sallins in County Kildare.
+
+The Irish government has arrested five of our men despite a complete lack of evidence for us being involved.
+
+Furthermore, the INLA leadership in Cork claims that they had no idea of such a robbery happening.
+
+The repressive free state is showing its true colours!
+
