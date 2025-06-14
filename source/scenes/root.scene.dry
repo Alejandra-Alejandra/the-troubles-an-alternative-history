@@ -289,6 +289,10 @@ Q.north_inflation = 24.21;
 // farming
 farming_monopolisation_fears = 4;
 farming_monopolisation = 32;
+
+// Dublin Housing
+housing_issue = 35;
+
 // economic expansion timer
 Q.economic_expansion = 0;
 
