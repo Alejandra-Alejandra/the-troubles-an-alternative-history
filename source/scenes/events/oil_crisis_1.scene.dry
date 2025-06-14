@@ -1,11 +1,12 @@
 title: Oil Crisis Hits Ireland
 new-page: true
-view-if: year = 1979 and month = 10
+view-if: year = 1979 and month = 9
 max-visits: 1
 priority: 10
 face-image: img/oil_crisis.jpg
 tags: event
+on-arrival: inflation += 5.6; north_inflation += 5.16
 
 = The Oil Crisis Hits Ireland
 
-The oil crisis caused by the Iranian Revolution has hit Ireland, and unemployment has stopped falling.
+The oil crisis caused by the Iranian Revolution has hit Ireland, and unemployment has stopped falling. Inflation has started spiralling out of control again.
