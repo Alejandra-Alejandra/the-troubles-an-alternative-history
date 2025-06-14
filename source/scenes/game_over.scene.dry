@@ -29,7 +29,7 @@ title: The North has risen up.
 tags: endings
 go-to: eg_menu
 
-The North has risen up and the British have fallen back to the eastern parts of the country, though they still hold onto Belfast given our control of the southern government, it seems clear that the British government will soon relinquish control over the place. Thousands of protestants have already started fleeing to Britain, though some Protestants remain.
+The North has risen up and the British have fallen back to the eastern parts of the country, though they still hold onto Belfast given our control of the southern government, it seems clear that the British government will soon relinquish control over the place. Thousands of unionists have already started fleeing to Britain, though some Protestants remain.
 
 @the_british_defeated_FF
 view-if: the_north_rises_up == 1 and FF_gov == 1
