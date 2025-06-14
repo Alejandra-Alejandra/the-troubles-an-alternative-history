@@ -86,6 +86,7 @@ title: Local Council Affairs
 view-if: in_council = 1
 card-image: img/bray.jpg
 is-deck: true
+
 - #council_affairs
 
 @calendar
