@@ -14,22 +14,6 @@ We have decided to hold a rally in Limerick, what should the focus of our rally 
 - @unification: We hold a rally demanding unification.
 - @courts: We hold a rally denouncing the repression in the free state, and specifically denounce the existence of the Special Criminal Court as anti-democratic and authoritarian.
 
-title: Rallying in Limerick
-new-page: true
-view-if: rally_check = 1
-on-arrival: rally_check = 0; month_actions += 0
-tags: event
-
-= Rallying in Limerick
-
-We have decided to hold a rally in Limerick, what should the focus of our rally be?
-
-- @british_violence: We hold a rally against the violence of the British army and unionist paramilitaries up north and demand an end to their attacks on Catholic civillians.
-- @workers: We hold a rally demanding increased worker control of industry, further worker protections and higher wages.
-- @housing: We hold a rally denouncing the impoverishment of the inner city in Limerick.
-- @unification: We hold a rally demanding unification.
-- @courts: We hold a rally denouncing the repression in the free state, and specifically denounce the existence of the Special Criminal Court as anti-democratic and authoritarian.
-
 @british_violence
 subtitle: -1 resources
 choose-if: resources >= 1
