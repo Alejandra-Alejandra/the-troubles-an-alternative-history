@@ -3,7 +3,7 @@ new-page: true
 view-if: year = 1980 and month = 1
 max-visits: 1
 priority: 10
-on-arrival: unemployed += 1.2; workers -= 1.2; north_unemployed += 1.4; catholic_workers -= 1; protestant_workers -= 0.4; workers_FF -= 1.5; north_unemployed_Provisionals += 0.7; inflation += 2.2; north_inflation + 4.55
+on-arrival: unemployed += 1.2; workers -= 1.2; north_unemployed += 1.4; catholic_workers -= 1; protestant_workers -= 0.4; workers_FF -= 1.5; north_unemployed_Provisionals += 0.7; inflation += 4.9; north_inflation + 4.55
 tags: event
 
 = 1980
