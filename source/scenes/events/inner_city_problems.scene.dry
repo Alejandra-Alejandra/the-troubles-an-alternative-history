@@ -1,0 +1,16 @@
+title: Crisis in the Inner City
+new-page: true
+view-if: year = 1980 and month = 4
+max-visits: 1
+priority: 10
+on-arrival: poverty_issue += 10
+face-image: fatima-jpg
+tags: event
+
+= Crisis in the Inner City
+
+The economic downturn in Ireland has been combined with an incredibly dangerous substance: heroin.
+  
+Following the Soviet invasion of Afghanisan, and the Iranian revolution, warlords have grown in power in the region. These criminals control vast amounts of land that they are using to grow poppies and make heroine.
+
+Heroine has begun pouring into Dublin inner city and the already dreadful economic woes have been exacerbated twicefold. Local drug lords have begun to take control of parts of the city and government authorities are failing to solve the issue.
