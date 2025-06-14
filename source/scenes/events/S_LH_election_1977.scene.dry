@@ -125,7 +125,7 @@ data = data.concat([
         "id": "FF",
         "legend": "FF",
         "name": "Fianna Fáil",
-        "seats": Math.round(Q.FF_l*(148/100)),
+        "seats": Math.round(Q.FF_l*(148/100)+Q.IRSP_l*(148/100)+Q.Officials_l*(148/100)),
     },
     {
         "id": "IRs",
