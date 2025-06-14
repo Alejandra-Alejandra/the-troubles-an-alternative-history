@@ -18,10 +18,10 @@ max-cards: 3
 
 - @party
 - @govt
-- @paramilitary
-- @student
-- @calendar
 - @local_council
+- @student
+- @paramilitary
+- @calendar
 - #advisor
 
 @main_easy
@@ -44,10 +44,10 @@ max-cards: 4
 
 - @party
 - @govt
-- @paramilitary
-- @student
-- @calendar
 - @local_council
+- @student
+- @paramilitary
+- @calendar
 - #advisor
 
 
