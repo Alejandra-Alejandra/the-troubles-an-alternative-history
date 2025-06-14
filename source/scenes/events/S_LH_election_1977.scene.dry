@@ -108,12 +108,7 @@ data = [
     }
 ];
 data = data.concat([
-    {
-        "id": "FF",
-        "legend": "FF",
-        "name": "Fianna Fáil",
-        "seats": Math.round(Q.FF_l*(148/100)),
-    },
+
     {
         "id": "Labour",
         "legend": "Labour",
@@ -121,16 +116,22 @@ data = data.concat([
         "seats": Math.round(Q.Labour_l**(148/100)),
     },
     {
-        "id": "IRs",
-        "legend": "IRs",
-        "name": "Independent Republicans",
-        "seats": Math.round(Q.IRs_l**(148/100)),
-    },
-    {
         "id": "INDs",
         "legend": "INDs",
         "name": "Independents",
         "seats": Math.round(Q.INDs_l**(148/100)),
+    },
+    {
+        "id": "FF",
+        "legend": "FF",
+        "name": "Fianna Fáil",
+        "seats": Math.round(Q.FF_l*(148/100)),
+    },
+    {
+        "id": "IRs",
+        "legend": "IRs",
+        "name": "Independent Republicans",
+        "seats": Math.round(Q.IRs_l**(148/100)),
     },
 ]);
 
