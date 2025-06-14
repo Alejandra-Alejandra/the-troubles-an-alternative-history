@@ -247,6 +247,9 @@ Q.farming_monopolisation = 32;
 // Dublin Inner City Poverty
 Q.poverty_issue = 35;
 
+// Limerick 
+Q.limerick_housing_issue = 20
+
 // economic expansion timer
 Q.economic_expansion = 0;
 
