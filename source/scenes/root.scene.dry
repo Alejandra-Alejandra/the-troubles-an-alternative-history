@@ -287,11 +287,11 @@ Q.inflation = 20.9;
 Q.north_inflation = 24.21;
 
 // farming
-farming_monopolisation_fears = 4;
-farming_monopolisation = 32;
+Q.farming_monopolisation_fears = 4;
+Q.farming_monopolisation = 32;
 
 // Dublin Inner City Poverty
-poverty_issue = 35;
+Q.poverty_issue = 35;
 
 // economic expansion timer
 Q.economic_expansion = 0;
