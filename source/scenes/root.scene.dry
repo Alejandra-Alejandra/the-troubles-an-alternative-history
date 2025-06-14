@@ -633,6 +633,7 @@ Q.taoiseach_party = 'FG';
 Q.prime_minister = "Harold Wilson";
 Q.prime_minister_party = 'UK Labour';
 Q.monarch = "Queen Elizabeth II";
+Q.in_council = 1;
 Q.old_SDLP_r = 0;
 Q.old_alliance_r = 0;
 Q.old_NILP_r = 0;
@@ -655,35 +656,6 @@ Q.old_FG_l = 47.9;
 Q.old_FF_l = 37.5;
 Q.old_Labour_l = 13.2;
 
-Q.in_right_coalition = 0;
-// Weimar coalition = SPD + Z + DDP
-Q.in_weimar_coalition = 0;
-// Grand coalition = SPD + Z + BVP + DDP + DVP
-// also includes the "new grand coalition" of SPD + Z + BVP + DDP + DVP + Others
-Q.in_grand_coalition = 0;
-// Popular front = SPD + KPD + Z + DDP
-Q.in_popular_front = 0;
-// left coalition = SPD + KPD + left-splinters
-Q.in_left_front = 0;
-// emergency government containing the SPD: only president Braun can do this.
-Q.in_emergency_government = 0;
-Q.in_spd_majority = 0;
-Q.grand_coalition_failed = 0;
-// if the SPD is ruling as part of a minority government
-Q.in_minority_government = 0;
-// national unity governmet
-
-// if you're in a coalition, this is an incremental counter for how many times dissent has happened from the right.
-Q.coalition_dissent = 0;
-// dissent from the KPD, in a popular front or left front government
-Q.kpd_coalition_dissent = 0;
-
-// does the SPD tolerate the government even if it is not a participant?
-Q.spd_toleration = 0;
-
-// is the current government a presidential minority government?
-Q.minority_government = 0;
-
 // ministries - which parties control the ministries?
 // starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
 // is the agricultural ministry useful at all?
@@ -704,68 +676,6 @@ Q.finance_minister_party = 'Z';
 Q.agriculture_minister = 'Schiele';
 Q.agriculture_minister_party = 'DNVP';
 
-// Events: what has occurred?
-Q.panzerkreuzer_seen = 0;
-Q.panzerkreuzer_funded = 0;
-Q.panzerkreuzer_failed = 0;
-Q.unemployment_insurance_seen = 0;
-// unemployment insurance event is seen if the unemployment level is at least 4 more than the threshold...
-Q.unemployment_insurance_threshold = 10;
-Q.blutmai = 0;
-
-// have we reformed these institutions to be more democratic?
-Q.judicial_reform = 0;
-Q.bureaucratic_reform = 0;
-Q.military_reform = 0;
-Q.womens_rights = 0;
-// level of welfare relative to 1928 (can go negative)
-Q.welfare = 0;
-// level of support for farmers
-Q.agricultural_policy = 0;
-Q.land_reform = 0;
-// works-creation programs (i.e. WTB-plan) - how much have they implemented?
-Q.works_program = 0;
-Q.wtb_implemented = 0;
-// Relations with the Western countries (France, UK).
-Q.west_relation = 0;
-// Relations with the Eastern countries (Poland, Czechoslovakia)
-Q.east_relation = 0;
-// Relations with the Soviet Union
-Q.soviet_relation = 0;
-// How much have we exposed the secret rearmament programs?
-Q.rearmament_exposed = 0;
-// reparations vs baseline: young plan is -1.
-Q.reparations = 0;
-Q.reparations_negotiation = 0;
-// nationalization_progress is part of the left economic plan.
-Q.nationalization_progress = 0;
-// socializations is part of the economic democracy card.
-Q.socializations = 0;
-Q.nationalize_budget = 4;
-// have there been any factory takeovers?
-Q.factory_takeovers = 0;
-// progress on the moderate economic plan
-Q.moderate_plan_progress = 0;
-// European Union negotiation process
-Q.eu = 0;
-Q.eu_progress = 0;
-// science/education
-Q.science = 0;
-Q.education_science = 0;
-
-// Tax rates relative to 1928 baseline
-Q.lower_tax_rates = 0;
-Q.upper_tax_rates = 0;
-Q.tariffs = 0;
-
-Q.electoral_threshold = 0;
-
-// our conduct in the government, and the conduct of our coalition opponents.
-// did the SPD vote against the previous government in a vote of no confidence?
-Q.spd_no_confidence = 0;
-// was the last SPD government taken down in a vote of no confidence by right-wing coalition partners?
-Q.no_confidence_against_spd = 0;
-
 // Advisors/Leaders
 Q.n_advisors = 3;
 // timer - this decrements by 1 every turn, and is set to 5 whenever an advisor action is used, so that you can only use one advisor action every 5 months.
@@ -773,20 +683,10 @@ Q.n_advisors = 3;
 // most party affairs and government affairs cards are on a timer.
 Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
             'fundraising', 'ideology',
-            'inter_party_relationships', 'international_relations',
-            'iron_front', 'media', 'enemies',
+            'inter_party_relationships', 'international_relations', 'media', 'enemies',
             'party_organizations', 'rally', 'reichsbanner',
-            'shuffle_leadership', 'streetfighting', 'peoples_party',
-            'party_disunity',
-            // govt
-            'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
-            'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy',
-            'police', 'prussian_affairs', 'shuffle_cabinet', 'social_welfare',
-            'homosexual_rights', 'economic_policy', 'coalition_affairs',
-            'war_guilt', 'womens_rights', 'economic_democracy',
-            'dealing_with_toleration',
-            'constitutional_reform', 'labor_rights',
-            'education_science', 'curriculum',
+            'shuffle_leadership', 'domestic_enemies',
+            'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy', 'shuffle_cabinet'
             // events
             'emergency_cuts', 'unemployment_insurance',
             'UVF_ban', 'uda_ban', 'papen_chancellor',
