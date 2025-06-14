@@ -9,7 +9,6 @@ tags: event
 We have decided to go doorknocking across county Wicklow, what should the focus of our campaign be?
 
 - @british_violence: We leaflet against the violence of the British army and unionist paramilitaries up north and demand an end to their attacks on Catholic civillians.
-- @tenants: We hand out leaflets about the rising rents and organise tenants in the area to resist evictions.
 - @support_refugees: We go door to door asking for clothes and food to give to refugees fleeing from the north.
 - @unification: We hand out leaflets demanding unification.
 - @courts: We hand out leaflets denouncing the repression in the free state, and specifically denounce the existence of the Special Criminal Court as anti-democratic and authoritarian.
@@ -18,38 +17,38 @@ We have decided to go doorknocking across county Wicklow, what should the focus 
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; Wicklow_support += 0.000002*(BAF_strength); resources -= 1; 
 
-WIP: Result will depend on quantity of BAF in Britain and level of state repression up north.
+[? if BAF_strength >= 10000: We have gained a significant amount of support in Wicklow due to the presence of the British Armed Forces ?][? if BAF_strength < 10000: We have gained little support in Wicklow due to the reduced presence of the British Armed Forces ?]
 
-@tenants
+@workers
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Wicklow_support += 0.01*(inflation)
 
-WIP: Result will depend on state of the economy. 
+[? if inflation >= 5: We have gained a substantial amount of support in Wicklow due to the state of the economy ?][? if inflation < 5: We have gained only a small amount of support in Wicklow due to the state of the economy ?]
 
 @support_refugees
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Wicklow_inner_city_support += 0.004*(pro_republic_supp); pro_socialism_supp += 0.01
 
-WIP: Result will depend on level of state repression up north and support for republicanism in Wicklow.
-  
+We have gained significant support due to the strong feelings of the people about refugees fleeing from the north.
+
 @unification
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Wicklow_support += 0.008*(republic_supp)
 
-WIP: Result will depend on support for republicanism in Wicklow.
+We have gained significant support due to the support for a united Ireland in Wicklow.
 
 @courts
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Wicklow_support += 0.003*(republic_supp); republic_supp += 0.001
 
-WIP: Result will depend on level of state repression in the south and support for left-wing parties.
+We have managed to rally support against the special criminal courts.
