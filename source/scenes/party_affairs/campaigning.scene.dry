@@ -23,7 +23,7 @@ If the party is to become a serious force to be reckoned with, we must expand ou
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: catholic_workers_IRSP += (0.04*(1-dissent)*catholic_support_weight + 0.0001*north_inflation); workers_IRSP += (0.06*(1-dissent)*MPTW++ 0.0005*inflation); resources -= 1; campaigned_yet = 1;
+on-arrival: catholic_workers_IRSP += (0.04*(1-dissent)*catholic_support_weight + 0.0001*north_inflation); workers_IRSP += (0.06*(1-dissent)*MPTW + 0.0005*inflation); resources -= 1; campaigned_yet = 1;
 
 We have increased our campaigning among the workers.
 
