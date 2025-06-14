@@ -18,38 +18,39 @@ We have decided to hold a rally in Belfast, what should the focus of our rally b
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; Belfast_support += 0.000004*(BAF_strength); resources -= 1; 
 
-WIP: Result will depend on quantity of BAF in Britain and level of state repression up north.
+[? if BAF_strength >= 10000: We have gained a significant amount of support in Belfast due to the presence of the British Armed Forces ?][? if BAF_strength < 10000: We have gained little support in Belfast due to the reduced presence of the British Armed Forces ?]
+
 
 @workers
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Belfast_support += 0.01*(north_inflation); protestant_workers_IRSP += 0.001
 
-WIP: Result will depend on state of the economy.
+[? if north_inflation >= 5: We have gained a substantial amount of support in Belfast due to the state of the economy ?][? if north_inflation < 5: We have gained only a small amount of support in Belfast due to the state of the economy ?]
 
 @inequality
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Belfast_support += 0.025*(north_unemployment)
 
-WIP: Result will depend on state of economy and quality of life of Catholics
+[? if north_unemployment >= 4: Due to the high unemployment in the north amongst Catholics we have gained a lot of support. ?][? if north_unemployment < 4: Due to the low unemployment in the north amongst Catholics we have gained barely any support. ?]
 
 @unification
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Belfast_support += 0.008*(north_republic_supp)
 
-WIP: Result will depend on support for republicanism in Belfast and the north.
+We have gained significant support due to the support for a united Ireland in Belfast.
 
 @democracy
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1
+on-arrival: month_actions += 0; resources -= 1; Belfast_support += 0.0000055*(BAF_strength) if year >= 1980; Belfast_support += 0.000002*(BAF_strength) if year < 1980
 
-WIP: Result will depend inversely on quantity of BAF in Britain and level of state repression up north, as well as who is in control up north.
+[if year < 1980: We have gained a small amount of support, but there are more pressing concerns right now. ?][if year >= 1980: We have gained a lot of support due to the increasing demands for democracy in Belfast. ?]
