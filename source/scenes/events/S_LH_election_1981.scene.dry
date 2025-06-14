@@ -119,7 +119,7 @@ data = data.concat([
         "id": "INDs",
         "legend": "INDs",
         "name": "Independents",
-        "seats": Math.round(Q.INDs_l**(148/100)),
+        "seats": Math.round(Q.INDs_l*(148/100)),
     },
     {
         "id": "FF",
