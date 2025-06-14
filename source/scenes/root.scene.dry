@@ -286,6 +286,9 @@ Q.inflation = 20.9;
 // north inflation - source: https://www.macrotrends.net/global-metrics/countries/gbr/united-kingdom/inflation-rate-cpi
 Q.north_inflation = 24.21;
 
+// farming
+farming_monopolisation_fears = 4;
+farming_monopolisation = 32;
 // economic expansion timer
 Q.economic_expansion = 0;
 
