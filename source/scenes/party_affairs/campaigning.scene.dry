@@ -31,7 +31,7 @@ We have increased our campaigning among the workers.
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: catholic_middle_urban_IRSP += 0.2*(1-dissent)*catholic_support_weight*catholic_moderate_support_weight; resources -= 1; campaigned_yet = 1;
+on-arrival: catholic_middle_urban_IRSP += 0.2*(1-dissent)*catholic_support_weight*catholic_moderate_support_weight*MPTW; resources -= 1; campaigned_yet = 1;
 
 We have increased our campaigning among the middle class.
 
@@ -39,7 +39,7 @@ We have increased our campaigning among the middle class.
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: catholic_poor_rural_IRSP += 0.2*(1-dissent)*catholic_support_weight; poor_rural_IRSP += 0.1*(1-dissent); resources -= 1; campaigned_yet = 1;
+on-arrival: catholic_poor_rural_IRSP += 0.2*(1-dissent)*catholic_support_weight*MPTW; poor_rural_IRSP += 0.1*(1-dissent); resources -= 1; campaigned_yet = 1;
 
 We have increased our campaigning among small farmers.
 
@@ -47,7 +47,7 @@ We have increased our campaigning among small farmers.
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: north_unemployed_IRSP += 0.3*(1-dissent)*catholic_support_weight; unemployed_IRSP += 0.4*(1-dissent); resources -= 1; campaigned_yet = 1;
+on-arrival: north_unemployed_IRSP += 0.3*(1-dissent)*catholic_support_weight*MPTW; unemployed_IRSP += 0.4*(1-dissent)*MPTW; resources -= 1; campaigned_yet = 1;
 
 We have increased our campaigning among the unemployed.
 
@@ -55,6 +55,6 @@ We have increased our campaigning among the unemployed.
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: catholic_workers_IRSP += 0.15*(1-dissent)*catholic_support_weight; catholic_middle_urban_IRSP += 0.05*(1-dissent)*catholic_support_weight*catholic_moderate_support_weight; catholic_poor_rural_IRSP += 0.1*(1-dissent)*catholic_support_weight; catholic_middle_rural_IRSP += 0.05*(1-dissent)*catholic_support_weight*catholic_moderate_support_weight; north_unemployed_IRSP += 0.1*(1-dissent)*catholic_support_weight; resources -= 1; campaigned_yet = 1;
+on-arrival: catholic_workers_IRSP += 0.15*(1-dissent)*catholic_support_weight*MPTW; catholic_middle_urban_IRSP += 0.05*(1-dissent)*catholic_support_weight*catholic_moderate_support_weight*MPTW; catholic_poor_rural_IRSP += 0.1*(1-dissent)*catholic_support_weight*MPTW; catholic_middle_rural_IRSP += 0.05*(1-dissent)*catholic_support_weight*catholic_moderate_support_weight*MPTW; north_unemployed_IRSP += 0.1*(1-dissent)*catholic_support_weight*MPTW; resources -= 1; campaigned_yet = 1;
 
 We have increased our campaigning among Catholics.
