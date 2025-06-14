@@ -1,6 +1,6 @@
 title: Crisis in the Inner City
 new-page: true
-view-if: year = 1981 and month = 2
+view-if: year = 1982 and month = 2
 max-visits: 1
 priority: 10
 on-arrival: poverty_issue += 10
