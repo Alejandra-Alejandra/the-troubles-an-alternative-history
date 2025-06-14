@@ -686,7 +686,7 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
             'inter_party_relationships', 'international_relations', 'media', 'enemies',
             'party_organizations', 'rally', 'reichsbanner',
             'shuffle_leadership', 'domestic_enemies',
-            'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy', 'shuffle_cabinet'
+            'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy', 'shuffle_cabinet',
             // events
             'emergency_cuts', 'unemployment_insurance',
             'UVF_ban', 'uda_ban', 'papen_chancellor',
