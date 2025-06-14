@@ -18,7 +18,7 @@ We have decided to hold a rally in Galway, what should the focus of our rally be
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; Galway_support += 0.000001*(BAF_strength); resources -= 1; 
+on-arrival: month_actions += 0; Galway_support += 0.000001*(BAF_strength)*MPTW; resources -= 1; 
 
 [? if BAF_strength >= 10000: We have gained a significant amount of support in Galway due to the presence of the British Armed Forces ?][? if BAF_strength < 10000: We have gained little support in Galway due to the reduced presence of the British Armed Forces ?]
 
@@ -26,7 +26,7 @@ on-arrival: month_actions += 0; Galway_support += 0.000001*(BAF_strength); resou
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Galway_support += 0.005*(inflation)
+on-arrival: month_actions += 0; resources -= 1; Galway_support += 0.005*(inflation)*MPTW
 
 [? if inflation >= 5: We have gained a substantial amount of support in Galway due to the state of the economy ?][? if inflation < 5: We have gained only a small amount of support in Galway due to the state of the economy ?]
 
@@ -34,7 +34,7 @@ on-arrival: month_actions += 0; resources -= 1; Galway_support += 0.005*(inflati
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Galway_support += 0.01*(farming_monopolisation_fears)
+on-arrival: month_actions += 0; resources -= 1; Galway_support += 0.01*(farming_monopolisation_fears)*MPTW
 
 [? if farming_monopilisation_fears >= 5: We have gained a substantial amount of support in Galway due to the monopolisation of the farming industry ?][? if farming_monopilisation_fears < 5: We have gained only a small amount of support in Galway as monopolisation of the farming sector is not that high yet. ?]
 
@@ -42,7 +42,7 @@ on-arrival: month_actions += 0; resources -= 1; Galway_support += 0.01*(farming_
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Galway_support += 0.003*(republic_supp)
+on-arrival: month_actions += 0; resources -= 1; Galway_support += 0.003*(republic_supp)*MPTW
 
 We have gained some support due to the support for a united Ireland in Galway.
 
@@ -50,6 +50,6 @@ We have gained some support due to the support for a united Ireland in Galway.
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Galway_support += 0.0015*(republic_supp); republic_supp += 0.0005
+on-arrival: month_actions += 0; resources -= 1; Galway_support += 0.0015*(republic_supp)*MPTW; republic_supp += 0.0005*MPTW
 
 We have managed to rally support against the special criminal courts.
