@@ -226,7 +226,3 @@ if (window && d3) {
 @FF_in_gov
 view-if: FF_l >= 50
 on-arrival: FF_in_gov = 1; taoiseach = "Jack Lynch"; taoiseach_party = 'FF'
-
-@FF_in_gov
-view-if: FF_l >= 50
-on-arrival: FF_in_gov = 1; taoiseach = "Jack Lynch"; taoiseach_party = 'FF'
