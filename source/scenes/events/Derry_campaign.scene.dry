@@ -19,7 +19,7 @@ We have decided to hold a rally in Derry, what should the focus of our rally be?
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; Derry_support += 0.000004*(BAF_strength); resources -= 1; 
+on-arrival: month_actions += 0; Derry_support += 0.000004*(BAF_strength)*MPTW; resources -= 1; 
 
 [? if BAF_strength >= 10000: We have gained a significant amount of support in Derry due to the presence of the British Armed Forces ?][? if BAF_strength < 10000: We have gained little support in Derry due to the reduced presence of the British Armed Forces ?]
 
@@ -28,7 +28,7 @@ on-arrival: month_actions += 0; Derry_support += 0.000004*(BAF_strength); resour
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Derry_support += 0.008*(north_inflation)
+on-arrival: month_actions += 0; resources -= 1; Derry_support += 0.008*(north_inflation)*MPTW
 
 [? if north_inflation >= 5: We have gained a substantial amount of support in Derry due to the state of the economy ?][? if north_inflation < 5: We have gained only a small amount of support in Derry due to the state of the economy ?]
 
@@ -36,7 +36,7 @@ on-arrival: month_actions += 0; resources -= 1; Derry_support += 0.008*(north_in
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Derry_support += 0.03*(north_unemployment)
+on-arrival: month_actions += 0; resources -= 1; Derry_support += 0.03*(north_unemployment)*MPTW
 
 [? if north_unemployment >= 4: Due to the high unemployment in the north amongst Catholics we have gained a lot of support. ?][? if north_unemployment < 4: Due to the low unemployment in the north amongst Catholics we have gained barely any support. ?]
 
@@ -44,7 +44,7 @@ on-arrival: month_actions += 0; resources -= 1; Derry_support += 0.03*(north_une
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Derry_support += 0.01*(north_republic_supp)
+on-arrival: month_actions += 0; resources -= 1; Derry_support += 0.01*(north_republic_supp)*MPTW
 
 We have gained significant support due to the support for a united Ireland in Derry.
 
@@ -52,6 +52,6 @@ We have gained significant support due to the support for a united Ireland in De
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Derry_support += 0.0000065*(BAF_strength) if year >= 1980; Derry_support += 0.000003*(BAF_strength) if year < 1980
+on-arrival: month_actions += 0; resources -= 1; Derry_support += 0.0000065*(BAF_strength)*MPTW if year >= 1980; Derry_support += 0.000003*(BAF_strength)*MPTW if year < 1980
 
 [if year < 1980: We have gained a small amount of support, but there are more pressing concerns right now. ?][if year >= 1980: We have gained a lot of support due to the increasing demands for democracy in Derry. ?]
