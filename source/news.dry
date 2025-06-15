@@ -1,0 +1,28 @@
+title: News Updates
+new-page: true
+is-special: true
+on-arrival: {!
+if (!Q.news_initialized) {
+    Q.global_events = "";
+    Q.southern_events = ""; 
+    Q.northern_events = "";
+    Q.news_initialized = true;
+}
+if (Q.unemployed) Q.unemployed_2 = Q.unemployed.toFixed(1);
+if (Q.north_unemployed) Q.north_unemployed_2 = Q.north_unemployed.toFixed(1);
+!}
+
+@global
+= Global News - [+ month +]/[+ year +]
+
+[+ global_events +]
+
+@southern
+= Southern News - [+ month +]/[+ year +]
+
+[+ southern_events +]
+
+@northern
+= Northern News - [+ month +]/[+ year +]
+
+[+ northern_events +]
