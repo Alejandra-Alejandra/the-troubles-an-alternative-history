@@ -3,7 +3,7 @@ new-page: true
 is-special: true
 on-arrival: {!
 if (!Q.news_initialized) {
-    Q.global_events = "";
+    Q.global_events = "test";
     Q.southern_events = ""; 
     Q.northern_events = "";
     Q.news_initialized = true;
