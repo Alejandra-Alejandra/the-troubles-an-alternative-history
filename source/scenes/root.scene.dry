@@ -24,6 +24,9 @@ Q.year = 1975;
 Q.month = 1;
 // how many actions have been taken this month?
 Q.month_actions = 0;
+Q.global_events = "WIP: Adding on Monday Night";
+Q.southern_events = "WIP: Adding on Monday Night"; 
+Q.northern_events = "WIP: Adding on Monday Night";
 
 // 0 = normal difficulty, 1 = hard mode, 2 = hard mode no UVFves
 Q.difficulty = 0;
