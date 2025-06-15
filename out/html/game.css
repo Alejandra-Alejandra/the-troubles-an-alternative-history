@@ -177,7 +177,7 @@ ul.choices li.unavailable {
 }
 ul.choices li:hover {
   background-color: var(--link-hover-color);
-  cursor: pointer;
+  cursor: default;
 }
 ul.choices li:last-child {
   border-bottom: none;
@@ -263,9 +263,11 @@ blockquote + blockquote.attribution {
     padding: 10px;
 }
 .tab_button.active {
+    cursor: default;
     background-color: var(--content-bg-color);
 }
 .tab_button:hover {
+    cursor: default;
     background-color: var(--tab-hover-color);
 }
 
