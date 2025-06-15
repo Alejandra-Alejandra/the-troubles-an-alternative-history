@@ -14,16 +14,16 @@ if (Q.north_unemployed) Q.north_unemployed_2 = Q.north_unemployed.toFixed(1);
 !}
 
 @global
-= Global News - [+ month +]/[+ year +]
+= Global News 
 
 [+ global_events +]
 
 @southern
-= Southern News - [+ month +]/[+ year +]
+= Southern News 
 
 [+ southern_events +]
 
 @northern
-= Northern News - [+ month +]/[+ year +]
+= Northern News 
 
 [+ northern_events +]
