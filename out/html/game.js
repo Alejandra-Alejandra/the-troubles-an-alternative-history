@@ -18,9 +18,36 @@
 
   var TITLE = "Social Democracy: An Alternate History" + '_' + "Autumn Chen";
 
-  // the url is a link to game.json
-  // test url: https://aucchen.github.io/social_democracy_mods/v0.1.json
-  // TODO; 
+window.newsTab = "news.global";
+  
+  window.changeNewsTab = function(newTab, tabId) {
+    if (window.dendryUI.dendryEngine.state.qualities.historical_mode) {
+        window.alert('News is not available in historical mode.');
+        return;
+    }
+    
+    var tabButton = document.getElementById(tabId);
+    var tabButtons = document.querySelectorAll('#news_wrapper .tab_button');
+    
+    tabButtons.forEach(function(button) {
+        button.classList.remove('active');
+    });
+    
+    tabButton.classList.add('active');
+    window.newsTab = newTab;
+    window.updateNewsSidebar();
+  };
+
+  window.updateNewsSidebar = function() {
+    $('#news_content').empty();
+    var scene = dendryUI.game.scenes[window.newsTab];
+    if (scene) {
+        dendryUI.dendryEngine._runActions(scene.onArrival);
+        var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+        $('#news_content').append(dendryUI.contentToHTML.convert(displayContent));
+    }
+  };
+  
   window.loadMod = function(url) {
       ui.loadGame(url);
   };
@@ -251,6 +278,8 @@
         document.body.classList.add('dark-mode');
     }
     window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
+    document.getElementById('global_news_tab').classList.add('active');
+    window.updateNewsSidebar();
   };
 
 }());
