@@ -35,6 +35,7 @@ body.dark-mode #content {
   border-style: double;
   border-width: 4px;
   border-color: #888;
+  margin-top: 0; 
 }
 body.dark-mode .tools {
   border-style: double;
@@ -46,13 +47,16 @@ header, #content, footer {
   max-width: 540px;
   margin: 0 auto;
   overflow: auto;
+  box-sizing: border-box;
 }
 #content {
   position: relative;
   background-color: var(--content-bg-color);
   font-size: 1.1em;
-  padding: 1em 1.5em 1.5em 1.5em;
+  padding: 1.5em; 
+  padding-top: 1.5em;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  margin-top: 0;
 }
 footer {
   margin-top: 1em;
@@ -63,20 +67,44 @@ footer a {
   padding-right: 1em;
 }
 header {
-  text-align: right
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0;
+  background-color: var(--tab-bg-color);
 }
+
 #header-links {
-  text-align: left;
-  float: left;
+  text-align: center;
   display: inline-block;
-  margin-bottom: 0.5em;
-  padding-left: 1em;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-  background-color: var(--bg-color);
+  margin-bottom: 0;
+  padding: 0;
+  background-color: var(--tab-bg-color);
+  width: 100%;
+  box-sizing: border-box;
 }
+
 #header-links a {
-  padding-right: 1em;
+  cursor: default;
+  padding: 5.5px;
+  margin: 0;
+  background-color: var(--tab-color);
+  color: var(--text-color);
+  font-family: "Minion Pro", Georgia, serif;
+  border: none;
+  outline: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
+
+#header-links a:hover {
+  cursor: default;
+  background-color: var(--tab-hover-color);
+}
+
+#header-links a.active {
+  background-color: var(--content-bg-color);
+}
+
 header h1, header h2 {
   display: inline-block;
   font-weight: normal;
@@ -151,7 +179,7 @@ ul.choices li.unavailable {
 }
 ul.choices li:hover {
   background-color: var(--link-hover-color);
-  cursor: pointer;
+  cursor: default;
 }
 ul.choices li:last-child {
   border-bottom: none;
@@ -228,18 +256,20 @@ blockquote + blockquote.attribution {
     margin-right: -0.6em;
 }
 .tab_button {
+    cursor: default; 
     font-family: "Minion Pro", Georgia, serif;
     background-color: var(--tab-color);
     color: var(--text-color);
-    /*float: left;*/
     border: none;
     outline: none;
     padding: 10px;
 }
 .tab_button.active {
+    cursor: default;
     background-color: var(--content-bg-color);
 }
 .tab_button:hover {
+    cursor: default;
     background-color: var(--tab-hover-color);
 }
 
