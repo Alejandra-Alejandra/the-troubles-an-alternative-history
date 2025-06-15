@@ -13,14 +13,17 @@ if (Q.unemployed) Q.unemployed_2 = Q.unemployed.toFixed(1);
 if (Q.north_unemployed) Q.north_unemployed_2 = Q.north_unemployed.toFixed(1);
 !}
 
+@global_news
 = Global News 
 
 [+ global_events +]
 
+@southern_news
 = Southern News 
 
 [+ southern_events +]
 
+@northern_news
 = Northern News 
 
 [+ northern_events +]
