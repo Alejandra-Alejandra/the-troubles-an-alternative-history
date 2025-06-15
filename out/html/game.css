@@ -85,7 +85,7 @@ header {
 
 #header-links a {
   cursor: default;
-  padding: 5px;
+  padding: 6px;
   margin: 0;
   background-color: var(--tab-color);
   color: var(--text-color);
