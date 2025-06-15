@@ -280,6 +280,12 @@ window.newsTab = "news.global";
     window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
     document.getElementById('global_news_tab').classList.add('active');
     window.updateNewsSidebar();
+    if (!Q.news_initialized) {
+        Q.global_events = "WIP";
+        Q.southern_events = "WIP"; 
+        Q.northern_events = "WIP";
+        Q.news_initialized = true;
+    }
   };
 
 }());
