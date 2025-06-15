@@ -53,9 +53,9 @@ header, #content, footer {
   position: relative;
   background-color: var(--content-bg-color);
   font-size: 1.1em;
-  padding: 1em 1.5em 1.5em 1.5em;
+  padding: 1.5em; 
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-  margin-top: 0; 
+  margin-top: 0;
 }
 footer {
   margin-top: 1em;
@@ -69,23 +69,41 @@ header {
   text-align: center;
   padding: 0;
   box-sizing: border-box;
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 
 #header-links {
-  text-align: center; 
-  display: block; 
-  margin-bottom: 0; 
-  padding: 0.5em 1.5em; 
+  text-align: center;
+  display: block;
+  margin-bottom: 0;
+  padding: 0.6em 1.5em;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-  background-color: var(--bg-color);
+  background-color: var(--tab-bg-color);
   width: 100%;
   box-sizing: border-box;
 }
 
 #header-links a {
-  padding-right: 1em;
+  padding: 10px;
+  margin: 0 2px;
+  background-color: var(--tab-color);
+  color: var(--text-color);
+  font-family: "Minion Pro", Georgia, serif;
+  border: none;
+  outline: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
+
+#header-links a:hover {
+  background-color: var(--tab-hover-color);
+  cursor: pointer;
+}
+
+#header-links a.active {
+  background-color: var(--content-bg-color);
+}
+
 header h1, header h2 {
   display: inline-block;
   font-weight: normal;
@@ -240,7 +258,6 @@ blockquote + blockquote.attribution {
     font-family: "Minion Pro", Georgia, serif;
     background-color: var(--tab-color);
     color: var(--text-color);
-    /*float: left;*/
     border: none;
     outline: none;
     padding: 10px;
