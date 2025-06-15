@@ -4,27 +4,21 @@ is-special: true
 on-arrival: {!
 // Shared calculations for all news tabs
 if (!Q.news_initialized) {
-    Q.global_events = "test";
-    Q.southern_events = ""; 
-    Q.northern_events = "";
+    Q.global_events = "WIP: Adding on Monday Night";
+    Q.southern_events = "WIP: Adding on Monday Night"; 
+    Q.northern_events = "WIP: Adding on Monday Night";
     Q.news_initialized = true;
 }
 if (Q.unemployed) Q.unemployed_2 = Q.unemployed.toFixed(1);
 if (Q.north_unemployed) Q.north_unemployed_2 = Q.north_unemployed.toFixed(1);
 !}
 
-= Global News 
-
 [+ global_events +]
 
 @southern
 
-= Southern News 
-
 [+ southern_events +]
 
 @northern
-
-= Northern News 
 
 [+ northern_events +]
