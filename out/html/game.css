@@ -46,6 +46,7 @@ header, #content, footer {
   max-width: 540px;
   margin: 0 auto;
   overflow: auto;
+  box-sizing: border-box; 
 }
 #content {
   position: relative;
@@ -65,15 +66,20 @@ footer a {
 header {
   text-align: right
 }
+
 #header-links {
   text-align: left;
   float: left;
   display: inline-block;
   margin-bottom: 0.5em;
   padding-left: 1em;
+  padding-right: 1.5em; 
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   background-color: var(--bg-color);
+  width: calc(540px - 3em); 
+  box-sizing: border-box; 
 }
+
 #header-links a {
   padding-right: 1em;
 }
