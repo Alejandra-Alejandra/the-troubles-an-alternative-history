@@ -1,5 +1,12 @@
 title: Monthly News Report
 new-page: true
 is-special: true
+on-arrival:
+
+- @event1
+
+@event1
+view-if: year = 1975 and month == 2
+on-arrival: global_events = "Students radicalise as a result of Garda crackdown on UCD campus.<br><br>Margaret Thatcher elected leader of the opposition by members of the conservative party.";
 
 [+ global_events +]
