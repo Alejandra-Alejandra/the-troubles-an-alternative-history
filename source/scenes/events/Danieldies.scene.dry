@@ -16,7 +16,7 @@ The Officials have responded by assassinating Daniel Loughran, one of our volunt
 - @End_Violence: We must end this cycle of violence before it gets out of hand! The enemy is the British, not our fellow Irishmen.
 
 @Kill_the_bastards
-on-arrival: cycle_of_violence = 1;
+on-arrival: cycle_of_violence = 1; Officials_relation -= 10
 face-image: img/fallscurfew.jpg
 
 Two men lay dead, and three in hospital. 
