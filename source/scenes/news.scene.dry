@@ -7,3 +7,5 @@ is-special: true
 [? if year == 1975 and month == 2 : Students radicalise as a result of Garda crackdown on UCD campus and Margaret Thatcher is elected leader of the opposition in the UK by members of the conservative party. ?]
 
 [? if year == 1975 and month == 3 : Pierre Trudeau, prime minister of Canada, visits Ireland. ?]
+
+[? if year == 1975 and month == 4 : Right-wing coup in Portugal defeated by the left-wing military government ?]
