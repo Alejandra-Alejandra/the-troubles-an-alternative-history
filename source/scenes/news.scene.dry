@@ -1,5 +1,6 @@
 title: News Updates
 new-page: true
+on-arrival: global_events = "After defeating Edwarth Heath in a race for the Conservative party leadership. Margaret Thatcher becomes the first female leader of any political party in Britain." if (year = 1975 and month = 2);
 is-special: true
 
 [+ global_events +]
