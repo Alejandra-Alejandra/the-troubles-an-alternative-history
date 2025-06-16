@@ -1,8 +1,6 @@
 title: News Updates
 new-page: true
-on-arrival: global_events = "After defeating Edwarth Heath in a race for the Conservative party leadership. Margaret Thatcher becomes the first female leader of any political party in Britain." if (year = 1975 and month = 2);
-northern_events = "Two Catholic civilians, both aged 19, shot dead by Loyalist paramilitaries." if (year = 1975 and month = 2);
-southern_events = "RTÉ held the eleventh National Song Contest at its studios in Dublin, hosted by Mike Murphy." if (year = 1975 and month = 2);
+on-arrival: global_events = "After defeating Edwarth Heath in a race for the Conservative party leadership. Margaret Thatcher becomes the first female leader of any political party in Britain." if (year = 1975 and month = 2); northern_events = "Two Catholic civilians, both aged 19, shot dead by Loyalist paramilitaries." if (year = 1975 and month = 2); southern_events = "RTÉ held the eleventh National Song Contest at its studios in Dublin, hosted by Mike Murphy." if (year = 1975 and month = 2);
 is-special: true
 
 [+ global_events +]
