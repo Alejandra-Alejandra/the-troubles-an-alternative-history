@@ -3,7 +3,7 @@ new-page: true
 subtitle: One of our volunteers has been murdered by the officials.
 view-if: year = 1975 and month = 4 and garland_attacked_1 == 1
 max-visits: 1
-on-arrival: loughran_killed = 1
+on-arrival: loughran_killed = 1; inla_strength -= 1;
 tags: event
 
 = The Officials Fight Back
@@ -22,8 +22,6 @@ face-image: img/fallscurfew.jpg
 Two men lay dead, and three in hospital. 
   
 Official commander Billy McMillen though his death was not ordered was killed as well. Many on the falls road mourn the soldier who led the valiant struggle against the British just 5 years before that started what people today are terming "The Troubles".
-
-The cycle of violence has begun, many more deaths shall come and only time will tell if it can end.
 
 @End_Violence
 on-arrival: cycle_of_violence = 2;
