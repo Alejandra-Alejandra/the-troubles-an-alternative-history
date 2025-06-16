@@ -38,13 +38,14 @@
     window.updateNewsSidebar();
   };
 
-  window.updateSidebar = function() {
+  window.updateNewsSidebar = function() {
       $('#news_content').empty();
       var scene = dendryUI.game.scenes[window.newsTab];
       dendryUI.dendryEngine._runActions(scene.onArrival);
       var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
       $('#news_content').append(dendryUI.contentToHTML.convert(displayContent));
   };
+
   
   window.onDisplayContent = function() {
       window.updateSidebar();
