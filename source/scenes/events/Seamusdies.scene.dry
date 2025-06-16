@@ -1,0 +1,15 @@
+title: Seamus Costello is Killed
+new-page: true
+subtitle: One of our volunteers has been murdered by the officials.
+view-if: year = 1977 and month = 10 and cycle_of_violence == 1
+on-arrival: costello_advisor = 2;
+max-visits: 1
+tags: event
+
+= Seamus Costello is Killed
+
+The Officials have suddenly sprung into action and assassinated Seamus Costello. Given his popular position in the party this is a massive blow.
+
+Costello was the glue holding together the entire party and the only member of the Ard Comhairle that the INLA held in such high regard.
+  
+Our party will surely fracture and lack of discipline amongst the ranks will only get worse.
