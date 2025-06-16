@@ -12,7 +12,7 @@ on-arrival: {!
   if (new_month == 5) { set visit_inla = 0 }
   set campaigned_yet = 0
   if (defended_derry = 1) { set defended_derry = 2 }
-!}
+  !}
 is-card: true
 card-image: img/calendar.jpg
 frequency: 100000
