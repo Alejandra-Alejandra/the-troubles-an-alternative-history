@@ -10,7 +10,7 @@ is-special: true
 
 [? if year == 1975 and month == 4 : Viet Cong liberates Saigon from the military dictatorship ending the Vietnam war and members of Red Army Faction are captured after taking over West German embassy to Sweden. ?]
 
-[? if year == 1975 and month == 5 : Nothing in the news today ?]
+[? if year == 1975 and month == 5 : Northern Ireland Constitutional Convention Elections held. ?]
 
 [? if year == 1975 and month == 6 : Mozambique gains independence from Portugal. ?]
 
