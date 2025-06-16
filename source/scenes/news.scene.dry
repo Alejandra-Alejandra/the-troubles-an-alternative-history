@@ -16,7 +16,7 @@ is-special: true
 
 [? if year == 1975 and month == 7 : Cape Verde, São Tomé and Príncipe gains independence from Portugal.<br><br>Three members of The Miami Showband killed up north. ?]
 
-[? if year == 1975 and month == 8 : Former taoiseach, and president of Ireland, Éamon de Valera dies. ?]
+[? if year == 1975 and month == 8 : Former taoiseach and president of Ireland Éamon de Valera dies at 92. ?]
 
 [? if year == 1975 and month == 9 : Franco regime executes five ETA and FRAP members ?]
 
@@ -26,5 +26,10 @@ is-special: true
 
 [? if year == 1975 and month == 12 : Indonesia invades East Timor ?]
 
+[? if year == 1976 and month == 1 : Former Taoiseach John A. Costello dies at 84.<br><br>United States vetoes UN resolution calling for an independent Palestinian state. ?]
+
+[? if year == 1976 and month == 2 : Sahrawi Arab Democratic Republic declared following withdrawal of Spanish occupation. ?]
+
+[? if year == 1976 and month == 3 : Merlyn Rees, Secretary of State for Northern Ireland ends Special Category Status for crimes relating to civil violence.<br><br> Northern Ireland Constitutional Convention dissolved and UK begins direct rule of the north.<br><br>Taoiseach Liam Cosgrave visits the White House.<br><br>Train Robbery near Sallins results in 200,000 pounds stolen from the Cork to Dublin Mail Train.<br><br>South African Army withdraws in disgrace from Angola. ?]
 
 
