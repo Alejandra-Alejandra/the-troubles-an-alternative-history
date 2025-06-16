@@ -3,7 +3,7 @@ new-page: true
 subtitle: The Taoiseach Liam Cosgrave visits UCD...
 view-if: year = 1975 and month >= 1 and Battle_bel == 0
 max-visits: 1
-on-arrival: Battle_bel = 1
+on-arrival: Battle_bel = 1; global_events = "Students radicalise as a result of Garda crackdown on UCD campus.<br><br> Margaret Thatcher elected leader of the opposition by members of the conservative party."
 face-image: img/belfield_battle.jpg
 tags: event
 
