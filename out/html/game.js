@@ -18,13 +18,7 @@
 
   var TITLE = "The Troubles: An Alternate History" + '_' + "Alejandra Martí Pérez";
 
-  window.newsTab = "news.global";
-  
-  window.changeNewsTab = function(newTab, tabId) {
-    if (window.dendryUI.dendryEngine.state.qualities.historical_mode) {
-        window.alert('News is not available in historical mode.');
-        return;
-    }
+    window.newsTab = "news.global";
     
     var tabButton = document.getElementById(tabId);
     var tabButtons = document.querySelectorAll('#news_wrapper .tab_button');
@@ -36,14 +30,6 @@
     tabButton.classList.add('active');
     window.newsTab = newTab;
     window.updateNewsSidebar();
-  };
-
-  window.updateNewsSidebar = function() {
-      $('#news_content').empty();
-      var scene = dendryUI.game.scenes[window.newsTab];
-      dendryUI.dendryEngine._runActions(scene.onArrival);
-      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      $('#news_content').append(dendryUI.contentToHTML.convert(displayContent));
   };
 
   
@@ -238,6 +224,21 @@
       $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
   };
 
+  
+  window.updateNewsSidebar = function() {
+      $('#news_content').empty();
+      var scene = dendryUI.game.scenes[window.newsTab];
+      dendryUI.dendryEngine._runActions(scene.onArrival);
+      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+      $('#news_content').append(dendryUI.contentToHTML.convert(displayContent));
+  };
+  
+  window.changeNewsTab = function(newTab, tabId) {
+    if (window.dendryUI.dendryEngine.state.qualities.historical_mode) {
+        window.alert('News is not available in historical mode.');
+        return;
+    }
+    
   window.changeTab = function(newTab, tabId) {
       if (tabId == 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
           window.alert('Polls are not available in historical mode.');
