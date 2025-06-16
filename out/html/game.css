@@ -588,6 +588,15 @@ img {
   }
 }
 
+#global_news_tab {
+    background-color: var(--content-bg-color) !important; 
+    cursor: default !important;
+}
+
+body.dark-mode #global_news_tab {
+    background-color: var(--content-bg-color) !important;
+}
+
 
 /* New stuff just for this game */
 
