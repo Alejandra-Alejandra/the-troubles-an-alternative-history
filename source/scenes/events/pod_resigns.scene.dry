@@ -1,0 +1,12 @@
+title: President Ó Dálaigh resigns
+new-page: true
+view-if: year = 1976 and month = 10
+max-visits: 1
+priority: 10
+face-image: img/hillery.jpg
+on-arrival: president = "Vacant"
+tags: event
+
+= President Ó Dálaigh resigns, new election to be held
+
+President Ó Dálaigh resigns following insulting remarks by Minister for Defence, Paddy Donegan. Fianna Fáil leader Jack Lynch proposes Patrick Hillery as party's presidential candidate, and Charles Haughey proposes Joseph Brennan, former Minister for Social Welfare.
