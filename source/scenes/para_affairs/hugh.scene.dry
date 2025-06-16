@@ -18,7 +18,7 @@ The Officials have murdered volunteer Hugh Ferguson. This murder clearly signals
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: inla_strength += 10; inla_militancy += 0.1; resources -= 1
+on-arrival: inla_strength += 10; inla_militancy += 0.1; resources -= 1; garland_attacked_2 = 1
 
 Many retired members of the Republican left sympathise with our views and are interested in defending us from the violence of the Officials. Ex Saor Éire volunteers Larry White and Frank Keane join the party. These grizzled veterans have years of experience committing bank robberies to fund the IRA, and provided us training in the past. This will help us unite the fractured republican movement.
 
