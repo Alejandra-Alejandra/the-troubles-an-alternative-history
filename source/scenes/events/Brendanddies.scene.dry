@@ -1,0 +1,16 @@
+title: Brendan McNamee Murdered
+new-page: true
+subtitle: One of our volunteers has been murdered by the officials.
+view-if: year = 1975 and month = 5 and cycle_of_violence == 1
+max-visits: 1
+tags: event
+
+= The Officials Fight Back
+
+The Officials have responded to our spate of attacks by killing INLA volunteer Brendan McNamee.
+
+Given Official commander Billy McMillen was killed, some in the INLA believe this act of retatlliation was to be expected, and have grown weary of further violence.
+
+As a result, the bloodshed has come to an end for now, but the tensions between the Officials and us remains at an all time high.
+
+
