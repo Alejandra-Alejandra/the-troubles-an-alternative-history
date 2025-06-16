@@ -235,6 +235,10 @@ window.newsTab = "news.global";
       window.updateSidebar();
   };
 
+    window.onDisplayContent = function() {
+      window.updateNewsSideba();
+  };
+
   /*
    * This function copied from the code for Infinite Space Battle Simulator
    *
