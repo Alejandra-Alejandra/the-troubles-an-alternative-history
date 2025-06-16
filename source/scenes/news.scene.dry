@@ -1,6 +1,44 @@
-title: News Updates
+title: Monthly News Report
 new-page: true
-on-arrival: global_events = "After defeating Edwarth Heath in a race for the Conservative party leadership. Margaret Thatcher becomes the first female leader of any political party in Britain.<br><br>Two Catholic civilians, both aged 19, shot dead by Loyalist paramilitaries." if (year = 1975 and month = 2); global_events = "Test." if (year = 1975 and month = 3);
 is-special: true
 
-[+ global_events +]
+*comment ===== NEWS DATABASE =====
+*create news_db
+  *comment -- Format: "YYYY-MM|Headline|Full Story Text"
+  *add "1972-07|Bloody Sunday|British troops shoot 26 civilians in Derry.@@International condemnation follows."
+  *add "1975-02|Thatcher Wins|Margaret Thatcher defeats Edward Heath.@@First female Conservative leader."
+*end
+
+*comment ===== MAIN LOGIC =====
+on-arrival: {!
+  *comment -- Generate date key (pad month with zero) --
+  *set month_str month < 10 ? "0" + month : "" + month
+  *set date_key year + "-" + month_str
+  
+  *comment -- Lookup and parse news --
+  *set news_record news_db.find(date_key)
+  *if news_record
+    *set parts news_record.split("|")
+    *set headline parts[1]
+    *set body parts[2].replace("@@", "\n\n")
+    *set display_text "〔 " + month_name + " " + year + " 〕\n" + headline + "\n" + body
+  *else
+    *set display_text "〔 " + month_name + " " + year + " 〕\nNo significant events reported."
+  *finish
+  
+  *comment -- Tracking --
+  *if not news_history
+    *create news_history
+  *finish
+  *add news_history date_key
+!}
+
+*comment ===== DISPLAY =====
+[+ display_text +]
+
+*comment ===== NAVIGATION =====
+*if month < 12
+  *button "Next Month"
+    *set month += 1
+    *goto "news"
+*finish
