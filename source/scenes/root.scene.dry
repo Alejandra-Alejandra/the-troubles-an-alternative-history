@@ -71,16 +71,8 @@ Q.reformists_resigned = 0;
 // organizations
 
 // inter-party relations
-Q.z_relation = 50;
-Q.kpd_relation = 25;
-Q.ddp_relation = 60;
-Q.dvp_relation = 35;
-// DNVP and NSDAP are invariably hostile
-Q.DNVP_relation = 10;
-Q.NSDAP_relation = 0;
-
 Q.Provisionals_relation = 60;
-Q.Officials_relation = 10;
+Q.Officials_relation = 20;
 Q.SDLP_relation = 10;
 Q.UUP_relation = 0;
 Q.DUP_relation = 0;
