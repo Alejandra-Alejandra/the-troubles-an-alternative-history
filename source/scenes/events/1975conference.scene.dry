@@ -3,7 +3,7 @@ new-page: true
 subtitle: The IRSP holds its first public meeting...
 view-if: year = 1975 and month = 2 and public_meeting_start == 0
 max-visits: 1
-on-arrival: public_meeting_start = 1; global_events = "Students radicalise as a result of Garda crackdown on UCD campus.<br><br> Margaret Thatcher elected leader of the opposition by members of the conservative party."
+on-arrival: public_meeting_start = 1; global_events = "Students radicalise as a result of Garda crackdown on UCD campus.<br><br>Margaret Thatcher elected leader of the opposition by members of the conservative party."
 face-image: img/irsp-meeting.jpg
 tags: event
 
