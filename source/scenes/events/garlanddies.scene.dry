@@ -1,0 +1,14 @@
+title: Attack on Garland Succeeds
+new-page: true
+subtitle: We have managed to kill Garland
+view-if: (year = 1975 and month >= 4) and garland_attacked_1 == 2
+on-arrival: Officials_truce = 1
+max-visits: 1
+face-image: img/inla_action.jpg
+tags: event
+
+= Attack on Garland Succeeds
+
+On the 1st of March two of our volunteers who were ex Saor Éire veterans lay in wait outside Seán Garland's home in Ballymun. Deep into the night at 10:00 pm he returned home with his wife and the two separated while he locked the car door. Our men opened fire on him, and two bullets to the head finished the job, afterwards they confirmed his death.
+
+The Officials are desperate for a truce now and have come to the negotiating table. They have agreed to end their attacks on us.
