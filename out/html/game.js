@@ -39,11 +39,11 @@
   };
 
   window.updateNewsSidebar = function() {
-      $('#news_content').empty();
+      $('#qualities').empty();
       var scene = dendryUI.game.scenes[window.newsTab];
       dendryUI.dendryEngine._runActions(scene.onArrival);
       var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      $('#news_content').append(dendryUI.contentToHTML.convert(displayContent));
+      $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
   };
 
   
