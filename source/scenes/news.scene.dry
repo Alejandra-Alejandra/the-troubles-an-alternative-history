@@ -4,11 +4,3 @@ on-arrival: global_events = "After defeating Edwarth Heath in a race for the Con
 is-special: true
 
 [+ global_events +]
-
-@southern
-
-[+ southern_events +]
-
-@northern
-
-[+ northern_events +]
