@@ -1,8 +1,8 @@
 body {
-  --bg-color: #f3f3e3;
+  --bg-color: #666666;
   --border-color: #000;
   --content-bg-color: #666666;
-  --text-color: #431;
+  --text-color: #f3f3e3;
   --link-color: #900;
   --link-hover-color: rgba(0, 0, 0, 0.05);
   --unavailable-bg-color: rgba(0, 0, 0, 0.1);
