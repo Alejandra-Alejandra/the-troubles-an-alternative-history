@@ -229,14 +229,11 @@ window.newsTab = "news.global";
       tabButton.className += ' active';
       window.statusTab = newTab;
       window.updateSidebar();
+      window.updateNewsSidebar();
   };
 
   window.onDisplayContent = function() {
       window.updateSidebar();
-  };
-
-    window.onDisplayContent = function() {
-      window.updateNewsSideba();
   };
 
   /*
