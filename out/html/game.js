@@ -35,17 +35,6 @@ window.newsTab = "news.global";
     
     tabButton.classList.add('active');
     window.newsTab = newTab;
-    window.updateNewsSidebar();
-  };
-
-  window.updateNewsSidebar = function() {
-    $('#news_content').empty();
-    var scene = dendryUI.game.scenes[window.newsTab];
-    if (scene) {
-        dendryUI.dendryEngine._runActions(scene.onArrival);
-        var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-        $('#news_content').append(dendryUI.contentToHTML.convert(displayContent));
-    }
   };
   
   window.loadMod = function(url) {
@@ -286,13 +275,6 @@ window.newsTab = "news.global";
     }
     window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
     document.getElementById('global_news_tab').classList.add('active');
-    window.updateNewsSidebar();
-    if (!Q.news_initialized) {
-        Q.global_events = "WIP";
-        Q.southern_events = "WIP"; 
-        Q.northern_events = "WIP";
-        Q.news_initialized = true;
-    }
   };
 
 }());
