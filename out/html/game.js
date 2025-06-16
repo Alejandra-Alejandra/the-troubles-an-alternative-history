@@ -268,13 +268,23 @@ window.newsTab = "news.global";
   window.dendryModifyUI = main;
   console.log("Modifying stats: see dendryUI.dendryEngine.state.qualities");
 
-  window.onload = function() {
+window.onload = function() {
     window.dendryUI.loadSettings({show_portraits: true, disable_bg: false});
     if (window.dendryUI.dark_mode) {
         document.body.classList.add('dark-mode');
     }
     window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
-    document.getElementById('global_news_tab').classList.add('active');
-  };
+    
+    var globalNewsTab = document.getElementById('global_news_tab');
+    if (globalNewsTab) {
+        globalNewsTab.classList.add('active');
+        var clickEvent = new MouseEvent('click', {
+            view: window,
+            bubbles: true,
+            cancelable: true
+        });
+        globalNewsTab.dispatchEvent(clickEvent);
+    }
+};
 
 }());
