@@ -2,4 +2,7 @@ title: Monthly News Report
 new-page: true
 is-special: true
 
-WIP
+[? if year == 1975 and month == 1 : IRSP formed by former members of the Officials.?]
+
+[? if year == 1975 and month == 2 : Students radicalise as a result of Garda crackdown on UCD campus.<br><br>Margaret Thatcher elected leader of the opposition by members of the conservative party. ?]
+
