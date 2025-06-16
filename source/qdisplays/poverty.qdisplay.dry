@@ -1,8 +1,8 @@
 # Inner City Poverty
 
-(..4.999) Low
-(4.999..14.999) Substantial
-(14.999..30.999) High
-(30.999..40) Very High
-(40..50) Astonishingly high
-(50..) Extreme
+(..4.999) Non-existent
+(4.999..14.999) Mild
+(14.999..30.999) Bad
+(30.999..40) Very Bad
+(40..50) Astonishingly Bad
+(50..) Extremely Bad
