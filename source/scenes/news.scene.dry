@@ -32,4 +32,6 @@ is-special: true
 
 [? if year == 1976 and month == 3 : Merlyn Rees, Secretary of State for Northern Ireland ends Special Category Status for crimes relating to civil violence.<br><br> Northern Ireland Constitutional Convention dissolved and UK begins direct rule of the north.<br><br>Taoiseach Liam Cosgrave visits the White House.<br><br>Train Robbery near Sallins results in 200,000 pounds stolen from the Cork to Dublin Mail Train.<br><br>South African Army withdraws in disgrace from Angola. ?]
 
+[? if year == 1976 and month == 4 : James Callaghan becomes Prime Minister of the UK. ?]
+
 
