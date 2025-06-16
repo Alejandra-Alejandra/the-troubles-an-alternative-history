@@ -24,7 +24,7 @@ is-special: true
 
 [? if year == 1975 and month == 11 : UDA bombs Dublin Airport ?]
 
-[? if year == 1975 and month == 12 : Indonesia invades East Timor ?]
+[? if year == 1975 and month == 12 : Provisional IRA soldiers captured after 6 day siege of Balcombe Street in UK.<br><br>Indonesia invades East Timor ?]
 
 [? if year == 1976 and month == 1 : Former Taoiseach, John A. Costello dies at 84.<br><br>United States vetoes UN resolution calling for an independent Palestinian state. ?]
 
@@ -50,6 +50,7 @@ is-special: true
 
 [? if year == 1976 and month == 12: Patrick Hillery is sworn as the 6th President of Ireland. ?]
 
+[? if year >= 1977 : WIP: News to be added past this point ?]
 
 
 
