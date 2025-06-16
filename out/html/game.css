@@ -74,6 +74,21 @@ header {
   background-color: var(--tab-bg-color);
 }
 
+#news_wrapper {
+  position: absolute;
+  right: 0.4em;
+  width: 14rem;
+  color: var(--text-color);
+  background-color: var(--content-bg-color);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+#news_content {
+  padding: 0.6em;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
 #header-links {
   text-align: center;
   display: inline-block;
@@ -197,10 +212,11 @@ blockquote.attribution {
 blockquote + blockquote.attribution {
   margin-top: -1em;
 }
-/* This is mostly copied from undum. */
+
 #mid_panel {
-  margin: 0 16rem;
+  margin: 0 16rem 0 16rem; 
 }
+
 #page {
   margin: 0 auto;
   position: relative;
@@ -487,9 +503,31 @@ img {
       margin-left: 0.4em;
   }
   #mid_panel {
-      margin-right: 0.4em;
+    margin-right: 16rem;
+  }
+  #news_wrapper {
+    position: static;
+    float: none;
+    width: 90%;
+    margin: 0.4em auto;
   }
 }
+
+@media screen and (max-width: 900px) {
+  #mid_panel {
+    margin: 0 0.4em;
+  }
+  
+  .tools.left,
+  .tools.right,
+  #news_wrapper {
+    position: static;
+    float: none;
+    width: 90%;
+    margin: 0.4em auto;
+  }
+}
+
 /* mobile: move the stat box to the top if the screen is too small,
  * and reduce font size slightly. */
 @media screen and (max-width: 560px) {
@@ -616,11 +654,6 @@ table {
     fill: #999999;
 }
 
-
-.tooltip-text {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-}
 
 .tooltip-text {
     text-decoration: underline;
