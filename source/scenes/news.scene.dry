@@ -4,17 +4,17 @@ is-special: true
 
 [? if year == 1975 and month == 1 : IRSP formed by former members of the Officials.?]
 
-[? if year == 1975 and month == 2 : Students radicalise as a result of Garda crackdown on UCD campus and Margaret Thatcher is elected leader of the opposition in the UK by members of the conservative party. ?]
+[? if year == 1975 and month == 2 : Students radicalise as a result of Garda crackdown on UCD campus.<br><br>Margaret Thatcher is elected leader of the opposition in the UK by members of the conservative party. ?]
 
-[? if year == 1975 and month == 3 : Pierre Trudeau, prime minister of Canada, visits Ireland and right-wing coup in Portugal defeated by the left-wing military government ?]
+[? if year == 1975 and month == 3 : Pierre Trudeau, prime minister of Canada, visits Ireland.<br><br>Right-wing coup in Portugal defeated by the left-wing military government ?]
 
-[? if year == 1975 and month == 4 : Viet Cong liberates Saigon from the military dictatorship ending the Vietnam war and members of Red Army Faction are captured after taking over West German embassy to Sweden. ?]
+[? if year == 1975 and month == 4 : Viet Cong liberates Saigon from the military dictatorship ending the Vietnam war.<br><br>Members of Red Army Faction are captured after taking over West German embassy to Sweden. ?]
 
 [? if year == 1975 and month == 5 : Northern Ireland Constitutional Convention Elections held. ?]
 
 [? if year == 1975 and month == 6 : Mozambique gains independence from Portugal. ?]
 
-[? if year == 1975 and month == 7 : Cape Verde, São Tomé and Príncipe gains independence from Portugal and three members of The Miami Showband killed up north. ?]
+[? if year == 1975 and month == 7 : Cape Verde, São Tomé and Príncipe gains independence from Portugal.<br><br>Three members of The Miami Showband killed up north. ?]
 
 [? if year == 1975 and month == 8 : Former taoiseach, and president of Ireland, Éamon de Valera dies. ?]
 
