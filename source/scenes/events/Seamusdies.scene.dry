@@ -3,6 +3,7 @@ new-page: true
 subtitle: One of our volunteers has been murdered by the officials.
 view-if: year = 1977 and month = 10 and cycle_of_violence == 1
 on-arrival: costello_advisor = 2;
+face-image: costello_dead.jpg
 max-visits: 1
 tags: event
 
