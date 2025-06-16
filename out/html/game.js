@@ -16,9 +16,15 @@
     // Add your custom code here.
   };
 
-  var TITLE = "The Troubles: An Alternate History" + '_' + "Alejandra Martí Pérez";
+  var TITLE = "Social Democracy: An Alternate History" + '_' + "Autumn Chen";
 
-    window.newsTab = "news.global";
+window.newsTab = "news.global";
+  
+  window.changeNewsTab = function(newTab, tabId) {
+    if (window.dendryUI.dendryEngine.state.qualities.historical_mode) {
+        window.alert('News is not available in historical mode.');
+        return;
+    }
     
     var tabButton = document.getElementById(tabId);
     var tabButtons = document.querySelectorAll('#news_wrapper .tab_button');
@@ -32,28 +38,14 @@
     window.updateNewsSidebar();
   };
 
-  
-  window.onDisplayContent = function() {
-      window.updateSidebar();
-      window.updateNewsSidebar();
-  };
-
-  window.watchNewsQualities = function() {
-    var newsQualities = ['global_events', 'southern_events', 'northern_events'];
-    
-    newsQualities.forEach(function(quality) {
-        Object.defineProperty(Q, quality, {
-            set: function(value) {
-                this['_' + quality] = value;
-                if (window.newsTab && window.newsTab.startsWith('news.')) {
-                    window.updateNewsSidebar();
-                }
-            },
-            get: function() {
-                return this['_' + quality];
-            }
-        });
-    });
+  window.updateNewsSidebar = function() {
+    $('#news_content').empty();
+    var scene = dendryUI.game.scenes[window.newsTab];
+    if (scene) {
+        dendryUI.dendryEngine._runActions(scene.onArrival);
+        var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+        $('#news_content').append(dendryUI.contentToHTML.convert(displayContent));
+    }
   };
   
   window.loadMod = function(url) {
@@ -224,21 +216,6 @@
       $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
   };
 
-  
-  window.updateNewsSidebar = function() {
-      $('#news_content').empty();
-      var scene = dendryUI.game.scenes[window.newsTab];
-      dendryUI.dendryEngine._runActions(scene.onArrival);
-      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      $('#news_content').append(dendryUI.contentToHTML.convert(displayContent));
-  };
-  
-  window.changeNewsTab = function(newTab, tabId) {
-    if (window.dendryUI.dendryEngine.state.qualities.historical_mode) {
-        window.alert('News is not available in historical mode.');
-        return;
-    }
-    
   window.changeTab = function(newTab, tabId) {
       if (tabId == 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
           window.alert('Polls are not available in historical mode.');
@@ -300,9 +277,15 @@
     if (window.dendryUI.dark_mode) {
         document.body.classList.add('dark-mode');
     }
+    window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
     document.getElementById('global_news_tab').classList.add('active');
-    window.watchNewsQualities(); 
-    window.updateNewsSidebar(); 
+    window.updateNewsSidebar();
+    if (!Q.news_initialized) {
+        Q.global_events = "WIP";
+        Q.southern_events = "WIP"; 
+        Q.northern_events = "WIP";
+        Q.news_initialized = true;
+    }
   };
 
 }());
