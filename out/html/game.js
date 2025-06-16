@@ -16,9 +16,9 @@
     // Add your custom code here.
   };
 
-  var TITLE = "Social Democracy: An Alternate History" + '_' + "Autumn Chen";
+  var TITLE = "The Troubles: An Alternate History" + '_' + "Alejandra Martí Pérez";
 
-window.newsTab = "news.global";
+  window.newsTab = "news.global";
   
   window.changeNewsTab = function(newTab, tabId) {
     if (window.dendryUI.dendryEngine.state.qualities.historical_mode) {
@@ -46,6 +46,29 @@ window.newsTab = "news.global";
         var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
         $('#news_content').append(dendryUI.contentToHTML.convert(displayContent));
     }
+  };
+
+  window.onDisplayContent = function() {
+      window.updateSidebar();
+      window.updateNewsSidebar();
+  };
+
+  window.watchNewsQualities = function() {
+    var newsQualities = ['global_events', 'southern_events', 'northern_events'];
+    
+    newsQualities.forEach(function(quality) {
+        Object.defineProperty(Q, quality, {
+            set: function(value) {
+                this['_' + quality] = value;
+                if (window.newsTab && window.newsTab.startsWith('news.')) {
+                    window.updateNewsSidebar();
+                }
+            },
+            get: function() {
+                return this['_' + quality];
+            }
+        });
+    });
   };
   
   window.loadMod = function(url) {
@@ -277,9 +300,9 @@ window.newsTab = "news.global";
     if (window.dendryUI.dark_mode) {
         document.body.classList.add('dark-mode');
     }
-    window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
     document.getElementById('global_news_tab').classList.add('active');
-    window.updateNewsSidebar();
+    window.watchNewsQualities(); 
+    window.updateNewsSidebar(); 
   };
 
 }());
