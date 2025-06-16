@@ -14,6 +14,8 @@ max-cards: 3
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
+[? if year == 1975 and month == 2 : Divisions start to show in the party between those who support armed conflict at all costs, and those who want to rein in the INLA. ?]
+
 - @party
 - @govt
 - @local_council
