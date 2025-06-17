@@ -53,8 +53,6 @@ Limerick Housing Crisis: [+ housing_issue : poverty +]
 
 Farming Monopolisation: [+ farming_monopolisation : trend +]
 
-Urbanisation: [+ (workers+urban_middle+(0.75*rich)+(0.64748201438*unemployed)) : trend +]
-
 = Northern Economy
 
 Inflation: [+ north_inflation_2 +]%
