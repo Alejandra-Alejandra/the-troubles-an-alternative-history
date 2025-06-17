@@ -32,7 +32,6 @@ Taoiseach: [+ taoiseach +] ([+ taoiseach_party +])
 
 Next election: [? if S_election_held == 0: Before 1978 ?][? if S_election_held == 1: Before 1982 ?][? if S_election_held == 2: Before 1986 ?]
 
-
 = Northern Government
 
 Prime Minister: [+ prime_minister +] ([+ prime_minister_party +])
@@ -52,6 +51,8 @@ Dublin Inner City Poverty: [+ poverty_issue : poverty +]
 Limerick Housing Crisis: [+ housing_issue : poverty +]
 
 Farming Monopolisation: [+ farming_monopolisation : trend +]
+
+Urbanisation: [+ urbanisation : trend +]
 
 = Northern Economy
 
