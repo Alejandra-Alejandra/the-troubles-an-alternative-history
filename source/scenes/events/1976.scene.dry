@@ -3,7 +3,7 @@ new-page: true
 view-if: year = 1976 and month = 1
 max-visits: 1
 priority: 10
-on-arrival: unemployed += .05; workers -= .05; north_unemployed += 1.6; catholic_workers -= 1.1; protestant_workers -= 0.5; north_unemployed_Provisionals += 2; inflation -= 2.9; north_inflation -= 7.65; workers += 0.35; poor_rural -= 0.35; catholic_workers +=0.2*1.01612903226; protestant_workers += 0.15*1.01612903226; catholic_poor_rural -= 0.2*1.01612903226; protestant_poor_rural -= 1.5*1.01612903226
+on-arrival: unemployed += .05; workers -= .05; north_unemployed += 1.6; catholic_workers -= 1.1; protestant_workers -= 0.5; north_unemployed_Provisionals += 2; inflation -= 2.9; north_inflation -= 7.65; workers += 0.35; poor_rural -= 0.35; catholic_workers +=0.2*1.01612903226; protestant_workers += 0.15*1.01612903226; catholic_poor_rural -= 0.2*1.01612903226; protestant_poor_rural -= 0.15*1.01612903226
 tags: event
 
 = 1976
