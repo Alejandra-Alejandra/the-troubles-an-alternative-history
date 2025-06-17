@@ -3,7 +3,7 @@ new-page: true
 view-if: year = 1977 and month = 1
 max-visits: 1
 priority: 10
-on-arrival: unemployed += 2; workers -= 2; north_unemployed += 0.6; catholic_workers -= 0.4; protestant_workers -= 0.2; unemployed_Labour -= 4; north_unemployed_Provisionals += 1; inflation -= 4.5; north_inflation -= 0.72
+on-arrival: unemployed += 2; workers -= 2; north_unemployed += 0.6; catholic_workers -= 0.4; protestant_workers -= 0.2; unemployed_Labour -= 4; north_unemployed_Provisionals += 1; inflation -= 4.5; north_inflation -= 0.72; workers += 0.34; poor_rural -= 0.34
 tags: event
 
 = 1977
