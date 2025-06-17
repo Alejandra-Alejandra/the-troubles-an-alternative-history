@@ -1,5 +1,6 @@
 title: Monthly News Report
 new-page: true
+on-arrival: urbanisation = workers+urban_middle+(0.75*rich)+(0.64748201438*unemployed)
 is-special: true
 
 [? if year == 1975 and month == 1 : IRSP formed by former members of the Officials.<br><br>Students radicalise as a result of Garda crackdown on UCD campus. ?]
