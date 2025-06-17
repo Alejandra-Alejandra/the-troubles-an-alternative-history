@@ -203,9 +203,9 @@ Q.budget = 4;
 
 // Proportion of different social groups, there is significant guesswork done here due to lack of useful figures.
 // sources: https://www.statista.com/statistics/384634/religion-of-northern-ireland-residents-census-uk/ and https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=GB and https://api.parliament.uk/historic-hansard/commons/1975/feb/13/unemployment#:~:text=The%20latest%20unemployment%20figures%20for%20Northern%20Ireland%20are%20for%2013th,which%20straddle%20the%20River%20Bann. https://cain.ulster.ac.uk/ni/economy/economy.htm#table6
-Q.catholic_workers = 15; // 
-Q.protestant_workers = 22; // 
-Q.other_workers = 8; // other christians, atheist, etc
+Q.catholic_workers = 17; // 
+Q.protestant_workers = 24; // 
+Q.other_workers = 4; // other christians, atheist, etc
 Q.catholic_middle_rural = 4.5; // 
 Q.catholic_middle_urban = 1; //
 Q.protestant_middle_rural = 13; //
