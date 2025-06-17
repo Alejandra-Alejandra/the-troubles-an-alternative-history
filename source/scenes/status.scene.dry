@@ -60,6 +60,8 @@ Inflation: [+ north_inflation_2 +]%
 
 Unemployment: [+ north_unemployed_2 +]%
 
+Urbanisation: [+ north_urbanisation : trend +]
+
 # = Public Opinion
 
 @politics
