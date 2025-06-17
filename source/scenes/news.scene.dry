@@ -1,6 +1,6 @@
 title: Monthly News Report
 new-page: true
-on-arrival: urbanisation = workers+urban_middle+(0.75*rich)+(0.64748201438*unemployed); north_urbanisation = catholic_workers+protestant_workers+catholic_middle_urban+protestant_middle_urban+(0.75*north_rich)+(0.64748201438*north_unemployed)
+on-arrival: urbanisation = workers+urban_middle+(0.75*rich)+(0.64748201438*unemployed); north_urbanisation = catholic_workers+protestant_workers+catholic_middle_urban+protestant_middle_urban+(0.75*north_rich)+(north_unemployed)
 is-special: true
 
 [? if year == 1975 and month == 1 : IRSP formed by former members of the Officials.<br><br>Students radicalise as a result of Garda crackdown on UCD campus. ?]
