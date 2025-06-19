@@ -20,7 +20,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: month_actions += 0; Belfast_support += 0.000004*(BAF_strength)*MPTW; resources -= 1; 
 
-[? if BAF_strength >= 10000: We have gained a significant amount of support in Belfast due to the presence of the British Armed Forces ?][? if BAF_strength < 10000: We have gained little support in Belfast due to the reduced presence of the British Armed Forces ?]
+[? if BAF_strength >= 10000: We have gained a significant amount of support in Belfast due to the presence of the British Armed Forces. ?][? if BAF_strength < 10000: We have gained little support in Belfast due to the reduced presence of the British Armed Forces. ?]
 
 
 @workers
@@ -53,4 +53,4 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: month_actions += 0; resources -= 1; Belfast_support += 0.0000055*(BAF_strength)*MPTW if year >= 1980; Belfast_support += 0.000002*(BAF_strength)*MPTW if year < 1980
 
-[if year < 1980: We have gained a small amount of support, but there are more pressing concerns right now. ?][if year >= 1980: We have gained a lot of support due to the increasing demands for democracy in Belfast. ?]
+[? if year < 1980: We have gained a small amount of support, but there are more pressing concerns right now. ?][? if year >= 1980: We have gained a lot of support due to the increasing demands for democracy in Belfast. ?]
