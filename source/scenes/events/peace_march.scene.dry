@@ -2,6 +2,7 @@ title: Peace People March
 new-page: true
 view-if: year = 1977 and month = 8
 max-visits: 1
+face-image: img/peace_people.jpg
 priority: 10
 tags: event
 
