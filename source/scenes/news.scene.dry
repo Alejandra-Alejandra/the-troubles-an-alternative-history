@@ -43,7 +43,7 @@ is-special: true
 
 [? if year == 1976 and month == 8: Emergency Powers Bill passed in Leinster House greatly expanding the powers of the guards and curtailing civil rights.<br><br>Violent crackdown on Black school children in South Africa continues, more kids shot dead. ?]
 
-[? if year == 1976 and month == 9: Around 10,000 Protestant and Catholic women demonstrate for peace in the north. ?]
+[? if year == 1976 and month == 9: Around 10,000 Protestant and Catholic women demonstrate for peace in the north.<br><br>Mao Zedong, aged 82, dies. ?]
 
 [? if year == 1976 and month == 10: President Ó Dálaigh resigns following insulting remarks by Minister for Defence, Paddy Donegan.<br><br>Gang of Four arrested in China - Maoist bloc is defeated. ?]
 
