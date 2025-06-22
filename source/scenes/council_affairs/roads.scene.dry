@@ -2,6 +2,7 @@ title: Building Roads in Wicklow
 new-page: true
 max-visits: 1
 view-if: wicklow_roads_timer == 0
+on-arrival: wicklow_roads_timer += 6
 is-card: true
 card-image: img/roads.jpg
 frequency: 100
@@ -22,12 +23,12 @@ We have successfully maintained the quality of our roads.
 
 @quality_rural_roads
 view-if: Left_Wicklow >= 11
-on-arrival: Wicklow_Budget -= 1; rural_road_quality += 1; Wicklow_support += 0.015*(poor_rural+middle_rural)*MPTW; Wicklow_rural_support += 5
+on-arrival: Wicklow_Budget -= 1; rural_road_quality += 1; Wicklow_support += 0.15*(poor_rural+middle_rural)*MPTW; Wicklow_rural_support += 5
 
 We have successfully invested in better roads in rural Wicklow, this has increased our support amongst the rural populace of Wicklow. 
 
 @expand_roads
 view-if: Left_Wicklow >= 11
-on-arrival: Wicklow_Budget -= 1; urban_road_quality += 1; Wicklow_support += 0.02*(workers)*MPTW
+on-arrival: Wicklow_Budget -= 1; urban_road_quality += 1; Wicklow_support += 0.2*(workers)*MPTW
 
 We have successfully invested in better roads in urban Wicklow, this has increased our support amongst the workers.
