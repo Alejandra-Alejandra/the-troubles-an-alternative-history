@@ -645,7 +645,7 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
             'UVF_ban', 'uda_ban', 'papen_chancellor',
             'kpd_policy', 'kpd_ultimatum', 'popular_front_dispute',
             'high_inflation', 'banking_crisis', 'march_on_berlin',
-            'understanding_enemy', 'schleichers_schemes', 'defend_derry', 'revolution_in_derry', 'meeting_ica', 'inlaquipment', 'SU_campaign', 'SU_consc'];
+            'understanding_enemy', 'schleichers_schemes', 'defend_derry', 'revolution_in_derry', 'meeting_ica', 'inlaquipment', 'SU_campaign', 'SU_consc', 'wicklow_roads'];
 Q.advisor_action_timer = 0;
 // party affairs timers
 Q.confronting_nazis_timer = 0;
