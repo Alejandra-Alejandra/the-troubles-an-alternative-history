@@ -8,7 +8,7 @@ card-image: img/roads.jpg
 frequency: 100
 tags: council_affairs
 
-= Test
+= Building Roads in Wicklow
 
 [? if Left_Wicklow >= 11: Since the left has a majority in Wicklow County Council we have a couple options as to where we ought to focus our financing for roads in Wicklow. ?]
 [? if Left_Wicklow <= 10: Since the left is a minority in Wicklow County Council we are unable to change the county council's focus of our finances for roads. ?]
