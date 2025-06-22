@@ -1,7 +1,7 @@
 title: Building Roads in Wicklow
 new-page: true
 max-visits: 1
-view-if: teste = 1
+view-if: wicklow_roads_timer == 0
 is-card: true
 card-image: img/roads.jpg
 frequency: 100
