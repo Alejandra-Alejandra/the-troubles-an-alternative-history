@@ -237,6 +237,7 @@ Q.inflation = 20.9;
 // north inflation - source: https://www.macrotrends.net/global-metrics/countries/gbr/united-kingdom/inflation-rate-cpi
 Q.north_inflation = 24.21;
 Q.wicklow_budget = 1;
+Q.IRSP_in_wicklow = 1;
 
 // farming
 Q.farming_monopolisation_fears = 4;
