@@ -68,7 +68,7 @@ Urbanisation: [+ north_urbanisation : trend +]
 
 = Local County Council Budgets
 
-[? if IRSP_in_wicklow = 1: [+ wicklow_budget : strength +] ?]
+[? if IRSP_in_wicklow = 1: Wicklow Budget: [+ wicklow_budget +] ?]
 
 = Inter-party Relations
 
