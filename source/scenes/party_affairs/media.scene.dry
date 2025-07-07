@@ -13,9 +13,6 @@ If the IRSP is to win broad appeal we must expand our media empire.
 
 - @campaign
 - @ideological
-- @radio
-- @radio_2
-- @radio_3
 - @return: We should not do anything with media at the moment.
 - @easy_discard
 - @cancel_advisor_action
@@ -33,31 +30,3 @@ subtitle: There will be space for all factions to air their views.
 on-arrival: communist_left_dissent -= 6; labor_dissent -= 6; trad_dissent -= 6; reformist_dissent -= 6; neorevisionist_dissent -= 6
 
 We have successfully eased tensions in the party.
-
-@radio
-title: Why not fund a radio station?
-subtitle: -2 resources
-choose-if: resources >= 2
-unavailable-subtitle: Not enough resources.
-view-if: radio = 0
-on-arrival: radio += 1; resources -= 2
-
-WIP: Our new radio station allows us to connect to people in a more intimate setting than before, spreading the message of socialism along with music and other popular content.
-
-@radio_2
-title: We must keep on building up our radio network.
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-view-if: radio > 0 and radio <= 3
-on-arrival: radio += 1; resources -= 1
-
-WIP: Our new radio network has a mix of popular and political programming, and is proving a success.
-
-@radio_3
-title: We must keep on building up our radio network.
-subtitle: It is now financially self-sufficient, and does not require any more resources.
-view-if: radio > 3 and radio <= 5 and year <= 1931
-on-arrival: radio += 1
-
-WIP: Our radio network has become a successful tool for spreading our message.
