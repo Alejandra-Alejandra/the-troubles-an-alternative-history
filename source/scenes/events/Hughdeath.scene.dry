@@ -1,0 +1,30 @@
+title: Hugh Ferguson
+new-page: true
+view-if: year = 1975 and month = 2
+on-arrival: month_actions += 0
+max-visits: 1
+priority: -1
+tags: event
+
+= Hugh Ferguson
+
+The Officials have murdered volunteer Hugh Ferguson. This murder clearly signals the beginning of a pogrom by the Officials to violently stifle the Republican Socialist Movement.
+
+- @recruit_left: We must make preparations to retaliate and begin a recruitment campaign amongst retired volunteers of the Republican left.
+- @fight_back: We must fight back! Order the execution of the OIRA leader Seán Garland.
+
+@recruit_left
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: inla_strength += 10; inla_militancy += 0.1; resources -= 1; garland_attacked_2 = 1
+
+Many retired members of the Republican left sympathise with our views and are interested in defending us from the violence of the Officials. Ex Saor Éire volunteers Larry White and Frank Keane join the party. These grizzled veterans have years of experience committing bank robberies to fund the IRA, and provided us training in the past. This will help us unite the fractured republican movement.
+
+@fight_back
+subtitle: -1 paramilitary resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: garland_attacked_1 = 1
+
+The order to kill Seán Garland has been given. Many in the INLA are pleased by this decision as they are hungry for blood.
