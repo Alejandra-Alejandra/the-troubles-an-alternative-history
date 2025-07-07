@@ -52,7 +52,7 @@ unavailable-subtitle: Not enough resources.
 subtitle: -1 resources
 on-arrival: resources -= 1; inla_strength  += 10 if free_derry_gov = 0; inla_strength  += 100 if free_derry_gov = 1; inla_militancy += 0.01; IRSP_timer = 0; funded_IRSP += 1
 
-We have increased recruiting to the IRSP.
+We have further funded the INLA.
 
 @youth
 choose-if: resources > 0
