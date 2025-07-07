@@ -54,4 +54,4 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: month_actions += 0; resources -= 1; Derry_support += 0.0000065*(BAF_strength)*MPTW if year >= 1980; Derry_support += 0.000003*(BAF_strength)*MPTW if year < 1980
 
-[if year < 1980: We have gained a small amount of support, but there are more pressing concerns right now. ?][if year >= 1980: We have gained a lot of support due to the increasing demands for democracy in Derry. ?]
+[? if year < 1980: We have gained a small amount of support, but there are more pressing concerns right now. ?][? if year >= 1980: We have gained a lot of support due to the increasing demands for democracy in Derry. ?]
