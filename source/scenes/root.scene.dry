@@ -279,6 +279,7 @@ Q.north_parties = ['IRSP', 'Provisionals', 'Officials', 'SDLP', 'UUP', 'DUP', 'V
 Q.FG_wicklow_support = 0.2;
 Q.Labour_wicklow_support = 0.4;
 Q.Officials_wicklow_support = 0.8;
+Q.IRs_wicklow_support = -1;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
