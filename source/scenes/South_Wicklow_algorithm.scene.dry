@@ -26,13 +26,13 @@ for (var party of Q.parties) {
             // okay i'm pretty sure this is wrong, and the hard version is correct
             // basically this allows for "spillover" effects in other demographics.
             // so you can campaign among say the workers and 
-            party_support += Q[c]*Q[c+'_'+party];
+            party_support += Q[c]*Q[c+'_'+party]*(1+Q[party+'_wicklow_support']);
             // However, there should be a cap on how much party support you can get in a certain demo.
         } else  {
-            party_support += Q[c]*Q[c+'_'+party+'_normalized'];
+            party_support += Q[c]*Q[c+'_'+party+'_normalized']*(1+Q[party+'_wicklow_support']);
         }
     }
-    Q[party + '_support'] = party_support*(1+party_wicklow_support);
+    Q[party + '_support'] = party_support;
     total_support += party_support;
 }
 // 2. normalize support (fraction)
