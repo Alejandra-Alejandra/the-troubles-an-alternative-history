@@ -17,7 +17,7 @@ We have decided to go doorknocking across county Wicklow, what should the focus 
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; Wicklow_support += 0.000002*(BAF_strength)*MPTW; resources -= 1; 
+on-arrival: month_actions += 0; IRSP_wicklow_support += 0.000002*(BAF_strength)*MPTW; resources -= 1; 
 
 [? if BAF_strength >= 10000: We have gained a significant amount of support in Wicklow due to the presence of the British Armed Forces ?][? if BAF_strength < 10000: We have gained little support in Wicklow due to the reduced presence of the British Armed Forces ?]
 
@@ -25,7 +25,7 @@ on-arrival: month_actions += 0; Wicklow_support += 0.000002*(BAF_strength)*MPTW;
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Wicklow_support += 0.01*(inflation)*MPTW
+on-arrival: month_actions += 0; resources -= 1; IRSP_wicklow_support += 0.01*(inflation)*MPTW
 
 [? if inflation >= 5: We have gained a substantial amount of support in Wicklow due to the state of the economy ?][? if inflation < 5: We have gained only a small amount of support in Wicklow due to the state of the economy ?]
 
@@ -41,7 +41,7 @@ We have gained significant support due to the strong feelings of the people abou
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Wicklow_support += 0.008*(republic_supp)*MPTW
+on-arrival: month_actions += 0; resources -= 1; IRSP_wicklow_support += 0.008*(republic_supp)*MPTW
 
 We have gained significant support due to the support for a united Ireland in Wicklow.
 
@@ -49,6 +49,6 @@ We have gained significant support due to the support for a united Ireland in Wi
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: month_actions += 0; resources -= 1; Wicklow_support += 0.003*(republic_supp)*MPTW; republic_supp += 0.001*MPTW
+on-arrival: month_actions += 0; resources -= 1; IRSP_wicklow_support += 0.003*(republic_supp)*MPTW; republic_supp += 0.001*MPTW
 
 We have managed to rally support against the special criminal courts.
