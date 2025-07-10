@@ -129,20 +129,20 @@ data = data.concat([
         "seats": Math.round(Q.FF_loc_wicklow*(21/100)),
     },
     {
-        "id": "IRs",
-        "legend": "IRs",
-        "name": "Independent Republicans",
-        "seats": Math.round(Q.IRs_loc_wicklow*(21/100)),
-    },
-]);
-
-// Add IRSP only if vote share > 1.5%
-if (Q.IRSP_loc_wicklow > 1.5) {
-    data.push({
         "id": "IRSP",
         "legend": "IRSP",
         "name": "Irish Republican Socialist Party",
-        "seats": Math.round(Q.IRSP_loc_wicklow*(21/100))
+        "seats": Math.round(Q.IRSP_loc_wicklow*(21/100)),
+    },
+]);
+
+// Add IRs only if vote share > 1.5%
+if (Q.IRs_loc_wicklow > 1.5) {
+    data.push({
+        "id": "IRs",
+        "legend": "IRs",
+        "name": "IRs",
+        "seats": Math.round(Q.IRs_loc_wicklow*(21/100))
     });
 }
 
