@@ -7,7 +7,7 @@ for (var c of Q.classes) {
         if (Q[c+'_'+party] < 0) {
             Q[c+'_'+party] = 0;
         }
-        class_votes += Q[c+'_'+party]*(1+party_wicklow_support);
+        class_votes += Q[c+'_'+party];
     }
     for (var party of Q.parties) {
         Q[c + '_' + party + '_normalized'] = 100*Q[c+'_'+party]/class_votes;
@@ -32,7 +32,7 @@ for (var party of Q.parties) {
             party_support += Q[c]*Q[c+'_'+party+'_normalized'];
         }
     }
-    Q[party + '_support'] = party_support;
+    Q[party + '_support'] = party_support*(1+party_wicklow_support);
     total_support += party_support;
 }
 // 2. normalize support (fraction)
