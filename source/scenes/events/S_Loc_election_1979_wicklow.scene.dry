@@ -129,10 +129,10 @@ data = data.concat([
         "seats": Math.round(Q.FF_loc_wicklow*(21/100)),
     },
     {
-        "id": "IRSP",
-        "legend": "IRSP",
-        "name": "Irish Republican Socialist Party",
-        "seats": Math.round(Q.IRSP_loc_wicklow*(21/100)),
+        "id": "Officials",
+        "legend": "Officials",
+        "name": "Official Sinn Féin",
+        "seats": Math.round(Q.Officials_loc_wicklow*(21/100)),
     },
 ]);
 
@@ -146,13 +146,13 @@ if (Q.IRs_loc_wicklow > 1.5) {
     });
 }
 
-// Add Officials only if vote share > 1.5%
-if (Q.Officials_loc_wicklow > 1.5) {
+// Add IRSP only if vote share > 1.5%
+if (Q.IRSP_loc_wicklow > 1.5) {
     data.push({
-        "id": "Officials",
-        "legend": "Officials",
-        "name": "Official Sinn Féin",
-        "seats": Math.round(Q.Officials_loc_wicklow*(21/100))
+        "id": "IRSP",
+        "legend": "IRSP",
+        "name": "Irish Republican Socialist Party",
+        "seats": Math.round(Q.IRSP_loc_wicklow*(21/100))
     });
 }
 
