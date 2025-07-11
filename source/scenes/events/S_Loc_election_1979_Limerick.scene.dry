@@ -1,0 +1,200 @@
+title: 1979 limerick Local Election 
+new-page: true
+tags: event
+priority: -1
+view-if: (year = 1979 and month == 6)
+on-arrival: election_1979_S_Loc_limerick_held = 1
+max-visits: 1
+set-jump: post_election_1979_S_Loc_limerick
+
+# the low priority means that this event is only seen after all other events are resolved for the month.
+
+= Elections, [+ month : month +] [+ year +]
+
+- @South_Limerick_algorithm: What were the results?
+
+@post_election_1979_S_Loc_limerick
+on-arrival: {!
+// set old results
+// election threshold constitutional reform
+// banning parties
+var new_party_sum = 0;
+for (var party of Q.parties) {
+    Q['old_' + party + '_loc_limerick'] = Q[party + '_loc_limerick'];
+    if (Q.constitutional_reform > 0) {
+        if (Q[party + '_votes'] < Q.electoral_threshold || (Q.electoral_threshold > 1 && party == 'other') || Q[party + '_south_banned']) {
+            Q[party + '_loc_limerick'] = 0;
+        } else {
+            Q[party + '_loc_limerick'] = Q[party + '_votes'];
+        }
+        new_party_sum += Q[party + '_loc_limerick'];
+    } else {
+        Q[party + '_loc_limerick'] = Q[party + '_votes'];
+    }
+    // if we use decimals, then we might want to truncate the numbers
+    if (Q.use_decimals) {
+        Q[party + '_loc_limerick_disp'] = Q[party+'_loc_limerick'].toFixed(2);
+    }  else {
+            Q[party + '_loc_limerick_disp'] = Q[party+'_loc_limerick'];
+    }
+    console.log(party, Q[party + '_loc_limerick'], Q['old_' + party + '_loc_limerick']);
+    Q['change_' + party + '_loc_limerick'] = Q[party + '_loc_limerick'] - Q['old_' + party + '_loc_limerick'];
+    var sign = Q['change_' + party + '_loc_limerick'] > 0 ? '+'  : '';
+    Q['str_change_' + party] = sign + Q['change_' + party + '_loc_limerick'];//.toFixed(2);
+}
+// calculate new party sum if electoral reform
+if (Q.electoral_threshold && Q.electoral_threshold > 0) {
+    for (var party of Q.parties) {
+        if (Q[party + '_loc_limerick'] > 0) {
+            if (Q.use_decimals) {
+                Q[party + '_loc_limerick'] = Math.round(Q[party + '_loc_limerick']*1000/new_party_sum)/10;
+            } else {
+                Q[party + '_loc_limerick'] = Math.round(Q[party + '_loc_limerick']*100/new_party_sum);
+            }
+        }
+        if (Q.use_decimals) {
+            Q[party + '_loc_limerick_disp'] = Q[party+'_loc_limerick'].toFixed(2);
+        } else {
+            Q[party + '_loc_limerick_disp'] = Q[party+'_loc_limerick'];
+        }
+        console.log(party, Q[party + '_loc_limerick'], Q['old_' + party + '_loc_limerick']);
+        Q['change_' + party + '_loc_limerick'] = Q[party + '_loc_limerick'] - Q['old_' + party + '_loc_limerick'];
+        var sign = Q['change_' + party + '_loc_limerick'] > 0 ? '+'  : '';
+        Q['str_change_' + party] = sign + Q['change_' + party + '_loc_limerick'];//.toFixed(2);
+    }
+}
+
+// Calculate total_l_unsouth_banned by summing _loc_limerick for all unsouth_banned parties
+var total_l_unsouth_banned = 0;
+for (var party of Q.parties) {
+    if (Q[party + '_south_banned'] != 1) {
+        total_l_unsouth_banned += Q[party + '_loc_limerick'];
+    }
+}
+
+// Adjust _loc_limerick values for unsouth_banned parties by dividing by total_l_unsouth_banned and multiplying by 100
+for (var party of Q.parties) {
+    if (Q[party + '_south_banned'] != 1) {
+        Q[party + '_loc_limerick'] = (Q[party + '_loc_limerick'] / total_l_unsouth_banned) * 100;
+        // Round to 2 decimal places
+        Q[party + '_loc_limerick'] = Math.round(Q[party + '_loc_limerick'] * 100) / 100;
+        if (Q.use_decimals) {
+            Q[party + '_loc_limerick_disp'] = Q[party+'_loc_limerick'].toFixed(2);
+        } else {
+            Q[party + '_loc_limerick_disp'] = Math.round(Q[party+'_loc_limerick']);
+        }
+        console.log(party, Q[party + '_loc_limerick'], Q['old_' + party + '_loc_limerick']);
+        Q['change_' + party + '_loc_limerick'] = Q[party + '_loc_limerick'] - Q['old_' + party + '_loc_limerick'];
+        var sign = Q['change_' + party + '_loc_limerick'] > 0 ? '+' : '';
+        Q['str_change_' + party] = sign + Q['change_' + party + '_loc_limerick'].toFixed(2);
+    }
+}
+
+
+var election_result = {'date': new Date(Q.year, Q.month - 1)};
+for (var party of Q.parties) {
+    election_result[party] = Q[party + '_loc_limerick'];
+}
+Q.election_records.push(election_result);
+!}
+on-display: {!
+data = [
+    {
+        "id": "FG",
+        "legend": "FG",
+        "name": "Fine Gael",
+        "seats": Math.round(Q.FG_loc_limerick*(21/100))+Math.round(Q.Officials_loc_limerick*(21/100)),
+    }
+];
+data = data.concat([
+
+    {
+        "id": "Labour",
+        "legend": "Labour",
+        "name": "Labour",
+        "seats": Math.round(Q.Labour_loc_limerick*(21/100)),
+    },
+    {
+        "id": "INDs",
+        "legend": "INDs",
+        "name": "Independents",
+        "seats": Math.round(Q.INDs_loc_limerick*(21/100)),
+    },
+    {
+        "id": "FF",
+        "legend": "FF",
+        "name": "Fianna Fáil",
+        "seats": Math.round(Q.FF_loc_limerick*(21/100)),
+    },
+    {
+        "id": "Officials",
+        "legend": "Officials",
+        "name": "Official Sinn Féin",
+        "seats": Math.round(Q.Officials_loc_limerick*(21/100)),
+    },
+]);
+
+// Add IRs only if vote share > 1.5%
+if (Q.IRs_loc_limerick > 1.5) {
+    data.push({
+        "id": "IRs",
+        "legend": "IRs",
+        "name": "IRs",
+        "seats": Math.round(Q.IRs_loc_limerick*(21/100))
+    });
+}
+
+// Add IRSP only if vote share > 1.5%
+if (Q.IRSP_loc_limerick > 1.5) {
+    data.push({
+        "id": "IRSP",
+        "legend": "IRSP",
+        "name": "Irish Republican Socialist Party",
+        "seats": Math.round(Q.IRSP_loc_limerick*(21/100))
+    });
+}
+
+
+if (window && d3) {
+    var width = 500; 
+    var height = 500;
+    var screenWidth = document.getElementById('content').offsetWidth;
+    if (screenWidth < width - 50) {
+        width = screenWidth - 50; 
+        height = width;
+        document.getElementById("reichstag").style.height = screenWidth/2 + "px";
+    } 
+
+    var parliament = d3.parliament();
+    parliament.width(width).height(height).innerRadiusCoef(0.4);
+    parliament.enter.fromCenter(true).smallToBig(true);
+    parliament.exit.toCenter(false).bigToSmall(true);
+    d3.select("#reichstag").datum(data).call(parliament);
+}
+
+!}
+
+= Election results (WIP)
+
+{!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
+
+{!<table>!} 
+{!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#FF7F7F'> </div> !} IRSP: {!</td><td>!} [+ IRSP_loc_limerick +]% {!</td><td>!} [+ str_change_IRSP +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#008000'> </div> !} Provisionals: {!</td><td>!} [+ Provisionals_loc_limerick +]% {!</td><td>!} [+ str_change_Provisionals +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#CC3333'> </div> !} Officials: {!</td><td>!} [+ Officials_loc_limerick +]% {!</td><td>!} [+ str_change_Officials +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#90bc7c'> </div> !} Independent Republicans: {!</td><td>!} [+ IRs_loc_limerick +]% {!</td><td>!} [+ str_change_IRs +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#18eaed'> </div> !} FG: {!</td><td>!} [+ FG_loc_limerick +]% {!</td><td>!} [+ str_change_FG +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#009E58'> </div> !} FF: {!</td><td>!} [+ FF_loc_limerick +]% {!</td><td>!} [+ str_change_FF +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#cc0000'> </div> !} Labour: {!</td><td>!} [+ Labour_loc_limerick +]% {!</td><td>!} [+ str_change_Labour +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#999999'> </div> !} Independents: {!</td><td>!} [+ INDs_loc_limerick +]% {!</td><td>!} [+ str_change_INDs +] {!</td></tr>!}
+
+{!</table>!}
