@@ -103,7 +103,7 @@ data = [
         "id": "FG",
         "legend": "FG",
         "name": "Fine Gael",
-        "seats": Math.round(Q.FG_loc_galway*(17/100))+Math.round(Q.Officials_loc_galway*(17/100)),
+        "seats": Math.round(Q.FG_loc_galway*(30/100))+Math.round(Q.Officials_loc_galway*(30/100)),
     }
 ];
 data = data.concat([
@@ -112,25 +112,25 @@ data = data.concat([
         "id": "Labour",
         "legend": "Labour",
         "name": "Labour",
-        "seats": Math.round(Q.Labour_loc_galway*(17/100)),
+        "seats": Math.round(Q.Labour_loc_galway*(30/100)),
     },
     {
         "id": "INDs",
         "legend": "INDs",
         "name": "Independents",
-        "seats": Math.round(Q.INDs_loc_galway*(17/100)),
+        "seats": Math.round(Q.INDs_loc_galway*(30/100)),
     },
     {
         "id": "FF",
         "legend": "FF",
         "name": "Fianna Fáil",
-        "seats": Math.round(Q.FF_loc_galway*(17/100)),
+        "seats": Math.round(Q.FF_loc_galway*(30/100)),
     },
     {
         "id": "Officials",
         "legend": "Officials",
         "name": "Official Sinn Féin",
-        "seats": Math.round(Q.Officials_loc_galway*(17/100)),
+        "seats": Math.round(Q.Officials_loc_galway*(30/100)),
     },
 ]);
 
@@ -140,7 +140,7 @@ if (Q.IRs_loc_galway > 1.5) {
         "id": "IRs",
         "legend": "IRs",
         "name": "IRs",
-        "seats": Math.round(Q.IRs_loc_galway*(17/100))
+        "seats": Math.round(Q.IRs_loc_galway*(30/100))
     });
 }
 
@@ -150,7 +150,7 @@ if (Q.IRSP_loc_galway > 1.5) {
         "id": "IRSP",
         "legend": "IRSP",
         "name": "Irish Republican Socialist Party",
-        "seats": Math.round(Q.IRSP_loc_galway*(17/100))
+        "seats": Math.round(Q.IRSP_loc_galway*(30/100))
     });
 }
 
