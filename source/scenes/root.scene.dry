@@ -285,6 +285,15 @@ Q.Labour_wicklow_support = 0.55;
 Q.IRs_wicklow_support = -1;
 Q.INDs_wicklow_support = 1.25;
 
+Q.IRSP_dublin_support = 0;
+Q.Provisionals_dublin_support = 0;
+Q.Officials_dublin_support = 2.1;
+Q.FG_dublin_support = 0.6;
+Q.FF_dublin_support = 0;
+Q.Labour_dublin_support = 1.55;
+Q.IRs_dublin_support = -1;
+Q.INDs_dublin_support = 3.75;
+
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 Q.catholic_workers_IRSP = 0.8;
