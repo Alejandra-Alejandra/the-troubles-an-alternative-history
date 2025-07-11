@@ -285,6 +285,15 @@ Q.Labour_wicklow_support = 0.55;
 Q.IRs_wicklow_support = -1;
 Q.INDs_wicklow_support = 1.25;
 
+Q.IRSP_cork_support = 0;
+Q.Provisionals_cork_support = 0;
+Q.Officials_cork_support = 2.3;
+Q.FG_cork_support = 0.15;
+Q.FF_cork_support = 0;
+Q.Labour_cork_support = 0;
+Q.IRs_cork_support = -1;
+Q.INDs_cork_support = 1;
+
 Q.IRSP_limerick_support = 0;
 Q.Provisionals_limerick_support = 0;
 Q.Officials_limerick_support = 1;
