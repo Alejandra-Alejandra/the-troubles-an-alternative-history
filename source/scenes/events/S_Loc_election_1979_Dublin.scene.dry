@@ -2,7 +2,7 @@ title: 1979 Dublin Local Election (WORK IN PROGRESS)
 new-page: true
 tags: event
 priority: -1
-view-if: (year = 1979 and month == 6)
+view-if: (year = 1975 and month == 2)
 on-arrival: election_1979_S_Loc_Dublin_held = 1
 max-visits: 1
 set-jump: post_election_1979_S_Loc_Dublin
