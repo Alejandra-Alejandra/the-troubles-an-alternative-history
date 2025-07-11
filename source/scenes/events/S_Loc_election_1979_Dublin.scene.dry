@@ -1,4 +1,4 @@
-title: 1979 Dublin Local Election (WORK IN PROGRESS)
+title: 1979 Dublin Local Election 
 new-page: true
 tags: event
 priority: -1
@@ -10,8 +10,6 @@ set-jump: post_election_1979_S_Loc_Dublin
 # the low priority means that this event is only seen after all other events are resolved for the month.
 
 = Elections, [+ month : month +] [+ year +]
-
-WIP
 
 - @South_Dublin_algorithm: What were the results?
 
