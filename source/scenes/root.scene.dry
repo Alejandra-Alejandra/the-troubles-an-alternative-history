@@ -295,20 +295,20 @@ Q.IRs_cork_support = -1;
 Q.INDs_cork_support = 1;
 
 Q.IRSP_galway_support = 0;
-Q.Provisionals_galway_support = 0;
-Q.Officials_galway_support = 1;
-Q.FG_galway_support = 0.2;
-Q.FF_galway_support = 0;
-Q.Labour_galway_support = 2.05;
+Q.Provisionals_galway_support = 2;
+Q.Officials_galway_support = -0.5;
+Q.FG_galway_support = 0;
+Q.FF_galway_support = 0.25;
+Q.Labour_galway_support = -0.6;
 Q.IRs_galway_support = -1;
-Q.INDs_galway_support = 6;
+Q.INDs_galway_support = 4;
 
 Q.IRSP_limerick_support = 0;
-Q.Provisionals_limerick_support = 2;
-Q.Officials_limerick_support = -0.5;
-Q.FG_limerick_support = 0;
-Q.FF_limerick_support = 0.25;
-Q.Labour_limerick_support = -0.1;
+Q.Provisionals_limerick_support = 0;
+Q.Officials_limerick_support = 1;
+Q.FG_limerick_support = 0.2;
+Q.FF_limerick_support = 0;
+Q.Labour_limerick_support = 2.05;
 Q.IRs_limerick_support = -1;
 Q.INDs_limerick_support = 6;
 
