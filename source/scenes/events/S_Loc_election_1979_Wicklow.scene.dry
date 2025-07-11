@@ -200,12 +200,3 @@ if (window && d3) {
 {!<tr><td><div class="box" style='background-color:#999999'> </div> !} Independents: {!</td><td>!} [+ INDs_loc_wicklow +]% {!</td><td>!} [+ str_change_INDs +] {!</td></tr>!}
 
 {!</table>!}
-
-
-- @FG_in_gov: FG wins
-
-@FG_in_gov
-view-if: FF_loc_wicklow < 50
-on-arrival: FF_in_gov = 0; FG_in_gov = 1; taoiseach = "Garret FitzGerald"; taoiseach_party = 'FG'
-
-FG and Labour have won this election as a result of the current economic crisis tainting Fianna Fáil. The new Taoiseach is the outspoken Garret FitzGerald of the liberal wing of Fine Gael
