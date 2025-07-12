@@ -152,9 +152,9 @@ is-deck: true
 @calendar_in_colour
 title: End Month
 view-if: world_in_colour = 1
-card-image: img/calendar.jpg
+card-image: img/colour/calendar.jpg
 is-deck: true
 
-- #calendar_affairs
+- #calendar_affairs_colour
 
 
