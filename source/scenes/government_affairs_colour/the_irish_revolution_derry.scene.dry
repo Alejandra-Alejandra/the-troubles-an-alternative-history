@@ -1,0 +1,28 @@
+title: The Revolution Spreads in Derry
+new-page: true
+is-card: true
+subtitle: Party members demand that we take steps to implement a socialist programme
+view-if: year = 1975 and month = 12 and free_derry_gov == 1
+frequency: 200
+max-visits: 10
+card-image: img/motorman.jpg
+tags: govt_affairs
+
+= The Revolution Spreads in Derry
+
+The Democratic Programme of 1919 drafted by the first Dáil asserted public ownership over the means of production, natural resources and "wealth" of the country. Unfortunately, it was later tossed to the side with the outbreak of the Irish civil war and the treaty that divided the country.
+
+Now that we have control over much of Derry, the traditionalists in our party demand the restructuring of local government to take control of all local industry. There is unfortunately not much industry in our controlled territories. However, we do have textile facilities in the area we could take control of.  
+
+On the other hand, the left of the party is demanding that we also establish worker, unemployed, and soldier's councils to help run the free territories.
+  
+- @local_gov: Let us take control of the local industry.
+- @council: Let workers take control of their own lives! It is time to form councils.
+
+@local_gov
+
+WIP: TO DO
+
+@council
+
+WIP: TO DO
