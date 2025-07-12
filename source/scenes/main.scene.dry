@@ -46,6 +46,12 @@ max-cards: 4
 - @student
 - @paramilitary
 - @calendar
+- @party_in_colour
+- @govt_in_colour
+- @local_council_in_colour
+- @student_in_colour
+- @paramilitary_in_colour
+- @calendar_in_colour
 - #advisor
 
 
@@ -97,5 +103,52 @@ is-deck: true
 
 - #calendar_affairs
 
+@party_in_colour
+title: Party Affairs
+view-if: world_in_colour = 0
+card-image: img/irsp_logo.png
+is-deck: true
+
+- #party_affairs
+
+@govt_in_colour
+title: The Unfinished Revolution
+view-if: in_control = 1 and world_in_colour = 0
+card-image: img/Free_Derry.jpg
+is-deck: true
+
+- #govt_affairs
+
+@paramilitary_in_colour
+title: Paramilitary Affairs
+view-if: world_in_colour = 0
+card-image: img/INLALogo123.jpg
+is-deck: true
+
+- #para_affairs
+
+@student_in_colour
+title: Student Affairs
+view-if: world_in_colour = 0 and left_is_united = 1
+card-image: img/ucd.jpg
+is-deck: true
+
+- #student_affairs
+
+@local_council_in_colour
+title: Local Council Affairs
+view-if: world_in_colour = 0 and in_council = 1
+card-image: img/bray.jpg
+is-deck: true
+
+- #council_affairs
+
+@calendar_in_colour
+title: End Month
+view-if: world_in_colour = 0
+card-image: img/calendar.jpg
+is-deck: true
+
+- #calendar_affairs
 
 
