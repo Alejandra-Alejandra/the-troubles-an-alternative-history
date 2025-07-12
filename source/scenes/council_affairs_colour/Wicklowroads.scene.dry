@@ -3,9 +3,9 @@ new-page: true
 view-if: wicklow_roads_timer == 0
 on-arrival: wicklow_roads_timer += 6
 is-card: true
-card-image: img/roads.jpg
+card-image: img/colour/roads.jpg
 frequency: 100
-tags: council_affairs
+tags: council_affairs_colour
 
 = Building Roads in Wicklow
 
