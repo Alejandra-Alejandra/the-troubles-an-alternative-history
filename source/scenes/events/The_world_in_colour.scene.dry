@@ -89,13 +89,15 @@ if (rightTools) {
     rightTools.style.display = 'block';
 }
 
-window.changeTab('status.emergency', 'emergency_tab')
-
-dendryUI.audioPlaylist = []
-
 !}
 set-bg: img/street.jpg
+go-to: colour_world
 
 = The World in Colour
 
 As the decade closes, colour TV and photography has become the norm across most of the Republic of Ireland.
+
+
+@colour_world
+on-arrival: world_in_colour = 1
+
