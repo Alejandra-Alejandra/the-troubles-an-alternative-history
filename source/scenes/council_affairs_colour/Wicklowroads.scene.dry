@@ -1,0 +1,33 @@
+title: Building Roads in Wicklow
+new-page: true
+view-if: wicklow_roads_timer == 0
+on-arrival: wicklow_roads_timer += 6
+is-card: true
+card-image: img/roads.jpg
+frequency: 100
+tags: council_affairs
+
+= Building Roads in Wicklow
+
+[? if Left_Wicklow >= 11: Since the left has a majority in Wicklow County Council we have a couple options as to where we ought to focus our financing for roads in Wicklow. ?]
+[? if Left_Wicklow <= 10: Since the left is a minority in Wicklow County Council we are unable to change the county council's focus of our finances for roads. ?]
+
+- @maintain_roads: The county council decides to simply maintain roads and do nothing new.
+- @quality_rural_roads: The county council decides to invest in better roads in rural Wicklow.
+- @expand_roads: The county council decides to expand the amount of roads in the urban areas of Wicklow.
+
+@maintain_roads
+
+We have successfully maintained the quality of our roads.
+
+@quality_rural_roads
+view-if: Left_Wicklow >= 11
+on-arrival: Wicklow_Budget -= 1; rural_road_quality += 1; Wicklow_support += 0.15*(poor_rural+middle_rural)*MPTW; Wicklow_rural_support += 5
+
+We have successfully invested in better roads in rural Wicklow, this has increased our support amongst the rural populace of Wicklow. 
+
+@expand_roads
+view-if: Left_Wicklow >= 11
+on-arrival: Wicklow_Budget -= 1; urban_road_quality += 1; Wicklow_support += 0.2*(workers)*MPTW
+
+We have successfully invested in better roads in urban Wicklow, this has increased our support amongst the workers.
