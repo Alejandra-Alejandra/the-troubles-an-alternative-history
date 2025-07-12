@@ -1,0 +1,33 @@
+title: Johnny White
+is-pinned-card: true
+tags: advisor, trad
+card-image: img/colour/johnny.jpg
+view-if: johnny_advisor = 1 and world_in_colour = 1
+new-page: true 
+
+= Johnny White
+
+An IRA veteran and one of the founders of the IRSP, he was a key member in organising Free Derry from 1969 to 1972.
+  
+- @arm_the_citizens
+- @recruit_in_derry
+- @root: Return to main
+
+@arm_the_citizens
+title: Arm the Citizens
+subtitle: Push the party towards militarising civillian sympathisers.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 1; arm_civillians += 1
+
+A few members are not happy with this debate, but we have convinced some of the executive.
+
+@recruit_in_derry
+title: Recruit for the INLA in Derry
+subtitle: Try recruit Derry locals to join the INLA.
+view-if: trouble_in_derry == 1
+choose-if: advisor_action_timer = 0 
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: inla_strength += 1*(derry_strength) if derry_strength <= 5; inla_strength += 5 if derry_strength >=6; derry_strength += 1; advisor_action_timer = 1
+
+[? if derry_strength <= 2: Some in Derry join the INLA. ?] [? if derry_strength >= 3 and derry_strength <=6: Our recruitment campaign in Derry is very successful, we have almost made sufficient preparations to go on the offensive. ?] [? if derry_strength >= 7: Soon we shall take back Free Derry... ?]
