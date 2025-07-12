@@ -1,5 +1,4 @@
 title: Next month
-set-bg: img/eire.jpg
 is-hand: true
 on-arrival: {!
 if (Q.advisor_action_timer <= 0) {
@@ -25,7 +24,6 @@ max-cards: 3
 - #advisor
 
 @main_easy
-set-bg: img/eire.jpg
 is-hand: true
 on-arrival: {!
 if (Q.advisor_action_timer <= 0) {
