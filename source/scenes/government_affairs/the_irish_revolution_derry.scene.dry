@@ -2,7 +2,7 @@ title: The Revolution Spreads in Derry
 new-page: true
 is-card: true
 subtitle: Party members demand that we take steps to implement a socialist programme
-view-if: year = 1975 and month = 12 and free_derry_gov == 1
+view-if: year = 1976 and month = 12 and free_derry_gov == 1
 frequency: 200
 max-visits: 10
 card-image: img/motorman.jpg
