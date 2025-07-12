@@ -6,7 +6,7 @@ view-if: year = 1975 and month = 12 and free_derry_gov == 1
 frequency: 200
 max-visits: 10
 card-image: img/motorman.jpg
-tags: govt_affairs
+tags: govt_affairs_colour
 
 = The Revolution Spreads in Derry
 
