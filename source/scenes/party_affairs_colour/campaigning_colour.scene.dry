@@ -5,7 +5,7 @@ max-visits: 100000
 is-card: true
 card-image: img/bigjim.jpeg
 view-if: campaigned_yet == 0
-tags: party_affairs
+tags: party_affairs_colour
 
 = Campaigning
 
