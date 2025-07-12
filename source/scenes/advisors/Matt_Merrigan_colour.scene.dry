@@ -1,7 +1,7 @@
 title: Matt Merrigan
 is-pinned-card: true
 tags: advisor, labor
-card-image: img/Matt_Merrigan.png
+card-image: img/colour/Matt_Merrigan.png
 view-if: Matt_advisor = 1 and world_in_colour = 1
 new-page: true 
 
