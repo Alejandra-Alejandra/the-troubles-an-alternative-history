@@ -4,7 +4,7 @@ view-if: year = 1980 and month = 1 and FF_in_gov == 1
 on-arrival: Haughey_is_king = 1; taoiseach = "Charles Haughey"
 max-visits: 1
 priority: -1
-face-image: img/haughey_talking.jpg
+face-image: img/colour/haughey_talking.jpg
 tags: event
 
 = We Are Living Beyond Our Means
