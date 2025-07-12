@@ -136,7 +136,7 @@ is-deck: true
 @student_in_colour
 title: Student Affairs
 view-if: world_in_colour = 1 and left_is_united = 1
-card-image: img/ucd.jpg
+card-image: img/colour/ucd.jpg
 is-deck: true
 
 - #student_affairs
