@@ -3,6 +3,6 @@ new-page: true
 on-arrival: month_actions += 1; new_month +=1 if new_month <= 4; new_month = 0 if new_month == 5; rally_check = 0; rally_check_2 = 0; visit_inla = 0 if new_month == 5; campaigned_yet = 0; defended_derry = 2 if defended_derry = 1; 
 max-visits: 100000
 is-card: true
-card-image: img/calendar.jpg
+card-image: img/colour/calendar.jpg
 frequency: 100000
 tags: calendar_affairs_colour
