@@ -1,7 +1,7 @@
 title: Political Rally
 new-page: true
 is-card: true
-tags: party_affairs
+tags: party_affairs_colour
 view-if: rally_check == 0 and rally_check_2 == 0
 on-arrival: month_actions += 0; rally_check = 1; rally_check_2 = 1; robbery_true +=1;
 card-image: img/protest.jpg
