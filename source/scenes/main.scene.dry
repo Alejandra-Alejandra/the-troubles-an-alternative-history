@@ -131,7 +131,7 @@ view-if: world_in_colour = 1
 card-image: img/INLALogo123.jpg
 is-deck: true
 
-- #para_affairs
+- #para_affairs_colour
 
 @student_in_colour
 title: Student Affairs
