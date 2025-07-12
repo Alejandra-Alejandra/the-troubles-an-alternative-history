@@ -51,6 +51,7 @@ max-cards: 4
 
 @party
 title: Party Affairs
+view-if: world_in_colour = 0
 card-image: img/irsp_logo.png
 is-deck: true
 
@@ -59,6 +60,7 @@ is-deck: true
 @govt
 title: The Unfinished Revolution
 view-if: in_control = 1
+view-if: world_in_colour = 0
 card-image: img/Free_Derry.jpg
 is-deck: true
 
@@ -66,6 +68,7 @@ is-deck: true
 
 @paramilitary
 title: Paramilitary Affairs
+view-if: world_in_colour = 0
 card-image: img/INLALogo123.jpg
 is-deck: true
 
@@ -73,6 +76,7 @@ is-deck: true
 
 @student
 title: Student Affairs
+view-if: world_in_colour = 0
 view-if: left_is_united = 1
 card-image: img/ucd.jpg
 is-deck: true
@@ -81,6 +85,7 @@ is-deck: true
 
 @local_council
 title: Local Council Affairs
+view-if: world_in_colour = 0
 view-if: in_council = 1
 card-image: img/bray.jpg
 is-deck: true
@@ -89,6 +94,7 @@ is-deck: true
 
 @calendar
 title: End Month
+view-if: world_in_colour = 0
 card-image: img/calendar.jpg
 is-deck: true
 
