@@ -115,7 +115,7 @@ view-if: world_in_colour = 1
 card-image: img/irsp_logo.png
 is-deck: true
 
-- #party_affairs
+- #party_affairs_colour
 
 @govt_in_colour
 title: The Unfinished Revolution
