@@ -3,7 +3,7 @@ new-page: true
 on-arrival: robbery_true += 1; month_actions += 0
 max-visits: 100000
 is-card: true
-card-image: img/bigjim.jpeg
+card-image: img/colour/campaigning.jpg
 view-if: campaigned_yet == 0
 tags: party_affairs_colour
 
