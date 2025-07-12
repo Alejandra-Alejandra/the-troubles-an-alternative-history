@@ -59,8 +59,7 @@ is-deck: true
 
 @govt
 title: The Unfinished Revolution
-view-if: in_control = 1
-view-if: world_in_colour = 0
+view-if: in_control = 1 and world_in_colour = 0
 card-image: img/Free_Derry.jpg
 is-deck: true
 
