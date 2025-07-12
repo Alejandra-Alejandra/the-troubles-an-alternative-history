@@ -1,0 +1,12 @@
+title: The World in Colour
+new-page: true
+view-if: year = 1980 and month = 1
+max-visits: 1
+priority: -1
+on-arrival: in_colour = 1
+face-image: img/colour.jpg
+tags: event
+
+= The World in Colour
+
+Colour TV and photography has finally become widespread across the entirety of the island of Ireland.
