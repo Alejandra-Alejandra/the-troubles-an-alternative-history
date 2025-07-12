@@ -4,7 +4,7 @@ view-if: year = 1981 and month = 2
 max-visits: 1
 priority: 10
 on-arrival: 
-face-image: img/stardust-fire.jpg
+face-image: img/Stardust.jpg
 tags: event
 
 = Stardust Fire
