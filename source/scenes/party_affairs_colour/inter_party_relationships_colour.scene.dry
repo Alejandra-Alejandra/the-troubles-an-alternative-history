@@ -4,7 +4,7 @@ view-if: year <= 1985 and inter_party_relationships_timer <= 0
 tags: party_affairs_colour
 is-card: true
 on-arrival: month_actions += 0; inter_party_relationships_timer = 2;
-card-image: img/LH.jpg
+card-image: img/colour/LH.jpg
 max-visits: 12
 #subtitle: Building relations with the other groups in Ireland.
 
