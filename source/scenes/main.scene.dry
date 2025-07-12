@@ -144,7 +144,7 @@ is-deck: true
 @local_council_in_colour
 title: Local Council Affairs
 view-if: world_in_colour = 1 and in_council = 1
-card-image: img/bray.jpg
+card-image: img/colour/bray_coast.jpg
 is-deck: true
 
 - #council_affairs_colour
