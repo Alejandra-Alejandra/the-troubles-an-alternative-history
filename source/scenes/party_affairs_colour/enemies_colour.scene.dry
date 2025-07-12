@@ -4,7 +4,7 @@ view-if: year <= 1977 and enemies_timer <= 0
 on-arrival: month_actions += 0; enemies_timer = 18
 max-visits: 3
 is-card: true
-card-image: img/poster_enemies.jpeg
+card-image: img/poster_enemies_colour.jpg
 tags: party_affairs_colour
 
 = Choosing our enemies
