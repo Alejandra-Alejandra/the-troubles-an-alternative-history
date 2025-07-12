@@ -4,7 +4,9 @@ priority: -1
 new-page: true
 tags: event
 max-visits: 1
-
+on-arrival: {!
+Q.colour =1;
+!}
 set-bg: img/street.jpg
 go-to: colour_world
 
