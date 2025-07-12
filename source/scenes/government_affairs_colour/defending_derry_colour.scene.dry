@@ -5,7 +5,7 @@ view-if: free_derry_gov == 1 and defend_derry_timer <= 0
 frequency: 200
 on-arrival: defend_derry_timer = 1
 card-image: img/motorman.jpg
-tags: govt_affairs
+tags: govt_affairs_colour
 
 = Defending Free Derry
 
