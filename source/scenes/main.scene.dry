@@ -21,6 +21,12 @@ max-cards: 3
 - @student
 - @paramilitary
 - @calendar
+- @party_in_colour
+- @govt_in_colour
+- @local_council_in_colour
+- @student_in_colour
+- @paramilitary_in_colour
+- @calendar_in_colour
 - #advisor
 
 @main_easy
