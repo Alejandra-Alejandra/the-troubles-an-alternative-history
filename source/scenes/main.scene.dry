@@ -112,7 +112,7 @@ is-deck: true
 @party_in_colour
 title: Party Affairs
 view-if: world_in_colour = 1
-card-image: img/irsp_logo.png
+card-image: img/colour/irsp.jpeg
 is-deck: true
 
 - #party_affairs_colour
