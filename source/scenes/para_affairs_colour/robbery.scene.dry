@@ -1,0 +1,36 @@
+title: Bank Robbery
+new-page: true
+on-arrival: month_actions += 0
+view-if: resources <= 3 and new_month == 4
+is-card: true
+card-image: img/robbery.jpg
+frequency: 100
+tags: para_affairs
+
+= Bank Robbery
+
+Since we are low on funds the Army Council is demanding we authorise a bank robbery. 
+  
+- @rob_Dublin: We will rob a large bank in Dublin
+- @rob_Belfast: We will rob from a large bank in Belfast that has been discriminating against Catholic workers.
+- @rob_Waterford: We will rob a small bank in Waterford.
+- @no: Do not rob a bank
+
+@rob_Dublin
+on-arrival: resources += 10
+
+This has given us a great deal of funds, WIP: however many in Dublin are unhappy about the chaos in the city as a result of our actions.
+  
+@rob_Belfast
+on-arrival: resources += 7
+
+We have retrieved a sizeable amount of funds and poor Catholic workers in Belfast are happy about our actions, WIP: however the UDA and UVF have denounced us, and the Protestants are angry.
+
+@rob_Waterford
+on-arrival: resources += 5
+
+We have retrieved a small amount of funds, WIP: the locals in Waterford are aggravated, but luckily this will not make national headlines.
+
+@no
+choose-if: INLA_relation >= 75 and (INLA_under_fullcontrol = 1 or INLA_under_control = 1)
+unavailable-subtitle: You need either more control over the INLA, or better relations with it.
