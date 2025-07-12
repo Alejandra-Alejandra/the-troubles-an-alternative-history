@@ -1,6 +1,6 @@
 title: The World in Colour
-view-if: year = 1975 and month = 3
-priority: -1
+view-if: year = 1980 and month = 1
+priority: 10
 new-page: true
 tags: event
 max-visits: 1
