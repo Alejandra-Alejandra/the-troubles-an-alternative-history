@@ -1,0 +1,60 @@
+title: Campaigning
+new-page: true
+on-arrival: robbery_true += 1; month_actions += 0
+max-visits: 100000
+is-card: true
+card-image: img/bigjim.jpeg
+view-if: campaigned_yet == 0
+tags: party_affairs
+
+= Campaigning
+
+If the party is to become a serious force to be reckoned with, we must expand our support.
+
+- @workers: The urban working class, composed of both protestants and catholics. Our traditional support base consists of Catholic workers.
+- @catholics: The catholic community, they typically support unification.
+- @catholic_urban_middle: The middle class of the cities and towns, who typically support the SDLP.
+- @small_rural: Poor farmers, many of whom are catholic.
+- @unemployed: The unemployed, primarily composed of catholics, much of our support base has historically come from them.
+- @root: We either don't want to or cannot campaign right now.
+- @easy_discard
+
+@workers
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: catholic_workers_IRSP += (0.04*(1-dissent)*catholic_support_weight + 0.0001*north_inflation); workers_IRSP += (0.06*(1-dissent)*MPTW + 0.0005*inflation); resources -= 1; campaigned_yet = 1;
+
+We have increased our campaigning among the workers.
+
+@catholic_urban_middle
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: catholic_middle_urban_IRSP += 0.01*(1-dissent)*catholic_support_weight*catholic_moderate_support_weight*MPTW; resources -= 1; campaigned_yet = 1;
+
+We have increased our campaigning among the middle class.
+
+@small_rural
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: catholic_poor_rural_IRSP += 0.02*(1-dissent)*catholic_support_weight*MPTW*(1+0.0005*farming_monopilisation_fears); poor_rural_IRSP += 0.01*(1-dissent); resources -= 1; campaigned_yet = 1;
+
+We have increased our campaigning among small farmers.
+
+@unemployed
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: north_unemployed_IRSP += 0.02*(1-dissent)*catholic_support_weight*MPTW; unemployed_IRSP += 0.05*(1-dissent)*MPTW; resources -= 1; campaigned_yet = 1;
+
+We have increased our campaigning among the unemployed.
+
+@catholics
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: catholic_workers_IRSP += 0.003*(1-dissent)*catholic_support_weight*MPTW; catholic_middle_urban_IRSP += 0.001*(1-dissent)*catholic_support_weight*catholic_moderate_support_weight*MPTW; catholic_poor_rural_IRSP += 0.002*(1-dissent)*catholic_support_weight*MPTW; catholic_middle_rural_IRSP += 0.001*(1-dissent)*catholic_support_weight*catholic_moderate_support_weight*MPTW; north_unemployed_IRSP += 0.008*(1-dissent)*catholic_support_weight*MPTW; resources -= 1; campaigned_yet = 1;
+
+We have increased our campaigning among Catholics.
