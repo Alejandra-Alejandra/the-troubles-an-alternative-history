@@ -1,0 +1,21 @@
+title: Charles Haughey Delivers Controversial Announcement on Television
+new-page: true
+view-if: year = 1980 and month = 1 and FF_in_gov == 1
+on-arrival: Haughey_is_king = 1; taoiseach = "Charles Haughey"
+max-visits: 1
+priority: -1
+face-image: img/haughey_talking.jpg
+tags: event
+
+= We Are Living Beyond Our Means
+
+I wish to talk to you this evening about the state of the nation’s affairs and the picture I have to paint is not, unfortunately, a very cheerful one.
+
+The figures which are now just becoming available to us show one thing very clearly. As a community we are living away beyond our means. I do not mean that everyone in the community is living too well. Clearly many are not and have barely enough to get by. But taking us all together, we have been living at a rate which is simply not justified by the amount of goods and services we are producing....
+
+- @support_collapse: What the hell?
+
+@support_collapse
+on-arrival: workers_FF -= 5; workers_FG += 5
+  
+Following the speech large sections of the working people of Ireland and the middle class have risen up in arms over the controversial and callous remarks by Haughey. Fianna Fáil which just recently delivered the greatest electoral victory in modern Irish history is now slipping in the polls.
