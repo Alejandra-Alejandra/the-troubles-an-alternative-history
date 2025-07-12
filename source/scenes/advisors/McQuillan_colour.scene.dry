@@ -1,0 +1,42 @@
+title: Jack McQuillan
+is-pinned-card: true
+tags: advisor, reformist
+card-image: img/colour/Jack_McQuillan.jpg
+view-if: McQuillan_advisor = 1 and world_in_colour = 1
+new-page: true 
+
+= Jack McQuillan
+
+A former Clann na Poblachta TD who later joined the National Progressive Democrats to support Noël Browne, Jack McQuillan is a grizzled politician.
+  
+- @trade_union_work
+- @national_organising
+- @undermine_ff
+- @root: Return to main
+
+@trade_union_work
+title: Increase our influence in the trade unions
+subtitle: Try undermine the base of support of the Labour party.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0
+on-arrival: advisor_action_timer = 1
+
+WIP: Not implemented yet
+
+@undermine_ff
+title: Organise a rally in Belfast
+subtitle: Try undermine the base of support of Fianna Fáil.
+choose-if: advisor_action_timer = 0 
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 1
+
+WIP: Not implemented yet
+  
+@national_organising
+title: Begin a national electoral campaign
+subtitle: Try gain mass support electorally
+choose-if: advisor_action_timer = 0 
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 1
+
+WIP: Not implemented yet
