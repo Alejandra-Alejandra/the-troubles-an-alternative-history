@@ -147,7 +147,7 @@ view-if: world_in_colour = 1 and in_council = 1
 card-image: img/bray.jpg
 is-deck: true
 
-- #council_affairs
+- #council_affairs_colour
 
 @calendar_in_colour
 title: End Month
