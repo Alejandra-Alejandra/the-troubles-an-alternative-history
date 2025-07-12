@@ -2,7 +2,7 @@ title: Jack McQuillan
 is-pinned-card: true
 tags: advisor, reformist
 card-image: img/portraits/Jack_McQuillan.jpg
-view-if: McQuillan_advisor = 1
+view-if: McQuillan_advisor = 1 and world_in_colour = 0
 new-page: true 
 
 = Jack McQuillan
