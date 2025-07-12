@@ -128,7 +128,7 @@ is-deck: true
 @paramilitary_in_colour
 title: Paramilitary Affairs
 view-if: world_in_colour = 1
-card-image: img/INLALogo123.jpg
+card-image: img/colour/inla_logo.jpg
 is-deck: true
 
 - #para_affairs_colour
