@@ -5,7 +5,7 @@ on-arrival: month_actions += 0; enemies_timer = 18
 max-visits: 3
 is-card: true
 card-image: img/poster_enemies.jpeg
-tags: party_affairs
+tags: party_affairs_colour
 
 = Choosing our enemies
 
