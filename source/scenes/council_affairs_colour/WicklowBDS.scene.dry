@@ -3,9 +3,9 @@ new-page: true
 max-visits: 1
 view-if: BDS_support == 100
 is-card: true
-card-image: img/roads.jpg
+card-image: img/colour/bds.jpg
 frequency: 100
-tags: council_affairs
+tags: council_affairs_colour
 
 = Cutting off ties with South Africa
 
