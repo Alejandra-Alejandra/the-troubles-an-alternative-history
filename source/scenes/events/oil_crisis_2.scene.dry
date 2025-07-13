@@ -4,7 +4,7 @@ view-if: year = 1980 and month = 2
 max-visits: 1
 priority: 10
 face-image: img/colour/iran_iraq_war.jpg
-on-arrival: unemployed += 1.1; workers -= 1.1; north_unemployed += 1; catholic_workers -= 0.7; protestant_workers -= 0.3; workers_FF -= 6; poor_rural_FF -= 4; north_unemployed_Provisionals += 0.7
+on-arrival: unemployed += 1.1; workers -= 1.1; north_unemployed += 1; catholic_workers -= 0.7; protestant_workers -= 0.3; workers_FF -= 8; poor_rural_FF -= 6; north_unemployed_Provisionals += 0.7
 tags: event
 
 = Iraq Invades Iran
