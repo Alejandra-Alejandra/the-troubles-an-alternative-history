@@ -3,7 +3,6 @@ new-page: true
 view-if: year = 1976 and month = 12
 max-visits: 1
 priority: 10
-face-image: img/hillery.jpg
 on-arrival: president = "Patrick Hillery"
 tags: event
 
