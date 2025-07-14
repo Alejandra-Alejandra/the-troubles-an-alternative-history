@@ -1,0 +1,11 @@
+title: "Save Wood Quay" Protest
+new-page: true
+view-if: year = 1978 and month = 9 and join_protest = 1
+tags: event
+on-arrival: MPTW += 0.1; catholic_workers_IRSP -= 0.3;
+
+= "Save Wood Quay" Protest
+
+We have joined the "Save Wood Quay" protest. Dozens of our members join the crowd of roughly 20,000 people protesting the replacement of the historic viking site with the offices of Dublin City Council.
+
+All sorts of people arrive at the protest, priests, members of the middle class, workers, farmers, all over from Ireland people come. As a result, our party begins to connect with the wider population of Ireland.
