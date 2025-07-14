@@ -1,0 +1,25 @@
+title: "Save Wood Quay" Protest
+new-page: true
+view-if: year = 1978 and month = 8
+tags: event
+
+= "Save Wood Quay" Protest
+
+Dublin City Council has decided to destroy the remains of a historic viking settlement in the middle of Dublin City Centre to replace it with their offices.
+
+Many in the city have decided to protest against the decision by Dublin City Council. The current campaign consists of all sorts - workers in the city, those of the middle class with an eye for aesthetics.
+  
+Some in the party openly oppose this move by Dublin City Council, though others see it as something the party should not intervene in.
+  
+- @join: Join the protest.
+- @do_not_join: Do not join the protest.
+
+@join
+on-arrival: join_protest = 2; 
+
+We have joined the protest
+
+@do_not_join
+on-arrival: join_protest = 1; 
+
+We do not join the protest
