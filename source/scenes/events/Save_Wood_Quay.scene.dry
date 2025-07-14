@@ -15,11 +15,10 @@ Some in the party openly oppose this move by Dublin City Council, though others 
 - @do_not_join: Do not join the protest.
 
 @join
-on-arrival: join_protest = 2; 
+on-arrival: join_protest = 1; 
 
 We have joined the protest
 
 @do_not_join
-on-arrival: join_protest = 1; 
 
 We do not join the protest
