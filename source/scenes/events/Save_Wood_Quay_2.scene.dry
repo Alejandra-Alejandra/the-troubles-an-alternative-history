@@ -4,6 +4,7 @@ view-if: year = 1978 and month = 9 and join_protest = 1
 tags: event
 face-image: img/wood_quay_protest.png
 on-arrival: MPTW += 0.1; catholic_workers_IRSP -= 0.3;
+max-visits: 1
 
 = "Save Wood Quay" Protest
 
