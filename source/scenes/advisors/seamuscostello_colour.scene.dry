@@ -2,7 +2,7 @@ title: Seamus Costello
 is-pinned-card: true
 tags: advisor
 card-image: img/colour/costello.jpg
-view-if: costello_advisor = 1 and world_in_colour = 1
+view-if: costello_colour_advisor = 1 and world_in_colour = 1
 new-page: true 
 
 = Seamus Costello
