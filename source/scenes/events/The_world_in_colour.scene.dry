@@ -16,5 +16,5 @@ As the decade closes, colour TV and photography has become the norm across most 
 
 
 @colour_world
-on-arrival: world_in_colour = 1
+on-arrival: world_in_colour = 1; costello_colour_advisor = 1 if costello_advisor == 1; costello_colour_advisor = 0 if costello_advisor == 0; costello_advisor = 2; johnny_colour_advisor = 1 if johnny_advisor == 1; johnny_colour_advisor = 0 if johnny_advisor == 0; johnny_advisor = 2; bernadette_colour_advisor = 1 if bernadette_advisor == 1; bernadette_colour_advisor = 0 if bernadette_advisor == 0; bernadette_advisor = 2; McQuillan_colour_advisor = 1 if McQuillan_advisor == 1; McQuillan_colour_advisor = 0 if McQuillan_advisor == 0; McQuillan_advisor = 2; Matt_colour_advisor = 1 if Matt_advisor == 1; Matt_colour_advisor = 0 if Matt_advisor == 0; Matt_advisor = 2
 
