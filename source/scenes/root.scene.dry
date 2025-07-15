@@ -762,7 +762,7 @@ Q.bernadette_colour_advisor = 1; // Bernadette Devlin
 Q.McQuillan_colour_advisor = 2; // Jack McQuillan
 
 // Labour advisors
-Q.Matt__colour_advisor = 2; // Matt Merrigan
+Q.Matt_colour_advisor = 2; // Matt Merrigan
 
 !}
 set-bg: img/eire.jpg
