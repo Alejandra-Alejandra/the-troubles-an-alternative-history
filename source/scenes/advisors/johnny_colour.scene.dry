@@ -2,7 +2,7 @@ title: Johnny White
 is-pinned-card: true
 tags: advisor, trad
 card-image: img/colour/johnny.jpg
-view-if: johnny_advisor = 1 and world_in_colour = 1
+view-if: johnny_colour_advisor = 1 and world_in_colour = 1
 new-page: true 
 
 = Johnny White
