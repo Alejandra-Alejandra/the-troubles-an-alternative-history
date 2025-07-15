@@ -2,7 +2,7 @@ title: Bernadette Devlin
 is-pinned-card: true
 tags: advisor, communist_left
 card-image: img/colour/bernadette_devlin.jpg
-view-if: bernadette_advisor = 1 and world_in_colour = 1
+view-if: bernadette_colour_advisor = 1 and world_in_colour = 1
 new-page: true 
 
 = Bernadette Devlin
