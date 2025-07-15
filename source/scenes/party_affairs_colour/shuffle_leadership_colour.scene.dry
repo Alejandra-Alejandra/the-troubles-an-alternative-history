@@ -35,8 +35,8 @@ tags: remove_advisor
 
 @remove_costello
 title: Remove Seamus Costello
-view-if: costello_advisor = 1
-on-arrival: costello_advisor = 0; inla_relation -= 15; trad_dissent +=5; communist_left_dissent +=5; n_advisors -= 1
+view-if: costello_colour_advisor = 1
+on-arrival: costello_colour_advisor = 0; inla_relation -= 15; trad_dissent +=5; communist_left_dissent +=5; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
 
@@ -44,8 +44,8 @@ Costello is the spiritual leader of the party. Many are upset.
 
 @remove_bernadette
 title: Remove Bernadette Devlin
-view-if: bernadette_advisor = 1
-on-arrival: bernadette_advisor = 0; communist_left_dissent +=5; n_advisors -= 1
+view-if: bernadette_colour_advisor = 1
+on-arrival: bernadette_colour_advisor = 0; communist_left_dissent +=5; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
 
@@ -53,8 +53,8 @@ The left is upset.
 
 @remove_johnny
 title: Remove Johnny White
-view-if: johnny_advisor = 1
-on-arrival: johnny_advisor = 0; trad_dissent +=5; n_advisors -= 1
+view-if: johnny_colour_advisor = 1
+on-arrival: johnny_colour_advisor = 0; trad_dissent +=5; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
 
@@ -62,8 +62,8 @@ The traditionalist republicans are upset.
 
 @remove_McQuillan
 title: Remove Jack McQuillan
-view-if: McQuillan_advisor = 1
-on-arrival: McQuillan_advisor = 0; reformist_dissent +=5; n_advisors -= 1
+view-if: McQuillan_colour_advisor = 1
+on-arrival: McQuillan_colour_advisor = 0; reformist_dissent +=5; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
 
@@ -71,8 +71,8 @@ The reformists are upset.
 
 @remove_MattMerrigan
 title: Remove Matt Merrigan
-view-if: Matt_advisor = 1
-on-arrival: Matt_advisor = 0; labor_dissent +=5; n_advisors -= 1
+view-if: Matt_colour_advisor = 1
+on-arrival: Matt_colour_advisor = 0; labor_dissent +=5; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
 
@@ -131,8 +131,8 @@ subtitle: A longtime tenants' organiser in Bray, and veteran IRA member. In 1974
 is-card: true
 card-image: img/portraits/costello.jpg
 tags: nonfactional_advisor
-view-if: costello_advisor = 0 and n_advisors < 18
-on-arrival: costello_advisor = 1; n_advisors += 1
+view-if: costello_colour_advisor = 0 and n_advisors < 18
+on-arrival: costello_colour_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
 Seamus Costello is now an advisor.
@@ -143,8 +143,8 @@ subtitle: A longtime civil rights campaigner in the north and Trotskyist, Bernad
 is-card: true
 card-image: img/portraits/Bernadette_Devlin.jpg
 tags: communist_left_advisor
-view-if: bernadette_advisor = 0 and n_advisors < 18
-on-arrival: bernadette_advisor = 1; n_advisors += 1
+view-if: bernadette_colour_advisor = 0 and n_advisors < 18
+on-arrival: bernadette_colour_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
 Bernadette Devlin is now an advisor.
@@ -155,8 +155,8 @@ subtitle: An IRA veteran and one of the founders of the IRSP, he was a key membe
 is-card: true
 card-image: img/portraits/johnny.jpg
 tags: trad_advisor
-view-if: johnny_advisor = 0 and n_advisors < 18
-on-arrival: johnny_advisor = 1; n_advisors += 1
+view-if: johnny_colour_advisor = 0 and n_advisors < 18
+on-arrival: johnny_colour_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
 Johnny White is now an advisor.
@@ -167,8 +167,8 @@ subtitle: A former Clann na Poblachta TD who later joined the National Progressi
 is-card: true
 card-image: img/portraits/Jack_McQuillan.jpg
 tags: reformist_advisor
-view-if: McQuillan_advisor = 0 and n_advisors < 18
-on-arrival: McQuillan_advisor = 1; n_advisors += 1
+view-if: McQuillan_colour_advisor = 0 and n_advisors < 18
+on-arrival: McQuillan_colour_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
 Jack McQuillan is now an advisor.
@@ -178,8 +178,8 @@ title: Add Matt Merrigan
 subtitle: A veteran Irish trade unionist leader and former organiser in the Irish Labour party.
 is-card: true
 card-image: img/portraits/mattyboy.png
-view-if: Matt_advisor = 0 and n_advisors < 18
-on-arrival: Matt_advisor = 1; n_advisors += 1
+view-if: Matt_colour_advisor = 0 and n_advisors < 18
+on-arrival: Matt_colour_advisor = 1; n_advisors += 1
 tags: labor_advisor
 go-to: advisor_menu
 
