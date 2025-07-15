@@ -33,45 +33,90 @@ go-to: root
 tags: remove_advisor
 
 
-@remove_costello
+@remove_costello_0
 title: Remove Seamus Costello
-view-if: costello_advisor = 1
+view-if: costello_advisor = 1 and world_in_colour = 0
 on-arrival: costello_advisor = 0; inla_relation -= 15; trad_dissent +=5; communist_left_dissent +=5; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
 
 Costello is the spiritual leader of the party. Many are upset.
 
-@remove_bernadette
+@remove_costello_1
+title: Remove Seamus Costello
+view-if: costello_advisor = 1 and world_in_colour = 1
+on-arrival: costello_advisor = 0; inla_relation -= 15; trad_dissent +=5; communist_left_dissent +=5; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Costello is the spiritual leader of the party. Many are upset.
+
+@remove_bernadette_0
 title: Remove Bernadette Devlin
-view-if: bernadette_advisor = 1
+view-if: bernadette_advisor = 1 and world_in_colour = 0
 on-arrival: bernadette_advisor = 0; communist_left_dissent +=5; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
 
 The left is upset.
 
-@remove_johnny
+@remove_bernadette_1
+title: Remove Bernadette Devlin
+view-if: bernadette_advisor = 1 and world_in_colour = 1
+on-arrival: bernadette_advisor = 0; communist_left_dissent +=5; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+The left is upset.
+
+@remove_johnny_0
 title: Remove Johnny White
-view-if: johnny_advisor = 1
+view-if: johnny_advisor = 1 and world_in_colour = 0
 on-arrival: johnny_advisor = 0; trad_dissent +=5; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
 
 The traditionalist republicans are upset.
 
-@remove_McQuillan
+@remove_johnny_1
+title: Remove Johnny White
+view-if: johnny_advisor = 1 and world_in_colour = 1
+on-arrival: johnny_advisor = 0; trad_dissent +=5; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+The traditionalist republicans are upset.
+
+@remove_McQuillan_0
 title: Remove Jack McQuillan
-view-if: McQuillan_advisor = 1
+view-if: McQuillan_advisor = 1 and world_in_colour = 0
 on-arrival: McQuillan_advisor = 0; reformist_dissent +=5; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
 
 The reformists are upset.
 
-@remove_MattMerrigan
+@remove_McQuillan_1
+title: Remove Jack McQuillan
+view-if: McQuillan_advisor = 1 and world_in_colour = 1
+on-arrival: McQuillan_advisor = 0; reformist_dissent +=5; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+The reformists are upset.
+
+@remove_MattMerrigan_0
 title: Remove Matt Merrigan
-view-if: Matt_advisor = 1
+view-if: Matt_advisor = 1 and world_in_colour = 0
+on-arrival: Matt_advisor = 0; labor_dissent +=5; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+The Labour wing is upset.
+
+@remove_MattMerrigan_1
+title: Remove Matt Merrigan
+view-if: Matt_advisor = 1 and world_in_colour = 1
 on-arrival: Matt_advisor = 0; labor_dissent +=5; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
