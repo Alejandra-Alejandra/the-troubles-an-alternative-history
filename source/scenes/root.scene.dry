@@ -756,7 +756,7 @@ Q.costello_colour_advisor = 0; // Seamus Costello
 Q.johnny_colour_advisor = 0; // Johnny White
 
 // Communist Left advisors
-Q.bernadette_colour_advisor = 1; // Bernadette Devlin
+Q.bernadette_colour_advisor = 0; // Bernadette Devlin
 
 // Reformist advisors
 Q.McQuillan_colour_advisor = 2; // Jack McQuillan
